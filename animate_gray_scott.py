@@ -25,7 +25,7 @@ def main():
         state.V,
         origin="lower",
         vmin=0.0,
-        vmax=0.8,
+        vmax=0.1, # 8.0
         interpolation="bilinear",  # smooths out blocky pixels
         cmap="gray",
     )
@@ -33,20 +33,24 @@ def main():
     ax.set_yticks([])
 
     # Run fewer visual updates, more simulation steps per frame
-    while True : #for frame_idx in range(6000)
-        # advance the system several internal steps per visual frame
-        for _ in range(5):
-            state = step_gray_scott(state, dt=1.0)
+    try:
+        while True: #for frame_idx in range(6000)
+            # advance the system several internal steps per visual frame
+            for _ in range(5):
+                state = step_gray_scott(state, dt=1.05) #1.0
 
-        img.set_data(state.V)
+            img.set_data(state.V)
 
-        # no dynamic rescaling -> less flashing
-        fig.canvas.draw()
-        fig.canvas.flush_events()
-        plt.pause(0.001)   # slower refresh = calmer motion
-
-    plt.ioff()
-    plt.show()
+            # no dynamic rescaling -> less flashing
+            fig.canvas.draw()
+            fig.canvas.flush_events()
+            plt.pause(0.001)   # slower refresh = calmer motion
+    except KeyboardInterrupt:
+        plt.close('all')
+        print("Animation interrupted. Closed all plots.")
+    finally:
+        plt.ioff()
+        plt.show()
 
 if __name__ == "__main__":
     main()
