@@ -38,10 +38,10 @@ def main():
     print("initial V range:", field.V.min(), field.V.max())
 
     # Duality parameters (known ‘worms’ regime)
-    Du, Dv = 0.02, 0.06 #0.16, 0.08
-    F, k   = 0.0314159,1.618  #0.022, 0.051
+    Du, Dv = 0.23, 0.066 #0.16, 0.08
+    F, k   = 0.016,0.070  #0.022, 0.051
     dt     = 1.0
-    steps  = 100000
+    steps  = 25000
 
     T_prev = tension_norm(field)
     print(f"t = 0, T = {T_prev:.6f}")
@@ -109,6 +109,19 @@ def main():
 
     plt.ioff()
     plt.show()
+
+    # Geneisis Signature
+    T_arr = np.array(T_series)
+    # B_arr = np.array(B_series)
+
+    tail = min(2000, len(T_arr))
+    T_tail = T_arr[-tail:]
+
+    print("\n=== Genesis Tension Signature ===")
+    print(f"T_mean = {float(T_tail.mean()):.3f} ")
+    print(f"T_std  = {float(T_tail.std()):.3f} ")
+
+    #end signature
 
     #--- plot probe time series ---
 
