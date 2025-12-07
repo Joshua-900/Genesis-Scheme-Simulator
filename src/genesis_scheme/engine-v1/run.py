@@ -4,16 +4,18 @@ import matplotlib.pyplot as plt
 
 from field2 import Field2
 from tension import tension_norm
-from ops import step
+from ops_grayscott import step_gs,step_gs_genesis
+from genesis_signature import tension_signature
+from genesis_logging import save_tension_csv
 
-def make_unity(shape=(200, 200)) -> Field2:
+def make_unity(shape=(512, 512)) -> Field2:
     # Baseline: U = 1, V = 0
     U = np.ones(shape, float)
     V = np.zeros(shape, float)
     return Field2(U, V)
 
 def add_central_patch(field: Field2,
-r: int = 10,
+r: int = 20,
 U_val: float = 0.50,
 V_val: float = 0.25) -> Field2:
     """Seed: central square patch."""
@@ -37,13 +39,32 @@ def main():
     print("initial U range:", field.U.min(), field.U.max())
     print("initial V range:", field.V.min(), field.V.max())
 
+    # # Duality parameters (known ‘worms’ regime)
+    # Du, Dv = 0.11, 0.066 #0.16, 0.08
+    # F, k   = 0.0210000999,0.055396396396  #0.022, 0.051
+    # dt     = 1.0 # 1.0
+    # steps  = 50000
+
     # Duality parameters (known ‘worms’ regime)
-    Du, Dv = 0.23, 0.066 #0.16, 0.08
-    F, k   = 0.016,0.070  #0.022, 0.051
-    dt     = 1.0
-    steps  = 25000
+    Du, Dv = 0.5, 0.0106
+    F,k = 0.018, 0.061
+    alpha = 0.0214         # start with NO local damping
+    beta  = 0.00314       # contrast strength
+    kappa = 1e-7    # very gentle global feedba
+    gamma = 0.5         # nonlinear term
+    dt    = 0.02
+    steps = 15000
+
+    #kappa = F * 3.14/k  # Genesis feedback strength
+    #k = alpha + 3.14 * 0.5   # map Genesis params to Gray–Scott
+    #F = dt * F/1.645
+
+
+
+    #use initial tension as T0 (target)
 
     T_prev = tension_norm(field)
+    T0 = T_prev 
     print(f"t = 0, T = {T_prev:.6f}")
 
     #probe1
@@ -64,6 +85,7 @@ def main():
     im = ax.imshow(
         field.V,
         cmap="inferno",
+        interpolation="bicubic",
         origin="lower",
         vmin=0.0,
         vmax=1.0,
@@ -71,7 +93,8 @@ def main():
     plt.colorbar(im, ax=ax)
 
     for t in range(1, steps + 1):
-        field = step(field, Du=Du, Dv=Dv, F=F, k=k, dt=dt)
+        #field = step_genesis(field, Du=Du, Dv=Dv, F=F, k=k, dt=dt)
+        field = step_gs_genesis(field, Du=Du, Dv=Dv, F=F, k=k, dt=dt, kappa=kappa, T0=T0)
 
         #probe 2
         #record probe
@@ -110,16 +133,11 @@ def main():
     plt.ioff()
     plt.show()
 
-    # Geneisis Signature
-    T_arr = np.array(T_series)
-    # B_arr = np.array(B_series)
-
-    tail = min(2000, len(T_arr))
-    T_tail = T_arr[-tail:]
-
-    print("\n=== Genesis Tension Signature ===")
-    print(f"T_mean = {float(T_tail.mean()):.3f} ")
-    print(f"T_std  = {float(T_tail.std()):.3f} ")
+    save_tension_csv("tension_sig_log.csv",range(len(T_series)),T_series)
+                        
+                           # Geneisis Signature
+    sig = tension_signature(T_series)
+    print(sig)
 
     #end signature
 
