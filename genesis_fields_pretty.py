@@ -5,7 +5,11 @@ from matplotlib.widgets import Slider
 from matplotlib import cm
 from matplotlib.collections import LineCollection
 
+
 # =====================================================
+# Slider for contour alpha (strength)
+ax_contour_alpha = plt.axes([0.15, 0.10, 0.7, 0.03])
+slider_contour_alpha = Slider(ax_contour_alpha, "Contour α", 0.05, 1.0, valinit=0.8)
 
 # Parameters
 
@@ -279,12 +283,15 @@ plt.subplots_adjust(bottom=0.38)
 # Background heatmap: compression (C)
 
 comp_norm = compression_field  # initially zeros
-bg_comp = ax.imshow(comp_norm,
-origin="lower",
-extent=(-2, N + 2, -2, N + 2),
-cmap="Greys",
-alpha=0.25,
-vmin=0.0, vmax=1.0)
+bg_comp = ax.imshow(
+    comp_norm,
+    origin="lower",
+    extent=(-2, N + 2, -2, N + 2),
+    cmap="Greys",
+    alpha=0.15,
+    vmin=0.0, vmax=1.0,
+    interpolation="gaussian"
+)
 
 # Symmetric dash visualization (no arrow heads)
 
@@ -450,8 +457,9 @@ def animate(frame):
     if contours is not None and hasattr(contours, 'collections'):
         for c in contours.collections:
             c.remove()
-    contours = ax.contour(X + ux, Y + uy, theta, levels=10,
-                          linewidths=0.3, colors='k', alpha=0.15)
+    contours = ax.contour(
+        X + ux, Y + uy, theta, levels=10,
+        linewidths=0.6, colors='black', alpha=slider_contour_alpha.val)
 
     # ----- update Genesis field visualizations -----
     im_unity.set_data(unity_field)
