@@ -20,7 +20,8 @@
 
 # 'v' = cycle view modes
 
-import numpy as np
+
+from backend import xp
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from matplotlib.widgets import Slider
@@ -92,10 +93,10 @@ def build_dash_segments(theta):
     Returns (N^2, 2, 2) array for LineCollection: [[(x0,y0),(x1,y1)], ...]
     """
     ny, nx = theta.shape
-    ys, xs = np.mgrid[0:ny, 0:nx]
+    ys, xs = xp.mgrid[0:ny, 0:nx]
 
-    u = np.cos(theta)
-    v = np.sin(theta)
+    u = xp.cos(theta)
+    v = xp.sin(theta)
 
     half = DASH_LEN * 0.5
     x0 = xs - half * u
@@ -103,8 +104,8 @@ def build_dash_segments(theta):
     x1 = xs + half * u
     y1 = ys + half * v
 
-    segs = np.stack(
-        [np.stack([x0, y0], axis=-1), np.stack([x1, y1], axis=-1)],
+    segs = xp.stack(
+        [xp.stack([x0, y0], axis=-1), xp.stack([x1, y1], axis=-1)],
         axis=-2,
     )
     return segs.reshape(-1, 2, 2)
@@ -240,7 +241,7 @@ def on_click(event):
             ii = i + di
             jj = j + dj
             if 0 <= ii < N and 0 <= jj < N:
-                state.theta[ii, jj] += np.pi * (np.random.rand() - 0.5)
+                state.theta[ii, jj] += xp.pi * (xp.random.rand() - 0.5)
 
 def on_key(event):
     global show_dashes

@@ -1,15 +1,16 @@
 # rules_triads.py
 
-import numpy as np
+
+from backend import xp
 from core import angle_diff   # or wherever you defined it
 
 # predefine the triad templates once
 
 _TRIADS = [
-    ((0, 0), (1, 0), (0, 1),  (0.25 * np.pi, 0.0,        0.5 * np.pi)),
-    ((0, 0), (-1, 0), (0, 1),  (0.75 * np.pi, np.pi,      0.5 * np.pi)),
-    ((0, 0), (1, 0), (0, -1), (-0.25 * np.pi, 0.0,      -0.5 * np.pi)),
-    ((0, 0), (-1, 0), (0, -1), (-0.75 * np.pi, np.pi,    -0.5 * np.pi)),
+    ((0, 0), (1, 0), (0, 1),  (0.25 * xp.pi, 0.0,        0.5 * xp.pi)),
+    ((0, 0), (-1, 0), (0, 1),  (0.75 * xp.pi, xp.pi,      0.5 * xp.pi)),
+    ((0, 0), (1, 0), (0, -1), (-0.25 * xp.pi, 0.0,      -0.5 * xp.pi)),
+    ((0, 0), (-1, 0), (0, -1), (-0.75 * xp.pi, xp.pi,    -0.5 * xp.pi)),
 ]
 
 _TRI_SIGMA2 = (0.4 ** 2)     # same as before
@@ -25,7 +26,7 @@ def triad_rule(state, params, extra):
     N     = state.N
     theta = state.theta
 
-    tri_torque = np.zeros_like(theta)
+    tri_torque = xp.zeros_like(theta)
 
     for i in range(N):
         for j in range(N):
@@ -49,12 +50,12 @@ def triad_rule(state, params, extra):
                 d2 = angle_diff(th2, a2)
 
                 sq_err = d0*d0 + d1*d1 + d2*d2
-                S = np.exp(-sq_err / _TRI_SIGMA2)
+                S = xp.exp(-sq_err / _TRI_SIGMA2)
                 if S < 1e-3:
                     continue
 
-                tri_torque[i0, j0] += params.triads * S * np.sin(a0 - th0)
-                tri_torque[i1, j1] += params.triads * S * np.sin(a1 - th1)
-                tri_torque[i2, j2] += params.triads * S * np.sin(a2 - th2)
+                tri_torque[i0, j0] += params.triads * S * xp.sin(a0 - th0)
+                tri_torque[i1, j1] += params.triads * S * xp.sin(a1 - th1)
+                tri_torque[i2, j2] += params.triads * S * xp.sin(a2 - th2)
 
     return {"torque": tri_torque}

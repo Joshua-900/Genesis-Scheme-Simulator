@@ -1,6 +1,7 @@
 # rules_dipoles.py
 
-import numpy as np
+
+from backend import xp
 
 def dipole_rule(state, params, extra):
     """
@@ -16,7 +17,7 @@ def dipole_rule(state, params, extra):
     X_def  = state.X + state.ux
     Y_def  = state.Y + state.uy
 
-    dipole_torque = np.zeros_like(theta)
+    dipole_torque = xp.zeros_like(theta)
 
     neighbor_offsets = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
@@ -28,14 +29,14 @@ def dipole_rule(state, params, extra):
                 if 0 <= ni < N and 0 <= nj < N:
                     dx = X_def[ni, nj] - X_def[i, j]
                     dy = Y_def[ni, nj] - Y_def[i, j]
-                    phi = np.arctan2(dy, dx)
+                    phi = xp.arctan2(dy, dx)
 
-                    QA = np.cos(theta[i, j]   - phi)
-                    QB = np.cos(theta[ni, nj] - (phi + np.pi))
+                    QA = xp.cos(theta[i, j]   - phi)
+                    QB = xp.cos(theta[ni, nj] - (phi + xp.pi))
                     Q  = QA * QB
 
-                    dipole_torque[i, j]   += Q * np.sin(phi        - theta[i, j])
-                    dipole_torque[ni, nj] += Q * np.sin(phi + np.pi - theta[ni, nj])
+                    dipole_torque[i, j]   += Q * xp.sin(phi        - theta[i, j])
+                    dipole_torque[ni, nj] += Q * xp.sin(phi + xp.pi - theta[ni, nj])
 
     dipole_torque *= params.dipole
     return {"torque": dipole_torque}

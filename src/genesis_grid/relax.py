@@ -1,5 +1,5 @@
-import numpy as np
 
+from backend import xp
 def relaxation_rule(state, params, extra):
     C = extra.get("C", state.C)
 
@@ -12,8 +12,8 @@ def relaxation_rule(state, params, extra):
     state.tau = (1.0 - params.decay_tau) * state.tau + gamma_soft_field * grad
 
     # geometry with softened kappa
-    state.ux = (1.0 - params.geom_decay) * state.ux + kappa_soft_field * state.tau * np.cos(state.theta)
-    state.uy = (1.0 - params.geom_decay) * state.uy + kappa_soft_field * state.tau * np.sin(state.theta)
+    state.ux = (1.0 - params.geom_decay) * state.ux + kappa_soft_field * state.tau * xp.cos(state.theta)
+    state.uy = (1.0 - params.geom_decay) * state.uy + kappa_soft_field * state.tau * xp.sin(state.theta)
 
     # relaxation of geometry in highly compressed zones
     state.ux *= (1.0 - params.relax_geom * C)
@@ -21,8 +21,8 @@ def relaxation_rule(state, params, extra):
 
     # tiny angular diffusion
     theta = state.theta
-    theta_lap = (np.roll(theta, -1, 0) + np.roll(theta, 1, 0) +
-                 np.roll(theta, -1, 1) + np.roll(theta, 1, 1) -
+    theta_lap = (xp.roll(theta, -1, 0) + xp.roll(theta, 1, 0) +
+                 xp.roll(theta, -1, 1) + xp.roll(theta, 1, 1) -
                  4.0 * theta)
     diff_term = params.theta_diff * theta_lap
 

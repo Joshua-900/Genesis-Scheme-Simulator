@@ -1,7 +1,5 @@
 # ui_matplotlib.py
 
-
-
 # Matplotlib front-end for the modular Genesis Dash Grid.
 
 # - Symmetric dashes (orientation-only DOF)
@@ -30,13 +28,11 @@
 
 # 2 = compression + dashes + smoothed compression contours
 
-
-
 # In mode 2, the smoothing + fewer contour levels give large-scale
 
 # polygonal / shell structures instead of tiny noisy cells.
 
-import numpy as np
+from backend import xp, to_cpu
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from matplotlib.widgets import Slider
@@ -108,10 +104,10 @@ def build_dash_segments(theta):
     Returns (N^2, 2, 2) array for LineCollection: [[(x0,y0),(x1,y1)], ...]
     """
     ny, nx = theta.shape
-    ys, xs = np.mgrid[0:ny, 0:nx]
+    ys, xs = xp.mgrid[0:ny, 0:nx]
 
-    u = np.cos(theta)
-    v = np.sin(theta)
+    u = xp.cos(theta)
+    v = xp.sin(theta)
 
     half = DASH_LEN * 0.5
     x0 = xs - half * u
@@ -119,11 +115,12 @@ def build_dash_segments(theta):
     x1 = xs + half * u
     y1 = ys + half * v
 
-    segs = np.stack(
-        [np.stack([x0, y0], axis=-1), np.stack([x1, y1], axis=-1)],
+    segs = xp.stack(
+        [xp.stack([x0, y0], axis=-1), xp.stack([x1, y1], axis=-1)],
         axis=-2,
     )
-    return segs.reshape(-1, 2, 2)
+    # convert to NumPy for Matplotlib
+    return to_cpu(segs.reshape(-1, 2, 2))
 
 # =========================
 
@@ -150,7 +147,7 @@ fontsize=10,
 # Background: compression field (start all zeros)
 
 comp_img = ax.imshow(
-state.C,
+to_cpu(state.C),
 cmap="Greys_r",      # high compression = dark
 origin="upper",
 interpolation="bilinear",
@@ -176,7 +173,6 @@ ax.add_collection(dashes)
 dashes.set_visible(show_dashes and render_mode in (1, 2))
 
 # contour artists (for mode 2)
-
 contour_artists = []
 
 def set_render_mode(new_mode: int):
@@ -255,7 +251,7 @@ def on_click(event):
             ii = i + di
             jj = j + dj
             if 0 <= ii < N and 0 <= jj < N:
-                state.theta[ii, jj] += np.pi * (np.random.rand() - 0.5)
+                state.theta[ii, jj] += xp.pi * (xp.random.rand() - 0.5)
 
 def on_key(event):
     global show_dashes
@@ -279,14 +275,15 @@ fig.canvas.mpl_connect("key_press_event", on_key)
 def animate(frame):
     global contour_artists
 
-    # advance the Genesis engine
+    print("C Type:",type(state.C))
+    # advance the Genesis engine (stays on GPU/XP)
     step(state, params, rules)
 
-    # update compression background
-    comp_img.set_data(state.C)
+    # update compression background (GPU -> CPU)
+    comp_img.set_data(to_cpu(state.C))
 
     # update dashes
-    segs = build_dash_segments(state.theta)
+    segs = build_dash_segments(state.theta)  # already to_cpu inside
     dashes.set_segments(segs)
 
     # handle contours for mode 2
@@ -295,25 +292,26 @@ def animate(frame):
         for coll in contour_artists:
             coll.remove()
 
-        # build a *smoothed* compression field just for contours
+        # build a *smoothed* compression field just for contours (GPU)
         C = state.C
         C_smooth = (
             0.05 * C +
-            0.15 * (np.roll(C, 1, 0) + np.roll(C, -1, 0) +
-                    np.roll(C, 1, 1) + np.roll(C, -1, 1)) +
-            0.10 * (np.roll(np.roll(C, 1, 0), 1, 1) +
-                    np.roll(np.roll(C, 1, 0), -1, 1) +
-                    np.roll(np.roll(C, -1, 0), 1, 1) +
-                    np.roll(np.roll(C, -1, 0), -1, 1))
+            0.15 * (xp.roll(C, 1, 0) + xp.roll(C, -1, 0) +
+                    xp.roll(C, 1, 1) + xp.roll(C, -1, 1)) +
+            0.10 * (xp.roll(xp.roll(C, 1, 0), 1, 1) +
+                    xp.roll(xp.roll(C, 1, 0), -1, 1) +
+                    xp.roll(xp.roll(C, -1, 0), 1, 1) +
+                    xp.roll(xp.roll(C, -1, 0), -1, 1))
         )
 
         # choose mid-range contour levels = bigger polygonal shells
-        levels = np.linspace(0.25, 0.80, 6)
+        levels_gpu = xp.linspace(0.25, 0.80, 6)
+        levels = to_cpu(levels_gpu)
 
         cs = ax.contour(
-            state.X,
-            state.Y,
-            C_smooth,
+            to_cpu(state.X),
+            to_cpu(state.Y),
+            to_cpu(C_smooth),
             levels=levels,
             colors="black",
             linewidths=0.5,
@@ -332,7 +330,7 @@ def animate(frame):
 
 # initialize render mode visuals
 
-set_render_mode(render_mode)
+# set_render_mode(render_mode)
 
 if __name__ == "__main__":
     anim = FuncAnimation(fig, animate, interval=30, blit=False, cache_frame_data=False)

@@ -1,19 +1,20 @@
-import numpy as np
+
+from backend import xp
 
 class GenesisState:
     def __init__(self, N, dt):
         self.N  = N
         self.dt = dt
 
-        self.theta = np.random.rand(N, N) * 2 * np.pi
-        self.tau   = np.zeros((N, N))
-        self.ux    = np.zeros((N, N))
-        self.uy    = np.zeros((N, N))
-        self.C     = np.zeros((N, N))   # compression field
+        self.theta = xp.random.rand(N, N) * 2 * xp.pi
+        self.tau   = xp.zeros((N, N))
+        self.ux    = xp.zeros((N, N))
+        self.uy    = xp.zeros((N, N))
+        self.C     = xp.zeros((N, N))   # compression field
 
-        x = np.arange(N)
-        y = np.arange(N)
-        self.X, self.Y = np.meshgrid(x, y)
+        x = xp.arange(N)
+        y = xp.arange(N)
+        self.X, self.Y = xp.meshgrid(x, y)
 
 class GenesisParams:
     """Things driven by sliders live here."""
@@ -42,7 +43,7 @@ class GenesisParams:
 
 def angle_diff(a, b):
     d = a - b
-    return (d + np.pi) % (2*np.pi) - np.pi
+    return (d + xp.pi) % (2*xp.pi) - xp.pi
 
 # ---------- step() orchestrates all rules ----------
 
@@ -56,7 +57,7 @@ def step(state: GenesisState, params: GenesisParams, rules):
     dt = state.dt
 
     # store contributions here
-    torque_total = np.zeros_like(state.theta)
+    torque_total = xp.zeros_like(state.theta)
     extra = {}  # for intermediate fields if rules want to share
 
     for rule in rules:
@@ -70,4 +71,4 @@ def step(state: GenesisState, params: GenesisParams, rules):
             extra.update(out["extra"])
 
     # final theta update
-    state.theta = (state.theta + dt * torque_total) % (2 * np.pi)
+    state.theta = (state.theta + dt * torque_total) % (2 * xp.pi)
