@@ -1,0 +1,144 @@
+{
+  "scripts": {
+    "genesis_grid_emergence.py": {
+      "description": "First engine-based script — full rule pipeline with compression locking for emergence",
+      "category": "Engine Scripts",
+      "notes": "Uses genesis_grid engine directly instead of inline physics. The compression locking mechanism freezes theta in folded regions, creating bistable structure. Sliders: Align, Tension, Geometry, Phase, Lock strength.",
+      "quality": "experimental",
+      "last_modified": ""
+    },
+    "animate_2d.py": {
+      "description": "2D unity state animation — plots scalar algebra evolution over time",
+      "category": "Animations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "animate_field.py": {
+      "description": "Unity field animation on a 200x200 grid with real-time heatmap",
+      "category": "Animations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "animate_gray_scott.py": {
+      "description": "Gray-Scott reaction-diffusion pattern animation",
+      "category": "Animations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "coupling_quiver_grid.py": {
+      "description": "Coupling quiver grid with phase interactions and slider controls",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_arrow_field_large.py": {
+      "description": "Large-scale (80x80) arrow field visualization with quiver plot",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_fields_pretty.py": {
+      "description": "Pretty field visualization with contour overlays and sliders",
+      "category": "Field Visualizations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_fields_pretty_2.py": {
+      "description": "Field visualization variant 2 — contour lines and line collections",
+      "category": "Field Visualizations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_fields_pretty_lite.py": {
+      "description": "Lightweight field visualization with line collections",
+      "category": "Field Visualizations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_grid_fields_folds.py": {
+      "description": "Grid fields with fold structures on a 60x60 grid",
+      "category": "Field Visualizations",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_quiver_particles.py": {
+      "description": "Quiver field with particle dynamics and alignment forces",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_quiver_particles_phase.py": {
+      "description": "Quiver particles with phase field coupling",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_quiver_phase_field.py": {
+      "description": "Phase field simulation with quiver overlay",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_quiver_phase_grid_notriad.py": {
+      "description": "Phase grid simulation without triad interactions",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_simple_quiver_particles_emergence.py": {
+      "description": "Simple quiver particles demonstrating emergent behavior",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_simply_quiver_particles.py": {
+      "description": "Minimal quiver particle system with alignment dynamics",
+      "category": "Quiver / Particles",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "main_scalar_demo.py": {
+      "description": "Console demo — prints scalar unity state iterations (no GUI)",
+      "category": "Demos",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "cupy-test.py": {
+      "description": "Quick CuPy / CUDA GPU sanity check",
+      "category": "Demos",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "vispy_heatmap_example.py": {
+      "description": "VisPy heatmap example — GPU-accelerated image rendering",
+      "category": "Demos",
+      "notes": "",
+      "quality": "",
+      "last_modified": ""
+    },
+    "genesis_measure.py": {
+      "description": "",
+      "category": "Measurements",
+      "quality": "",
+      "notes": "The results of this indicate a bias which is not good: 20 runs. Every single angle between 1.02 and 1.96. Standard deviation 0.218 on a range of 0 to 6.28. The system is consistently picking the same direction.\n\nThis is not spontaneous symmetry breaking. There's a bias in the system that prefers angles near θ ≈ 1.4 (roughly π/4 ≈ 0.785 to π/2 ≈ 1.57). That's the diagonal direction of the square grid.\n\nThe ordering is real — |m| is consistently around 0.32, the system does organize. But it's the square lattice doing the symmetry breaking, not the field dynamics. The 4-neighbor coupling on a square grid with forward-difference derivatives in the compression rule creates a preferred axis along the grid diagonal.\n\nThis is an important and honest result. It means:\n\nThe system does order (|m| >> 0)\nBut the direction is set by the lattice geometry, not chosen spontaneously\nThe \"SSB\" we were celebrating was actually explicit breaking by the square grid topology\nWhat would fix this and produce a real test:\n\nHexagonal lattice — 6 neighbors instead of 4, higher rotational symmetry. If the bias disappears, it was the square grid.\nSymmetric finite differences — the compression rule uses forward differences (roll(-1) - self) which are asymmetric. Central differences ((roll(-1) - roll(+1)) / 2) would remove that directional bias.\nRandom neighbor topology — Voronoi or Delaunay mesh instead of a regular grid. No preferred directions at all.\nThe simplest fix to try first: switch the compression rule's finite differences from forward to central. That might eliminate the bias without changing the lattice.",
+      "last_modified": "2026-04-12T14:55:18+00:00"
+    }
+  }
+}

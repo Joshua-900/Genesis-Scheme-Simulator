@@ -1,5 +1,5 @@
 
-from backend import xp
+from .backend import xp
 
 # Minimal placeholder for curvature_rule
 def curvature_rule(state, params):

@@ -1,5 +1,5 @@
 
-from backend import xp
+from .backend import xp
 
 def alignment_rule(state, params, extra):
     # Ensure 'state' is defined and has attribute 'theta'

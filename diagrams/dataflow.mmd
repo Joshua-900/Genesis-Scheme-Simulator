@@ -1,0 +1,37 @@
+sequenceDiagram
+    actor User
+    participant Browser
+    participant Launcher as launcher.py (Flask)
+    participant JSON as scripts_metadata.json
+    participant Script as genesis_*.py
+    participant Engine as Engine (v0/v1/grid)
+
+    User->>Browser: Open localhost:5000
+    Browser->>Launcher: GET /
+    Launcher->>JSON: Load metadata
+    JSON-->>Launcher: descriptions, notes, quality
+    Launcher-->>Browser: Render script list + details
+
+    User->>Browser: Click script card
+    Browser->>Launcher: GET /api/meta/{name}
+    Launcher->>JSON: Read script metadata
+    JSON-->>Launcher: {description, notes, quality, category}
+    Launcher-->>Browser: Show details tab
+
+    User->>Browser: Edit notes, click Save
+    Browser->>Launcher: PUT /api/meta/{name}
+    Launcher->>JSON: Write updated metadata
+    Launcher-->>Browser: OK
+
+    User->>Browser: Click Run
+    Browser->>Launcher: POST /api/run/{name}
+    Launcher->>Script: subprocess.Popen(python script.py)
+    Script->>Engine: create_state() / step()
+    Browser->>Launcher: GET /api/stream (SSE)
+    loop Real-time output
+        Script-->>Launcher: stdout lines
+        Launcher-->>Browser: SSE data events
+    end
+    User->>Browser: Click Stop
+    Browser->>Launcher: POST /api/stop
+    Launcher->>Script: SIGBREAK / terminate

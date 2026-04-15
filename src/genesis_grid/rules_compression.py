@@ -1,5 +1,5 @@
 
-from backend import xp
+from .backend import xp
 
 def compression_rule(state, params, extra):
 	# use grad from alignment
@@ -14,11 +14,12 @@ def compression_rule(state, params, extra):
 	state.uy = (1.0 - params.geom_decay) * state.uy + params.kappa * state.tau * xp.sin(state.theta)
 
 	# ----- compression from deformation -----
+	# Central differences (symmetric — no directional bias from the grid)
 	ux, uy = state.ux, state.uy
-	ux_x = xp.roll(ux, -1, axis=1) - ux
-	ux_y = xp.roll(ux, -1, axis=0) - ux
-	uy_x = xp.roll(uy, -1, axis=1) - uy
-	uy_y = xp.roll(uy, -1, axis=0) - uy
+	ux_x = 0.5 * (xp.roll(ux, -1, axis=1) - xp.roll(ux, 1, axis=1))
+	ux_y = 0.5 * (xp.roll(ux, -1, axis=0) - xp.roll(ux, 1, axis=0))
+	uy_x = 0.5 * (xp.roll(uy, -1, axis=1) - xp.roll(uy, 1, axis=1))
+	uy_y = 0.5 * (xp.roll(uy, -1, axis=0) - xp.roll(uy, 1, axis=0))
 
 	detF = (1.0 + ux_x) * (1.0 + uy_y) - ux_y * uy_x
 	C = xp.exp(-(detF * detF) / (params.sigma_c2 + 1e-8))
@@ -28,6 +29,14 @@ def compression_rule(state, params, extra):
 	extra["detF"] = detF
 	extra["C"]    = state.C
 
-	# slight torque from tension if you want:
+	# --- shell geometry: compression gradients push geometry outward ---
+	# This sharpens boundaries around compressed cores
+	if params.shell_geom_gain > 0.0:
+		Cx = 0.5 * (xp.roll(state.C, -1, axis=1) - xp.roll(state.C, 1, axis=1))
+		Cy = 0.5 * (xp.roll(state.C, -1, axis=0) - xp.roll(state.C, 1, axis=0))
+		state.ux = state.ux + params.shell_geom_gain * Cx
+		state.uy = state.uy + params.shell_geom_gain * Cy
+
+	# slight torque from tension
 	torque = 0.1 * state.tau
 	return {"torque": torque}

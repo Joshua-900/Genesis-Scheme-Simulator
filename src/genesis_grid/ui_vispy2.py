@@ -14,15 +14,15 @@
 
 # - GPU-friendly core state (via backend.xp)
 
-from backend import xp, to_cpu
-from core import GenesisState, GenesisParams, step
-import rules_alignment
-import rules_phase
-import rules_dipoles
-import rules_triads
-import rules_curvature
-import rules_compression
-import relax
+from .backend import xp, to_cpu
+from .core import GenesisState, GenesisParams, step
+from . import rules_alignment
+from . import rules_phase
+from . import rules_dipoles
+from . import rules_triads
+from . import rules_curvature
+from . import rules_compression
+from . import relax
 
 from vispy import app, scene
 import numpy as np

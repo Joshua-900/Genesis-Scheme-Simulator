@@ -21,20 +21,20 @@
 # 'v' = cycle view modes
 
 
-from backend import xp
+from .backend import xp
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from matplotlib.widgets import Slider
 from matplotlib.collections import LineCollection
 
-from core import GenesisState, GenesisParams, step
-import rules_alignment
-import rules_phase
-import rules_dipoles
-import rules_triads
-import rules_curvature
-import rules_compression
-import relax
+from .core import GenesisState, GenesisParams, step
+from . import rules_alignment
+from . import rules_phase
+from . import rules_dipoles
+from . import rules_triads
+from . import rules_curvature
+from . import rules_compression
+from . import relax
 
 # =========================
 

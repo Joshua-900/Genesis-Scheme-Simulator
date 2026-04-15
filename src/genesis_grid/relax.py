@@ -1,5 +1,5 @@
 
-from backend import xp
+from .backend import xp
 def relaxation_rule(state, params, extra):
     C = extra.get("C", state.C)
 
