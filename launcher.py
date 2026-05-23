@@ -41,21 +41,35 @@ def _save_metadata(data: dict) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def _get_script_meta(name: str) -> dict:
-    data = _load_metadata()
-    return data["scripts"].get(name, {
+def _empty_meta() -> dict:
+    """Default metadata shape for files that have no entry yet."""
+    return {
         "description": "",
         "category": "Uncategorized",
-        "notes": "",
+        "status": "",
         "quality": "",
+        "notes": "",
+        "findings": [],
         "last_modified": "",
-    })
+    }
+
+
+def _get_script_meta(name: str) -> dict:
+    data = _load_metadata()
+    return data["scripts"].get(name, _empty_meta())
 
 
 def _set_script_meta(name: str, meta: dict) -> None:
+    """Merge incoming meta into the existing entry rather than overwriting.
+
+    Preserves fields the frontend doesn't know about (e.g. `findings`,
+    `status` if the UI didn't send it) so they don't get clobbered on save.
+    """
     data = _load_metadata()
-    meta["last_modified"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    data["scripts"][name] = meta
+    existing = data["scripts"].get(name, {})
+    merged = {**existing, **meta}
+    merged["last_modified"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    data["scripts"][name] = merged
     _save_metadata(data)
 
 
@@ -162,16 +176,9 @@ def index():
     scripts = _discover_scripts()
     metadata = _load_metadata()
 
-    # Build grouped structure from metadata
     groups = {}
     for name in scripts:
-        meta = metadata["scripts"].get(name, {
-            "description": "",
-            "category": "Uncategorized",
-            "notes": "",
-            "quality": "",
-            "last_modified": "",
-        })
+        meta = {**_empty_meta(), **metadata["scripts"].get(name, {})}
         cat = meta.get("category", "Uncategorized") or "Uncategorized"
         groups.setdefault(cat, []).append({"name": name, **meta})
 
@@ -258,7 +265,6 @@ HTML_TEMPLATE = r"""
     line-height: 1.5;
   }
 
-  /* --- Header --- */
   header {
     border-bottom: 1px solid var(--border);
     padding: 0.8rem 2rem;
@@ -276,14 +282,30 @@ HTML_TEMPLATE = r"""
   .status-idle    { background: var(--border); color: var(--muted); }
   .status-running { background: #1a4b2e; color: var(--green); }
 
-  /* --- Layout --- */
+  .filter-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .filter-bar select {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.78rem;
+    font-family: inherit;
+  }
+
   .layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: calc(100vh - 52px);
   }
 
-  /* --- Left panel: script list --- */
   .panel-scripts {
     border-right: 1px solid var(--border);
     overflow-y: auto;
@@ -314,6 +336,7 @@ HTML_TEMPLATE = r"""
   .script-card:hover { border-color: var(--accent); }
   .script-card.is-selected { border-color: var(--accent); background: #1c2333; }
   .script-card.is-running  { border-color: var(--green); }
+  .script-card.is-hidden   { display: none; }
   .script-info { flex: 1; min-width: 0; }
   .script-info h3 {
     font-size: 0.85rem;
@@ -336,6 +359,25 @@ HTML_TEMPLATE = r"""
     color: var(--orange);
     margin-left: 0.4rem;
   }
+
+  .status-pill {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.08rem 0.45rem;
+    border-radius: 10px;
+    margin-left: 0.45rem;
+    vertical-align: middle;
+    border: 1px solid transparent;
+  }
+  .status-active     { background: #1a4b2e; color: #3fb950; border-color: #2ea043; }
+  .status-reference  { background: #1a2f4b; color: #58a6ff; border-color: #1f6feb; }
+  .status-exploratory{ background: #3a2e1c; color: #d29922; border-color: #9e6a03; }
+  .status-superseded { background: #2d2d35; color: #8b949e; border-color: #484f58; }
+  .status-broken     { background: #4a1d22; color: #f85149; border-color: #8e1519; }
+
   .btn {
     border: none;
     border-radius: 6px;
@@ -354,18 +396,8 @@ HTML_TEMPLATE = r"""
   .btn-save { background: var(--accent); color: #000; }
   .btn:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  /* --- Right panel --- */
-  .panel-right {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  /* Tabs */
-  .tabs {
-    display: flex;
-    border-bottom: 1px solid var(--border);
-  }
+  .panel-right { display: flex; flex-direction: column; overflow: hidden; }
+  .tabs { display: flex; border-bottom: 1px solid var(--border); }
   .tab {
     padding: 0.5rem 1.2rem;
     font-size: 0.8rem;
@@ -384,12 +416,9 @@ HTML_TEMPLATE = r"""
     padding-right: 1rem;
     gap: 0.5rem;
   }
-
-  /* Tab panes */
   .tab-pane { display: none; flex: 1; overflow: hidden; }
   .tab-pane.active { display: flex; flex-direction: column; flex: 1; }
 
-  /* Output console */
   #console {
     flex: 1;
     overflow-y: auto;
@@ -404,12 +433,7 @@ HTML_TEMPLATE = r"""
   #console .line-error { color: var(--red); }
   #console .line-info  { color: var(--muted); font-style: italic; }
 
-  /* Details form */
-  .details-pane {
-    flex: 1;
-    overflow-y: auto;
-    padding: 1.2rem 1.5rem;
-  }
+  .details-pane { flex: 1; overflow-y: auto; padding: 1.2rem 1.5rem; }
   .details-empty {
     color: var(--muted);
     font-size: 0.85rem;
@@ -428,7 +452,8 @@ HTML_TEMPLATE = r"""
     margin-bottom: 0.3rem;
   }
   .field-group input,
-  .field-group textarea {
+  .field-group textarea,
+  .field-group select {
     width: 100%;
     background: var(--bg);
     border: 1px solid var(--border);
@@ -441,10 +466,8 @@ HTML_TEMPLATE = r"""
     transition: border-color 0.15s;
   }
   .field-group input:focus,
-  .field-group textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
+  .field-group textarea:focus,
+  .field-group select:focus { outline: none; border-color: var(--accent); }
   .field-group textarea { min-height: 80px; }
   .save-bar {
     padding: 0.7rem 1.5rem;
@@ -468,17 +491,25 @@ HTML_TEMPLATE = r"""
 <header>
   <h1>GenesisScheme Launcher</h1>
   <span id="status-badge" class="status-badge status-idle">Idle</span>
+  <div class="filter-bar">
+    <label for="status-filter">Show:</label>
+    <select id="status-filter" onchange="applyStatusFilter()">
+      <option value="default" selected>Default (hide superseded &amp; broken)</option>
+      <option value="active-only">Active only</option>
+      <option value="all">All</option>
+      <option value="legacy-only">Legacy only (superseded &amp; broken)</option>
+    </select>
+  </div>
 </header>
 
 <div class="layout">
-  <!-- Left: Script list -->
   <div class="panel-scripts">
     {% for category, scripts in categories.items() %}
     <div class="category-title">{{ category }}</div>
     {% for s in scripts %}
-    <div class="script-card" data-script="{{ s.name }}" onclick="selectScript('{{ s.name }}')">
+    <div class="script-card" data-script="{{ s.name }}" data-status="{{ s.status or 'unset' }}" onclick="selectScript('{{ s.name }}')">
       <div class="script-info">
-        <h3>{{ s.name }}{% if s.quality %}<span class="quality-badge">{{ s.quality }}</span>{% endif %}</h3>
+        <h3>{{ s.name }}{% if s.status %}<span class="status-pill status-{{ s.status }}">{{ s.status }}</span>{% endif %}{% if s.quality %}<span class="quality-badge">{{ s.quality }}</span>{% endif %}</h3>
         <p>{{ s.description }}</p>
       </div>
       <button class="btn btn-run" onclick="event.stopPropagation(); runScript('{{ s.name }}')">Run</button>
@@ -487,7 +518,6 @@ HTML_TEMPLATE = r"""
     {% endfor %}
   </div>
 
-  <!-- Right: Tabs -->
   <div class="panel-right">
     <div class="tabs">
       <div class="tab active" data-tab="output" onclick="switchTab('output')">Output</div>
@@ -497,12 +527,10 @@ HTML_TEMPLATE = r"""
       </div>
     </div>
 
-    <!-- Output tab -->
     <div class="tab-pane active" id="pane-output">
       <div id="console"><span class="line-info">Select a script to run...</span></div>
     </div>
 
-    <!-- Details tab -->
     <div class="tab-pane" id="pane-details">
       <div class="details-pane" id="details-form">
         <div class="details-empty">Click a script to view and edit its details.</div>
@@ -520,13 +548,11 @@ HTML_TEMPLATE = r"""
   let currentScript = null;
   let selectedScript = null;
 
-  // --- Tab switching ---
   function switchTab(tab) {
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
     document.querySelectorAll('.tab-pane').forEach(p => p.classList.toggle('active', p.id === `pane-${tab}`));
   }
 
-  // --- Select a script (shows details) ---
   function selectScript(name) {
     selectedScript = name;
     document.querySelectorAll('.script-card').forEach(c =>
@@ -536,14 +562,30 @@ HTML_TEMPLATE = r"""
     switchTab('details');
   }
 
-  // --- Load details for a script ---
   function loadDetails(name) {
     fetch(`/api/meta/${name}`)
       .then(r => r.json())
       .then(meta => {
         const form = document.getElementById('details-form');
+        const statusOptions = ['', 'active', 'reference', 'exploratory', 'superseded', 'broken'];
+        const statusSelect = statusOptions.map(v =>
+          `<option value="${v}" ${meta.status === v ? 'selected' : ''}>${v || '(unset)'}</option>`
+        ).join('');
+        const findings = Array.isArray(meta.findings) ? meta.findings : [];
+        const findingsHtml = findings.length
+          ? `<div class="field-group">
+               <label>Findings</label>
+               <ul style="font-size:0.82rem; padding-left:1.1rem; color:var(--muted);">
+                 ${findings.map(f => `<li><code>${esc(f)}</code></li>`).join('')}
+               </ul>
+             </div>`
+          : '';
         form.innerHTML = `
           <h2 style="font-size:1rem; margin-bottom:1rem; color:var(--accent);">${name}</h2>
+          <div class="field-group">
+            <label>Status (lifecycle)</label>
+            <select id="meta-status">${statusSelect}</select>
+          </div>
           <div class="field-group">
             <label>Description</label>
             <input type="text" id="meta-description" value="${esc(meta.description || '')}" placeholder="What does this script do?">
@@ -553,13 +595,14 @@ HTML_TEMPLATE = r"""
             <input type="text" id="meta-category" value="${esc(meta.category || '')}" placeholder="e.g. Animations, Quiver / Particles, Demos">
           </div>
           <div class="field-group">
-            <label>Quality / Status</label>
-            <input type="text" id="meta-quality" value="${esc(meta.quality || '')}" placeholder="e.g. stable, experimental, broken, promising">
+            <label>Quality (correctness/confidence — reserved)</label>
+            <input type="text" id="meta-quality" value="${esc(meta.quality || '')}" placeholder="e.g. stable, calibrated, suspect">
           </div>
           <div class="field-group">
             <label>Notes</label>
-            <textarea id="meta-notes" placeholder="Your thoughts, observations, opinions...">${esc(meta.notes || '')}</textarea>
+            <textarea id="meta-notes" placeholder="Short metadata-grade context. Longer writeups belong in findings/.">${esc(meta.notes || '')}</textarea>
           </div>
+          ${findingsHtml}
           ${meta.last_modified ? `<p style="font-size:0.7rem; color:var(--muted); margin-top:0.5rem;">Last edited: ${meta.last_modified}</p>` : ''}
         `;
         document.getElementById('save-bar').style.display = 'flex';
@@ -567,12 +610,12 @@ HTML_TEMPLATE = r"""
       });
   }
 
-  // --- Save metadata ---
   function saveMeta() {
     if (!selectedScript) return;
     const meta = {
       description: document.getElementById('meta-description').value,
       category: document.getElementById('meta-category').value,
+      status: document.getElementById('meta-status').value,
       quality: document.getElementById('meta-quality').value,
       notes: document.getElementById('meta-notes').value,
     };
@@ -587,20 +630,46 @@ HTML_TEMPLATE = r"""
       s.classList.add('visible');
       setTimeout(() => s.classList.remove('visible'), 2000);
 
-      // Update the card in the left panel
       const card = document.querySelector(`[data-script="${selectedScript}"]`);
       if (card) {
         card.querySelector('p').textContent = meta.description;
         const h3 = card.querySelector('h3');
         h3.innerHTML = selectedScript;
+        if (meta.status) {
+          h3.innerHTML += `<span class="status-pill status-${esc(meta.status)}">${esc(meta.status)}</span>`;
+        }
         if (meta.quality) {
           h3.innerHTML += `<span class="quality-badge">${esc(meta.quality)}</span>`;
         }
+        card.dataset.status = meta.status || 'unset';
+        applyStatusFilter();
       }
     });
   }
 
-  // --- Run a script ---
+  function applyStatusFilter() {
+    const mode = document.getElementById('status-filter').value;
+    const visibleFor = {
+      'default':     ['active', 'reference', 'exploratory', 'unset'],
+      'active-only': ['active'],
+      'all':         ['active', 'reference', 'exploratory', 'superseded', 'broken', 'unset'],
+      'legacy-only': ['superseded', 'broken'],
+    }[mode];
+    document.querySelectorAll('.script-card').forEach(card => {
+      const s = card.dataset.status || 'unset';
+      card.classList.toggle('is-hidden', !visibleFor.includes(s));
+    });
+    document.querySelectorAll('.category-title').forEach(title => {
+      let next = title.nextElementSibling;
+      let anyVisible = false;
+      while (next && next.classList.contains('script-card')) {
+        if (!next.classList.contains('is-hidden')) { anyVisible = true; break; }
+        next = next.nextElementSibling;
+      }
+      title.style.display = anyVisible ? '' : 'none';
+    });
+  }
+
   function runScript(name) {
     fetch(`/api/run/${name}`, { method: 'POST' })
       .then(r => r.json())
@@ -614,14 +683,12 @@ HTML_TEMPLATE = r"""
       });
   }
 
-  // --- Stop ---
   function stopScript() {
     fetch('/api/stop', { method: 'POST' })
       .then(r => r.json())
       .then(() => updateRunUI(false));
   }
 
-  // --- SSE stream ---
   function listenStream() {
     if (evtSource) evtSource.close();
     evtSource = new EventSource('/api/stream');
@@ -646,7 +713,6 @@ HTML_TEMPLATE = r"""
     };
   }
 
-  // --- UI state ---
   function updateRunUI(running) {
     const badge = document.getElementById('status-badge');
     const stopBtn = document.getElementById('btn-stop');
@@ -667,14 +733,14 @@ HTML_TEMPLATE = r"""
     });
   }
 
-  // --- Helpers ---
   function esc(s) {
     const d = document.createElement('div');
     d.textContent = s;
     return d.innerHTML.replace(/"/g, '&quot;');
   }
 
-  // --- Init ---
+  applyStatusFilter();
+
   fetch('/api/status').then(r => r.json()).then(s => {
     if (s.running) {
       currentScript = s.running;

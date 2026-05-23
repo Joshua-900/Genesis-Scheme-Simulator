@@ -224,3 +224,79 @@ sequenceDiagram
     Browser->>Launcher: POST /api/stop
     Launcher->>Script: SIGBREAK / terminate
 ```
+
+## Organization & Lifecycle Layer
+
+The diagrams above describe what the engine *does*. A separate layer
+describes which files in the repo are *current* — and this is enforced
+by data, not by convention.
+
+### Sources of truth
+
+- `scripts_metadata.json` — status for every runnable `.py` in the
+  repo root (currently 27 entries).
+- `modules_metadata.json` — status for every module under `src/`
+  (currently 27 entries).
+- `docs/status_taxonomy.md` — definitions of the 5 status values.
+- `diagrams/timeline.mmd` — authoritative engine generation lineage
+  (which the status labels in `modules_metadata.json` derive from).
+
+### Status values
+
+`active | reference | exploratory | superseded | broken`. See
+`docs/status_taxonomy.md` for definitions. Mutually exclusive; every
+file gets exactly one.
+
+### How it's surfaced
+
+The launcher (`launcher.py`) reads `scripts_metadata.json` and:
+
+1. Groups script cards by `category`.
+2. Renders a colored status pill on each card.
+3. Filters the visible set based on the "Show:" dropdown in the
+   header (default: hide `superseded` and `broken`).
+4. Exposes a `Status` dropdown in the per-script Details panel so the
+   label can be changed without editing JSON by hand.
+
+The backend merges saves rather than overwriting, so a `findings`
+array or other field added later won't be clobbered when someone edits
+a description through the UI.
+
+### Findings vs notes
+
+The `notes` field in the metadata files is for short metadata-grade
+context. Anything that draws a conclusion or runs to more than a
+paragraph goes in `findings/YYYY-MM-DD_short_slug.md` instead, and the
+script entry's `findings` array links to it. This keeps substantive
+results out of JSON and into a place where they can be read and edited
+as documents.
+
+### Diagram of the organization layer
+
+```mermaid
+graph LR
+    subgraph DATA["Data layer (sources of truth)"]
+        SM["scripts_metadata.json<br/><i>27 entries</i>"]
+        MM["modules_metadata.json<br/><i>27 entries</i>"]
+        TAX["docs/status_taxonomy.md<br/><i>5 status definitions</i>"]
+        TL["diagrams/timeline.mmd<br/><i>engine generations</i>"]
+    end
+
+    subgraph SURFACES["Read/write surfaces"]
+        LAUNCH["launcher.py<br/><i>localhost:5000</i>"]
+        FIND["findings/<br/><i>dated writeups</i>"]
+        DIAG["diagrams/<br/><i>rendered architecture</i>"]
+    end
+
+    SM -.reads & writes.-> LAUNCH
+    MM -.reads.-> LAUNCH
+    TAX -.defines.-> SM
+    TAX -.defines.-> MM
+    TL  -.classifies.-> MM
+    SM  -.links to.-> FIND
+
+    classDef data fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
+    classDef surface fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
+    class DATA data
+    class SURFACES surface
+```

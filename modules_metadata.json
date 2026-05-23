@@ -1,0 +1,171 @@
+{
+  "_taxonomy": {
+    "status_values": ["active", "reference", "exploratory", "superseded", "broken"],
+    "field_notes": "Status labels for modules under src/. Same semantics as scripts_metadata.json. See docs/status_taxonomy.md.",
+    "schema_version": 1
+  },
+  "modules": {
+    "src/genesis_grid/__init__.py": {
+      "description": "Public re-exports for the active engine package.",
+      "status": "active",
+      "notes": "",
+      "last_modified": ""
+    },
+    "src/genesis_grid/backend.py": {
+      "description": "NumPy vs CuPy switch via GENESIS_USE_CUPY env. Cross-cutting; imported by every rule.",
+      "status": "active",
+      "notes": "",
+      "last_modified": ""
+    },
+    "src/genesis_grid/core.py": {
+      "description": "GenesisState, GenesisParams, and the step() orchestrator. Heart of the active engine.",
+      "status": "active",
+      "notes": "GenesisParams is a flat bag of 18 knobs with no per-rule grouping or validation — flagged in the architecture analysis as a future refactor target.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/adapter.py": {
+      "description": "GenesisGridEngine — wraps core.step() to conform to the GenesisEngine protocol. Defines the 7-rule DEFAULT_RULES pipeline.",
+      "status": "active",
+      "notes": "DEFAULT_RULES here differs from the 3-rule pipeline used by genesis_measure.py. Two parallel pipeline definitions exist; consider extracting a named registry of pipelines.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/diagnostics.py": {
+      "description": "Read-only diagnostic computations (vortex detection, local coherence). NOT in the step() pipeline.",
+      "status": "active",
+      "notes": "",
+      "last_modified": ""
+    },
+    "src/genesis_grid/relax.py": {
+      "description": "Soft relaxation rule — small Laplacian diffusion plus geometry damping.",
+      "status": "active",
+      "notes": "Duplicates compression_rule's mutations on state.tau, ux, uy. When both are in the same pipeline (as in adapter.py's DEFAULT_RULES) they overwrite each other in sequence. Candidate for consolidation.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_alignment.py": {
+      "description": "Alignment rule — neighbor-coupled sin-torque. Writes extra[grad_align], extra[dtheta_align].",
+      "status": "active",
+      "notes": "Cleanest rule in the package. Pure: returns torque, no state mutation.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_compression.py": {
+      "description": "Compression rule — updates tau, ux, uy, C; computes detF; applies shell-geometry feedback.",
+      "status": "active",
+      "notes": "Architecture analysis flagged this as a 'god-module' — six concerns in one rule. Also uses forward differences which contribute to the measured θ ≈ π/4 lattice-bias in the SSB study. Tab-indented while every other rule uses spaces (formatting drift).",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_curvature.py": {
+      "description": "Curvature rule — torque toward the direction of the Laplacian of the geometry field.",
+      "status": "active",
+      "notes": "Contains a dead stub at the top (lines 5-12) that references state.grid (which doesn't exist) before being overridden by the real definition below. Should be deleted as part of cleanup.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_dipoles.py": {
+      "description": "Head-tail dipole interaction across deformed grid.",
+      "status": "active",
+      "notes": "Not in the genesis_measure.py 3-rule pipeline; used by adapter.py's DEFAULT_RULES.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_locking.py": {
+      "description": "locking_postprocess — the post= hook. Amplifies phase/triad torques in compressed cores and scales total torque by (1 - lock * C).",
+      "status": "active",
+      "notes": "Two of its three inputs (phase_torque, tri_torque) are never produced by the genesis_measure pipeline, so the lock currently only freezes torque — it doesn't amplify anything.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_phase.py": {
+      "description": "Phase rule — fourfold cos potential, writes extra[phase_torque] for the locker to amplify.",
+      "status": "active",
+      "notes": "Not in the genesis_measure.py 3-rule pipeline.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_triads.py": {
+      "description": "L-shaped 3-body triad rule with absolute target orientations. Writes extra[tri_torque].",
+      "status": "active",
+      "notes": "Has a sibling, rules_triads_relative.py, which writes the same extra key. Whichever is imported wins. Consider a params.triads_mode selector.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/rules_triads_relative.py": {
+      "description": "Rotation-invariant variant of the triad rule. Same extra key as rules_triads.py.",
+      "status": "exploratory",
+      "notes": "A/B alternative to rules_triads.py. No selector — choice is encoded in which one is imported into the rule list. Pick a winner or add an explicit mode flag.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/ui_matplotlib.py": {
+      "description": "Matplotlib UI variant 1.",
+      "status": "exploratory",
+      "notes": "One of three matplotlib UI iterations. Pick a winner and demote the others to superseded.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/ui_matplotlib2.py": {
+      "description": "Matplotlib UI variant 2.",
+      "status": "exploratory",
+      "notes": "One of three matplotlib UI iterations.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/ui_matplotlib3.py": {
+      "description": "Matplotlib UI variant 3.",
+      "status": "exploratory",
+      "notes": "One of three matplotlib UI iterations.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/ui_vispy.py": {
+      "description": "VisPy UI variant 1.",
+      "status": "exploratory",
+      "notes": "One of three VisPy UI iterations. Pick a winner and demote the others to superseded.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/ui_vispy2.py": {
+      "description": "VisPy UI variant 2.",
+      "status": "exploratory",
+      "notes": "One of three VisPy UI iterations.",
+      "last_modified": ""
+    },
+    "src/genesis_grid/ui_vispy3.py": {
+      "description": "VisPy UI variant 3.",
+      "status": "exploratory",
+      "notes": "One of three VisPy UI iterations.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/__init__.py": {
+      "description": "Public exports for the legacy package. ALSO eagerly imports .engine.adapter.EngineV0 and .engine_v1.adapter.EngineV1.",
+      "status": "broken",
+      "notes": "References subdirectories (engine/, engine_v1/) that do not exist in the repo. `from src.genesis_scheme import *` will raise ImportError. The four scripts using this package (animate_2d, animate_field, animate_gray_scott, main_scalar_demo) must be importing leaf modules directly to avoid this. Either restore the missing subpackages or strip the eager imports.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/algebra.py": {
+      "description": "Scalar F/A duality. The Nov 30 2025 1D proof-of-concept.",
+      "status": "superseded",
+      "notes": "Per timeline.mmd, replaced by the genesis_grid engine. Imported by main_scalar_demo.py.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/algebra_2d.py": {
+      "description": "UnityState2D — 2D rotation extension of algebra.py.",
+      "status": "superseded",
+      "notes": "Per timeline.mmd, replaced by the genesis_grid engine. Imported by animate_2d.py.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/field_unity.py": {
+      "description": "FieldUnity — diffusion/reaction on a 2D grid. Engine v0 era.",
+      "status": "superseded",
+      "notes": "Per timeline.mmd, replaced by the genesis_grid engine. Imported by animate_field.py.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/gray_scott.py": {
+      "description": "Gray-Scott reaction-diffusion state. Engine v1 (U,V) two-field era.",
+      "status": "superseded",
+      "notes": "Per timeline.mmd, replaced by the genesis_grid engine. Imported by animate_gray_scott.py.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/engine_interface.py": {
+      "description": "GenesisEngine Protocol — minimal pluggable engine contract.",
+      "status": "active",
+      "notes": "Apr 2026 restructure per timeline.mmd. The genesis_grid adapter conforms to this protocol.",
+      "last_modified": ""
+    },
+    "src/genesis_scheme/engine_registry.py": {
+      "description": "Engine registry — register/get/list_engines for runtime discovery.",
+      "status": "active",
+      "notes": "Apr 2026 restructure per timeline.mmd.",
+      "last_modified": ""
+    }
+  }
+}
