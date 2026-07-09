@@ -6,7 +6,9 @@ class GenesisState:
         self.N  = N
         self.dt = dt
 
-        self.theta = xp.random.rand(N, N) * 2 * xp.pi
+        #self.theta = xp.random.rand(N, N) * 2 * xp.pi
+
+        self.theta = xp.zeros((N, N))  # start aligned
         self.tau   = xp.zeros((N, N))
         self.ux    = xp.zeros((N, N))
         self.uy    = xp.zeros((N, N))
@@ -22,10 +24,10 @@ class GenesisParams:
         self.alpha = 0.4   # alignment
         self.gamma = 0.05  # tension gain
         self.kappa = 0.50 # geometry
-        self.phase = 0.08
-        self.dipole = 0.6
-        self.triads = 1.3
-        self.curv   = 0.03
+        self.phase = 0
+        self.dipole = 0.1
+        self.triads = 0
+        self.curv   = 0
 
         # relaxation knobs
         self.gamma_soft = 0.7

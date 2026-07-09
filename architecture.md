@@ -1,160 +1,146 @@
 # GenesisScheme Architecture
 
+The diagram below is a single-view mental model of the repo. It uses
+the project's standard zone palette: green for entry points, purple
+for the metadata layer, teal for the current engine, blue for the
+protocol, amber for the legacy engines, grey for scripts and outputs.
+Status accents (dashed grey for superseded, red for broken) call out
+exceptions. See `docs/status_taxonomy.md` for the status taxonomy and
+`diagrams/timeline.mmd` for engine lineage.
+
 ```mermaid
 graph TB
-    %% ===== LAUNCHER =====
-    subgraph LAUNCHER["Launcher  (localhost:5000)"]
-        direction LR
-        L_APP["launcher.py<br/><i>Flask web app</i>"]
-        L_META[("scripts_metadata.json<br/><i>descriptions, notes,<br/>quality, categories</i>")]
-        L_APP <--> L_META
+    %% =========================================================================
+    %%  GenesisScheme Architecture — mental-model view
+    %%
+    %%  Three zones, top to bottom:
+    %%    1. User Interfaces — how you start something
+    %%    2. Engine + Data + Outputs — what runs and what it produces
+    %%    3. Top-level scripts — grouped by lifecycle status
+    %%
+    %%  Palette matches the project's other diagrams (zone-semantic):
+    %%    green=entry           purple=data layer
+    %%    teal=current engine   blue=protocol / reference
+    %%    amber=legacy engine   yellow=rules / exploratory
+    %%    grey=scripts/outputs
+    %%  Plus status accents: dashed grey=superseded, red=broken
+    %% =========================================================================
+
+    %% ===== ZONE 1: USER INTERFACES =====
+    subgraph UI_ZONE["User Interfaces"]
+        LAUNCHER["launcher.py<br/>Flask app on localhost:5000<br/><i>script discovery, status pills,<br/>filter, live console, metadata editor</i>"]
+        MEASURE["genesis_measure.py<br/>headless measurement harness<br/><i>Tk UI or CLI<br/>single / multi-seed / sweep / compare</i>"]
     end
 
-    %% ===== TOP-LEVEL SCRIPTS =====
-    subgraph SCRIPTS["Top-Level Scripts  (18 runnable .py files)"]
-        direction TB
-
-        subgraph S_ANIM["Animations"]
-            animate_2d["animate_2d.py"]
-            animate_field["animate_field.py"]
-            animate_gray_scott["animate_gray_scott.py"]
-        end
-
-        subgraph S_FIELD["Field Visualizations"]
-            fields_pretty["genesis_fields_pretty.py"]
-            fields_pretty_2["genesis_fields_pretty_2.py"]
-            fields_pretty_lite["genesis_fields_pretty_lite.py"]
-            grid_folds["genesis_grid_fields_folds.py"]
-        end
-
-        subgraph S_QUIVER["Quiver / Particles"]
-            coupling["coupling_quiver_grid.py"]
-            arrow_large["genesis_arrow_field_large.py"]
-            qp["genesis_quiver_particles.py"]
-            qp_phase["genesis_quiver_particles_phase.py"]
-            qpf["genesis_quiver_phase_field.py"]
-            qpg_nt["genesis_quiver_phase_grid_notriad.py"]
-            simple_emerge["genesis_simple_quiver_..._emergence.py"]
-            simple_qp["genesis_simply_quiver_particles.py"]
-        end
-
-        subgraph S_DEMO["Demos"]
-            scalar_demo["main_scalar_demo.py"]
-            cupy_test["cupy-test.py"]
-            vispy_ex["vispy_heatmap_example.py"]
-        end
+    %% ===== ZONE 2A: DATA LAYER =====
+    subgraph DATA["Data layer"]
+        SM["scripts_metadata.json<br/>27 entries<br/><i>fields: status, category, description,<br/>quality, notes, findings, last_modified</i>"]
+        MM["modules_metadata.json<br/>27 entries · covers src/"]
+        TAX["docs/status_taxonomy.md<br/>5 status definitions"]
+        TL["diagrams/timeline.mmd<br/>engine generations"]
     end
 
-    %% ===== ENGINE INTERFACE =====
-    subgraph INTERFACE["Engine Interface  (src/genesis_scheme)"]
-        direction TB
-        PROTO["engine_interface.py<br/><b>GenesisEngine Protocol</b><br/><i>name, description, created<br/>create_state(), step()</i>"]
-        REG["engine_registry.py<br/><i>register(), get(), list_engines()</i>"]
-        PROTO --- REG
+    %% ===== ZONE 2B: CURRENT ENGINE =====
+    subgraph CURRENT["Current engine — src/genesis_grid/"]
+        BACKEND["backend.py<br/>numpy or cupy switch<br/><i>cross-cutting</i>"]
+        STATE["core.GenesisState<br/>theta (orientation),<br/>tau, ux, uy, C, X, Y"]
+        STEP["core.step(state, params, rules, post)<br/><i>sums rule torques,<br/>applies post hook,<br/>updates theta mod 2 pi</i>"]
+        PARAMS["core.GenesisParams<br/><i>flat bag of 18 knobs</i>"]
+        RULES["Rules: alignment, compression, curvature,<br/>locking, phase, dipoles, triads, relax<br/><i>pluggable, order-sensitive</i>"]
+        RULES_AB["rules_triads_relative<br/><i>exploratory A/B variant</i>"]
+        DIAG["diagnostics.py<br/><i>vortex detection, unity<br/>read-only, not in pipeline</i>"]
+        ADAPT["adapter.GenesisGridEngine<br/><i>conforms to GenesisEngine protocol</i>"]
+        UI_VAR["ui_matplotlib 1/2/3<br/>ui_vispy 1/2/3<br/><i>exploratory variants</i>"]
     end
 
-    %% ===== ALGEBRA FOUNDATIONS =====
-    subgraph ALGEBRA["Algebra Foundations  (src/genesis_scheme)"]
-        direction LR
-        alg["algebra.py<br/><i>UnityState, F/A duality, step()</i>"]
-        alg2d["algebra_2d.py<br/><i>UnityState2D, 2D rotation</i>"]
-        fu["field_unity.py<br/><i>FieldUnity, diffusion/reaction</i>"]
-        gs["gray_scott.py<br/><i>GrayScottState, reaction-diffusion</i>"]
+    %% ===== ZONE 2C: PROTOCOL LAYER =====
+    subgraph PROTOCOL["Plug-in protocol — src/genesis_scheme/ (Apr 2026)"]
+        PROTO["engine_interface.py<br/>GenesisEngine Protocol"]
+        REG["engine_registry.py<br/>register / get / list_engines"]
     end
 
-    %% ===== ENGINE V0 =====
-    subgraph EV0["Engine v0  (src/genesis_scheme/engine)"]
-        direction TB
-        ev0_base["genesis_base_engine.py<br/><i>Field, D-/D+/N, step()</i>"]
-        ev0_adapt["adapter.py → EngineV0"]
-        ev0_base --> ev0_adapt
+    %% ===== ZONE 2D: LEGACY ENGINES =====
+    subgraph LEGACY["Legacy engines — src/genesis_scheme/"]
+        BROKEN_INIT["__init__.py<br/><b>BROKEN</b><br/><i>eager-imports missing<br/>engine/ and engine_v1/</i>"]
+        ALG["algebra.py<br/><i>Nov 30 2025 · scalar F/A</i>"]
+        ALG2["algebra_2d.py<br/><i>Dec 2025 · 2D rotation</i>"]
+        FU["field_unity.py<br/><i>engine v0</i>"]
+        GS["gray_scott.py<br/><i>engine v1</i>"]
     end
 
-    %% ===== ENGINE V1 =====
-    subgraph EV1["Engine v1  (src/genesis_scheme/engine_v1)"]
-        direction TB
-        ev1_field["field2.py<br/><i>Field2(U, V)</i>"]
-        ev1_ops["ops.py<br/><i>D-, D+, step()</i>"]
-        ev1_gs["ops_grayscott.py<br/><i>step_gs, step_gs_genesis</i>"]
-        ev1_gen["ops_genesis.py<br/><i>step_genesis (tension feedback)</i>"]
-        ev1_tension["tension.py<br/><i>tension_norm()</i>"]
-        ev1_log["genesis_logging.py / genesis_signature.py"]
-        ev1_adapt["adapter.py → EngineV1"]
-        ev1_field --> ev1_ops
-        ev1_field --> ev1_gs
-        ev1_field --> ev1_gen
-        ev1_field --> ev1_tension
-        ev1_ops --> ev1_adapt
-        ev1_gen --> ev1_adapt
+    %% ===== ZONE 2E: OUTPUTS =====
+    subgraph OUT["Outputs"]
+        RES["results/<br/><i>per-run JSON,<br/>summary CSV</i>"]
+        FIND["findings/<br/><i>dated markdown writeups<br/>YYYY-MM-DD slug md</i>"]
     end
 
-    %% ===== GENESIS GRID =====
-    subgraph GRID["Genesis Grid  (src/genesis_grid)  — LATEST ENGINE"]
-        direction TB
-
-        subgraph GRID_CORE["Core"]
-            g_backend["backend.py<br/><i>NumPy / CuPy switch</i>"]
-            g_core["core.py<br/><i>GenesisState, GenesisParams<br/>step(state, params, rules)</i>"]
-        end
-
-        subgraph GRID_RULES["Pluggable Rules  (each returns torque)"]
-            r_align["rules_alignment"]
-            r_phase["rules_phase"]
-            r_dipole["rules_dipoles"]
-            r_triads["rules_triads"]
-            r_curv["rules_curvature"]
-            r_comp["rules_compression"]
-            r_relax["relax"]
-        end
-
-        subgraph GRID_UI["UI Variants"]
-            ui_mpl["ui_matplotlib  (1, 2, 3)"]
-            ui_vispy["ui_vispy  (1, 2, 3)"]
-        end
-
-        g_adapt["adapter.py → GenesisGridEngine"]
-
-        g_backend --> g_core
-        g_core --> GRID_RULES
-        GRID_RULES --> g_adapt
-        g_core --> GRID_UI
-        GRID_RULES --> GRID_UI
+    %% ===== ZONE 3: TOP-LEVEL SCRIPTS by status =====
+    subgraph SCRIPTS["Top-level scripts in root (by status)"]
+        S_REF["REFERENCE (3)<br/>genesis_grid_emergence<br/>cupy-test<br/>vispy_heatmap_example"]
+        S_EXP["EXPLORATORY (19)<br/>genesis_grid_* (7 studies)<br/>genesis_quiver_* (7)<br/>genesis_fields_pretty (3)<br/>coupling_quiver_grid<br/>genesis_arrow_field_large"]
+        S_SUP["SUPERSEDED (4)<br/>animate_2d / animate_field<br/>animate_gray_scott<br/>main_scalar_demo"]
     end
 
-    %% ===== CONNECTIONS =====
-    L_APP -- "subprocess<br/>launch & stream" --> SCRIPTS
+    %% ===== RELATIONSHIPS =====
+    LAUNCHER -->|reads and writes| SM
+    LAUNCHER -.->|reads| MM
+    LAUNCHER -->|subprocess Popen| S_REF
+    LAUNCHER -->|subprocess Popen| S_EXP
+    LAUNCHER -->|subprocess Popen| S_SUP
+    LAUNCHER -->|subprocess Popen| MEASURE
 
-    animate_2d -- "imports" --> alg2d
-    animate_field -- "imports" --> fu
-    animate_gray_scott -- "imports" --> gs
-    scalar_demo -- "imports" --> alg
+    TAX -.->|defines vocab| SM
+    TAX -.->|defines vocab| MM
+    TL -.->|classifies lineage| MM
 
-    ev0_adapt -- "registers" --> REG
-    ev1_adapt -- "registers" --> REG
-    g_adapt -- "registers" --> REG
+    MEASURE -->|imports| STATE
+    MEASURE -->|imports| RULES
+    MEASURE -->|writes| RES
+    MEASURE -.->|results graduate to| FIND
+    SM -.->|findings array links to| FIND
 
-    ev0_adapt -. "conforms to" .-> PROTO
-    ev1_adapt -. "conforms to" .-> PROTO
-    g_adapt -. "conforms to" .-> PROTO
+    BACKEND --> STATE
+    BACKEND -.-> RULES
+    STATE --> STEP
+    PARAMS --> STEP
+    RULES --> STEP
+    STEP --> ADAPT
 
-    %% ===== STYLING =====
-    %% Clean, muted palette — white backgrounds with colored left-borders via stroke
+    ADAPT -->|registers| REG
+    ADAPT -.->|conforms to| PROTO
 
-    classDef launcher fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#14532d
-    classDef iface fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
-    classDef algebra fill:#faf5ff,stroke:#7c3aed,stroke-width:2px,color:#3b0764
-    classDef engine fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#78350f
-    classDef grid fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
-    classDef scripts fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#475569
-    classDef node_default fill:#ffffff,stroke:#cbd5e1,color:#334155
+    S_REF -.->|imports| STATE
+    S_EXP -.->|imports| STATE
+    S_SUP -.->|imports| ALG2
 
-    class LAUNCHER launcher
-    class INTERFACE iface
-    class ALGEBRA algebra
-    class EV0,EV1 engine
-    class GRID grid
-    class SCRIPTS,S_ANIM,S_FIELD,S_QUIVER,S_DEMO scripts
+    %% ===== STYLING (matches project palette in other diagrams) =====
+    classDef launcher   fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#14532d
+    classDef iface      fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
+    classDef algebra    fill:#faf5ff,stroke:#7c3aed,stroke-width:2px,color:#3b0764
+    classDef engine     fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#78350f
+    classDef grid       fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
+    classDef rules      fill:#fef3c7,stroke:#ca8a04,stroke-width:2px,color:#713f12
+    classDef scripts    fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#475569
+    classDef superseded fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,stroke-dasharray:4 2,color:#475569
+    classDef broken     fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d
+
+    class UI_ZONE,LAUNCHER,MEASURE launcher
+    class DATA,SM,MM,TAX,TL algebra
+    class CURRENT,BACKEND,STATE,STEP,PARAMS,RULES,DIAG,ADAPT grid
+    class RULES_AB,UI_VAR,S_EXP rules
+    class PROTOCOL,PROTO,REG,S_REF iface
+    class LEGACY,ALG,ALG2,FU,GS engine
+    class OUT,RES,FIND scripts
+    class S_SUP superseded
+    class BROKEN_INIT broken
 ```
+
+### How to read this diagram
+
+- **Start at the top.** Two user interfaces (`launcher.py`, `genesis_measure.py`) are the only things you actually run from a fresh checkout.
+- **Middle band, left to right.** The data layer (metadata + taxonomy + timeline) is the source of truth for what's current; the current engine (`src/genesis_grid/`) is where physics happens; the protocol layer is the contract that lets engines plug in; the legacy engines are kept around but no new work goes there; outputs split into machine-generated (`results/`) and human-written (`findings/`).
+- **Bottom band.** The 26 other top-level scripts are grouped by status, not by category, because category is what the launcher uses for *layout* but status is what you need to make a *decision* about a file.
+- **Color tells you the zone.** Green = entry points, purple = metadata, teal = current engine, blue = protocol / reference, amber = legacy engines, grey = scripts and outputs. Dashed grey marks superseded items inside the scripts catalog; one red node calls out the broken `__init__.py`.
 
 ## Engine Evolution Timeline
 
@@ -181,6 +167,16 @@ timeline
               : Engine Protocol interface
               : Pluggable registry
               : Enhanced launcher with metadata
+    Apr 12 2026 : SSB measurement
+                 : 20-seed multi-seed run on genesis_measure.py
+                 : Result: square-lattice anisotropy, not SSB
+                 : See findings/2026-04-12_ssb_lattice_bias.md
+    May 23 2026 : Status taxonomy rollout
+                 : 5-value lifecycle vocabulary
+                 : scripts_metadata + modules_metadata
+                 : Launcher status pills + filter
+                 : findings/ promoted out of notes
+                 : README + CHANGELOG + org-layer diagram
 ```
 
 ## Data Flow: Running a Script
@@ -197,18 +193,18 @@ sequenceDiagram
     User->>Browser: Open localhost:5000
     Browser->>Launcher: GET /
     Launcher->>JSON: Load metadata
-    JSON-->>Launcher: descriptions, notes, quality
-    Launcher-->>Browser: Render script list + details
+    JSON-->>Launcher: status, category, description, findings
+    Launcher-->>Browser: Render script list, status pills, filter
 
     User->>Browser: Click script card
     Browser->>Launcher: GET /api/meta/{name}
     Launcher->>JSON: Read script metadata
-    JSON-->>Launcher: {description, notes, quality, category}
-    Launcher-->>Browser: Show details tab
+    JSON-->>Launcher: full entry incl. status + findings
+    Launcher-->>Browser: Show Details tab
 
-    User->>Browser: Edit notes, click Save
+    User->>Browser: Edit Status / Notes, click Save
     Browser->>Launcher: PUT /api/meta/{name}
-    Launcher->>JSON: Write updated metadata
+    Launcher->>JSON: Merge update (preserves findings)
     Launcher-->>Browser: OK
 
     User->>Browser: Click Run
@@ -227,76 +223,12 @@ sequenceDiagram
 
 ## Organization & Lifecycle Layer
 
-The diagrams above describe what the engine *does*. A separate layer
-describes which files in the repo are *current* — and this is enforced
-by data, not by convention.
+The architecture diagram above shows *what* the system is. This second
+view shows *how it knows what's current* — the metadata layer that
+makes the status labels meaningful.
 
 ### Sources of truth
 
 - `scripts_metadata.json` — status for every runnable `.py` in the
   repo root (currently 27 entries).
-- `modules_metadata.json` — status for every module under `src/`
-  (currently 27 entries).
-- `docs/status_taxonomy.md` — definitions of the 5 status values.
-- `diagrams/timeline.mmd` — authoritative engine generation lineage
-  (which the status labels in `modules_metadata.json` derive from).
-
-### Status values
-
-`active | reference | exploratory | superseded | broken`. See
-`docs/status_taxonomy.md` for definitions. Mutually exclusive; every
-file gets exactly one.
-
-### How it's surfaced
-
-The launcher (`launcher.py`) reads `scripts_metadata.json` and:
-
-1. Groups script cards by `category`.
-2. Renders a colored status pill on each card.
-3. Filters the visible set based on the "Show:" dropdown in the
-   header (default: hide `superseded` and `broken`).
-4. Exposes a `Status` dropdown in the per-script Details panel so the
-   label can be changed without editing JSON by hand.
-
-The backend merges saves rather than overwriting, so a `findings`
-array or other field added later won't be clobbered when someone edits
-a description through the UI.
-
-### Findings vs notes
-
-The `notes` field in the metadata files is for short metadata-grade
-context. Anything that draws a conclusion or runs to more than a
-paragraph goes in `findings/YYYY-MM-DD_short_slug.md` instead, and the
-script entry's `findings` array links to it. This keeps substantive
-results out of JSON and into a place where they can be read and edited
-as documents.
-
-### Diagram of the organization layer
-
-```mermaid
-graph LR
-    subgraph DATA["Data layer (sources of truth)"]
-        SM["scripts_metadata.json<br/><i>27 entries</i>"]
-        MM["modules_metadata.json<br/><i>27 entries</i>"]
-        TAX["docs/status_taxonomy.md<br/><i>5 status definitions</i>"]
-        TL["diagrams/timeline.mmd<br/><i>engine generations</i>"]
-    end
-
-    subgraph SURFACES["Read/write surfaces"]
-        LAUNCH["launcher.py<br/><i>localhost:5000</i>"]
-        FIND["findings/<br/><i>dated writeups</i>"]
-        DIAG["diagrams/<br/><i>rendered architecture</i>"]
-    end
-
-    SM -.reads & writes.-> LAUNCH
-    MM -.reads.-> LAUNCH
-    TAX -.defines.-> SM
-    TAX -.defines.-> MM
-    TL  -.classifies.-> MM
-    SM  -.links to.-> FIND
-
-    classDef data fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
-    classDef surface fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
-    class DATA data
-    class SURFACES surface
-```
+- `modules_metadata.j

@@ -1,0 +1,220 @@
+graph TB
+    %% =========================================================================
+    %%  Genesis Grid engine — IDEAL (target state) view
+    %%
+    %%  Companion to genesis_grid_engine.mmd (the code-accurate view).
+    %%  Shows the engine after the architectural cleanups flagged in
+    %%  the analysis are applied. Same palette; structural changes only.
+    %%
+    %%  Key differences from the actual diagram:
+    %%    1. compression_rule split into 3 focused rules (tension, geometry,
+    %%       compression-field) + a separate shell-modulator
+    %%    2. Single canonical triads rule with a mode parameter (absolute vs
+    %%       rotation-invariant), no more A/B collision
+    %%    3. relax is a soft modulator that produces a multiplier; it does
+    %%       NOT independently mutate state
+    %%    4. Locking post-processor's amp branches are explicit gates
+    %%    5. Pipelines registry replaces the two parallel DEFAULT_RULES /
+    %%       genesis_measure.RULES lists
+    %%    6. GenesisParams grouped into per-rule namespaces
+    %%    7. Each rule declares requires / provides; ordering is derivable
+    %% =========================================================================
+
+    %% ===== BACKEND =====
+    BACKEND["backend.py<br/><i>xp = NumPy or CuPy</i><br/><i>cross-cutting</i>"]
+
+    %% ===== STATE =====
+    subgraph STATE["GenesisState  (core.py)"]
+        direction LR
+        S_THETA["theta (N x N) — DOF"]
+        S_TAU["tau (N x N) — tension"]
+        S_GEOM["ux, uy — displacement"]
+        S_C["C — compression"]
+        S_GRID["X, Y — base grid"]
+    end
+
+    %% ===== PARAMS (grouped per rule) =====
+    subgraph PARAMS["GenesisParams  (grouped per rule)"]
+        direction TB
+        subgraph P_ALIGN["alignment"]
+            PA_ALPHA["alpha"]
+        end
+        subgraph P_TEN["tension"]
+            PT_GAMMA["gamma"]
+            PT_DECAY["decay"]
+        end
+        subgraph P_GEOM["geometry"]
+            PG_KAPPA["kappa"]
+            PG_DECAY["decay"]
+            PG_SHELL["shell_gain"]
+        end
+        subgraph P_COMP["compression"]
+            PC_SIGMA["sigma_c"]
+        end
+        subgraph P_CURV["curvature"]
+            PCV_CURV["curv"]
+        end
+        subgraph P_TRIAD["triads"]
+            PTR_STR["strength"]
+            PTR_SIGMA["sigma"]
+            PTR_MODE["mode: absolute | relative"]
+        end
+        subgraph P_PHASE["phase, dipoles"]
+            PP_PHASE["phase"]
+            PP_DIPOLE["dipole"]
+        end
+        subgraph P_LOCK["locking"]
+            PL_STR["lock_strength"]
+            PL_AMP["amp_gains"]
+        end
+        subgraph P_RELAX["relax"]
+            PR_STR["soft_factor"]
+        end
+    end
+
+    %% ===== STEP FUNCTION =====
+    subgraph STEP["step(state, params, pipeline)  (core.py)"]
+        direction TB
+
+        INIT_TORQUE["torque_total = zeros(N, N)<br/>extra = {}"]
+
+        subgraph PIPELINE["Pipeline  (each rule declares requires / provides)"]
+            direction TB
+
+            subgraph R1["rules_alignment.py"]
+                R1_DESC["requires: state.theta<br/>provides: grad_align, dtheta_align<br/>returns: alpha · sum sin(theta_n − theta)"]
+            end
+
+            subgraph R2a["rules_tension.py"]
+                R2a_DESC["requires: state.tau, grad_align<br/>provides: (none)<br/>mutates: state.tau<br/>(tau += gamma · grad − decay · tau)"]
+            end
+
+            subgraph R2b["rules_geometry.py"]
+                R2b_DESC["requires: state.theta, state.tau<br/>provides: (none)<br/>mutates: state.ux, state.uy<br/>(u += kappa · tau · dir − decay · u)"]
+            end
+
+            subgraph R2c["rules_compression_field.py"]
+                R2c_DESC["requires: state.ux, state.uy<br/>provides: detF, C<br/>mutates: state.C<br/>(C = exp(−detF² / sigma_c²))"]
+            end
+
+            subgraph R2d["rules_shell.py  (optional modulator)"]
+                R2d_DESC["requires: state.C<br/>mutates: state.ux, state.uy<br/>(u += shell_gain · grad(C))"]
+            end
+
+            subgraph R3["rules_curvature.py"]
+                R3_DESC["requires: state.ux, state.uy, state.theta<br/>provides: curv_mag, phi_curv<br/>returns: curv · mag · sin(phi − theta)<br/><i>(dead stub removed)</i>"]
+            end
+
+            subgraph R4["rules_phase.py"]
+                R4_DESC["requires: state.theta<br/>provides: phase_torque<br/>returns: −phase · sin(4 · theta)"]
+            end
+
+            subgraph R5["rules_dipoles.py"]
+                R5_DESC["requires: state.theta, state.ux, state.uy<br/>returns: dipole · head-tail torque"]
+            end
+
+            subgraph R6["rules_triads.py  (mode-switched)"]
+                R6_DESC["requires: state.theta<br/>provides: tri_torque<br/>params.triads.mode selects:<br/>• absolute (lattice-targeting)<br/>• relative (rotation-invariant)<br/><i>(single source of truth)</i>"]
+            end
+
+            subgraph R7["rules_relax.py  (soft modulator)"]
+                R7_DESC["requires: state.C<br/>provides: relax_scale = (1 − f · C)<br/><i>does NOT mutate state directly;<br/>R2a, R2b multiply their gains by relax_scale</i>"]
+            end
+        end
+
+        SUM["torque_total += each rule's torque"]
+
+        subgraph POST["rules_locking.py  (post-processor with explicit gates)"]
+            POST_PHASE_GATE{"phase_torque in extra ?"}
+            POST_PHASE_AMP["torque += phase_lock_gain · C · phase_torque"]
+            POST_TRI_GATE{"tri_torque in extra ?"}
+            POST_TRI_AMP["torque += tri_lock_gain · C · tri_torque"]
+            POST_FREEZE["torque *= (1 − lock_strength · C)<br/><i>always runs</i>"]
+            POST_PHASE_GATE -- yes --> POST_PHASE_AMP --> POST_TRI_GATE
+            POST_PHASE_GATE -- no --> POST_TRI_GATE
+            POST_TRI_GATE -- yes --> POST_TRI_AMP --> POST_FREEZE
+            POST_TRI_GATE -- no --> POST_FREEZE
+        end
+
+        THETA_UP["state.theta = (theta + dt · torque) % 2π"]
+
+        INIT_TORQUE --> PIPELINE
+        PIPELINE --> SUM
+        SUM --> POST
+        POST --> THETA_UP
+    end
+
+    %% ===== DIAGNOSTICS =====
+    subgraph DIAG["diagnostics.py  (read-only)"]
+        D_VORTEX["detect_vortices()"]
+        D_UNITY["compute_unity()"]
+    end
+
+    %% ===== ADAPTER + PIPELINES REGISTRY =====
+    subgraph ADAPTER["adapter.py + pipelines registry"]
+        A_ENGINE["GenesisGridEngine<br/><i>conforms to GenesisEngine Protocol</i>"]
+        A_REG["PIPELINES = {<br/>  'minimal':   [alignment, tension, geometry, compression_field, curvature],<br/>  'full':      [...all rules, mode='absolute'],<br/>  'invariant': [...all rules, mode='relative']<br/>}<br/><i>single source of truth for rule sets;<br/>genesis_measure picks by name, no hardcoded list</i>"]
+        A_ENGINE --> A_REG
+    end
+
+    %% ===== UI =====
+    subgraph UIS["UI  (consolidated to one matplotlib + one vispy)"]
+        UI_MPL["ui_matplotlib"]
+        UI_VISPY["ui_vispy"]
+    end
+
+    %% ===== DATA-FLOW EDGES inside the pipeline =====
+    R1 -->|"grad_align"| R2a
+    R2a -->|"state.tau"| R2b
+    R2b -->|"state.ux, uy"| R2c
+    R2c -->|"state.C"| R2d
+    R2c -->|"state.C"| R7
+    R7 -.->|"relax_scale (read by R2a, R2b)"| R2a
+    R7 -.->|"relax_scale"| R2b
+    R2c -->|"state.ux, uy, C"| R3
+    R4 -.->|"phase_torque"| POST
+    R6 -.->|"tri_torque"| POST
+    R2c -.->|"state.C"| POST
+
+    %% ===== TOP-LEVEL CONNECTIONS =====
+    BACKEND -. "provides xp" .-> STATE
+    BACKEND -. "provides xp" .-> PIPELINE
+
+    PARAMS -- "namespaced read per rule" --> PIPELINE
+    PARAMS --> POST
+
+    STATE -- "read & mutated by rules" --> PIPELINE
+    STATE -- "read by post" --> POST
+    THETA_UP -- "writes" --> S_THETA
+
+    STATE -. "read only" .-> DIAG
+
+    ADAPTER -- "calls step(pipeline=PIPELINES[name])" --> STEP
+    UIS -- "calls step()" --> STEP
+    UIS -. "reads state for rendering" .-> STATE
+
+    %% ===== STYLING (matches project palette) =====
+    classDef state fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
+    classDef params fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
+    classDef step fill:#faf5ff,stroke:#7c3aed,stroke-width:2px,color:#3b0764
+    classDef rules fill:#fff7ed,stroke:#ea580c,stroke-width:2px,color:#7c2d12
+    classDef optional fill:#fefce8,stroke:#ca8a04,stroke-width:1px,color:#713f12
+    classDef modulator fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,stroke-dasharray:3 2,color:#14532d
+    classDef post fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d
+    classDef gate fill:#fff,stroke:#dc2626,stroke-width:1px,color:#7f1d1d
+    classDef diag fill:#f8fafc,stroke:#64748b,stroke-width:1px,color:#475569
+    classDef adapter fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#14532d
+    classDef backend fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#475569
+
+    class STATE state
+    class PARAMS,P_ALIGN,P_TEN,P_GEOM,P_COMP,P_CURV,P_TRIAD,P_PHASE,P_LOCK,P_RELAX params
+    class STEP step
+    class PIPELINE,R1,R2a,R2b,R2c,R3,R6 rules
+    class R4,R5,R2d optional
+    class R7 modulator
+    class POST post
+    class POST_PHASE_GATE,POST_TRI_GATE gate
+    class DIAG diag
+    class ADAPTER adapter
+    class BACKEND backend
+    class UIS adapter

@@ -1,0 +1,35 @@
+graph LR
+    %% Organization & lifecycle layer
+    %% Companion to architecture.mmd — shows the data layer that classifies
+    %% every file in the repo, and the read/write surfaces that consume it.
+
+    subgraph DATA["Data layer — sources of truth"]
+        SM["scripts_metadata.json<br/><i>27 entries</i><br/><i>fields: status, category,<br/>description, quality,<br/>notes, findings, last_modified</i>"]
+        MM["modules_metadata.json<br/><i>27 entries</i><br/><i>covers src/genesis_grid/ +<br/>src/genesis_scheme/</i>"]
+        TAX["docs/status_taxonomy.md<br/><i>5 status definitions:<br/>active, reference, exploratory,<br/>superseded, broken</i>"]
+        TL["diagrams/timeline.mmd<br/><i>engine generations</i><br/><i>authoritative lineage</i>"]
+    end
+
+    subgraph SURFACES["Read / write surfaces"]
+        LAUNCH["launcher.py<br/><i>Flask app on localhost:5000</i><br/><i>renders status pills,<br/>filters by status,<br/>edits via Details panel</i>"]
+        FIND["findings/<br/><i>dated markdown writeups</i><br/><i>YYYY-MM-DD slug md</i>"]
+        DIAG["diagrams/<br/><i>mmd sources rendered<br/>into architecture md</i>"]
+        README["README md / CHANGELOG md<br/><i>orientation + history</i>"]
+    end
+
+    %% Source-of-truth relationships
+    TAX -.->|defines vocabulary| SM
+    TAX -.->|defines vocabulary| MM
+    TL  -.->|classifies legacy vs current| MM
+
+    %% Surface relationships
+    SM   -.->|read and write via UI| LAUNCH
+    MM   -.->|read| LAUNCH
+    SM   -.->|links via findings array| FIND
+    FIND -.->|embedded in| README
+    DIAG -.->|embedded in| README
+
+    classDef data fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
+    classDef surface fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
+    class DATA data
+    class SURFACES s

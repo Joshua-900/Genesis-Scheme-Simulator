@@ -1,36 +1,45 @@
 graph TB
+    %% =========================================================================
+    %%  Genesis Grid engine — ACTUAL (code-accurate) view
+    %%
+    %%  Honest documentation of the engine as it stands today, warts included.
+    %%  See genesis_grid_engine_ideal.mmd for the target state.
+    %%
+    %%  ⚠️ markers point at architectural smells flagged in the analysis.
+    %% =========================================================================
+
     %% ===== BACKEND =====
-    BACKEND["backend.py<br/><i>xp = NumPy or CuPy</i><br/><i>to_cpu() for rendering</i>"]
+    BACKEND["backend.py<br/><i>xp = NumPy or CuPy</i><br/><i>to_cpu() for rendering</i><br/><i>cross-cutting</i>"]
 
     %% ===== STATE =====
     subgraph STATE["GenesisState  (core.py)"]
         direction LR
         S_THETA["theta (N x N)<br/><b>THE single DOF</b><br/><i>orientation 0 to 2pi</i>"]
-        S_TAU["tau (N x N)<br/><i>tension field<br/>(accumulated disagreement)</i>"]
-        S_GEOM["ux, uy (N x N)<br/><i>displacement field<br/>(protospace deformation)</i>"]
-        S_C["C (N x N)<br/><i>compression field<br/>(fold intensity 0 to 1)</i>"]
+        S_TAU["tau (N x N)<br/><i>tension field</i>"]
+        S_GEOM["ux, uy (N x N)<br/><i>displacement field</i>"]
+        S_C["C (N x N)<br/><i>compression field 0..1</i>"]
         S_GRID["X, Y (N x N)<br/><i>base grid coordinates</i>"]
     end
 
     %% ===== PARAMS =====
-    subgraph PARAMS["GenesisParams  (core.py)"]
+    subgraph PARAMS["GenesisParams  (core.py)  ⚠️ flat bag of 18 knobs, no per-rule grouping"]
         direction TB
         subgraph P_CORE["Core Physics"]
-            P_ALPHA["alpha  <i>alignment coupling</i>"]
-            P_GAMMA["gamma  <i>tension gain</i>"]
-            P_KAPPA["kappa  <i>geometry coupling</i>"]
-            P_CURV["curv  <i>curvature feedback</i>"]
+            P_ALPHA["alpha <i>alignment</i>"]
+            P_GAMMA["gamma <i>tension gain</i>"]
+            P_KAPPA["kappa <i>geometry coupling</i>"]
+            P_CURV["curv <i>curvature feedback</i>"]
         end
         subgraph P_OPTIONAL["Optional Forces"]
-            P_PHASE["phase  <i>4-well strength</i>"]
-            P_DIPOLE["dipole  <i>head-tail coupling</i>"]
-            P_TRIADS["triads  <i>3-body cohesion</i>"]
+            P_PHASE["phase <i>4-well strength</i>"]
+            P_DIPOLE["dipole <i>head-tail coupling</i>"]
+            P_TRIADS["triads <i>3-body cohesion</i>"]
         end
         subgraph P_LOCKING["Locking Mechanics"]
-            P_LOCK["lock_strength  <i>freeze intensity</i>"]
-            P_PLOCK["phase_lock_gain  <i>amplify phase in folds</i>"]
-            P_TLOCK["tri_lock_gain  <i>amplify triads in folds</i>"]
-            P_SHELL["shell_geom_gain  <i>compression gradient push</i>"]
+            P_LOCK["lock_strength"]
+            P_PLOCK["phase_lock_gain"]
+            P_TLOCK["tri_lock_gain"]
+            P_SHELL["shell_geom_gain"]
         end
         subgraph P_HOUSE["Housekeeping"]
             P_DECAY["decay_tau, geom_decay"]
@@ -44,56 +53,56 @@ graph TB
 
         INIT_TORQUE["torque_total = zeros(N, N)<br/>extra = {}"]
 
-        subgraph PIPELINE["Rule Pipeline  (pluggable, ordered)"]
+        subgraph PIPELINE["Rule Pipeline  (pluggable, ⚠️ ORDER IS LOAD-BEARING)"]
             direction TB
 
             subgraph R1["rules_alignment.py"]
                 R1_IN["Reads: state.theta"]
-                R1_DO["sin(theta_neighbor - theta)<br/>for 4 cardinal neighbors"]
-                R1_OUT["Returns: alpha * dtheta_align<br/>Shares: dtheta_align, grad_align"]
+                R1_DO["sin(theta_neighbor − theta)<br/>4 cardinal neighbors"]
+                R1_OUT["Returns: alpha · dtheta_align<br/>Shares: dtheta_align, grad_align"]
                 R1_IN --> R1_DO --> R1_OUT
             end
 
-            subgraph R2["rules_compression.py"]
-                R2_IN["Reads: state.theta, ux, uy, tau<br/>Uses: grad_align from extra"]
-                R2_DO["1. tau += gamma * grad  (tension)<br/>2. ux,uy += kappa * tau * dir  (geometry)<br/>3. detF = det(deformation gradient)<br/>4. C = exp(-detF^2 / sigma)  (compression)<br/>5. Shell push: ux,uy += gain * grad(C)"]
-                R2_OUT["Returns: 0.1 * tau<br/>Shares: detF, C<br/>Mutates: state.tau, ux, uy, C"]
+            subgraph R2["rules_compression.py  ⚠️ god-module"]
+                R2_IN["Reads: state.theta, ux, uy, tau<br/>Uses: grad_align (from R1)"]
+                R2_DO["1. tau += gamma · grad (tension)<br/>2. ux,uy += kappa · tau · dir (geometry)<br/>3. detF = det(deformation grad)<br/>4. C = exp(−detF² / sigma)<br/>5. Shell push: ux,uy += gain · grad(C)<br/><i>⚠️ contributes to lattice anisotropy<br/>findings/2026-04-12_ssb_lattice_bias.md</i>"]
+                R2_OUT["Returns: 0.1 · tau<br/>Shares: detF, C<br/>Mutates: state.tau, ux, uy, C"]
                 R2_IN --> R2_DO --> R2_OUT
             end
 
-            subgraph R3["rules_curvature.py"]
-                R3_IN["Reads: state.ux, uy, theta"]
-                R3_DO["Laplacian of (ux, uy)<br/>curv_mag, phi_curv = direction<br/>torque toward curvature direction"]
-                R3_OUT["Returns: curv * mag * sin(phi - theta)"]
+            subgraph R3["rules_curvature.py  ⚠️ dead stub at top of file"]
+                R3_IN["Reads: state.ux, uy, theta<br/><i>(uy/ux already mutated by R2)</i>"]
+                R3_DO["Laplacian of (ux, uy)<br/>curv_mag, phi_curv = direction<br/>torque toward curvature dir"]
+                R3_OUT["Returns: curv · mag · sin(phi − theta)"]
                 R3_IN --> R3_DO --> R3_OUT
             end
 
             subgraph R4["rules_phase.py  (optional)"]
-                R4_DO["-phase * sin(4 * theta)<br/>4-well potential"]
+                R4_DO["−phase · sin(4 · theta)<br/>4-well potential"]
                 R4_OUT["Returns: phase_force<br/>Shares: phase_torque"]
                 R4_DO --> R4_OUT
             end
 
             subgraph R5["rules_dipoles.py  (optional)"]
-                R5_DO["Head-tail interaction<br/>on deformed grid (X+ux, Y+uy)<br/>Vectorized with np.roll"]
-                R5_OUT["Returns: dipole * torque"]
+                R5_DO["Head-tail interaction<br/>on deformed grid (X+ux, Y+uy)"]
+                R5_OUT["Returns: dipole · torque"]
                 R5_DO --> R5_OUT
             end
 
             subgraph R6["rules_triads.py  (optional)"]
-                R6_DO["3-body L-shape templates<br/>Gaussian match score<br/>Vectorized with np.roll"]
+                R6_DO["3-body L-shape templates<br/>absolute target angles<br/>Gaussian match score"]
                 R6_OUT["Returns: triad torque<br/>Shares: tri_torque"]
                 R6_DO --> R6_OUT
             end
 
-            subgraph R6B["rules_triads_relative.py  (optional)"]
-                R6B_DO["Rotationally invariant triads<br/>Angle DIFFERENCES only<br/>No absolute targets"]
-                R6B_OUT["Returns: triad torque<br/>Shares: tri_torque"]
+            subgraph R6B["rules_triads_relative.py  ⚠️ exploratory · same extra key as R6"]
+                R6B_DO["Rotationally invariant<br/>angle DIFFERENCES only<br/>no absolute targets"]
+                R6B_OUT["Returns: triad torque<br/>Shares: tri_torque (collides with R6)"]
                 R6B_DO --> R6B_OUT
             end
 
-            subgraph R7["relax.py  (optional)"]
-                R7_DO["Softened tension/geometry<br/>in compressed zones<br/>Angular diffusion"]
+            subgraph R7["relax.py  ⚠️ duplicates R2's state mutations"]
+                R7_DO["Softened tension/geometry<br/>in compressed zones<br/>+ angular diffusion<br/><i>writes state.tau, ux, uy<br/>overlapping with R2</i>"]
                 R7_OUT["Returns: diffusion torque<br/>Mutates: state.tau, ux, uy"]
                 R7_DO --> R7_OUT
             end
@@ -101,13 +110,13 @@ graph TB
 
         SUM["torque_total += each rule's torque"]
 
-        subgraph POST["rules_locking.py  (post-processor)"]
-            POST_AMP["Amplify phase/triad torques<br/>in compressed cores:<br/>torque += gain * C * component"]
-            POST_FREEZE["Freeze in compressed regions:<br/>torque *= (1 - lock * C)"]
+        subgraph POST["rules_locking.py  (post-processor hook)"]
+            POST_AMP["⚠️ Conditional: amp only fires<br/>when extra contains the keys<br/>(phase_torque from R4, tri_torque from R6/R6B).<br/>In the measure pipeline (R1+R2+R3 only),<br/>this branch is a no-op."]
+            POST_FREEZE["Always: torque *= (1 − lock · C)<br/>(freezes theta in compressed regions)"]
             POST_AMP --> POST_FREEZE
         end
 
-        THETA_UP["state.theta = (theta + dt * torque) % 2pi"]
+        THETA_UP["state.theta = (theta + dt · torque) % 2π"]
 
         INIT_TORQUE --> PIPELINE
         PIPELINE --> SUM
@@ -117,21 +126,23 @@ graph TB
 
     %% ===== DIAGNOSTICS =====
     subgraph DIAG["diagnostics.py  (read-only, never in pipeline)"]
-        D_VORTEX["detect_vortices()<br/><i>Winding number on plaquettes<br/>Returns +1/-1 positions</i>"]
-        D_UNITY["compute_unity()<br/><i>Local coherence magnitude<br/>Neighborhood order parameter</i>"]
+        D_VORTEX["detect_vortices()<br/><i>plaquette winding → ±1 positions</i>"]
+        D_UNITY["compute_unity()<br/><i>local coherence magnitude</i>"]
     end
 
     %% ===== ADAPTER =====
-    subgraph ADAPTER["adapter.py"]
-        A_ENGINE["GenesisGridEngine<br/><i>Conforms to GenesisEngine Protocol</i>"]
-        A_DEFAULT["DEFAULT_RULES = [<br/>  alignment, compression, relax,<br/>  phase, dipoles, triads, curvature<br/>]"]
+    subgraph ADAPTER["adapter.py  ⚠️ DEFAULT_RULES diverges from genesis_measure's RULES"]
+        A_ENGINE["GenesisGridEngine<br/><i>conforms to GenesisEngine Protocol</i>"]
+        A_DEFAULT["DEFAULT_RULES = [<br/>  alignment, compression, relax,<br/>  phase, dipoles, triads, curvature<br/>]<br/><i>7 rules</i>"]
+        A_MEASURE["genesis_measure.RULES = [<br/>  alignment, compression, curvature<br/>] + locking_postprocess<br/><i>3 rules — what we actually run</i>"]
         A_ENGINE --> A_DEFAULT
+        A_ENGINE -.-> A_MEASURE
     end
 
     %% ===== UI VARIANTS =====
-    subgraph UIS["UI Variants  (6 files)"]
-        UI_MPL["ui_matplotlib  1, 2, 3<br/><i>Dashes, heatmaps, contours, sliders</i>"]
-        UI_VISPY["ui_vispy  1, 2, 3<br/><i>GPU rendering via PyQt5 + VisPy</i>"]
+    subgraph UIS["UI Variants  (6 files, all exploratory)"]
+        UI_MPL["ui_matplotlib 1, 2, 3"]
+        UI_VISPY["ui_vispy 1, 2, 3"]
     end
 
     %% ===== CONNECTIONS =====
@@ -151,22 +162,25 @@ graph TB
     UIS -- "calls step()" --> STEP
     UIS -. "reads state for rendering" .-> STATE
 
-    %% ===== STYLING =====
+    %% ===== STYLING (matches project palette) =====
     classDef state fill:#f0fdfa,stroke:#0d9488,stroke-width:2px,color:#134e4a
     classDef params fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e3a5f
     classDef step fill:#faf5ff,stroke:#7c3aed,stroke-width:2px,color:#3b0764
     classDef rules fill:#fff7ed,stroke:#ea580c,stroke-width:2px,color:#7c2d12
     classDef optional fill:#fefce8,stroke:#ca8a04,stroke-width:1px,color:#713f12
+    classDef exploratory fill:#fef3c7,stroke:#ca8a04,stroke-width:1px,stroke-dasharray:4 2,color:#713f12
     classDef post fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#7f1d1d
     classDef diag fill:#f8fafc,stroke:#64748b,stroke-width:1px,color:#475569
     classDef adapter fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#14532d
     classDef backend fill:#f8fafc,stroke:#94a3b8,stroke-width:1px,color:#475569
+    classDef warning fill:#fef2f2,stroke:#dc2626,stroke-width:1px,stroke-dasharray:4 2,color:#7f1d1d
 
     class STATE state
     class PARAMS,P_CORE,P_LOCKING,P_HOUSE,P_OPTIONAL params
     class STEP step
     class PIPELINE,R1,R2,R3 rules
-    class R4,R5,R6,R6B,R7 optional
+    class R4,R5,R6,R7 optional
+    class R6B exploratory
     class POST post
     class DIAG diag
     class ADAPTER adapter
