@@ -6,9 +6,9 @@ class GenesisState:
         self.N  = N
         self.dt = dt
 
-        #self.theta = xp.random.rand(N, N) * 2 * xp.pi
+        self.theta = xp.random.rand(N, N) * 2 * xp.pi
 
-        self.theta = xp.zeros((N, N))  # start aligned
+        #self.theta = xp.zeros((N, N))  # start aligned
         self.tau   = xp.zeros((N, N))
         self.ux    = xp.zeros((N, N))
         self.uy    = xp.zeros((N, N))
@@ -23,7 +23,7 @@ class GenesisParams:
     def __init__(self):
         self.alpha = 0.4   # alignment
         self.gamma = 0.05  # tension gain
-        self.kappa = 0.50 # geometry
+        self.kappa = 0.0 # geometry
         self.phase = 0
         self.dipole = 0.1
         self.triads = 0
@@ -43,9 +43,9 @@ class GenesisParams:
         self.tri_sigma2  = 0.8 ** 2    # triad matching Gaussian width
 
         # compression locking (emergence mechanics)
-        self.lock_strength   = 0.75   # how much C freezes theta (0=off, 1=full freeze)
-        self.tri_lock_gain   = 3.0    # amplify triads in compressed cores
-        self.phase_lock_gain = 2.5    # amplify phase wells in compressed cores
+        self.lock_strength   = 0.0 #0.75   # how much C freezes theta (0=off, 1=full freeze)
+        self.tri_lock_gain   = 0.0 #3.0    # amplify triads in compressed cores
+        self.phase_lock_gain = 0.0 #2.5    # amplify phase wells in compressed cores
         self.shell_geom_gain = 0.08   # compression gradients push geometry outward
 
 # ---------- helper: angle_diff ----------

@@ -43,7 +43,7 @@ N = 256
 DT = 0.05
 DASH_LEN = 0.45
 RENDER_SUBSAMPLE = 4
-INTERVAL_MS = 30
+INTERVAL_MS = 100 #30
 
 # =========================
 # Init state, params, rules

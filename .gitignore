@@ -31,3 +31,5 @@ tmp/
 # OS cruft
 .DS_store
 Thumbs.db
+results/napari_capture_20260713_121206.npz
+results/napari_capture_20260713_121505.npz
