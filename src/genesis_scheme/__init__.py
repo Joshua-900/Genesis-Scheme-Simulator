@@ -20,3 +20,21 @@ try:
     engine_registry.register(GenesisGridEngine())
 except ImportError:
     pass
+
+try:
+    from src.genesis_v2.adapter import GenesisV2Engine
+    engine_registry.register(GenesisV2Engine())
+except ImportError:
+    pass
+
+try:
+    from src.genesis_v2_beta.adapter import GenesisV2BetaEngine
+    engine_registry.register(GenesisV2BetaEngine())
+except ImportError:
+    pass
+
+try:
+    from src.genesis_v2_gamma.adapter import GenesisV2GammaEngine
+    engine_registry.register(GenesisV2GammaEngine())
+except ImportError:
+    pass

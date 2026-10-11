@@ -15,6 +15,8 @@ links:
   - "[[Experimental Results 4-11-2026]]"
   - "[[Theory Index]]"
   - "[[Implementation Index]]"
+  - "[[Current Direction]]"
+  - "[[Return Protocol]]"
 summary: Entry point for the theory-first Genesis Scheme knowledge base and its relationship to implementation and experiments.
 canonical: true
 ---
@@ -42,6 +44,8 @@ The Genesis Scheme is a theory-first project. This vault keeps the conceptual fr
 
 ## Current starting points
 
+- [[Current Direction]]
+- [[Return Protocol]]
 - [[Theory Index]]
 - [[Operators Index]]
 - [[Implementation Index]]

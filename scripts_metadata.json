@@ -14,6 +14,94 @@
       "findings": ["findings/2026-04-12_ssb_lattice_bias.md"],
       "last_modified": "2026-04-12T14:55:18+00:00"
     },
+    "genesis_object_census.py": {
+      "description": "Headless census of tracked vortex-antivortex candidates with time-stamped object attributes.",
+      "category": "Measurements",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Read-only observer of the active genesis_grid pipeline. Persistent candidate status is a declared threshold, not evidence of autonomy, natural kinds, or metaphysical claims. See docs/Genesis Scheme Vault/40-Experiments/Higher-Order Object Detection Spec.md.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_object_sensitivity.py": {
+      "description": "Headless detector-sensitivity sweep for v1 vortex-antivortex pair candidates.",
+      "category": "Measurements",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Holds v1 dynamics and seeds fixed while varying only sampling interval and pairing radius. It measures distributional robustness, not one-to-one object identity or autonomy.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_intervention.py": {
+      "description": "Paired potentiality-actuality intervention test for the experimental Genesis v2 engine.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Tests bidirectional P/A consequences in the v2 coupled-field scaffold. A nonzero divergence demonstrates distinct implemented state roles, not metaphysical validation.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_measure.py": {
+      "description": "Headless multi-seed baseline measurement for the experimental Genesis v2 P/A/R engine.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Measures unperturbed actual order, potential strength, P/A alignment, and relation strength before v2 visual or object-level claims.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_beta_measure.py": {
+      "description": "Headless baseline measurement for the rule-based Genesis v2-beta engine.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Tests distinction persistence after v2-alpha collapsed potentiality into actuality.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_beta_intervention.py": {
+      "description": "Multi-seed paired intervention test for the rule-based Genesis v2-beta engine.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Rechecks bidirectional P/A consequences after introducing the beta rule layer.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_beta_sweep.py": {
+      "description": "Headless parameter-regime map for the rule-based Genesis v2-beta engine.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Maps distinction, spatial coherence, and late-time stability without prematurely labeling patterns as objects.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_beta_inspect.py": {
+      "description": "Four-panel visual inspector for the distinction-preserving Genesis v2-beta regime.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "inspection tool",
+      "notes": "Shows actuality, latent potential direction, availability, and P/A difference. It is for hypothesis generation, not object proof.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_measure.py": {
+      "description": "Headless baseline measurement for the boundary-forming Genesis v2-gamma hypothesis.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Measures whether a separate boundary/permeability field remains active while P/A distinction persists. It makes no object-level claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_domains.py": {
+      "description": "Headless cutoff-sensitivity and identity-tracking census of v2-gamma relation-bounded regions.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Sweeps the declared relation-permeability cutoff and tracks component identity across samples. Persistent components remain candidates, not established objects.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_perturb.py": {
+      "description": "Paired localized-perturbation probe for v2-gamma relation-bounded components.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Compares the continuity and disturbance propagation of an observer-defined component against an unperturbed control. It does not establish autonomy or causal closure.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
     "genesis_grid_emergence.py": {
       "description": "First engine-based script — full rule pipeline with compression locking for emergence",
       "category": "Engine Scripts",

@@ -10,6 +10,9 @@ links:
   - "[[Genesis Scheme Home]]"
   - "[[Data Collection for analysis]]"
   - "[[Experimental Results 4-11-2026]]"
+  - "[[Higher-Order Object Detection Spec]]"
+  - "[[V1 Pair Census Baseline]]"
+  - "[[V2 Gamma Boundary Probe]]"
 summary: Navigation note for experimental plans, measurements, and results related to the Genesis Scheme.
 canonical: true
 ---
@@ -20,3 +23,6 @@ Experiments provide evidence for or against specific claims. Each result should 
 
 - [[Data Collection for analysis]]
 - [[Experimental Results 4-11-2026]]
+- [[Higher-Order Object Detection Spec]]
+- [[V1 Pair Census Baseline]]
+- [[V2 Gamma Boundary Probe]]

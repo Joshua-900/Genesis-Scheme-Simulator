@@ -14,6 +14,9 @@ venv/
 .vscode/
 *.code-workspace
 
+# Obsidian keeps open panes and layout per machine.
+docs/.obsidian/workspace.json
+
 # Local persistence / vector stores
 storage/
 storage/*

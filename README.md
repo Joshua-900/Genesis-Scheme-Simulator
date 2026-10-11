@@ -40,6 +40,14 @@ python launcher.py
 
 Then open <http://127.0.0.1:5000/>.
 
+## Returning To Work
+
+After a break, start with [CURRENT.md](CURRENT.md). It names the active
+milestone and next concrete task, then points to the detailed
+[Current Direction](docs/Genesis%20Scheme%20Vault/01-Home/Current%20Direction.md)
+inside the vault. Follow the linked [Return Protocol](docs/Genesis%20Scheme%20Vault/01-Home/Return%20Protocol.md)
+before changing code or theory.
+
 The launcher discovers every runnable `.py` in the repo root, groups them
 by category, and lets you start/stop them with live console output. It
 also reads and writes the metadata files described below.

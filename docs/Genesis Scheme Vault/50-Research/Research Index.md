@@ -10,6 +10,7 @@ links:
   - "[[Genesis Scheme Home]]"
   - "[[GenesisScheme — Session Notes April 11, 2026]]"
   - "[[Important Breakthrough]]"
+  - "[[Genesis Scheme Prior Art Review]]"
 summary: Navigation note for exploratory sessions, supporting material, and research provenance.
 canonical: true
 ---
@@ -20,5 +21,6 @@ Research notes preserve context and provenance. They can inform theory and exper
 
 - [[GenesisScheme — Session Notes April 11, 2026]]
 - [[Important Breakthrough]]
+- [[Genesis Scheme Prior Art Review]]
 - `References/` contains external papers.
 - `Assets/` contains supporting images.
