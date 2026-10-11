@@ -3,6 +3,7 @@
 __pycache__/
 *.pyc
 .venv/
+.venv*/
 venv/
 .env
 .env.*
@@ -23,6 +24,7 @@ storage/**/*.json
 # Logs & temp
 *.log
 tmp/
+.tmp/
 .cache/
 
 # Jupyter

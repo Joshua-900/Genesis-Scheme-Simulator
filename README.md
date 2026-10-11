@@ -8,14 +8,44 @@ to it, or unrelated visualization.
 
 ## Quick start
 
-```bash
-python launcher.py
-# then open http://localhost:5000
+### Windows
+
+From the repo root:
+
+```powershell
+.\launch.ps1
 ```
+
+Or double-click `launch.bat`.
+
+The launch script creates a local `.venv` if needed, installs
+`requirements.txt`, starts the Flask launcher, and prints the local URL.
+Open <http://127.0.0.1:5000/> if your browser does not open automatically.
+
+If PowerShell blocks script execution, run this once in the same terminal:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\launch.ps1
+```
+
+### macOS / Linux
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python launcher.py
+```
+
+Then open <http://127.0.0.1:5000/>.
 
 The launcher discovers every runnable `.py` in the repo root, groups them
 by category, and lets you start/stop them with live console output. It
 also reads and writes the metadata files described below.
+
+Do not commit `.venv`; virtual environments contain machine-specific
+absolute paths and must be recreated on each clone.
 
 For headless measurement runs (no GUI):
 
