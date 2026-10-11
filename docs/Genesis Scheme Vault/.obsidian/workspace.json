@@ -1,0 +1,450 @@
+{
+  "main": {
+    "id": "92faab4304a096b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "c55be0d616aebfdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6137e3bffbd95dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Mathematics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Mathematics"
+            }
+          },
+          {
+            "id": "2b903e492ffe4fe2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Important Breakthrough.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Important Breakthrough"
+            }
+          },
+          {
+            "id": "08f4468e5447e314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Mathematics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Mathematics"
+            }
+          },
+          {
+            "id": "d32ad105b6d4e248",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Engine v1 recap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Engine v1 recap"
+            }
+          },
+          {
+            "id": "b294391ac610c0cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tension Operator Recipe.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tension Operator Recipe"
+            }
+          },
+          {
+            "id": "33e71c9b97678f00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Ladder — Recursive Realization of Being (Formal).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Ladder — Recursive Realization of Being (Formal)"
+            }
+          },
+          {
+            "id": "07f454b244d33afe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Measure Flow.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Measure Flow"
+            }
+          },
+          {
+            "id": "d72ece783fe4eb65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
+            "id": "f69996cb9986e1d9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Experimental Results 4-11-2026.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Experimental Results 4-11-2026"
+            }
+          },
+          {
+            "id": "da121f4a928d8397",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Collection for analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Collection for analysis"
+            }
+          },
+          {
+            "id": "d4c78fe4988296cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mermaid of Rule Pipeline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mermaid of Rule Pipeline"
+            }
+          },
+          {
+            "id": "ea23a4504ce5e8f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Measure Flow.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Measure Flow"
+            }
+          },
+          {
+            "id": "75139a249bb0a61e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chat Version of CFD  SSE Spec.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chat Version of CFD  SSE Spec"
+            }
+          },
+          {
+            "id": "5719b8059636e095",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Frontmatter Affects on the System.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Frontmatter Affects on the System"
+            }
+          },
+          {
+            "id": "547fb435522d6718",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Engine Analysis By Opus 4.7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Engine Analysis By Opus 4.7"
+            }
+          },
+          {
+            "id": "0c42d3b878bae0eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Genesis Engine Updated Mermaid Diagram.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Genesis Engine Updated Mermaid Diagram"
+            }
+          },
+          {
+            "id": "a0294513a78dd39a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ],
+        "currentTab": 16
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "437e942302d64498",
+    "type": "split",
+    "children": [
+      {
+        "id": "36228653aadd11a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c5889f79e2b468f2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "39dd4e70e9e9a921",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a39a223721535564",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6e93b8d57d4cca3b",
+    "type": "split",
+    "children": [
+      {
+        "id": "61fcaf25ec5bcf03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa93851d1b4ed1b6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Genesis Mathematics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Genesis Mathematics"
+            }
+          },
+          {
+            "id": "1f220e4c452dbb24",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Genesis Mathematics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Genesis Mathematics"
+            }
+          },
+          {
+            "id": "755d59e83148bad1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ea612eaeba7f5dd6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "6c66fade7e8b2e53",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Genesis Mathematics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Genesis Mathematics"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a0294513a78dd39a",
+  "lastOpenFiles": [
+    "Genesis Ladder — Recursive Realization of Being (Formal).md",
+    "Mermaid of Rule Pipeline.md",
+    "Genesis Scheme — Ontological Framework of Becoming (Formal).md",
+    "Genesis Measure Flow.md",
+    "Frontmatter Affects on the System.md",
+    "Genesis Engine Analysis By Opus 4.7.md",
+    "Genesis Engine Updated Mermaid Diagram.md",
+    "mermaid-diagram-genesis-rule-pipeline.png",
+    "Genesis Engine v1 recap.md",
+    "Genesis v1 Novelty.md",
+    "pdfs/All elementary functions from a single operator paper 2603.21852v2.pdf",
+    "pdfs",
+    "New folder",
+    "Chat Version of CFD  SSE Spec.md",
+    "Data Collection for analysis.md",
+    "Experimental Results 4-11-2026.md",
+    "Untitled.md",
+    "GenesisScheme — Session Notes April 11, 2026.md",
+    "Important Breakthrough.md",
+    "Genesis Invariant v0.md",
+    "Compact Formal Math.md",
+    "Higher-Order Operator Recipe.md",
+    "Emergence Operator Recipe.md",
+    "Duality Operator Recipe.md",
+    "Unity Field Recipe.md",
+    "Tension Operator Recipe.md",
+    "mermaid-diagram-genesis-measure-flow.svg",
+    "mermaid-diagram-genesis-measure-flow 1.png",
+    "mermaid-diagram-genesis-measure-flow.png",
+    "Genesis Mathematics.md",
+    "Pasted image 20251207081408.png",
+    "Pasted image 20251206192149.png",
+    "Pasted image 20251206191835.png",
+    "Pasted image 20251206191753.png",
+    "Pasted image 20251206191312.png",
+    "Pasted image 20251206191148.png",
+    "Welcome.md",
+    "create a link.md"
+  ]
+}
