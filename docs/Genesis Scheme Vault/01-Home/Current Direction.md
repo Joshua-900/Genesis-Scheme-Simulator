@@ -70,11 +70,16 @@ The first headless object census is now specified in [[Higher-Order Object Detec
 
 Test the v2-gamma boundary hypothesis for stable individuation. Gamma has
 passed a preliminary boundary-and-identity scaffold: relation-bounded
-components persist under the current tracker, and an inside-component
-perturbation usually remains local. It has not shown an observer-robust
-component scale or an object-specific response. First compare the same
-perturbation just outside a selected component; then assess those two gates
-before adding another dynamical rule. V1 remains the comparison model.
+components persist under the current tracker, the location control shows a
+distinct inside-versus-outside candidate response, the response survives the
+first finite-size sweep at `N=64` and `N=96`, and candidates forecast their
+own future identity better than equal-shape background masks. It has not shown
+an observer-independent object class, autonomy, causal closure, or an
+attribute model that predicts which candidates persist best: a 285-record,
+held-out study found no material improvement beyond size, cutoff, and area.
+Test whether a candidate's own boundary has a causal effect by applying equal
+boundary interventions to a candidate and an equal-sized background region.
+Do this before adding another dynamical rule. V1 remains the comparison model.
 
 ## Evidence and Context
 

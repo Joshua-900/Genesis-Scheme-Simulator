@@ -88,6 +88,37 @@ the same patch just outside a selected component and compares containment,
 recovery, and identity continuity. Only a difference between inside and
 outside perturbations would support an object-specific interpretation.
 
+## Inside-Outside Location Control
+
+The required control was run from the same warmed-up state for five seeds.
+Each seed had three branches: unperturbed control, an equal `pi/2` patch inside
+the selected candidate, and an equal patch outside it with a two-cell buffer.
+
+| Seed | Control overlap | Inside overlap | Outside overlap | Inside candidate delta | Outside candidate delta |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 0.422 | 0.441 | 0.422 | 0.493 | 0.045 |
+| 2 | 0.705 | 0.705 | 0.760 | 0.147 | 0.005 |
+| 3 | 0.478 | 0.500 | 0.478 | 0.391 | 0.003 |
+| 4 | 0.482 | 0.459 | 0.485 | 0.363 | 0.018 |
+| 5 | 0.349 | 0.349 | 0.349 | 0.004 | 0.008 |
+
+The median residual effect in the selected candidate was `0.363` for the
+inside perturbation and `0.007` for the outside perturbation. The candidate's
+identity overlap remained comparable to the unperturbed control in every
+seed. This establishes a **location-specific response of an observer-defined,
+bounded candidate**.
+
+The outside patch itself also retained a large local residual (`0.84-0.99` in
+all five seeds). Therefore the result does not establish self-protection,
+autonomy, or causal closure; both locations can retain local disturbances.
+It does, however, rule out the simpler explanation that the apparent response
+is merely uniform field-wide propagation.
+
+The next gate is scale robustness: repeat the boundary census and location
+control across lattice resolutions and nearby cutoffs. A candidate class whose
+size or behavior disappears under modest observer changes remains a useful
+field partition, not a higher-order object.
+
 ## Related Files
 
 - `src/genesis_v2_gamma/core.py`
@@ -95,6 +126,8 @@ outside perturbations would support an object-specific interpretation.
 - `genesis_v2_gamma_measure.py`
 - `genesis_v2_gamma_domains.py`
 - `genesis_v2_gamma_perturb.py`
+- `genesis_v2_gamma_location_control.py`
 - `results/v2_gamma_baseline_smoke.json`
 - `results/v2_gamma_domains.json`
 - `results/v2_gamma_perturbation.json`
+- `results/v2_gamma_location_control.json`

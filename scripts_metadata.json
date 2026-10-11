@@ -102,6 +102,38 @@
       "notes": "Compares the continuity and disturbance propagation of an observer-defined component against an unperturbed control. It does not establish autonomy or causal closure.",
       "last_modified": "2026-10-11T00:00:00-05:00"
     },
+    "genesis_v2_gamma_location_control.py": {
+      "description": "Paired inside-versus-outside perturbation control for v2-gamma relation-bounded components.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Uses equal perturbations inside and outside a candidate domain to test whether its response differs from surrounding field behavior. The first five-seed run found a bounded, location-specific response; scale robustness remains untested.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_finite_size.py": {
+      "description": "Finite-size and observer-cutoff robustness sweep for v2-gamma bounded-response candidates.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Tests whether the location-control result survives modest lattice-size and cutoff changes. It is a finite-size test, not a continuum-resolution claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_forecast.py": {
+      "description": "Forecast test comparing v2-gamma candidate identity persistence against equal-shape background masks.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Tests whether candidate attributes forecast future identity better than a translated background mask. It does not establish autonomy or natural kinds.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_attribute_model.py": {
+      "description": "Grouped held-out test of whether v2-gamma region attributes improve persistence forecasts beyond size, cutoff, and area.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Holds out whole seeds and compares an area/condition baseline with a fuller region-attribute ridge model. It is a prediction test, not an autonomy claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
     "genesis_grid_emergence.py": {
       "description": "First engine-based script — full rule pipeline with compression locking for emergence",
       "category": "Engine Scripts",

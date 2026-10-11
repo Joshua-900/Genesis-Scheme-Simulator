@@ -38,12 +38,28 @@ after 400 frames, but the unperturbed component itself has only moderate
 continuity. This cannot be attributed to the component without an equal
 outside-component control.
 
+The equal outside-component control now shows a location-specific response:
+inside perturbations leave a substantially larger residual in the candidate
+than outside perturbations, while candidate identity remains near the control.
+Both locations can retain local disturbances, so this is a bounded-response
+result, not evidence of autonomy.
+
+The response also survives from `N=64` to `N=96` at nearby usable cutoffs.
+Candidate scale remains observer-sensitive, although stricter cutoffs yield
+similar cell-scale regions across those two lattice sizes.
+
+Candidates now also forecast their own 200-frame identity better than
+equal-shape background masks: 22 of 22 observations had higher future overlap.
+The larger held-out dataset confirms that the present four attributes do not
+materially explain variation within that candidate class beyond size, cutoff,
+and area.
+
 ## Next Gate
 
-Before adding any more dynamics, run the equal outside-component perturbation
-control. It must compare containment, recovery, and identity continuity with
-the existing inside-component perturbation. Then test whether candidate domains
-show both:
+Before adding any more dynamics, perform a causal boundary intervention:
+weaken or strengthen a selected candidate's perimeter relations and compare
+identity and recovery with the same intervention on an equal-sized background
+region. Then test whether candidate domains show both:
 
 1. a scale that is robust across a modest observer sweep; and
 2. a distinct response or recovery under a localized perturbation.
@@ -54,4 +70,10 @@ identifies a specific missing mechanism.
 ## Evidence
 
 - `findings/2026-10-11_v2_gamma_boundary_probe.md`
+- `findings/2026-10-11_v2_gamma_finite_size.md`
+- `findings/2026-10-11_v2_gamma_identity_forecast.md`
+- `findings/2026-10-11_v2_gamma_attribute_model.md`
 - `results/v2_gamma_domains.json`
+- `results/v2_gamma_finite_size.json`
+- `results/v2_gamma_forecast.json`
+- `results/v2_gamma_attribute_model.json`
