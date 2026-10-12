@@ -23,7 +23,12 @@ canonical: false
 
 This note defines a higher-order object as an empirical designation. It does not claim that a visual pattern, a simulation result, or a measured object establishes a metaphysical conclusion.
 
-The first target is a vortex-antivortex pair. It is chosen because the v1 engine already detects defects and tracks their identity through time. Other candidates, such as coherent compressed domains, must be assessed against the same criteria rather than accepted by appearance.
+The first target was a vortex-antivortex pair. That pairing remains a useful
+relational candidate, but the individual vortex is the stronger V1 object
+target because its integer winding charge is localized and does not depend on
+the pair tracker's greedy matching convention. Other candidates, such as
+coherent compressed domains, must be assessed against the same criteria rather
+than accepted by appearance.
 
 ## Operational Definition
 
@@ -42,6 +47,15 @@ The required attribute families are:
 | Robustness | Is it reproducible rather than a one-off artifact? | Multi-seed prevalence and later small-perturbation comparison |
 
 A candidate is not called an autonomous object merely because it persists. Autonomy requires a later, explicit test that its coarse attributes predict its short-term behavior better than a generic local-field baseline.
+
+## Current V1 Object Result
+
+Individual `+1` and `-1` vortices now meet the supported-object-type threshold:
+they are repeatably detected by integer winding, have localized extent and
+tracked identity, persist across seeds, and retain strict ID-and-charge
+continuation after a matched smooth-core perturbation. They are therefore
+supported **topological emergent objects** in this V1 model. This designation
+does not imply autonomy or metaphysical significance.
 
 ## First Headless Experiment: Pair Census
 

@@ -1,0 +1,379 @@
+{
+  "claim_boundary": "Smooth-deformation robustness of a topological candidate only.",
+  "runs": [
+    {
+      "seed": 1,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 1,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 1,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 1,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 13,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 12,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 13,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 6,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 5,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 5,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 5,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 7,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 6,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 7,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 20,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 22,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 20,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 10,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 8,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 8,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 8,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 38,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 38,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 38,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 12,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 10,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 14,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 10,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 13,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 39,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 39,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 14,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 15,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 34,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 29,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 34,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 16,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 18,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 10,
+          "survived_to_end": false
+        },
+        "core": {
+          "continuation_samples": 7,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 10,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 20,
+      "status": "tested",
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "core": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "untouched": {
+      "median": 38.5,
+      "end": 9
+    },
+    "core": {
+      "median": 39.0,
+      "end": 10
+    },
+    "background": {
+      "median": 38.5,
+      "end": 9
+    }
+  }
+}

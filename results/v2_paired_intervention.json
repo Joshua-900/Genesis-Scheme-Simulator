@@ -1,0 +1,1887 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "A nonzero divergence is evidence that this prototype implements distinct coupled P/A/R state components. It is not evidence for a metaphysical claim.",
+  "config": {
+    "N": 64,
+    "steps": 300,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "region_fractions": [
+      0.06,
+      0.12,
+      0.2
+    ],
+    "angle": 1.5707963267948966
+  },
+  "conditions": [
+    {
+      "region_fraction": 0.06,
+      "runs": [
+        {
+          "seed": 1,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.00512123684408025,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0006779201410783047
+              },
+              {
+                "frame": 30,
+                "distance": 0.0014086919421619267
+              },
+              {
+                "frame": 45,
+                "distance": 0.0020845010694860314
+              },
+              {
+                "frame": 60,
+                "distance": 0.0025526706889154546
+              },
+              {
+                "frame": 75,
+                "distance": 0.0026794768808201747
+              },
+              {
+                "frame": 90,
+                "distance": 0.0027146351545790873
+              },
+              {
+                "frame": 105,
+                "distance": 0.00288525286429014
+              },
+              {
+                "frame": 120,
+                "distance": 0.0030673343302136126
+              },
+              {
+                "frame": 135,
+                "distance": 0.003245188722968147
+              },
+              {
+                "frame": 150,
+                "distance": 0.0034575582097748445
+              },
+              {
+                "frame": 165,
+                "distance": 0.0036768871936596324
+              },
+              {
+                "frame": 180,
+                "distance": 0.0038821278563232328
+              },
+              {
+                "frame": 195,
+                "distance": 0.0040572714423590586
+              },
+              {
+                "frame": 210,
+                "distance": 0.004185616139747774
+              },
+              {
+                "frame": 225,
+                "distance": 0.004263028818963042
+              },
+              {
+                "frame": 240,
+                "distance": 0.004309953233722845
+              },
+              {
+                "frame": 255,
+                "distance": 0.0043606642801554685
+              },
+              {
+                "frame": 270,
+                "distance": 0.004460830270925226
+              },
+              {
+                "frame": 285,
+                "distance": 0.0046920332760301015
+              },
+              {
+                "frame": 300,
+                "distance": 0.00512123684408025
+              }
+            ],
+            "control": {
+              "actual_order": 0.12734320710774202,
+              "potential_strength": 0.4337750030329112,
+              "potential_actual_alignment": 0.9925283505442739,
+              "relation_mean": 0.833706860901214
+            },
+            "treated": {
+              "actual_order": 0.12388654761544209,
+              "potential_strength": 0.43362286309665465,
+              "potential_actual_alignment": 0.992523858289785,
+              "relation_mean": 0.8337045496513087
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.00764670641047078,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0006748071785311401
+              },
+              {
+                "frame": 30,
+                "distance": 0.0012373163135038572
+              },
+              {
+                "frame": 45,
+                "distance": 0.0017165239220424584
+              },
+              {
+                "frame": 60,
+                "distance": 0.0021332982124759262
+              },
+              {
+                "frame": 75,
+                "distance": 0.0025074545580101625
+              },
+              {
+                "frame": 90,
+                "distance": 0.0028550394371601663
+              },
+              {
+                "frame": 105,
+                "distance": 0.0031870786842618736
+              },
+              {
+                "frame": 120,
+                "distance": 0.003511548868672985
+              },
+              {
+                "frame": 135,
+                "distance": 0.003837796177702421
+              },
+              {
+                "frame": 150,
+                "distance": 0.0041777519746419725
+              },
+              {
+                "frame": 165,
+                "distance": 0.004528910096829452
+              },
+              {
+                "frame": 180,
+                "distance": 0.004885049560200352
+              },
+              {
+                "frame": 195,
+                "distance": 0.0052447774879600135
+              },
+              {
+                "frame": 210,
+                "distance": 0.005609097194816133
+              },
+              {
+                "frame": 225,
+                "distance": 0.0059709149121482605
+              },
+              {
+                "frame": 240,
+                "distance": 0.00632567055916171
+              },
+              {
+                "frame": 255,
+                "distance": 0.00667065402359927
+              },
+              {
+                "frame": 270,
+                "distance": 0.007005017923474122
+              },
+              {
+                "frame": 285,
+                "distance": 0.007329624871422067
+              },
+              {
+                "frame": 300,
+                "distance": 0.00764670641047078
+              }
+            ],
+            "control": {
+              "actual_order": 0.12734320710774202,
+              "potential_strength": 0.4337750030329112,
+              "potential_actual_alignment": 0.9925283505442739,
+              "relation_mean": 0.833706860901214
+            },
+            "treated": {
+              "actual_order": 0.11905596922373965,
+              "potential_strength": 0.4332818132928947,
+              "potential_actual_alignment": 0.9925194284931068,
+              "relation_mean": 0.8333374473694559
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.005646909736315157,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0008171342750850821
+              },
+              {
+                "frame": 30,
+                "distance": 0.0018447042595511722
+              },
+              {
+                "frame": 45,
+                "distance": 0.0028799141248269876
+              },
+              {
+                "frame": 60,
+                "distance": 0.0038519481982603448
+              },
+              {
+                "frame": 75,
+                "distance": 0.0046069035867579025
+              },
+              {
+                "frame": 90,
+                "distance": 0.005154734276033707
+              },
+              {
+                "frame": 105,
+                "distance": 0.005614321487936982
+              },
+              {
+                "frame": 120,
+                "distance": 0.005968214223194659
+              },
+              {
+                "frame": 135,
+                "distance": 0.006076082915973481
+              },
+              {
+                "frame": 150,
+                "distance": 0.006005563819451711
+              },
+              {
+                "frame": 165,
+                "distance": 0.005940009054207544
+              },
+              {
+                "frame": 180,
+                "distance": 0.005935044702587813
+              },
+              {
+                "frame": 195,
+                "distance": 0.00589068364978636
+              },
+              {
+                "frame": 210,
+                "distance": 0.005902645506110428
+              },
+              {
+                "frame": 225,
+                "distance": 0.005917918610406563
+              },
+              {
+                "frame": 240,
+                "distance": 0.005908560014393535
+              },
+              {
+                "frame": 255,
+                "distance": 0.00584504779459359
+              },
+              {
+                "frame": 270,
+                "distance": 0.005744929841287231
+              },
+              {
+                "frame": 285,
+                "distance": 0.005657953233511633
+              },
+              {
+                "frame": 300,
+                "distance": 0.005646909736315157
+              }
+            ],
+            "control": {
+              "actual_order": 0.0776136126296806,
+              "potential_strength": 0.4240554487911589,
+              "potential_actual_alignment": 0.9937302076414523,
+              "relation_mean": 0.8160582221023079
+            },
+            "treated": {
+              "actual_order": 0.07877175294205176,
+              "potential_strength": 0.4238267637407839,
+              "potential_actual_alignment": 0.9936928931457125,
+              "relation_mean": 0.8157675877850283
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.005302645748127076,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0006658853148002454
+              },
+              {
+                "frame": 30,
+                "distance": 0.0012030600256522435
+              },
+              {
+                "frame": 45,
+                "distance": 0.001655356220706442
+              },
+              {
+                "frame": 60,
+                "distance": 0.0020459320632237746
+              },
+              {
+                "frame": 75,
+                "distance": 0.0023894582695374806
+              },
+              {
+                "frame": 90,
+                "distance": 0.002699602883766958
+              },
+              {
+                "frame": 105,
+                "distance": 0.002994729573659216
+              },
+              {
+                "frame": 120,
+                "distance": 0.00327664705354401
+              },
+              {
+                "frame": 135,
+                "distance": 0.0035332921975847055
+              },
+              {
+                "frame": 150,
+                "distance": 0.003760283915084142
+              },
+              {
+                "frame": 165,
+                "distance": 0.003958559217071561
+              },
+              {
+                "frame": 180,
+                "distance": 0.00413339514554299
+              },
+              {
+                "frame": 195,
+                "distance": 0.004293485819203232
+              },
+              {
+                "frame": 210,
+                "distance": 0.004448118987371245
+              },
+              {
+                "frame": 225,
+                "distance": 0.004599675421960919
+              },
+              {
+                "frame": 240,
+                "distance": 0.004746008957324506
+              },
+              {
+                "frame": 255,
+                "distance": 0.004888103763381731
+              },
+              {
+                "frame": 270,
+                "distance": 0.005028004309203623
+              },
+              {
+                "frame": 285,
+                "distance": 0.0051661556773097556
+              },
+              {
+                "frame": 300,
+                "distance": 0.005302645748127076
+              }
+            ],
+            "control": {
+              "actual_order": 0.0776136126296806,
+              "potential_strength": 0.4240554487911589,
+              "potential_actual_alignment": 0.9937302076414523,
+              "relation_mean": 0.8160582221023079
+            },
+            "treated": {
+              "actual_order": 0.08208928963394471,
+              "potential_strength": 0.42396469020312855,
+              "potential_actual_alignment": 0.9936819376769561,
+              "relation_mean": 0.8163626267030135
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.007600354042474467,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0007731240017567354
+              },
+              {
+                "frame": 30,
+                "distance": 0.0016485908611595852
+              },
+              {
+                "frame": 45,
+                "distance": 0.00251355368602592
+              },
+              {
+                "frame": 60,
+                "distance": 0.0031609791331151343
+              },
+              {
+                "frame": 75,
+                "distance": 0.003503808546336971
+              },
+              {
+                "frame": 90,
+                "distance": 0.003677775726133924
+              },
+              {
+                "frame": 105,
+                "distance": 0.003979657688348336
+              },
+              {
+                "frame": 120,
+                "distance": 0.0043083559204396315
+              },
+              {
+                "frame": 135,
+                "distance": 0.0047158550685913675
+              },
+              {
+                "frame": 150,
+                "distance": 0.005163746397347397
+              },
+              {
+                "frame": 165,
+                "distance": 0.005510950340500933
+              },
+              {
+                "frame": 180,
+                "distance": 0.005740429880096055
+              },
+              {
+                "frame": 195,
+                "distance": 0.006001091054606458
+              },
+              {
+                "frame": 210,
+                "distance": 0.00625017629233233
+              },
+              {
+                "frame": 225,
+                "distance": 0.006516564192111403
+              },
+              {
+                "frame": 240,
+                "distance": 0.006824456665275905
+              },
+              {
+                "frame": 255,
+                "distance": 0.007163026770739971
+              },
+              {
+                "frame": 270,
+                "distance": 0.007444336374402888
+              },
+              {
+                "frame": 285,
+                "distance": 0.00753639057860361
+              },
+              {
+                "frame": 300,
+                "distance": 0.007600354042474467
+              }
+            ],
+            "control": {
+              "actual_order": 0.03414473297616739,
+              "potential_strength": 0.4172427595741328,
+              "potential_actual_alignment": 0.9924593310998919,
+              "relation_mean": 0.8128068412679914
+            },
+            "treated": {
+              "actual_order": 0.03478656674286381,
+              "potential_strength": 0.41692561651539306,
+              "potential_actual_alignment": 0.9924776823248684,
+              "relation_mean": 0.8124274078184353
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.008214812870641222,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0006833480322594664
+              },
+              {
+                "frame": 30,
+                "distance": 0.0012695101782556673
+              },
+              {
+                "frame": 45,
+                "distance": 0.0017933948552791127
+              },
+              {
+                "frame": 60,
+                "distance": 0.002265965708501144
+              },
+              {
+                "frame": 75,
+                "distance": 0.002709686322824631
+              },
+              {
+                "frame": 90,
+                "distance": 0.0031347056717859795
+              },
+              {
+                "frame": 105,
+                "distance": 0.003550328622068371
+              },
+              {
+                "frame": 120,
+                "distance": 0.0039655096715121955
+              },
+              {
+                "frame": 135,
+                "distance": 0.004386781543261411
+              },
+              {
+                "frame": 150,
+                "distance": 0.004805575216290464
+              },
+              {
+                "frame": 165,
+                "distance": 0.005217306167164464
+              },
+              {
+                "frame": 180,
+                "distance": 0.005618347404705459
+              },
+              {
+                "frame": 195,
+                "distance": 0.00600498693721634
+              },
+              {
+                "frame": 210,
+                "distance": 0.006378002496771054
+              },
+              {
+                "frame": 225,
+                "distance": 0.006739831062501457
+              },
+              {
+                "frame": 240,
+                "distance": 0.00708562350721244
+              },
+              {
+                "frame": 255,
+                "distance": 0.007411054628131936
+              },
+              {
+                "frame": 270,
+                "distance": 0.0077122167483460865
+              },
+              {
+                "frame": 285,
+                "distance": 0.007982286578513218
+              },
+              {
+                "frame": 300,
+                "distance": 0.008214812870641222
+              }
+            ],
+            "control": {
+              "actual_order": 0.03414473297616739,
+              "potential_strength": 0.4172427595741328,
+              "potential_actual_alignment": 0.9924593310998919,
+              "relation_mean": 0.8128068412679914
+            },
+            "treated": {
+              "actual_order": 0.03266118043643438,
+              "potential_strength": 0.41672803903890476,
+              "potential_actual_alignment": 0.9924808525671023,
+              "relation_mean": 0.8116823845669541
+            }
+          }
+        }
+      ],
+      "summary": {
+        "runs": 3,
+        "potentiality_to_actuality": {
+          "min": 0.00512123684408025,
+          "median": 0.005646909736315157,
+          "max": 0.007600354042474467
+        },
+        "actuality_to_potentiality": {
+          "min": 0.005302645748127076,
+          "median": 0.00764670641047078,
+          "max": 0.008214812870641222
+        },
+        "all_pre_intervention_invariants_zero": true
+      }
+    },
+    {
+      "region_fraction": 0.12,
+      "runs": [
+        {
+          "seed": 1,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.026410064631267376,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0032894983130081516
+              },
+              {
+                "frame": 30,
+                "distance": 0.006695687289827081
+              },
+              {
+                "frame": 45,
+                "distance": 0.009982308470902129
+              },
+              {
+                "frame": 60,
+                "distance": 0.01280608943034629
+              },
+              {
+                "frame": 75,
+                "distance": 0.014891398301972362
+              },
+              {
+                "frame": 90,
+                "distance": 0.016500280661977642
+              },
+              {
+                "frame": 105,
+                "distance": 0.017946344577364402
+              },
+              {
+                "frame": 120,
+                "distance": 0.019269655527921054
+              },
+              {
+                "frame": 135,
+                "distance": 0.020450036465710322
+              },
+              {
+                "frame": 150,
+                "distance": 0.021438155003946177
+              },
+              {
+                "frame": 165,
+                "distance": 0.022249833580679952
+              },
+              {
+                "frame": 180,
+                "distance": 0.02305510876830982
+              },
+              {
+                "frame": 195,
+                "distance": 0.023676837043541704
+              },
+              {
+                "frame": 210,
+                "distance": 0.024191632091974412
+              },
+              {
+                "frame": 225,
+                "distance": 0.02469068971017231
+              },
+              {
+                "frame": 240,
+                "distance": 0.024981541995087862
+              },
+              {
+                "frame": 255,
+                "distance": 0.02527019793564344
+              },
+              {
+                "frame": 270,
+                "distance": 0.025678381986661947
+              },
+              {
+                "frame": 285,
+                "distance": 0.026029561540980073
+              },
+              {
+                "frame": 300,
+                "distance": 0.026410064631267376
+              }
+            ],
+            "control": {
+              "actual_order": 0.12734320710774202,
+              "potential_strength": 0.4337750030329112,
+              "potential_actual_alignment": 0.9925283505442739,
+              "relation_mean": 0.833706860901214
+            },
+            "treated": {
+              "actual_order": 0.1199906731334222,
+              "potential_strength": 0.43219034605001505,
+              "potential_actual_alignment": 0.9926234397453948,
+              "relation_mean": 0.8321986242236186
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.02849139814481282,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.003344630969700602
+              },
+              {
+                "frame": 30,
+                "distance": 0.0059932437176363
+              },
+              {
+                "frame": 45,
+                "distance": 0.00820102888080921
+              },
+              {
+                "frame": 60,
+                "distance": 0.010095868882780896
+              },
+              {
+                "frame": 75,
+                "distance": 0.011777669185590218
+              },
+              {
+                "frame": 90,
+                "distance": 0.013311044401570772
+              },
+              {
+                "frame": 105,
+                "distance": 0.014730611741220721
+              },
+              {
+                "frame": 120,
+                "distance": 0.01605547339101592
+              },
+              {
+                "frame": 135,
+                "distance": 0.017300664300995555
+              },
+              {
+                "frame": 150,
+                "distance": 0.01848353212832954
+              },
+              {
+                "frame": 165,
+                "distance": 0.019620681433100962
+              },
+              {
+                "frame": 180,
+                "distance": 0.020712965717929566
+              },
+              {
+                "frame": 195,
+                "distance": 0.021762763466105155
+              },
+              {
+                "frame": 210,
+                "distance": 0.022774372508150613
+              },
+              {
+                "frame": 225,
+                "distance": 0.02375820268744021
+              },
+              {
+                "frame": 240,
+                "distance": 0.02472091078917022
+              },
+              {
+                "frame": 255,
+                "distance": 0.025669748787611704
+              },
+              {
+                "frame": 270,
+                "distance": 0.02661340668630914
+              },
+              {
+                "frame": 285,
+                "distance": 0.027554237920798922
+              },
+              {
+                "frame": 300,
+                "distance": 0.02849139814481282
+              }
+            ],
+            "control": {
+              "actual_order": 0.12734320710774202,
+              "potential_strength": 0.4337750030329112,
+              "potential_actual_alignment": 0.9925283505442739,
+              "relation_mean": 0.833706860901214
+            },
+            "treated": {
+              "actual_order": 0.11486363398002672,
+              "potential_strength": 0.4338297076414534,
+              "potential_actual_alignment": 0.9924205339464771,
+              "relation_mean": 0.8338099674818221
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.015053687077199939,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.003375134606731639
+              },
+              {
+                "frame": 30,
+                "distance": 0.006983376533010079
+              },
+              {
+                "frame": 45,
+                "distance": 0.009990733055290614
+              },
+              {
+                "frame": 60,
+                "distance": 0.01202016318125031
+              },
+              {
+                "frame": 75,
+                "distance": 0.013376209613809694
+              },
+              {
+                "frame": 90,
+                "distance": 0.014581636694543897
+              },
+              {
+                "frame": 105,
+                "distance": 0.015581994923029308
+              },
+              {
+                "frame": 120,
+                "distance": 0.01631387142756327
+              },
+              {
+                "frame": 135,
+                "distance": 0.016719560875199112
+              },
+              {
+                "frame": 150,
+                "distance": 0.016915873601225626
+              },
+              {
+                "frame": 165,
+                "distance": 0.0170298157159925
+              },
+              {
+                "frame": 180,
+                "distance": 0.01715837380209394
+              },
+              {
+                "frame": 195,
+                "distance": 0.017324782368828628
+              },
+              {
+                "frame": 210,
+                "distance": 0.01748486455487518
+              },
+              {
+                "frame": 225,
+                "distance": 0.017562324109711994
+              },
+              {
+                "frame": 240,
+                "distance": 0.01747981193660209
+              },
+              {
+                "frame": 255,
+                "distance": 0.017127543623451896
+              },
+              {
+                "frame": 270,
+                "distance": 0.016454350010859806
+              },
+              {
+                "frame": 285,
+                "distance": 0.01571215658950815
+              },
+              {
+                "frame": 300,
+                "distance": 0.015053687077199939
+              }
+            ],
+            "control": {
+              "actual_order": 0.0776136126296806,
+              "potential_strength": 0.4240554487911589,
+              "potential_actual_alignment": 0.9937302076414523,
+              "relation_mean": 0.8160582221023079
+            },
+            "treated": {
+              "actual_order": 0.07870532318551854,
+              "potential_strength": 0.42297125409479497,
+              "potential_actual_alignment": 0.9936368117504595,
+              "relation_mean": 0.8148064034064062
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.026204367838399807,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.003320327305464002
+              },
+              {
+                "frame": 30,
+                "distance": 0.0059014321425412495
+              },
+              {
+                "frame": 45,
+                "distance": 0.008035131316716479
+              },
+              {
+                "frame": 60,
+                "distance": 0.009866765488556571
+              },
+              {
+                "frame": 75,
+                "distance": 0.011492567180039378
+              },
+              {
+                "frame": 90,
+                "distance": 0.01296758124837956
+              },
+              {
+                "frame": 105,
+                "distance": 0.014318518431795681
+              },
+              {
+                "frame": 120,
+                "distance": 0.015567632281217283
+              },
+              {
+                "frame": 135,
+                "distance": 0.016738111829988477
+              },
+              {
+                "frame": 150,
+                "distance": 0.017853903665418697
+              },
+              {
+                "frame": 165,
+                "distance": 0.01891210237593275
+              },
+              {
+                "frame": 180,
+                "distance": 0.019909834465250527
+              },
+              {
+                "frame": 195,
+                "distance": 0.02085191046379888
+              },
+              {
+                "frame": 210,
+                "distance": 0.021740775704541786
+              },
+              {
+                "frame": 225,
+                "distance": 0.022583905244877914
+              },
+              {
+                "frame": 240,
+                "distance": 0.023385753658536873
+              },
+              {
+                "frame": 255,
+                "distance": 0.024145949453710992
+              },
+              {
+                "frame": 270,
+                "distance": 0.0248670844257163
+              },
+              {
+                "frame": 285,
+                "distance": 0.02555260449569919
+              },
+              {
+                "frame": 300,
+                "distance": 0.026204367838399807
+              }
+            ],
+            "control": {
+              "actual_order": 0.0776136126296806,
+              "potential_strength": 0.4240554487911589,
+              "potential_actual_alignment": 0.9937302076414523,
+              "relation_mean": 0.8160582221023079
+            },
+            "treated": {
+              "actual_order": 0.06805679831746292,
+              "potential_strength": 0.4231706887055626,
+              "potential_actual_alignment": 0.9932316426047949,
+              "relation_mean": 0.8140218544931301
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.025707258874020797,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0034913401362165835
+              },
+              {
+                "frame": 30,
+                "distance": 0.007295738009728124
+              },
+              {
+                "frame": 45,
+                "distance": 0.010810690181712178
+              },
+              {
+                "frame": 60,
+                "distance": 0.013603945365292905
+              },
+              {
+                "frame": 75,
+                "distance": 0.015451358952090204
+              },
+              {
+                "frame": 90,
+                "distance": 0.017134415354847277
+              },
+              {
+                "frame": 105,
+                "distance": 0.018784133617651588
+              },
+              {
+                "frame": 120,
+                "distance": 0.020164708342476394
+              },
+              {
+                "frame": 135,
+                "distance": 0.02134968590902221
+              },
+              {
+                "frame": 150,
+                "distance": 0.022419686069054368
+              },
+              {
+                "frame": 165,
+                "distance": 0.023523616549449927
+              },
+              {
+                "frame": 180,
+                "distance": 0.024279481486847852
+              },
+              {
+                "frame": 195,
+                "distance": 0.024843845283278855
+              },
+              {
+                "frame": 210,
+                "distance": 0.025147569473238297
+              },
+              {
+                "frame": 225,
+                "distance": 0.025213502328016113
+              },
+              {
+                "frame": 240,
+                "distance": 0.025236362079147333
+              },
+              {
+                "frame": 255,
+                "distance": 0.02529588357739003
+              },
+              {
+                "frame": 270,
+                "distance": 0.025476727653994006
+              },
+              {
+                "frame": 285,
+                "distance": 0.02572332146705016
+              },
+              {
+                "frame": 300,
+                "distance": 0.025707258874020797
+              }
+            ],
+            "control": {
+              "actual_order": 0.03414473297616739,
+              "potential_strength": 0.4172427595741328,
+              "potential_actual_alignment": 0.9924593310998919,
+              "relation_mean": 0.8128068412679914
+            },
+            "treated": {
+              "actual_order": 0.039277401453163004,
+              "potential_strength": 0.4175406064572079,
+              "potential_actual_alignment": 0.9925156960644856,
+              "relation_mean": 0.8134226947570427
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.028170559660283853,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.0033412282133171867
+              },
+              {
+                "frame": 30,
+                "distance": 0.005971991831973956
+              },
+              {
+                "frame": 45,
+                "distance": 0.008134486642189102
+              },
+              {
+                "frame": 60,
+                "distance": 0.00996749085709138
+              },
+              {
+                "frame": 75,
+                "distance": 0.011570693288760366
+              },
+              {
+                "frame": 90,
+                "distance": 0.013014582314268362
+              },
+              {
+                "frame": 105,
+                "distance": 0.014338662303130967
+              },
+              {
+                "frame": 120,
+                "distance": 0.015580334893512229
+              },
+              {
+                "frame": 135,
+                "distance": 0.016764133742231627
+              },
+              {
+                "frame": 150,
+                "distance": 0.01791563678624715
+              },
+              {
+                "frame": 165,
+                "distance": 0.01905092905149311
+              },
+              {
+                "frame": 180,
+                "distance": 0.02017292843562396
+              },
+              {
+                "frame": 195,
+                "distance": 0.021275944465397503
+              },
+              {
+                "frame": 210,
+                "distance": 0.022350740827585203
+              },
+              {
+                "frame": 225,
+                "distance": 0.02339153748116051
+              },
+              {
+                "frame": 240,
+                "distance": 0.024396778822640398
+              },
+              {
+                "frame": 255,
+                "distance": 0.025370567268582535
+              },
+              {
+                "frame": 270,
+                "distance": 0.026320763422378872
+              },
+              {
+                "frame": 285,
+                "distance": 0.02725377461241562
+              },
+              {
+                "frame": 300,
+                "distance": 0.028170559660283853
+              }
+            ],
+            "control": {
+              "actual_order": 0.03414473297616739,
+              "potential_strength": 0.4172427595741328,
+              "potential_actual_alignment": 0.9924593310998919,
+              "relation_mean": 0.8128068412679914
+            },
+            "treated": {
+              "actual_order": 0.0414203731839833,
+              "potential_strength": 0.4157116648992633,
+              "potential_actual_alignment": 0.9927954991286854,
+              "relation_mean": 0.8112233701430491
+            }
+          }
+        }
+      ],
+      "summary": {
+        "runs": 3,
+        "potentiality_to_actuality": {
+          "min": 0.015053687077199939,
+          "median": 0.025707258874020797,
+          "max": 0.026410064631267376
+        },
+        "actuality_to_potentiality": {
+          "min": 0.026204367838399807,
+          "median": 0.028170559660283853,
+          "max": 0.02849139814481282
+        },
+        "all_pre_intervention_invariants_zero": true
+      }
+    },
+    {
+      "region_fraction": 0.2,
+      "runs": [
+        {
+          "seed": 1,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.06799441517838659,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.009337524060252799
+              },
+              {
+                "frame": 30,
+                "distance": 0.01831772481532576
+              },
+              {
+                "frame": 45,
+                "distance": 0.027178892075745018
+              },
+              {
+                "frame": 60,
+                "distance": 0.03471425739086606
+              },
+              {
+                "frame": 75,
+                "distance": 0.04022651859917392
+              },
+              {
+                "frame": 90,
+                "distance": 0.044163385600920535
+              },
+              {
+                "frame": 105,
+                "distance": 0.04717978542201005
+              },
+              {
+                "frame": 120,
+                "distance": 0.04950028555928242
+              },
+              {
+                "frame": 135,
+                "distance": 0.05131242433886739
+              },
+              {
+                "frame": 150,
+                "distance": 0.05297920532735104
+              },
+              {
+                "frame": 165,
+                "distance": 0.054596850047152756
+              },
+              {
+                "frame": 180,
+                "distance": 0.05616353396249661
+              },
+              {
+                "frame": 195,
+                "distance": 0.0576942937661373
+              },
+              {
+                "frame": 210,
+                "distance": 0.05934605605725317
+              },
+              {
+                "frame": 225,
+                "distance": 0.06114833225211079
+              },
+              {
+                "frame": 240,
+                "distance": 0.06293117112265764
+              },
+              {
+                "frame": 255,
+                "distance": 0.06469125432193741
+              },
+              {
+                "frame": 270,
+                "distance": 0.06613416808956554
+              },
+              {
+                "frame": 285,
+                "distance": 0.06714350301125976
+              },
+              {
+                "frame": 300,
+                "distance": 0.06799441517838659
+              }
+            ],
+            "control": {
+              "actual_order": 0.12734320710774202,
+              "potential_strength": 0.4337750030329112,
+              "potential_actual_alignment": 0.9925283505442739,
+              "relation_mean": 0.833706860901214
+            },
+            "treated": {
+              "actual_order": 0.12068193178856519,
+              "potential_strength": 0.4304434836817323,
+              "potential_actual_alignment": 0.993251869335571,
+              "relation_mean": 0.8300715365411437
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.06740487186785199,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.00972516050392289
+              },
+              {
+                "frame": 30,
+                "distance": 0.017170282159716957
+              },
+              {
+                "frame": 45,
+                "distance": 0.023188372737607973
+              },
+              {
+                "frame": 60,
+                "distance": 0.028205135802380946
+              },
+              {
+                "frame": 75,
+                "distance": 0.03252358560144876
+              },
+              {
+                "frame": 90,
+                "distance": 0.036362022904102634
+              },
+              {
+                "frame": 105,
+                "distance": 0.03984100392014817
+              },
+              {
+                "frame": 120,
+                "distance": 0.04303923075940303
+              },
+              {
+                "frame": 135,
+                "distance": 0.045992356616298774
+              },
+              {
+                "frame": 150,
+                "distance": 0.04873939576162181
+              },
+              {
+                "frame": 165,
+                "distance": 0.05130802565918166
+              },
+              {
+                "frame": 180,
+                "distance": 0.05369484580044699
+              },
+              {
+                "frame": 195,
+                "distance": 0.055884377499754695
+              },
+              {
+                "frame": 210,
+                "distance": 0.057892962829374756
+              },
+              {
+                "frame": 225,
+                "distance": 0.059741002321376746
+              },
+              {
+                "frame": 240,
+                "distance": 0.06144681513553979
+              },
+              {
+                "frame": 255,
+                "distance": 0.06303609360962244
+              },
+              {
+                "frame": 270,
+                "distance": 0.06454087556437266
+              },
+              {
+                "frame": 285,
+                "distance": 0.06599374890650694
+              },
+              {
+                "frame": 300,
+                "distance": 0.06740487186785199
+              }
+            ],
+            "control": {
+              "actual_order": 0.12734320710774202,
+              "potential_strength": 0.4337750030329112,
+              "potential_actual_alignment": 0.9925283505442739,
+              "relation_mean": 0.833706860901214
+            },
+            "treated": {
+              "actual_order": 0.09004943882700557,
+              "potential_strength": 0.4355201440795384,
+              "potential_actual_alignment": 0.9932797203409612,
+              "relation_mean": 0.8351820088356621
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.06759302411195706,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.009377228205734762
+              },
+              {
+                "frame": 30,
+                "distance": 0.018939578685751593
+              },
+              {
+                "frame": 45,
+                "distance": 0.028183152529027044
+              },
+              {
+                "frame": 60,
+                "distance": 0.035749486239139566
+              },
+              {
+                "frame": 75,
+                "distance": 0.0413319435070741
+              },
+              {
+                "frame": 90,
+                "distance": 0.04590052956580593
+              },
+              {
+                "frame": 105,
+                "distance": 0.04981876056464819
+              },
+              {
+                "frame": 120,
+                "distance": 0.05299570634856232
+              },
+              {
+                "frame": 135,
+                "distance": 0.05546746176461126
+              },
+              {
+                "frame": 150,
+                "distance": 0.057365104583359416
+              },
+              {
+                "frame": 165,
+                "distance": 0.059063215631030785
+              },
+              {
+                "frame": 180,
+                "distance": 0.06065725617200746
+              },
+              {
+                "frame": 195,
+                "distance": 0.06202074233546838
+              },
+              {
+                "frame": 210,
+                "distance": 0.06331198118177339
+              },
+              {
+                "frame": 225,
+                "distance": 0.06461044061860718
+              },
+              {
+                "frame": 240,
+                "distance": 0.06580627992565369
+              },
+              {
+                "frame": 255,
+                "distance": 0.06676858699072866
+              },
+              {
+                "frame": 270,
+                "distance": 0.06752518690793652
+              },
+              {
+                "frame": 285,
+                "distance": 0.06769624096145427
+              },
+              {
+                "frame": 300,
+                "distance": 0.06759302411195706
+              }
+            ],
+            "control": {
+              "actual_order": 0.0776136126296806,
+              "potential_strength": 0.4240554487911589,
+              "potential_actual_alignment": 0.9937302076414523,
+              "relation_mean": 0.8160582221023079
+            },
+            "treated": {
+              "actual_order": 0.07104655798194631,
+              "potential_strength": 0.4222104601266582,
+              "potential_actual_alignment": 0.9932683943355669,
+              "relation_mean": 0.8128648925420254
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.07042450037725144,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.009678668981494169
+              },
+              {
+                "frame": 30,
+                "distance": 0.01695739453699874
+              },
+              {
+                "frame": 45,
+                "distance": 0.02276293706845852
+              },
+              {
+                "frame": 60,
+                "distance": 0.027579504286609994
+              },
+              {
+                "frame": 75,
+                "distance": 0.031745415840290475
+              },
+              {
+                "frame": 90,
+                "distance": 0.03548621759893922
+              },
+              {
+                "frame": 105,
+                "distance": 0.038947098703065494
+              },
+              {
+                "frame": 120,
+                "distance": 0.042201587331085755
+              },
+              {
+                "frame": 135,
+                "distance": 0.04527280319598811
+              },
+              {
+                "frame": 150,
+                "distance": 0.048165531387776794
+              },
+              {
+                "frame": 165,
+                "distance": 0.05088673333720685
+              },
+              {
+                "frame": 180,
+                "distance": 0.05346210202657526
+              },
+              {
+                "frame": 195,
+                "distance": 0.05590513076971368
+              },
+              {
+                "frame": 210,
+                "distance": 0.05823017964984657
+              },
+              {
+                "frame": 225,
+                "distance": 0.060459111893802424
+              },
+              {
+                "frame": 240,
+                "distance": 0.06260452195424998
+              },
+              {
+                "frame": 255,
+                "distance": 0.06466812531952003
+              },
+              {
+                "frame": 270,
+                "distance": 0.06665317301322951
+              },
+              {
+                "frame": 285,
+                "distance": 0.06857140143268223
+              },
+              {
+                "frame": 300,
+                "distance": 0.07042450037725144
+              }
+            ],
+            "control": {
+              "actual_order": 0.0776136126296806,
+              "potential_strength": 0.4240554487911589,
+              "potential_actual_alignment": 0.9937302076414523,
+              "relation_mean": 0.8160582221023079
+            },
+            "treated": {
+              "actual_order": 0.04720291926726142,
+              "potential_strength": 0.4215596932995632,
+              "potential_actual_alignment": 0.9925148234078076,
+              "relation_mean": 0.810343390573597
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "pre_intervention_invariants": {
+            "actuality_distance_after_potential_only_change": 0.0,
+            "potentiality_distance_after_actuality_only_change": 0.0
+          },
+          "potentiality_to_actuality": {
+            "final_distance": 0.05875481482843671,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.009360056188855354
+              },
+              {
+                "frame": 30,
+                "distance": 0.018947435940125518
+              },
+              {
+                "frame": 45,
+                "distance": 0.028171560156011098
+              },
+              {
+                "frame": 60,
+                "distance": 0.0351997603679943
+              },
+              {
+                "frame": 75,
+                "distance": 0.0401190578306881
+              },
+              {
+                "frame": 90,
+                "distance": 0.04422731415383106
+              },
+              {
+                "frame": 105,
+                "distance": 0.04759179808002889
+              },
+              {
+                "frame": 120,
+                "distance": 0.05051859170473959
+              },
+              {
+                "frame": 135,
+                "distance": 0.05320052383291859
+              },
+              {
+                "frame": 150,
+                "distance": 0.05532245250687623
+              },
+              {
+                "frame": 165,
+                "distance": 0.057026187642589446
+              },
+              {
+                "frame": 180,
+                "distance": 0.05792907073914781
+              },
+              {
+                "frame": 195,
+                "distance": 0.05865628023567501
+              },
+              {
+                "frame": 210,
+                "distance": 0.05901299201278769
+              },
+              {
+                "frame": 225,
+                "distance": 0.05912222111167645
+              },
+              {
+                "frame": 240,
+                "distance": 0.05911606510329893
+              },
+              {
+                "frame": 255,
+                "distance": 0.05914023046889107
+              },
+              {
+                "frame": 270,
+                "distance": 0.058855405376755404
+              },
+              {
+                "frame": 285,
+                "distance": 0.058739946860887564
+              },
+              {
+                "frame": 300,
+                "distance": 0.05875481482843671
+              }
+            ],
+            "control": {
+              "actual_order": 0.03414473297616739,
+              "potential_strength": 0.4172427595741328,
+              "potential_actual_alignment": 0.9924593310998919,
+              "relation_mean": 0.8128068412679914
+            },
+            "treated": {
+              "actual_order": 0.04883937436343973,
+              "potential_strength": 0.4181346131117113,
+              "potential_actual_alignment": 0.9930152433453576,
+              "relation_mean": 0.8147549959843645
+            }
+          },
+          "actuality_to_potentiality": {
+            "final_distance": 0.07064761822039747,
+            "series": [
+              {
+                "frame": 15,
+                "distance": 0.009745496217556996
+              },
+              {
+                "frame": 30,
+                "distance": 0.017168284526179384
+              },
+              {
+                "frame": 45,
+                "distance": 0.023089132130525956
+              },
+              {
+                "frame": 60,
+                "distance": 0.027956268334358183
+              },
+              {
+                "frame": 75,
+                "distance": 0.032086957855982104
+              },
+              {
+                "frame": 90,
+                "distance": 0.03570401908385726
+              },
+              {
+                "frame": 105,
+                "distance": 0.03897678419890578
+              },
+              {
+                "frame": 120,
+                "distance": 0.041991856075699455
+              },
+              {
+                "frame": 135,
+                "distance": 0.04482850293637409
+              },
+              {
+                "frame": 150,
+                "distance": 0.04752676680559942
+              },
+              {
+                "frame": 165,
+                "distance": 0.050114751060515834
+              },
+              {
+                "frame": 180,
+                "distance": 0.052620115430442205
+              },
+              {
+                "frame": 195,
+                "distance": 0.05505994308510233
+              },
+              {
+                "frame": 210,
+                "distance": 0.057447461243842333
+              },
+              {
+                "frame": 225,
+                "distance": 0.05977899397029551
+              },
+              {
+                "frame": 240,
+                "distance": 0.062052212679607165
+              },
+              {
+                "frame": 255,
+                "distance": 0.06428028309098371
+              },
+              {
+                "frame": 270,
+                "distance": 0.06645153039372319
+              },
+              {
+                "frame": 285,
+                "distance": 0.06857646699679082
+              },
+              {
+                "frame": 300,
+                "distance": 0.07064761822039747
+              }
+            ],
+            "control": {
+              "actual_order": 0.03414473297616739,
+              "potential_strength": 0.4172427595741328,
+              "potential_actual_alignment": 0.9924593310998919,
+              "relation_mean": 0.8128068412679914
+            },
+            "treated": {
+              "actual_order": 0.038628322183188735,
+              "potential_strength": 0.41700277933564966,
+              "potential_actual_alignment": 0.9925379365137208,
+              "relation_mean": 0.8118390048560815
+            }
+          }
+        }
+      ],
+      "summary": {
+        "runs": 3,
+        "potentiality_to_actuality": {
+          "min": 0.05875481482843671,
+          "median": 0.06759302411195706,
+          "max": 0.06799441517838659
+        },
+        "actuality_to_potentiality": {
+          "min": 0.06740487186785199,
+          "median": 0.07042450037725144,
+          "max": 0.07064761822039747
+        },
+        "all_pre_intervention_invariants_zero": true
+      }
+    }
+  ]
+}

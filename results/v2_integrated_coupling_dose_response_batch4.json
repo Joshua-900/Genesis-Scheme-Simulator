@@ -1,0 +1,885 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This tests dose response of one P-to-A link; it does not establish higher-order objects.",
+  "experiment": {
+    "name": "v2_integrated_coupling_dose_response",
+    "parameters": {
+      "mode": "both",
+      "gains": [
+        0.0,
+        0.025,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "N": 64,
+      "field_frames": 2000,
+      "burn_in_frames": 1000,
+      "follow_frames": 1000,
+      "seeds": 5,
+      "seed_start": 16,
+      "sample_interval": 25,
+      "max_pair_distance": 64.0,
+      "radius": 5.0,
+      "weaken_strength": 1.0,
+      "output": "results\\v2_integrated_coupling_dose_response_batch4.json"
+    }
+  },
+  "conditions": [
+    {
+      "potential_to_actual": 0.0,
+      "field_runs": [
+        {
+          "seed": 16,
+          "observation": {
+            "pa_alignment": -0.041455381211976325,
+            "actual_order": 0.15494880734879743,
+            "mean_tension": 0.04671655016634202,
+            "mean_compression": 0.0701830185710706,
+            "vortex_count": 42
+          }
+        },
+        {
+          "seed": 17,
+          "observation": {
+            "pa_alignment": 0.0047938108529091,
+            "actual_order": 0.12847421058146602,
+            "mean_tension": 0.04244126620235418,
+            "mean_compression": 0.05709232372927733,
+            "vortex_count": 30
+          }
+        },
+        {
+          "seed": 18,
+          "observation": {
+            "pa_alignment": 0.03294122344280947,
+            "actual_order": 0.1774111162415972,
+            "mean_tension": 0.05161790320353486,
+            "mean_compression": 0.07099388316761085,
+            "vortex_count": 50
+          }
+        },
+        {
+          "seed": 19,
+          "observation": {
+            "pa_alignment": 0.014995657793684562,
+            "actual_order": 0.24145505971380707,
+            "mean_tension": 0.04815856654473273,
+            "mean_compression": 0.06832782186567889,
+            "vortex_count": 28
+          }
+        },
+        {
+          "seed": 20,
+          "observation": {
+            "pa_alignment": 0.035297246979212174,
+            "actual_order": 0.39529403326129875,
+            "mean_tension": 0.052724270081908164,
+            "mean_compression": 0.07588623181629925,
+            "vortex_count": 30
+          }
+        }
+      ],
+      "field_summary": {
+        "pa_alignment": 0.014995657793684562,
+        "actual_order": 0.1774111162415972,
+        "mean_tension": 0.04815856654473273,
+        "mean_compression": 0.0701830185710706,
+        "vortex_count": 30.0
+      },
+      "local_runs": [
+        {
+          "seed": 16,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "background": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            }
+          }
+        },
+        {
+          "seed": 17,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 18,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 15,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            }
+          }
+        },
+        {
+          "seed": 19,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 27,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 3,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 27,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 20,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 22,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 19,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 22,
+              "survived_to_end": false
+            }
+          }
+        }
+      ],
+      "local_summary": {
+        "untouched": {
+          "tested": 5,
+          "survived_to_end": 2,
+          "median_continuation_samples": 27.0
+        },
+        "candidate_neighborhood": {
+          "tested": 5,
+          "survived_to_end": 1,
+          "median_continuation_samples": 15.0
+        },
+        "background": {
+          "tested": 5,
+          "survived_to_end": 2,
+          "median_continuation_samples": 27.0
+        }
+      }
+    },
+    {
+      "potential_to_actual": 0.025,
+      "field_runs": [
+        {
+          "seed": 16,
+          "observation": {
+            "pa_alignment": 0.04330701788888012,
+            "actual_order": 0.09463067283758488,
+            "mean_tension": 0.05938525788138217,
+            "mean_compression": 0.07099143722936002,
+            "vortex_count": 34
+          }
+        },
+        {
+          "seed": 17,
+          "observation": {
+            "pa_alignment": 0.09153670359243457,
+            "actual_order": 0.13403054536894288,
+            "mean_tension": 0.056951213504495175,
+            "mean_compression": 0.06193376010211024,
+            "vortex_count": 28
+          }
+        },
+        {
+          "seed": 18,
+          "observation": {
+            "pa_alignment": 0.09882415055928223,
+            "actual_order": 0.17713313450077398,
+            "mean_tension": 0.06174678839770103,
+            "mean_compression": 0.07182471121519636,
+            "vortex_count": 44
+          }
+        },
+        {
+          "seed": 19,
+          "observation": {
+            "pa_alignment": 0.0812879053859078,
+            "actual_order": 0.19036330095196038,
+            "mean_tension": 0.05895251141518519,
+            "mean_compression": 0.06612701883328616,
+            "vortex_count": 36
+          }
+        },
+        {
+          "seed": 20,
+          "observation": {
+            "pa_alignment": 0.10478916477149557,
+            "actual_order": 0.36699595520294265,
+            "mean_tension": 0.06295018737889277,
+            "mean_compression": 0.0810238953327918,
+            "vortex_count": 32
+          }
+        }
+      ],
+      "field_summary": {
+        "pa_alignment": 0.09153670359243457,
+        "actual_order": 0.17713313450077398,
+        "mean_tension": 0.05938525788138217,
+        "mean_compression": 0.07099143722936002,
+        "vortex_count": 34.0
+      },
+      "local_runs": [
+        {
+          "seed": 16,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 16,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 15,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 16,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 17,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 15,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 3,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 15,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 18,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 19,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 6,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            }
+          }
+        },
+        {
+          "seed": 20,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 20,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 3,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 20,
+              "survived_to_end": false
+            }
+          }
+        }
+      ],
+      "local_summary": {
+        "untouched": {
+          "tested": 5,
+          "survived_to_end": 1,
+          "median_continuation_samples": 16.0
+        },
+        "candidate_neighborhood": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 3.0
+        },
+        "background": {
+          "tested": 5,
+          "survived_to_end": 1,
+          "median_continuation_samples": 16.0
+        }
+      }
+    },
+    {
+      "potential_to_actual": 0.05,
+      "field_runs": [
+        {
+          "seed": 16,
+          "observation": {
+            "pa_alignment": 0.11221540146078769,
+            "actual_order": 0.11170875557867065,
+            "mean_tension": 0.07522480979347053,
+            "mean_compression": 0.07302929716254106,
+            "vortex_count": 38
+          }
+        },
+        {
+          "seed": 17,
+          "observation": {
+            "pa_alignment": 0.15753006340324052,
+            "actual_order": 0.12220908431249247,
+            "mean_tension": 0.07513433761989954,
+            "mean_compression": 0.06220377218453833,
+            "vortex_count": 30
+          }
+        },
+        {
+          "seed": 18,
+          "observation": {
+            "pa_alignment": 0.1636798354542676,
+            "actual_order": 0.12973746733817243,
+            "mean_tension": 0.07814218307142949,
+            "mean_compression": 0.06909010376357175,
+            "vortex_count": 44
+          }
+        },
+        {
+          "seed": 19,
+          "observation": {
+            "pa_alignment": 0.13843317802174832,
+            "actual_order": 0.1677997516755144,
+            "mean_tension": 0.07649265019119882,
+            "mean_compression": 0.06316417417254552,
+            "vortex_count": 36
+          }
+        },
+        {
+          "seed": 20,
+          "observation": {
+            "pa_alignment": 0.17868736892628612,
+            "actual_order": 0.31077664246535625,
+            "mean_tension": 0.0771265843920336,
+            "mean_compression": 0.07118994097477359,
+            "vortex_count": 34
+          }
+        }
+      ],
+      "field_summary": {
+        "pa_alignment": 0.15753006340324052,
+        "actual_order": 0.12973746733817243,
+        "mean_tension": 0.07649265019119882,
+        "mean_compression": 0.06909010376357175,
+        "vortex_count": 36.0
+      },
+      "local_runs": [
+        {
+          "seed": 16,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 24,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 17,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 24,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 17,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 22,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 12,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 22,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 18,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 7,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 7,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 19,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 15,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            }
+          }
+        },
+        {
+          "seed": 20,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            }
+          }
+        }
+      ],
+      "local_summary": {
+        "untouched": {
+          "tested": 5,
+          "survived_to_end": 1,
+          "median_continuation_samples": 22.0
+        },
+        "candidate_neighborhood": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 12.0
+        },
+        "background": {
+          "tested": 5,
+          "survived_to_end": 1,
+          "median_continuation_samples": 22.0
+        }
+      }
+    },
+    {
+      "potential_to_actual": 0.1,
+      "field_runs": [
+        {
+          "seed": 16,
+          "observation": {
+            "pa_alignment": 0.23812474613748152,
+            "actual_order": 0.06384593882246628,
+            "mean_tension": 0.11605743912307823,
+            "mean_compression": 0.067505097015914,
+            "vortex_count": 40
+          }
+        },
+        {
+          "seed": 17,
+          "observation": {
+            "pa_alignment": 0.271094023291926,
+            "actual_order": 0.057393368172839965,
+            "mean_tension": 0.11347408646978929,
+            "mean_compression": 0.0582974403022659,
+            "vortex_count": 30
+          }
+        },
+        {
+          "seed": 18,
+          "observation": {
+            "pa_alignment": 0.26476222251183334,
+            "actual_order": 0.10250223847541291,
+            "mean_tension": 0.11411761847588002,
+            "mean_compression": 0.06970242225741648,
+            "vortex_count": 44
+          }
+        },
+        {
+          "seed": 19,
+          "observation": {
+            "pa_alignment": 0.2743157813114847,
+            "actual_order": 0.1641917057924184,
+            "mean_tension": 0.11328738422624937,
+            "mean_compression": 0.06499766539335675,
+            "vortex_count": 40
+          }
+        },
+        {
+          "seed": 20,
+          "observation": {
+            "pa_alignment": 0.26037445914901836,
+            "actual_order": 0.30301177622087455,
+            "mean_tension": 0.11167221184657694,
+            "mean_compression": 0.0694547270558849,
+            "vortex_count": 30
+          }
+        }
+      ],
+      "field_summary": {
+        "pa_alignment": 0.26476222251183334,
+        "actual_order": 0.10250223847541291,
+        "mean_tension": 0.11347408646978929,
+        "mean_compression": 0.067505097015914,
+        "vortex_count": 40.0
+      },
+      "local_runs": [
+        {
+          "seed": 16,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 27,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 19,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 27,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 17,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 4,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 4,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 18,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 8,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 8,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 19,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 20,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            }
+          }
+        }
+      ],
+      "local_summary": {
+        "untouched": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 4.0
+        },
+        "candidate_neighborhood": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 1.0
+        },
+        "background": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 4.0
+        }
+      }
+    },
+    {
+      "potential_to_actual": 0.2,
+      "field_runs": [
+        {
+          "seed": 16,
+          "observation": {
+            "pa_alignment": 0.4277621451946137,
+            "actual_order": 0.02079838128130857,
+            "mean_tension": 0.1899104888586703,
+            "mean_compression": 0.08723620366568455,
+            "vortex_count": 50
+          }
+        },
+        {
+          "seed": 17,
+          "observation": {
+            "pa_alignment": 0.43850222580095255,
+            "actual_order": 0.030401134540924746,
+            "mean_tension": 0.18958576761606807,
+            "mean_compression": 0.07645749540325358,
+            "vortex_count": 54
+          }
+        },
+        {
+          "seed": 18,
+          "observation": {
+            "pa_alignment": 0.4034263244262214,
+            "actual_order": 0.10138464271890187,
+            "mean_tension": 0.19131030338621696,
+            "mean_compression": 0.08567275011303617,
+            "vortex_count": 48
+          }
+        },
+        {
+          "seed": 19,
+          "observation": {
+            "pa_alignment": 0.42083528636288153,
+            "actual_order": 0.08052513335529107,
+            "mean_tension": 0.1918768582772618,
+            "mean_compression": 0.07958535798066851,
+            "vortex_count": 52
+          }
+        },
+        {
+          "seed": 20,
+          "observation": {
+            "pa_alignment": 0.4195787494523076,
+            "actual_order": 0.23844083768565305,
+            "mean_tension": 0.18999775701841534,
+            "mean_compression": 0.08117059982867245,
+            "vortex_count": 30
+          }
+        }
+      ],
+      "field_summary": {
+        "pa_alignment": 0.42083528636288153,
+        "actual_order": 0.08052513335529107,
+        "mean_tension": 0.18999775701841534,
+        "mean_compression": 0.08117059982867245,
+        "vortex_count": 50.0
+      },
+      "local_runs": [
+        {
+          "seed": 16,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 26,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 26,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 17,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 4,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 4,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 18,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 19,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 19,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 19,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 8,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 8,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 20,
+          "status": "tested",
+          "branches": {
+            "untouched": {
+              "continuation_samples": 4,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 1,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 4,
+              "survived_to_end": false
+            }
+          }
+        }
+      ],
+      "local_summary": {
+        "untouched": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 8.0
+        },
+        "candidate_neighborhood": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 2.0
+        },
+        "background": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 8.0
+        }
+      }
+    }
+  ]
+}

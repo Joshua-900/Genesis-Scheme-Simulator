@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "Regime screen only; candidate counts do not establish higher-order objects.",
+  "conditions": [
+    {
+      "triads": 0.0,
+      "tri_lock_gain": 0.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.04259192370444846,
+          "mean_compression": 0.06316263401620367,
+          "global_order": 0.15207801800093212,
+          "pair_count": 423,
+          "persistent_pairs": 126,
+          "long_lived_pairs": 41,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.04913744498953203,
+          "mean_compression": 0.06668776777891339,
+          "global_order": 0.19625615982640793,
+          "pair_count": 391,
+          "persistent_pairs": 94,
+          "long_lived_pairs": 31,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.04713672882056007,
+          "mean_compression": 0.06840433697539779,
+          "global_order": 0.3039658118522023,
+          "pair_count": 423,
+          "persistent_pairs": 123,
+          "long_lived_pairs": 41,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.04713672882056007,
+        "mean_compression": 0.06668776777891339,
+        "global_order": 0.19625615982640793,
+        "pair_count": 423.0,
+        "persistent_pairs": 123.0,
+        "long_lived_pairs": 41.0,
+        "median_pair_age": 25.0
+      }
+    },
+    {
+      "triads": 0.05,
+      "tri_lock_gain": 0.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.042067290784828265,
+          "mean_compression": 0.06188262193647588,
+          "global_order": 0.18102251283640977,
+          "pair_count": 416,
+          "persistent_pairs": 119,
+          "long_lived_pairs": 36,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.04685995509639771,
+          "mean_compression": 0.06775482170287792,
+          "global_order": 0.19711881602549422,
+          "pair_count": 389,
+          "persistent_pairs": 101,
+          "long_lived_pairs": 32,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.04742243066673126,
+          "mean_compression": 0.06706631936789617,
+          "global_order": 0.3214427604930557,
+          "pair_count": 414,
+          "persistent_pairs": 111,
+          "long_lived_pairs": 40,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.04685995509639771,
+        "mean_compression": 0.06706631936789617,
+        "global_order": 0.19711881602549422,
+        "pair_count": 414.0,
+        "persistent_pairs": 111.0,
+        "long_lived_pairs": 36.0,
+        "median_pair_age": 25.0
+      }
+    },
+    {
+      "triads": 0.05,
+      "tri_lock_gain": 1.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.041917681062791964,
+          "mean_compression": 0.061540078917945745,
+          "global_order": 0.17777947109917422,
+          "pair_count": 416,
+          "persistent_pairs": 119,
+          "long_lived_pairs": 33,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.04639006222749174,
+          "mean_compression": 0.06679180799964217,
+          "global_order": 0.1971085263632367,
+          "pair_count": 389,
+          "persistent_pairs": 101,
+          "long_lived_pairs": 32,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.04756409984322223,
+          "mean_compression": 0.066642359829072,
+          "global_order": 0.3154704242125632,
+          "pair_count": 416,
+          "persistent_pairs": 113,
+          "long_lived_pairs": 42,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.04639006222749174,
+        "mean_compression": 0.066642359829072,
+        "global_order": 0.1971085263632367,
+        "pair_count": 416.0,
+        "persistent_pairs": 113.0,
+        "long_lived_pairs": 33.0,
+        "median_pair_age": 25.0
+      }
+    },
+    {
+      "triads": 0.1,
+      "tri_lock_gain": 0.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.0439786852106379,
+          "mean_compression": 0.06360195667328541,
+          "global_order": 0.14131959779902478,
+          "pair_count": 398,
+          "persistent_pairs": 114,
+          "long_lived_pairs": 37,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.045805271799613835,
+          "mean_compression": 0.06879911171414697,
+          "global_order": 0.19474766587512646,
+          "pair_count": 380,
+          "persistent_pairs": 98,
+          "long_lived_pairs": 28,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.04799706832988073,
+          "mean_compression": 0.06854454910771132,
+          "global_order": 0.297050590753504,
+          "pair_count": 420,
+          "persistent_pairs": 112,
+          "long_lived_pairs": 44,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.045805271799613835,
+        "mean_compression": 0.06854454910771132,
+        "global_order": 0.19474766587512646,
+        "pair_count": 398.0,
+        "persistent_pairs": 112.0,
+        "long_lived_pairs": 37.0,
+        "median_pair_age": 25.0
+      }
+    },
+    {
+      "triads": 0.1,
+      "tri_lock_gain": 1.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.04429958596230306,
+          "mean_compression": 0.062293092557692276,
+          "global_order": 0.14862835090000323,
+          "pair_count": 399,
+          "persistent_pairs": 117,
+          "long_lived_pairs": 37,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.04400682618705859,
+          "mean_compression": 0.0650311831738935,
+          "global_order": 0.17916398940522996,
+          "pair_count": 383,
+          "persistent_pairs": 99,
+          "long_lived_pairs": 28,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.04775358509256497,
+          "mean_compression": 0.06428386087909464,
+          "global_order": 0.2915358741048011,
+          "pair_count": 418,
+          "persistent_pairs": 113,
+          "long_lived_pairs": 46,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.04429958596230306,
+        "mean_compression": 0.06428386087909464,
+        "global_order": 0.17916398940522996,
+        "pair_count": 399.0,
+        "persistent_pairs": 113.0,
+        "long_lived_pairs": 37.0,
+        "median_pair_age": 25.0
+      }
+    },
+    {
+      "triads": 0.2,
+      "tri_lock_gain": 0.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.04719760022673501,
+          "mean_compression": 0.059387658807326674,
+          "global_order": 0.09755547980967359,
+          "pair_count": 396,
+          "persistent_pairs": 121,
+          "long_lived_pairs": 44,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.048046820205586094,
+          "mean_compression": 0.06441961631771517,
+          "global_order": 0.1561922646199632,
+          "pair_count": 360,
+          "persistent_pairs": 87,
+          "long_lived_pairs": 30,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.050917264708527005,
+          "mean_compression": 0.06539266089529303,
+          "global_order": 0.31138284267189376,
+          "pair_count": 388,
+          "persistent_pairs": 106,
+          "long_lived_pairs": 48,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.048046820205586094,
+        "mean_compression": 0.06441961631771517,
+        "global_order": 0.1561922646199632,
+        "pair_count": 388.0,
+        "persistent_pairs": 106.0,
+        "long_lived_pairs": 44.0,
+        "median_pair_age": 25.0
+      }
+    },
+    {
+      "triads": 0.2,
+      "tri_lock_gain": 1.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.04952765671975664,
+          "mean_compression": 0.05839431375225143,
+          "global_order": 0.09114186416356769,
+          "pair_count": 388,
+          "persistent_pairs": 118,
+          "long_lived_pairs": 47,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.04628850102696085,
+          "mean_compression": 0.06091278739067427,
+          "global_order": 0.15446267390876794,
+          "pair_count": 357,
+          "persistent_pairs": 85,
+          "long_lived_pairs": 29,
+          "median_pair_age": 25.0
+        },
+        {
+          "seed": 3,
+          "mean_tension": 0.05070098006056054,
+          "mean_compression": 0.06385308469514427,
+          "global_order": 0.3089603914545719,
+          "pair_count": 390,
+          "persistent_pairs": 100,
+          "long_lived_pairs": 49,
+          "median_pair_age": 25.0
+        }
+      ],
+      "median": {
+        "mean_tension": 0.04952765671975664,
+        "mean_compression": 0.06091278739067427,
+        "global_order": 0.15446267390876794,
+        "pair_count": 388.0,
+        "persistent_pairs": 100.0,
+        "long_lived_pairs": 47.0,
+        "median_pair_age": 25.0
+      }
+    }
+  ]
+}

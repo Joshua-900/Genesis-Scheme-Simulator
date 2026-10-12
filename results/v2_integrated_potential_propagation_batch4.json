@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This tests field-level propagation from P; it does not establish higher-order objects.",
+  "experiment": {
+    "name": "v2_integrated_potential_propagation",
+    "parameters": {
+      "N": 64,
+      "burn_in_frames": 1000,
+      "follow_frames": 250,
+      "sample_frames": [
+        25,
+        100,
+        250
+      ],
+      "seeds": 5,
+      "seed_start": 16,
+      "tracker_sample_interval": 25,
+      "max_pair_distance": 64.0,
+      "radius": 5.0,
+      "exclusion_radius_multiple": 2.0,
+      "rotation": 1.5707963267948966,
+      "output": "results\\v2_integrated_potential_propagation_batch4.json"
+    }
+  },
+  "runs": [
+    {
+      "seed": 16,
+      "status": "tested",
+      "responses": {
+        "candidate": {
+          "25": {
+            "mean_p_angle_difference": 3.4241029073120938e-15,
+            "mean_a_angle_difference": 1.1742934733388098e-10,
+            "mean_tension_difference": 6.403711138345862e-11,
+            "mean_compression_difference": 6.963358940777253e-11
+          },
+          "100": {
+            "mean_p_angle_difference": 1.4713162382012725e-11,
+            "mean_a_angle_difference": 4.529305440537822e-07,
+            "mean_tension_difference": 2.4450535021485216e-07,
+            "mean_compression_difference": 5.040799272501099e-08
+          },
+          "250": {
+            "mean_p_angle_difference": 1.634217145939759e-09,
+            "mean_a_angle_difference": 1.6987742874772532e-05,
+            "mean_tension_difference": 5.949171819317631e-06,
+            "mean_compression_difference": 8.626265405552057e-07
+          }
+        },
+        "background": {
+          "25": {
+            "mean_p_angle_difference": 3.407209902767868e-15,
+            "mean_a_angle_difference": 3.542056532345013e-10,
+            "mean_tension_difference": 1.0096036262745145e-10,
+            "mean_compression_difference": 1.661479545743041e-09
+          },
+          "100": {
+            "mean_p_angle_difference": 1.675889554562192e-11,
+            "mean_a_angle_difference": 3.388254545169602e-07,
+            "mean_tension_difference": 2.0880453198748492e-07,
+            "mean_compression_difference": 1.8768645503547492e-07
+          },
+          "250": {
+            "mean_p_angle_difference": 2.410748191737312e-09,
+            "mean_a_angle_difference": 9.073728869435374e-06,
+            "mean_tension_difference": 3.855692124149605e-06,
+            "mean_compression_difference": 7.97139800013435e-07
+          }
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "status": "tested",
+      "responses": {
+        "candidate": {
+          "25": {
+            "mean_p_angle_difference": 1.2012563523621757e-15,
+            "mean_a_angle_difference": 8.052528262568799e-11,
+            "mean_tension_difference": 3.5559845673275335e-11,
+            "mean_compression_difference": 1.492110553786647e-09
+          },
+          "100": {
+            "mean_p_angle_difference": 5.6318881111676865e-12,
+            "mean_a_angle_difference": 3.500218732649983e-07,
+            "mean_tension_difference": 2.0684944222395172e-07,
+            "mean_compression_difference": 1.5347865545325534e-07
+          },
+          "250": {
+            "mean_p_angle_difference": 7.571234906470998e-10,
+            "mean_a_angle_difference": 2.041266312122351e-05,
+            "mean_tension_difference": 8.33070734332351e-06,
+            "mean_compression_difference": 1.0241521370151036e-06
+          }
+        },
+        "background": {
+          "25": {
+            "mean_p_angle_difference": 4.1032356792547e-15,
+            "mean_a_angle_difference": 1.9460110850759362e-10,
+            "mean_tension_difference": 9.163526686396281e-11,
+            "mean_compression_difference": 2.679310220742092e-10
+          },
+          "100": {
+            "mean_p_angle_difference": 1.9095959188460444e-11,
+            "mean_a_angle_difference": 4.522106709341033e-07,
+            "mean_tension_difference": 2.5435648498633547e-07,
+            "mean_compression_difference": 1.247658746736769e-07
+          },
+          "250": {
+            "mean_p_angle_difference": 2.4035021982155283e-09,
+            "mean_a_angle_difference": 3.3874589942615485e-05,
+            "mean_tension_difference": 1.3568154653654054e-05,
+            "mean_compression_difference": 2.4986501838529826e-06
+          }
+        }
+      }
+    },
+    {
+      "seed": 18,
+      "status": "tested",
+      "responses": {
+        "candidate": {
+          "25": {
+            "mean_p_angle_difference": 4.736798098359528e-15,
+            "mean_a_angle_difference": 9.61708601239394e-10,
+            "mean_tension_difference": 2.5640049991947905e-10,
+            "mean_compression_difference": 6.56311220116134e-09
+          },
+          "100": {
+            "mean_p_angle_difference": 2.0873028221131445e-11,
+            "mean_a_angle_difference": 6.676474774010249e-07,
+            "mean_tension_difference": 4.358260306696587e-07,
+            "mean_compression_difference": 5.29751008868589e-07
+          },
+          "250": {
+            "mean_p_angle_difference": 2.4272850621169877e-09,
+            "mean_a_angle_difference": 1.9627721684561605e-05,
+            "mean_tension_difference": 7.4257778711107665e-06,
+            "mean_compression_difference": 2.0583366635756766e-06
+          }
+        },
+        "background": {
+          "25": {
+            "mean_p_angle_difference": 3.643629439063689e-15,
+            "mean_a_angle_difference": 4.3818961211445706e-10,
+            "mean_tension_difference": 1.4496029115307823e-10,
+            "mean_compression_difference": 7.845730600759774e-10
+          },
+          "100": {
+            "mean_p_angle_difference": 1.575001534556147e-11,
+            "mean_a_angle_difference": 3.6916726525061883e-07,
+            "mean_tension_difference": 2.637217277708831e-07,
+            "mean_compression_difference": 7.627672993194803e-08
+          },
+          "250": {
+            "mean_p_angle_difference": 1.795000348569903e-09,
+            "mean_a_angle_difference": 1.5745854690326345e-05,
+            "mean_tension_difference": 7.650876481134485e-06,
+            "mean_compression_difference": 1.494932167109583e-06
+          }
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "status": "tested",
+      "responses": {
+        "candidate": {
+          "25": {
+            "mean_p_angle_difference": 1.4015465438444835e-15,
+            "mean_a_angle_difference": 5.811449224565497e-11,
+            "mean_tension_difference": 4.0087276036330256e-11,
+            "mean_compression_difference": 1.7661962542487495e-11
+          },
+          "100": {
+            "mean_p_angle_difference": 6.136287362289016e-12,
+            "mean_a_angle_difference": 3.202709536774647e-07,
+            "mean_tension_difference": 1.9306181007465736e-07,
+            "mean_compression_difference": 3.752012783990213e-08
+          },
+          "250": {
+            "mean_p_angle_difference": 7.398420748927843e-10,
+            "mean_a_angle_difference": 1.851730435891764e-05,
+            "mean_tension_difference": 7.282444692792062e-06,
+            "mean_compression_difference": 1.4432441378170754e-06
+          }
+        },
+        "background": {
+          "25": {
+            "mean_p_angle_difference": 2.726443174459111e-15,
+            "mean_a_angle_difference": 1.5442500789174327e-10,
+            "mean_tension_difference": 8.697601145416702e-11,
+            "mean_compression_difference": 1.0032442210258767e-10
+          },
+          "100": {
+            "mean_p_angle_difference": 1.2327766898213118e-11,
+            "mean_a_angle_difference": 6.684704593381386e-07,
+            "mean_tension_difference": 3.5375553765785097e-07,
+            "mean_compression_difference": 7.135527167172279e-08
+          },
+          "250": {
+            "mean_p_angle_difference": 1.5283786053689887e-09,
+            "mean_a_angle_difference": 3.0777190075640855e-05,
+            "mean_tension_difference": 1.1578096273284624e-05,
+            "mean_compression_difference": 8.217184003158129e-07
+          }
+        }
+      }
+    },
+    {
+      "seed": 20,
+      "status": "tested",
+      "responses": {
+        "candidate": {
+          "25": {
+            "mean_p_angle_difference": 8.668973418781592e-16,
+            "mean_a_angle_difference": 5.7167894981111035e-11,
+            "mean_tension_difference": 3.707269433293737e-11,
+            "mean_compression_difference": 3.032118951364164e-11
+          },
+          "100": {
+            "mean_p_angle_difference": 4.318016484163824e-12,
+            "mean_a_angle_difference": 3.667004472866143e-07,
+            "mean_tension_difference": 2.14810501076778e-07,
+            "mean_compression_difference": 1.9977164217589662e-08
+          },
+          "250": {
+            "mean_p_angle_difference": 6.222654256227356e-10,
+            "mean_a_angle_difference": 2.2785204701423204e-05,
+            "mean_tension_difference": 8.672533881783738e-06,
+            "mean_compression_difference": 1.4928531769139046e-06
+          }
+        },
+        "background": {
+          "25": {
+            "mean_p_angle_difference": 3.491529215200998e-15,
+            "mean_a_angle_difference": 6.694527031311433e-10,
+            "mean_tension_difference": 1.6345901257903144e-10,
+            "mean_compression_difference": 1.9320211497220752e-09
+          },
+          "100": {
+            "mean_p_angle_difference": 1.46797912493839e-11,
+            "mean_a_angle_difference": 3.6935285899679663e-07,
+            "mean_tension_difference": 2.1834231574088097e-07,
+            "mean_compression_difference": 1.8850580182763952e-07
+          },
+          "250": {
+            "mean_p_angle_difference": 1.5842811633747532e-09,
+            "mean_a_angle_difference": 1.0475971832040982e-05,
+            "mean_tension_difference": 4.497380237148076e-06,
+            "mean_compression_difference": 8.172147265237398e-07
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "25": {
+      "candidate": {
+        "mean_p_angle_difference": 1.4015465438444835e-15,
+        "mean_a_angle_difference": 8.052528262568799e-11,
+        "mean_tension_difference": 4.0087276036330256e-11,
+        "mean_compression_difference": 6.963358940777253e-11
+      },
+      "background": {
+        "mean_p_angle_difference": 3.491529215200998e-15,
+        "mean_a_angle_difference": 3.542056532345013e-10,
+        "mean_tension_difference": 1.0096036262745145e-10,
+        "mean_compression_difference": 7.845730600759774e-10
+      }
+    },
+    "100": {
+      "candidate": {
+        "mean_p_angle_difference": 6.136287362289016e-12,
+        "mean_a_angle_difference": 3.667004472866143e-07,
+        "mean_tension_difference": 2.14810501076778e-07,
+        "mean_compression_difference": 5.040799272501099e-08
+      },
+      "background": {
+        "mean_p_angle_difference": 1.575001534556147e-11,
+        "mean_a_angle_difference": 3.6935285899679663e-07,
+        "mean_tension_difference": 2.5435648498633547e-07,
+        "mean_compression_difference": 1.247658746736769e-07
+      }
+    },
+    "250": {
+      "candidate": {
+        "mean_p_angle_difference": 7.571234906470998e-10,
+        "mean_a_angle_difference": 1.9627721684561605e-05,
+        "mean_tension_difference": 7.4257778711107665e-06,
+        "mean_compression_difference": 1.4432441378170754e-06
+      },
+      "background": {
+        "mean_p_angle_difference": 1.795000348569903e-09,
+        "mean_a_angle_difference": 1.5745854690326345e-05,
+        "mean_tension_difference": 7.650876481134485e-06,
+        "mean_compression_difference": 8.217184003158129e-07
+      }
+    }
+  }
+}

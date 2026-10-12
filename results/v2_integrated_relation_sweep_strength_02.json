@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This is a predeclared parameter sweep of one causal link, not an object claim or a search for a preferred regime.",
+  "experiment": {
+    "name": "v2_integrated_relation_memory_tension_sweep",
+    "question": "Does any specified relation-memory strength improve persistence without P/A collapse or global ordering?",
+    "grid_size": 64,
+    "frames": 2000,
+    "seeds": 5,
+    "strengths": [
+      0.2
+    ]
+  },
+  "conditions": [
+    {
+      "condition": "relation_memory_tension_0.2",
+      "parameters": {
+        "potential_transport": 0.03,
+        "potential_source_restore": 0.1,
+        "actuality_to_potential": 0.0,
+        "potential_to_actual": 0.1,
+        "potential_actual_tension": 0.0,
+        "potential_neighbor_tension": 0.0,
+        "relation_memory_rate": 0.3,
+        "relation_memory_decay": 0.05,
+        "relation_memory_tension": 0.2,
+        "alpha": 0.3,
+        "gamma": 0.01,
+        "kappa": 0.05,
+        "phase": 0.0,
+        "dipole": 0.0,
+        "triads": 0.0,
+        "curv": 0.04,
+        "gamma_soft": 0.7,
+        "kappa_soft": 0.5,
+        "curv_soft": 0.8,
+        "relax_geom": 0.03,
+        "theta_diff": 0.002,
+        "decay_tau": 0.02,
+        "geom_decay": 0.05,
+        "sigma_c2": 0.0625,
+        "tri_sigma2": 0.6400000000000001,
+        "lock_strength": 0.96,
+        "tri_lock_gain": 0.0,
+        "phase_lock_gain": 0.0,
+        "shell_geom_gain": 0.08
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "potential_actual_alignment": 0.2678758851402114,
+          "actual_order": 0.1336584026744992,
+          "mean_tension": 0.11541477349007905,
+          "mean_compression": 1.0109728092137796e-06,
+          "mean_relation_memory": 0.14689136099933364,
+          "pair_candidates_observed": 403,
+          "persistent_pair_candidates": 117,
+          "median_pair_max_age": 25.0,
+          "mean_pair_compression": 2.483206293644677e-05
+        },
+        {
+          "seed": 2,
+          "potential_actual_alignment": 0.25653910579151623,
+          "actual_order": 0.2196730611797626,
+          "mean_tension": 0.11708648038134978,
+          "mean_compression": 9.967507268441875e-07,
+          "mean_relation_memory": 0.15018101771629844,
+          "pair_candidates_observed": 381,
+          "persistent_pair_candidates": 96,
+          "median_pair_max_age": 25.0,
+          "mean_pair_compression": 1.7741677281923485e-05
+        },
+        {
+          "seed": 3,
+          "potential_actual_alignment": 0.29259679822986556,
+          "actual_order": 0.3279825920385058,
+          "mean_tension": 0.11624741698274331,
+          "mean_compression": 4.611537209137423e-07,
+          "mean_relation_memory": 0.14951985032023996,
+          "pair_candidates_observed": 438,
+          "persistent_pair_candidates": 115,
+          "median_pair_max_age": 25.0,
+          "mean_pair_compression": 2.7696725600761703e-05
+        },
+        {
+          "seed": 4,
+          "potential_actual_alignment": 0.23324605750294314,
+          "actual_order": 0.26185301277557704,
+          "mean_tension": 0.1165898651886727,
+          "mean_compression": 0.0009595590455867954,
+          "mean_relation_memory": 0.14838009786300632,
+          "pair_candidates_observed": 457,
+          "persistent_pair_candidates": 121,
+          "median_pair_max_age": 25.0,
+          "mean_pair_compression": 0.0007629286572341085
+        },
+        {
+          "seed": 5,
+          "potential_actual_alignment": 0.2869395023613106,
+          "actual_order": 0.20808695809015662,
+          "mean_tension": 0.11660021726532718,
+          "mean_compression": 0.0004593248568591037,
+          "mean_relation_memory": 0.14531266417119307,
+          "pair_candidates_observed": 440,
+          "persistent_pair_candidates": 122,
+          "median_pair_max_age": 25.0,
+          "mean_pair_compression": 0.0012245934229861818
+        }
+      ],
+      "median_final": {
+        "potential_actual_alignment": 0.2678758851402114,
+        "actual_order": 0.2196730611797626,
+        "mean_tension": 0.1165898651886727,
+        "mean_compression": 1.0109728092137796e-06,
+        "mean_relation_memory": 0.14838009786300632,
+        "pair_candidates_observed": 438.0,
+        "persistent_pair_candidates": 117.0,
+        "median_pair_max_age": 25.0,
+        "mean_pair_compression": 2.7696725600761703e-05
+      },
+      "relation_memory_tension": 0.2
+    }
+  ]
+}

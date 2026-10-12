@@ -134,6 +134,195 @@
       "notes": "Holds out whole seeds and compares an area/condition baseline with a fuller region-attribute ridge model. It is a prediction test, not an autonomy claim.",
       "last_modified": "2026-10-11T00:00:00-05:00"
     },
+    "genesis_v2_gamma_boundary_causality.py": {
+      "description": "Causal boundary intervention comparing selected v2-gamma candidates with equal-size background regions.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Directly weakens or strengthens stored perimeter boundaries to test their causal contribution to candidate identity and recovery. It does not establish autonomy.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_recovery.py": {
+      "description": "Long-horizon recovery test after weakening a v2-gamma candidate boundary.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Compares candidate-boundary recovery with untouched and exact-shape background weakening controls. It tests model-level restoration, not autonomy.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_gamma_dynamic_recovery.py": {
+      "description": "Motion-aware continuity tracker for v2-gamma candidates after matched boundary weakening.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Uses consecutive-sample overlap to distinguish motion or transformation from track loss after causal boundary intervention.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_delta_sweep.py": {
+      "description": "Initial scale-selection regime sweep for the v2-delta short-range coherence and long-range counter-relation hypothesis.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Tests whether a specified competing-scale rule avoids gamma coarsening without P/A collapse or noise fragmentation. It is not an object claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_delta_stationarity.py": {
+      "description": "Long-horizon finite-scale stationarity probe for the v2-delta competing-scale hypothesis.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Samples delta relation-domain size distributions over time to distinguish a bounded characteristic scale from delayed coarsening or fragmentation. It is not an object claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_epsilon_sweep.py": {
+      "description": "Initial regime sweep for the v2-epsilon slow resource-renewal hypothesis.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Tests whether coherent actuality consuming slowly renewed, spatially transported potential availability prevents runaway merger. It is not an object claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_epsilon_stationarity.py": {
+      "description": "Long-horizon finite-scale stationarity probe for the v2-epsilon resource-renewal hypothesis.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Samples epsilon relation-domain distributions through time to distinguish sustained bounded scale from delayed coarsening or fragmentation. It is not an object claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_zeta_sweep.py": {
+      "description": "Initial regime sweep for the v2-zeta coherence-driven refractory benchmark.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "prototype",
+      "notes": "Tests delayed local inhibition that directly suppresses further alignment without a global clock. This is a benchmark against known activator-refractory dynamics, not a novelty claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_zeta_stationarity.py": {
+      "description": "Long-horizon finite-scale and refractory-state probe for the v2-zeta benchmark.",
+      "category": "V2 Experiments",
+      "status": "exploratory",
+      "quality": "measurement scaffold",
+      "notes": "Tests whether zeta maintains finite relation-domain scale and nontrivial refractory dynamics after its initial regime map. It is not an object or novelty claim.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_probe.py": {
+      "description": "Headless first comparison for the V1-derived potentiality/actuality structural bridge.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "Checks V1 parity against one independently defined P-to-A intervention before relation-memory or object claims. See findings/2026-10-11_v2_integrated_first_bridge.md.",
+      "findings": ["findings/2026-10-11_v2_integrated_first_bridge.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_relation_probe.py": {
+      "description": "Tracked-candidate comparison for edge relation memory in the V1-derived P/A/R bridge.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "Adds only remembered edge incompatibility as a contribution to inherited structural tension. It records candidate persistence, not objects.",
+      "findings": ["findings/2026-10-11_v2_integrated_relation_memory.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_relation_sweep.py": {
+      "description": "Predeclared relation-memory strength sweep for the V1-derived P/A/R bridge.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "Reports P/A distinction, compression, global order, and tracked candidate persistence across fixed relation-memory strengths. No strength improved persistence in the first sweep.",
+      "findings": ["findings/2026-10-11_v2_integrated_relation_sweep.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v1_compression_ablation.py": {
+      "description": "Causal population-level ablation of V1 geometry/compression with tracked pair candidates.",
+      "category": "Measurements",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "Varying geometry coupling changed compression but did not materially change pair persistence in the first five-seed test. This does not establish compression as a stabilizer.",
+      "findings": ["findings/2026-10-11_v1_compression_ablation.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v1_local_structure_perturbation.py": {
+      "description": "Matched local candidate-neighborhood versus background structural perturbation test for V1 pairs.",
+      "category": "Measurements",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "The first ten-seed result showed a provisional local continuation signal requiring a fixed 30-seed replication. Strict constituent-ID continuation does not count transformations as survival.",
+      "findings": ["findings/2026-10-11_v1_local_structure_perturbation.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_local_structure_probe.py": {
+      "description": "Thirty-seed comparison of V1-parity and independent P-to-A dynamics using the matched local structural continuation test.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "P-to-A dynamics preserved the validated local structural effect but did not yet demonstrate a new capability beyond V1.",
+      "findings": ["findings/2026-10-11_v2_integrated_local_structure.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_potential_perturbation.py": {
+      "description": "Matched candidate-neighborhood versus background potential-direction rotation test in the V1-derived P/A bridge.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "The first 30-seed 90-degree local rotation did not resolve a strict continuation effect; it does not establish P as irrelevant.",
+      "findings": ["findings/2026-10-11_v2_potential_only_perturbation.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_high_compression_audit.py": {
+      "description": "Paired field-level audit of the P-to-A coupling against V1 parity in the high-compression regime.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "P-to-A changed alignment, tension, and vortex count across 20 fixed seeds, without resolving a global-order or mean-compression difference.",
+      "findings": ["findings/2026-10-11_v2_pa_high_compression_audit.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_potential_propagation.py": {
+      "description": "Matched candidate versus background test for far-field effects of a local P-direction rotation.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "The 30-seed test found no candidate-specific far-field response in A, tension, or compression at the tested coupling and horizon.",
+      "findings": ["findings/2026-10-11_v2_potential_propagation.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v2_integrated_coupling_dose_response.py": {
+      "description": "Fixed-seed field and strict-continuation dose response for P-to-A coupling strength.",
+      "category": "V2 Experiments",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "Across 20 seeds, coupling strength gave a coherent field dose response while the V1 local structural effect remained significant at every tested gain.",
+      "findings": ["findings/2026-10-11_v2_coupling_dose_response.md"],
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "genesis_v1_pair_object_gate.py": {
+      "description": "Held-out forecast gate comparing V1 pair relational state against an equal-information generic local-field baseline.",
+      "category": "Measurements",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "Two independent ten-seed cohorts gave relational-model wins in 19 of 20 held-out seeds but missed the predeclared 5% pooled Brier-reduction gate.",
+      "findings": ["findings/2026-10-12_v1_pair_object_forecast_gate.md"],
+      "last_modified": "2026-10-12T00:00:00-05:00"
+    },
+    "genesis_v1_vortex_census.py": {
+      "description": "Headless census of individual integer-winding V1 vortex candidates.",
+      "category": "Measurements",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "The individual vortex is the supported V1 topological-object target, unlike the heuristic pair relation.",
+      "findings": ["findings/2026-10-12_v1_topological_objects.md"],
+      "last_modified": "2026-10-12T00:00:00-05:00"
+    },
+    "genesis_v1_vortex_robustness.py": {
+      "description": "Matched smooth-core versus background perturbation test for individual V1 vortex identity.",
+      "category": "Measurements",
+      "status": "active",
+      "quality": "measurement scaffold",
+      "notes": "A smooth core twist did not reduce strict ID-and-charge continuation across 20 fixed seeds.",
+      "findings": ["findings/2026-10-12_v1_topological_objects.md"],
+      "last_modified": "2026-10-12T00:00:00-05:00"
+    },
     "genesis_grid_emergence.py": {
       "description": "First engine-based script — full rule pipeline with compression locking for emergence",
       "category": "Engine Scripts",

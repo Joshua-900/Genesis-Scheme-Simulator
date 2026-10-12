@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This tests causal sensitivity to a local P-direction perturbation, not higher-order objects.",
+  "experiment": {
+    "name": "v2_integrated_potential_only_perturbation",
+    "parameters": {
+      "N": 64,
+      "burn_in_frames": 1000,
+      "follow_frames": 1000,
+      "seeds": 5,
+      "seed_start": 16,
+      "sample_interval": 25,
+      "max_pair_distance": 64.0,
+      "radius": 5.0,
+      "rotation": 1.5707963267948966,
+      "output": "results\\v2_integrated_potential_perturbation_batch4.json"
+    }
+  },
+  "runs": [
+    {
+      "seed": 16,
+      "status": "tested",
+      "potential_actual_alignment": 0.18908280701610697,
+      "candidate_line_compression": 0.48895700110295537,
+      "branches": {
+        "untouched": {
+          "continuation_samples": 27,
+          "survived_to_end": false
+        },
+        "candidate_potential": {
+          "continuation_samples": 40,
+          "survived_to_end": true
+        },
+        "background_potential": {
+          "continuation_samples": 27,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "status": "tested",
+      "potential_actual_alignment": 0.23679720718446284,
+      "candidate_line_compression": 0.40883427388249705,
+      "branches": {
+        "untouched": {
+          "continuation_samples": 4,
+          "survived_to_end": false
+        },
+        "candidate_potential": {
+          "continuation_samples": 2,
+          "survived_to_end": false
+        },
+        "background_potential": {
+          "continuation_samples": 4,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 18,
+      "status": "tested",
+      "potential_actual_alignment": 0.21720316251837798,
+      "candidate_line_compression": 0.8178814806461248,
+      "branches": {
+        "untouched": {
+          "continuation_samples": 8,
+          "survived_to_end": false
+        },
+        "candidate_potential": {
+          "continuation_samples": 6,
+          "survived_to_end": false
+        },
+        "background_potential": {
+          "continuation_samples": 8,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "status": "tested",
+      "potential_actual_alignment": 0.218898580571405,
+      "candidate_line_compression": 0.803179204703977,
+      "branches": {
+        "untouched": {
+          "continuation_samples": 2,
+          "survived_to_end": false
+        },
+        "candidate_potential": {
+          "continuation_samples": 2,
+          "survived_to_end": false
+        },
+        "background_potential": {
+          "continuation_samples": 2,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 20,
+      "status": "tested",
+      "potential_actual_alignment": 0.2338737224185809,
+      "candidate_line_compression": 0.7938168580304217,
+      "branches": {
+        "untouched": {
+          "continuation_samples": 0,
+          "survived_to_end": false
+        },
+        "candidate_potential": {
+          "continuation_samples": 0,
+          "survived_to_end": false
+        },
+        "background_potential": {
+          "continuation_samples": 0,
+          "survived_to_end": false
+        }
+      }
+    }
+  ],
+  "summary": {
+    "untouched": {
+      "tested": 5,
+      "survived_to_end": 0,
+      "median_continuation_samples": 4.0
+    },
+    "candidate_potential": {
+      "tested": 5,
+      "survived_to_end": 1,
+      "median_continuation_samples": 2.0
+    },
+    "background_potential": {
+      "tested": 5,
+      "survived_to_end": 0,
+      "median_continuation_samples": 4.0
+    }
+  }
+}

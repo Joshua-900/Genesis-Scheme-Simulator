@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This tests distinct coupled beta state roles, not object formation or metaphysical validity.",
+  "config": {
+    "N": 64,
+    "steps": 300,
+    "seeds": 3,
+    "seed_start": 1,
+    "region_fraction": 0.12,
+    "angle": 1.5707963267948966,
+    "output": "results\\v2_beta_intervention.json"
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "initial_actuality_distance_after_p_only": 0.0,
+      "initial_potential_distance_after_a_only": 0.0,
+      "potentiality_to_actuality": 0.03563918092942587,
+      "actuality_to_potentiality": 0.011895332636316341
+    },
+    {
+      "seed": 2,
+      "initial_actuality_distance_after_p_only": 0.0,
+      "initial_potential_distance_after_a_only": 0.0,
+      "potentiality_to_actuality": 0.031795072832570985,
+      "actuality_to_potentiality": 0.01218499309995447
+    },
+    {
+      "seed": 3,
+      "initial_actuality_distance_after_p_only": 0.0,
+      "initial_potential_distance_after_a_only": 0.0,
+      "potentiality_to_actuality": 0.03731367479093946,
+      "actuality_to_potentiality": 0.012407466686904546
+    }
+  ],
+  "summary": {
+    "potentiality_to_actuality": {
+      "min": 0.031795072832570985,
+      "median": 0.03563918092942587,
+      "max": 0.03731367479093946
+    },
+    "actuality_to_potentiality": {
+      "min": 0.011895332636316341,
+      "median": 0.01218499309995447,
+      "max": 0.012407466686904546
+    },
+    "all_initial_invariants_zero": true
+  }
+}

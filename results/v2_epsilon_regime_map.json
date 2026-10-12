@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This maps a slow-resource renewal hypothesis. It does not establish cycles, stable objects, or metaphysical claims.",
+  "config": {
+    "N": 64,
+    "frames": 2000,
+    "seeds": 3,
+    "seed_start": 1,
+    "depletions": [
+      0.01,
+      0.03,
+      0.08
+    ],
+    "replenishments": [
+      0.015,
+      0.035,
+      0.07
+    ],
+    "transport": 0.22,
+    "cutoff": 0.75,
+    "min_area": 24
+  },
+  "conditions": [
+    {
+      "replenish": 0.015,
+      "coherence_depletion": 0.01,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.015,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.01,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.11248906855515245,
+        "potential_strength": 0.2667073835017646,
+        "potential_actual_alignment": 0.3487204335933419,
+        "relation_mean": 0.6807139121192018,
+        "availability_std": 0.002545224511812648,
+        "domain_count": 24.333333333333332,
+        "largest_domain_fraction": 0.16438802083333334,
+        "median_domain_area": 75.33333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.1215220256429319,
+          "potential_strength": 0.2666345258218177,
+          "potential_actual_alignment": 0.2400177054159611,
+          "relation_mean": 0.6763241156239365,
+          "availability_std": 0.0023159613957732094,
+          "domain_count": 31,
+          "largest_domain_fraction": 0.10400390625,
+          "median_domain_area": 66
+        },
+        {
+          "actual_order": 0.05132711369205033,
+          "potential_strength": 0.2668575019204117,
+          "potential_actual_alignment": 0.3466338886167435,
+          "relation_mean": 0.6825647661584083,
+          "availability_std": 0.002606177723863397,
+          "domain_count": 20,
+          "largest_domain_fraction": 0.134033203125,
+          "median_domain_area": 84.5
+        },
+        {
+          "actual_order": 0.16461806633047513,
+          "potential_strength": 0.2666301227630644,
+          "potential_actual_alignment": 0.45950970674732117,
+          "relation_mean": 0.6832528545752607,
+          "availability_std": 0.002713534415801337,
+          "domain_count": 22,
+          "largest_domain_fraction": 0.255126953125,
+          "median_domain_area": 75.5
+        }
+      ]
+    },
+    {
+      "replenish": 0.015,
+      "coherence_depletion": 0.03,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.015,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.03,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.11400868837390728,
+        "potential_strength": 0.1586915355542596,
+        "potential_actual_alignment": 0.23160066415459069,
+        "relation_mean": 0.6822971973355062,
+        "availability_std": 0.003458388305743723,
+        "domain_count": 23.666666666666668,
+        "largest_domain_fraction": 0.177734375,
+        "median_domain_area": 82
+      },
+      "runs": [
+        {
+          "actual_order": 0.1348234036790081,
+          "potential_strength": 0.15845836660650997,
+          "potential_actual_alignment": 0.1166906715310492,
+          "relation_mean": 0.6794537753795127,
+          "availability_std": 0.0031793720868923416,
+          "domain_count": 31,
+          "largest_domain_fraction": 0.106689453125,
+          "median_domain_area": 72
+        },
+        {
+          "actual_order": 0.06058117701094424,
+          "potential_strength": 0.1589560163856959,
+          "potential_actual_alignment": 0.22579946019826375,
+          "relation_mean": 0.6843205398731736,
+          "availability_std": 0.003592715234418058,
+          "domain_count": 21,
+          "largest_domain_fraction": 0.152099609375,
+          "median_domain_area": 72
+        },
+        {
+          "actual_order": 0.14662148443176948,
+          "potential_strength": 0.15866022367057292,
+          "potential_actual_alignment": 0.3523118607344591,
+          "relation_mean": 0.6831172767538323,
+          "availability_std": 0.003603077595920769,
+          "domain_count": 19,
+          "largest_domain_fraction": 0.2744140625,
+          "median_domain_area": 102
+        }
+      ]
+    },
+    {
+      "replenish": 0.015,
+      "coherence_depletion": 0.08,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.015,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.08,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.11140496137722182,
+        "potential_strength": 0.07873056602459057,
+        "potential_actual_alignment": 0.1092907523974614,
+        "relation_mean": 0.682761321876822,
+        "availability_std": 0.0030942188595144116,
+        "domain_count": 23.333333333333332,
+        "largest_domain_fraction": 0.19075520833333334,
+        "median_domain_area": 73.83333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.14262092214251154,
+          "potential_strength": 0.07855388755273107,
+          "potential_actual_alignment": 0.0003257221136173105,
+          "relation_mean": 0.680170110617632,
+          "availability_std": 0.0028544059546298517,
+          "domain_count": 31,
+          "largest_domain_fraction": 0.107421875,
+          "median_domain_area": 59
+        },
+        {
+          "actual_order": 0.05383148153630594,
+          "potential_strength": 0.07897036985807027,
+          "potential_actual_alignment": 0.09013663625862281,
+          "relation_mean": 0.6842920751597656,
+          "availability_std": 0.0031632857133438315,
+          "domain_count": 19,
+          "largest_domain_fraction": 0.265625,
+          "median_domain_area": 67
+        },
+        {
+          "actual_order": 0.13776248045284797,
+          "potential_strength": 0.07866744066297038,
+          "potential_actual_alignment": 0.23740989882014407,
+          "relation_mean": 0.6838217798530684,
+          "availability_std": 0.003264964910569551,
+          "domain_count": 20,
+          "largest_domain_fraction": 0.19921875,
+          "median_domain_area": 95.5
+        }
+      ]
+    },
+    {
+      "replenish": 0.035,
+      "coherence_depletion": 0.01,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.035,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.01,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.10978560810121973,
+        "potential_strength": 0.355307069224353,
+        "potential_actual_alignment": 0.41318084942605926,
+        "relation_mean": 0.6800374278122032,
+        "availability_std": 0.0024817658713116,
+        "domain_count": 24.666666666666668,
+        "largest_domain_fraction": 0.19287109375,
+        "median_domain_area": 73.33333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.11369026216086871,
+          "potential_strength": 0.3552662519403252,
+          "potential_actual_alignment": 0.3074843653685734,
+          "relation_mean": 0.6750845155194014,
+          "availability_std": 0.0023380394424354326,
+          "domain_count": 32,
+          "largest_domain_fraction": 0.07080078125,
+          "median_domain_area": 70.5
+        },
+        {
+          "actual_order": 0.045436578858069274,
+          "potential_strength": 0.35550796462873785,
+          "potential_actual_alignment": 0.41724490873799236,
+          "relation_mean": 0.6817559322871399,
+          "availability_std": 0.002517806299546481,
+          "domain_count": 20,
+          "largest_domain_fraction": 0.25390625,
+          "median_domain_area": 74.5
+        },
+        {
+          "actual_order": 0.17022998328472122,
+          "potential_strength": 0.35514699110399595,
+          "potential_actual_alignment": 0.514813274171612,
+          "relation_mean": 0.6832718356300682,
+          "availability_std": 0.002589451871952887,
+          "domain_count": 22,
+          "largest_domain_fraction": 0.25390625,
+          "median_domain_area": 75.0
+        }
+      ]
+    },
+    {
+      "replenish": 0.035,
+      "coherence_depletion": 0.03,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.035,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.03,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.11261069311787973,
+        "potential_strength": 0.2569162826564267,
+        "potential_actual_alignment": 0.3176371724979675,
+        "relation_mean": 0.6815154133439489,
+        "availability_std": 0.004430280309848486,
+        "domain_count": 24.333333333333332,
+        "largest_domain_fraction": 0.16569010416666666,
+        "median_domain_area": 74.33333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.12702868224883945,
+          "potential_strength": 0.2567739763107345,
+          "potential_actual_alignment": 0.20623585107725545,
+          "relation_mean": 0.6779920131840597,
+          "availability_std": 0.004183631403789559,
+          "domain_count": 32,
+          "largest_domain_fraction": 0.104248046875,
+          "median_domain_area": 67.5
+        },
+        {
+          "actual_order": 0.054934454613370695,
+          "potential_strength": 0.25724429268469695,
+          "potential_actual_alignment": 0.3165716955376551,
+          "relation_mean": 0.6831331995352805,
+          "availability_std": 0.004560605930113476,
+          "domain_count": 20,
+          "largest_domain_fraction": 0.135986328125,
+          "median_domain_area": 84.5
+        },
+        {
+          "actual_order": 0.15586894249142905,
+          "potential_strength": 0.25673057897384854,
+          "potential_actual_alignment": 0.43010397087899205,
+          "relation_mean": 0.6834210273125065,
+          "availability_std": 0.004546603595642422,
+          "domain_count": 21,
+          "largest_domain_fraction": 0.2568359375,
+          "median_domain_area": 71
+        }
+      ]
+    },
+    {
+      "replenish": 0.035,
+      "coherence_depletion": 0.08,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.035,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.08,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.10983793742534237,
+        "potential_strength": 0.15164826622201227,
+        "potential_actual_alignment": 0.1896677251531846,
+        "relation_mean": 0.6825314674746917,
+        "availability_std": 0.005128594365249769,
+        "domain_count": 24,
+        "largest_domain_fraction": 0.17928059895833334,
+        "median_domain_area": 84.83333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.13752675213147544,
+          "potential_strength": 0.15140495700343407,
+          "potential_actual_alignment": 0.08215214732731906,
+          "relation_mean": 0.6801272278462009,
+          "availability_std": 0.0048575715562457315,
+          "domain_count": 33,
+          "largest_domain_fraction": 0.083251953125,
+          "median_domain_area": 73
+        },
+        {
+          "actual_order": 0.052439096065708936,
+          "potential_strength": 0.15207655233603007,
+          "potential_actual_alignment": 0.17855157180772896,
+          "relation_mean": 0.6839573662099456,
+          "availability_std": 0.005339487442602175,
+          "domain_count": 20,
+          "largest_domain_fraction": 0.263671875,
+          "median_domain_area": 79.5
+        },
+        {
+          "actual_order": 0.1395479640788427,
+          "potential_strength": 0.15146328932657266,
+          "potential_actual_alignment": 0.30829945632450584,
+          "relation_mean": 0.6835098083679285,
+          "availability_std": 0.005188724096901401,
+          "domain_count": 19,
+          "largest_domain_fraction": 0.19091796875,
+          "median_domain_area": 102
+        }
+      ]
+    },
+    {
+      "replenish": 0.07,
+      "coherence_depletion": 0.01,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.07,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.01,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.10826959463310458,
+        "potential_strength": 0.41474279328845404,
+        "potential_actual_alignment": 0.4632850084820492,
+        "relation_mean": 0.6791692689174458,
+        "availability_std": 0.002107280749496811,
+        "domain_count": 25.333333333333332,
+        "largest_domain_fraction": 0.15323893229166666,
+        "median_domain_area": 74.5
+      },
+      "runs": [
+        {
+          "actual_order": 0.1062555448356623,
+          "potential_strength": 0.41474097630714146,
+          "potential_actual_alignment": 0.35957078099825956,
+          "relation_mean": 0.6737974319663664,
+          "availability_std": 0.0020092666877423635,
+          "domain_count": 30,
+          "largest_domain_fraction": 0.069580078125,
+          "median_domain_area": 69.5
+        },
+        {
+          "actual_order": 0.04103441177902234,
+          "potential_strength": 0.41492242055460815,
+          "potential_actual_alignment": 0.4716581723929896,
+          "relation_mean": 0.6810432166547382,
+          "availability_std": 0.0021615540882780403,
+          "domain_count": 21,
+          "largest_domain_fraction": 0.181396484375,
+          "median_domain_area": 84
+        },
+        {
+          "actual_order": 0.17751882728462912,
+          "potential_strength": 0.41456498300361255,
+          "potential_actual_alignment": 0.5586260720548983,
+          "relation_mean": 0.6826671581312327,
+          "availability_std": 0.0021510214724700296,
+          "domain_count": 25,
+          "largest_domain_fraction": 0.208740234375,
+          "median_domain_area": 70
+        }
+      ]
+    },
+    {
+      "replenish": 0.07,
+      "coherence_depletion": 0.03,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.07,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.03,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.1099268403196068,
+        "potential_strength": 0.33901881332744266,
+        "potential_actual_alignment": 0.39166597316493795,
+        "relation_mean": 0.6803351102753503,
+        "availability_std": 0.0045116907269692735,
+        "domain_count": 24.333333333333332,
+        "largest_domain_fraction": 0.15152994791666666,
+        "median_domain_area": 77.83333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.11834499632249089,
+          "potential_strength": 0.33897447707029366,
+          "potential_actual_alignment": 0.284926995331981,
+          "relation_mean": 0.6758389927591804,
+          "availability_std": 0.004336285183148315,
+          "domain_count": 31,
+          "largest_domain_fraction": 0.070556640625,
+          "median_domain_area": 72
+        },
+        {
+          "actual_order": 0.04404620136036462,
+          "potential_strength": 0.3393109310288452,
+          "potential_actual_alignment": 0.39372780267234936,
+          "relation_mean": 0.6820850094433615,
+          "availability_std": 0.004601491768865289,
+          "domain_count": 20,
+          "largest_domain_fraction": 0.130126953125,
+          "median_domain_area": 86.5
+        },
+        {
+          "actual_order": 0.1673893232759649,
+          "potential_strength": 0.3387710318831891,
+          "potential_actual_alignment": 0.49634312149048343,
+          "relation_mean": 0.6830813286235091,
+          "availability_std": 0.004597295228894217,
+          "domain_count": 22,
+          "largest_domain_fraction": 0.25390625,
+          "median_domain_area": 75.0
+        }
+      ]
+    },
+    {
+      "replenish": 0.07,
+      "coherence_depletion": 0.08,
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.07,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55,
+        "boundary_rate": 0.18,
+        "boundary_decay": 0.04,
+        "boundary_permeability_floor": 0.04,
+        "boundary_permeability_span": 0.82,
+        "availability_transport": 0.22,
+        "coherence_depletion": 0.08,
+        "baseline_depletion": 0.005
+      },
+      "aggregate": {
+        "actual_order": 0.11028314063686269,
+        "potential_strength": 0.23256868251101961,
+        "potential_actual_alignment": 0.27949155075929993,
+        "relation_mean": 0.6822173360299524,
+        "availability_std": 0.006478049578670471,
+        "domain_count": 23.333333333333332,
+        "largest_domain_fraction": 0.17862955729166666,
+        "median_domain_area": 82.33333333333333
+      },
+      "runs": [
+        {
+          "actual_order": 0.13050470058717828,
+          "potential_strength": 0.2324194617660128,
+          "potential_actual_alignment": 0.168107070634833,
+          "relation_mean": 0.679320386513965,
+          "availability_std": 0.006286917677394365,
+          "domain_count": 30,
+          "largest_domain_fraction": 0.110107421875,
+          "median_domain_area": 74.0
+        },
+        {
+          "actual_order": 0.05296140340233868,
+          "potential_strength": 0.23298168720369072,
+          "potential_actual_alignment": 0.27836498691029066,
+          "relation_mean": 0.683994276749607,
+          "availability_std": 0.006773046253024904,
+          "domain_count": 22,
+          "largest_domain_fraction": 0.15185546875,
+          "median_domain_area": 69.0
+        },
+        {
+          "actual_order": 0.1473833179210711,
+          "potential_strength": 0.23230489856335534,
+          "potential_actual_alignment": 0.3920025947327762,
+          "relation_mean": 0.683337344826285,
+          "availability_std": 0.006374184805592144,
+          "domain_count": 18,
+          "largest_domain_fraction": 0.27392578125,
+          "median_domain_area": 104.0
+        }
+      ]
+    }
+  ]
+}

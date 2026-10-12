@@ -166,6 +166,18 @@
       "status": "active",
       "notes": "Apr 2026 restructure per timeline.mmd.",
       "last_modified": ""
+    },
+    "src/genesis_v2_integrated/core.py": {
+      "description": "V1-derived P/A/R bridge: relational mismatch feeds retained tension, deformation, and compression mechanics.",
+      "status": "active",
+      "notes": "All new couplings default to zero and are covered by a V1-parity regression test. This is a bridge experiment, not a demonstrated object model.",
+      "last_modified": "2026-10-11T00:00:00-05:00"
+    },
+    "src/genesis_v2_integrated/__init__.py": {
+      "description": "Public exports for the V1-derived P/A/R bridge package.",
+      "status": "active",
+      "notes": "",
+      "last_modified": "2026-10-11T00:00:00-05:00"
     }
   }
 }

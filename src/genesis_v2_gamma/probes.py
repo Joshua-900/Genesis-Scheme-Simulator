@@ -29,6 +29,20 @@ def outside_patch(reference: np.ndarray, radius: float, buffer: int) -> np.ndarr
     return min(options, key=lambda option: option[0])[1] if options else None
 
 
+def translated_background_mask(mask: np.ndarray, occupied: np.ndarray, max_overlap: float = 0.10) -> np.ndarray | None:
+    """Move a candidate's exact shape to the least occupied available location."""
+    height, width = mask.shape
+    options = []
+    for shift_y in range(height):
+        for shift_x in range(width):
+            if shift_y == 0 and shift_x == 0:
+                continue
+            translated = np.roll(mask, (shift_y, shift_x), axis=(0, 1))
+            options.append((float(np.logical_and(translated, occupied).sum() / translated.sum()), translated))
+    overlap, selected = min(options, key=lambda option: option[0])
+    return selected if overlap <= max_overlap else None
+
+
 def best_overlap(reference: np.ndarray, regions) -> tuple[float, int]:
     scores = []
     for region in regions:

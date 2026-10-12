@@ -1,0 +1,1827 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This measures causal field distinction and inherited structural change, not higher-order objects.",
+  "experiment": {
+    "name": "v2_integrated_first_potential_bridge_probe",
+    "question": "Can P remain distinct from A while changing V1-derived structural dynamics?",
+    "grid_size": 64,
+    "frames": 2000,
+    "seeds": 5
+  },
+  "conditions": [
+    {
+      "condition": "v1_parity",
+      "parameters": {
+        "potential_transport": 0.0,
+        "potential_source_restore": 0.0,
+        "actuality_to_potential": 0.0,
+        "potential_to_actual": 0.0,
+        "potential_actual_tension": 0.0,
+        "potential_neighbor_tension": 0.0,
+        "relation_memory_rate": 0.0,
+        "relation_memory_decay": 0.0,
+        "relation_memory_tension": 0.0,
+        "alpha": 0.3,
+        "gamma": 0.01,
+        "kappa": 0.05,
+        "phase": 0.0,
+        "dipole": 0.0,
+        "triads": 0.0,
+        "curv": 0.04,
+        "gamma_soft": 0.7,
+        "kappa_soft": 0.5,
+        "curv_soft": 0.8,
+        "relax_geom": 0.03,
+        "theta_diff": 0.002,
+        "decay_tau": 0.02,
+        "geom_decay": 0.05,
+        "sigma_c2": 0.0625,
+        "tri_sigma2": 0.6400000000000001,
+        "lock_strength": 0.96,
+        "tri_lock_gain": 0.0,
+        "phase_lock_gain": 0.0,
+        "shell_geom_gain": 0.08
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.0058094737336753955,
+              "mean_tension": 0.26087974530995894,
+              "mean_compression": 0.00019369543307546036,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 272
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.00615424338991228,
+              "mean_tension": 0.13254251599197062,
+              "mean_compression": 1.1766504981122168e-05,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 146
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.006358037273195808,
+              "mean_tension": 0.07254310518919976,
+              "mean_compression": 1.3461796395758165e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 114
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.004748513324847374,
+              "mean_tension": 0.05182578322540571,
+              "mean_compression": 1.0880535498700798e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 84
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": -0.0002761318534337028,
+              "mean_tension": 0.03987438618157903,
+              "mean_compression": 9.615715316457385e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 66
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": -0.002684759294298575,
+              "mean_tension": 0.028439183270781557,
+              "mean_compression": 2.8088851505535486e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 60
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": -0.0031389484778936126,
+              "mean_tension": 0.023352944589117047,
+              "mean_compression": 3.4760507369716364e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 52
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": -0.0035365930609335336,
+              "mean_tension": 0.01901745882002977,
+              "mean_compression": 1.509368353799397e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 50
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": -0.0035332339520177565,
+              "mean_tension": 0.015612140938179184,
+              "mean_compression": 1.3652937717621645e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 48
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": -0.003593859040364777,
+              "mean_tension": 0.013550670641696261,
+              "mean_compression": 1.2280140880775038e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 46
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": -0.003432689375637326,
+              "mean_tension": 0.011901412880953689,
+              "mean_compression": 1.2246509877454386e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": -0.003013844150252666,
+              "mean_tension": 0.010468573720338312,
+              "mean_compression": 1.1750359716011616e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": -0.002240722815404511,
+              "mean_tension": 0.009988300782310975,
+              "mean_compression": 1.1844571804591677e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": -0.0010525146300237919,
+              "mean_tension": 0.009982843172318972,
+              "mean_compression": 1.7420809208834245e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 6.316793246626505e-05,
+              "mean_tension": 0.009855679890090114,
+              "mean_compression": 2.508615400740812e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.00035993313190775273,
+              "mean_tension": 0.009350180656789255,
+              "mean_compression": 1.1904884120334e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": -0.00024803185198768365,
+              "mean_tension": 0.009511063296625814,
+              "mean_compression": 1.490364181383932e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": -0.0012772002579099651,
+              "mean_tension": 0.009456651963022455,
+              "mean_compression": 1.433535264687302e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": -0.0007404095046513251,
+              "mean_tension": 0.010043703699790595,
+              "mean_compression": 2.753167698975142e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.00016371361071318945,
+              "mean_tension": 0.00928129452992596,
+              "mean_compression": 1.4538746237076288e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.00016371361071318945,
+            "mean_tension": 0.00928129452992596,
+            "mean_compression": 1.4538746237076288e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 28
+          }
+        },
+        {
+          "seed": 2,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.007054830402943142,
+              "mean_tension": 0.2621222524943169,
+              "mean_compression": 0.0005483631581034032,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 264
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.014876086922471396,
+              "mean_tension": 0.13646370916661194,
+              "mean_compression": 0.0003827321913728327,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 116
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.017887159491331767,
+              "mean_tension": 0.07145115968521425,
+              "mean_compression": 0.00023103279521575226,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 94
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.015847349872099355,
+              "mean_tension": 0.04727421380653664,
+              "mean_compression": 0.00022626731462338363,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 66
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.014536481736501532,
+              "mean_tension": 0.035717196765034015,
+              "mean_compression": 0.0002161656763975053,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 56
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.014531963337028182,
+              "mean_tension": 0.027639634339920824,
+              "mean_compression": 2.639231083485239e-05,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.015419801018082963,
+              "mean_tension": 0.021076117977503223,
+              "mean_compression": 1.5066556222015824e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.015573832778894046,
+              "mean_tension": 0.0160438231593141,
+              "mean_compression": 1.2150544072518695e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.015305135682257918,
+              "mean_tension": 0.01357369581069142,
+              "mean_compression": 2.237371219914417e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.015031507366005654,
+              "mean_tension": 0.012074793391596884,
+              "mean_compression": 1.38157188733846e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.014230531473582591,
+              "mean_tension": 0.0107358495693183,
+              "mean_compression": 1.1794701287686564e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.013179108540222629,
+              "mean_tension": 0.00984249010596338,
+              "mean_compression": 1.1712319006575053e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.012267884420492522,
+              "mean_tension": 0.010307200788540836,
+              "mean_compression": 1.526678494624345e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.012866584657921032,
+              "mean_tension": 0.008801918801893936,
+              "mean_compression": 1.1598612672752488e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.012943916097149054,
+              "mean_tension": 0.007578566125489035,
+              "mean_compression": 1.144525623371702e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.013070669141161652,
+              "mean_tension": 0.006879429254882423,
+              "mean_compression": 1.143287923139894e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.013385862072526237,
+              "mean_tension": 0.0065444641936304605,
+              "mean_compression": 1.1495072814109642e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.01385228131035578,
+              "mean_tension": 0.006461297604231453,
+              "mean_compression": 1.1551266675952236e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.014283889277327233,
+              "mean_tension": 0.0064238564999571065,
+              "mean_compression": 1.17592568054086e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.014504167081490498,
+              "mean_tension": 0.006450984171877606,
+              "mean_compression": 1.2119930461310036e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.014504167081490498,
+            "mean_tension": 0.006450984171877606,
+            "mean_compression": 1.2119930461310036e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 32
+          }
+        },
+        {
+          "seed": 3,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.01972044088432076,
+              "mean_tension": 0.2559649181099737,
+              "mean_compression": 0.0004041158411267759,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 292
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.01289480036823292,
+              "mean_tension": 0.1329546556505622,
+              "mean_compression": 0.00024474601344493587,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 144
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.01268919747092134,
+              "mean_tension": 0.07225353563000461,
+              "mean_compression": 0.0001680308627649614,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 116
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.009023730088359883,
+              "mean_tension": 0.04818851996573205,
+              "mean_compression": 8.282803320023195e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 94
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.005936975762170392,
+              "mean_tension": 0.0359220291988233,
+              "mean_compression": 5.3554215097225e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 76
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.007019519881045995,
+              "mean_tension": 0.02679016877435425,
+              "mean_compression": 2.399343573847404e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 72
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.008699077564658939,
+              "mean_tension": 0.0229276396617128,
+              "mean_compression": 3.655172317261397e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 66
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.008686581982919175,
+              "mean_tension": 0.021444799485152467,
+              "mean_compression": 2.1251488602599743e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 56
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.00915245295251749,
+              "mean_tension": 0.020527604673893453,
+              "mean_compression": 3.1739497100363837e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 48
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.010055981315226314,
+              "mean_tension": 0.018089124637404582,
+              "mean_compression": 1.4575210161560953e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.010746455802213123,
+              "mean_tension": 0.015365819686829495,
+              "mean_compression": 1.3275022153423805e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.011372086055324524,
+              "mean_tension": 0.01424119350047946,
+              "mean_compression": 1.7515603895514753e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.011254107970896585,
+              "mean_tension": 0.013671876566739946,
+              "mean_compression": 3.035164092775014e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.011573967931999838,
+              "mean_tension": 0.012189106221885546,
+              "mean_compression": 1.3758782929737957e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.01159135746852136,
+              "mean_tension": 0.010735082070985488,
+              "mean_compression": 1.2563425118399738e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.012315102120543426,
+              "mean_tension": 0.010228613801718038,
+              "mean_compression": 1.868163675918156e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.01331377769359188,
+              "mean_tension": 0.009771958581748924,
+              "mean_compression": 1.5446520975514207e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.014452037562079217,
+              "mean_tension": 0.009457979202611929,
+              "mean_compression": 1.5011807414901784e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.015058676443915881,
+              "mean_tension": 0.008847715793577984,
+              "mean_compression": 1.236334105793765e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.014308516073757454,
+              "mean_tension": 0.009448510081679335,
+              "mean_compression": 1.8893513360506896e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 24
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.014308516073757454,
+            "mean_tension": 0.009448510081679335,
+            "mean_compression": 1.8893513360506896e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 24
+          }
+        },
+        {
+          "seed": 4,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": -0.003933401109118471,
+              "mean_tension": 0.2592065517374398,
+              "mean_compression": 0.0005589312621687359,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 286
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": -0.01110171149979966,
+              "mean_tension": 0.1361726611359889,
+              "mean_compression": 0.0004707790479214849,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 166
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": -0.015140649427457655,
+              "mean_tension": 0.07631580350370458,
+              "mean_compression": 0.00027962352146427335,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 122
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": -0.014485233758623376,
+              "mean_tension": 0.05018727991166552,
+              "mean_compression": 0.0002393923297618388,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 100
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": -0.01598376508117571,
+              "mean_tension": 0.03954925557278724,
+              "mean_compression": 0.00023030325744819607,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 80
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": -0.01455113428549702,
+              "mean_tension": 0.03175349067245727,
+              "mean_compression": 0.00021880100412259416,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 72
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": -0.0132266757121331,
+              "mean_tension": 0.025557736019705096,
+              "mean_compression": 0.0002290309889530931,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 68
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": -0.010582639118570577,
+              "mean_tension": 0.02442652963017471,
+              "mean_compression": 0.00015680300239438272,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 52
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": -0.0065138041108207855,
+              "mean_tension": 0.020774218962869285,
+              "mean_compression": 5.285294869944845e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 50
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": -0.0037059049943308766,
+              "mean_tension": 0.01716875087566241,
+              "mean_compression": 1.3205638118755478e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 50
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": -0.0006953891779971689,
+              "mean_tension": 0.016270368968264885,
+              "mean_compression": 2.8683034303512027e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.002445272869766535,
+              "mean_tension": 0.015189363541363805,
+              "mean_compression": 2.0296921416180352e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.0027728532839959357,
+              "mean_tension": 0.013973608728615045,
+              "mean_compression": 1.478674285763415e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.0011738207863715331,
+              "mean_tension": 0.012962590743065447,
+              "mean_compression": 1.4862533360807276e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.0009902177278885912,
+              "mean_tension": 0.011220403787727358,
+              "mean_compression": 1.297806702517336e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.0014193130516718636,
+              "mean_tension": 0.010238891906672983,
+              "mean_compression": 1.6282727807316166e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.0016371975342370877,
+              "mean_tension": 0.009371185371680173,
+              "mean_compression": 1.2659438626127896e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.0017339191869320558,
+              "mean_tension": 0.00849793568460759,
+              "mean_compression": 1.2118556835590827e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.002032120734078195,
+              "mean_tension": 0.008263268388925007,
+              "mean_compression": 3.1387871794856266e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.002091208696750254,
+              "mean_tension": 0.007009772574494226,
+              "mean_compression": 1.152110529104076e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.002091208696750254,
+            "mean_tension": 0.007009772574494226,
+            "mean_compression": 1.152110529104076e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 30
+          }
+        },
+        {
+          "seed": 5,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.004571196921218876,
+              "mean_tension": 0.26067701900926155,
+              "mean_compression": 0.0008054949126022576,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 290
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.005515675348339888,
+              "mean_tension": 0.1363518570865511,
+              "mean_compression": 0.0004324696292880451,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 140
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.004851507413548669,
+              "mean_tension": 0.07602596496594445,
+              "mean_compression": 0.00023326094773943202,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 98
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.005390323867185431,
+              "mean_tension": 0.046883134142784944,
+              "mean_compression": 0.00015853982203650464,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 84
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.00437104775448047,
+              "mean_tension": 0.03366223893363099,
+              "mean_compression": 4.0511399574727956e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 74
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.0050305397693369116,
+              "mean_tension": 0.02595997693498686,
+              "mean_compression": 5.818937167286913e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 66
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.0041511520242452,
+              "mean_tension": 0.021242221374742635,
+              "mean_compression": 5.972040833964363e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 62
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.0036652381973373413,
+              "mean_tension": 0.01879435882717678,
+              "mean_compression": 1.9073386475259984e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 58
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.0033587902158021474,
+              "mean_tension": 0.01692598384675279,
+              "mean_compression": 1.760323570198639e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 54
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.003483322620591896,
+              "mean_tension": 0.015359776384863532,
+              "mean_compression": 1.783471290568655e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 50
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.003510341506051907,
+              "mean_tension": 0.014002358253365755,
+              "mean_compression": 3.009563739230749e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 48
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.0028620517770866485,
+              "mean_tension": 0.01312845218973661,
+              "mean_compression": 1.4050043061001862e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.0030927966305349802,
+              "mean_tension": 0.012041053840296904,
+              "mean_compression": 1.4232205316233037e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.0042111282136072445,
+              "mean_tension": 0.011387824229721379,
+              "mean_compression": 1.233752461082197e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.005580924214060734,
+              "mean_tension": 0.01115976492382684,
+              "mean_compression": 3.6802608844103e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.0063077177861187,
+              "mean_tension": 0.010399422054339762,
+              "mean_compression": 1.5176825449663814e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.007690510290934604,
+              "mean_tension": 0.009996828386784146,
+              "mean_compression": 1.2171039870985685e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.008059938201194675,
+              "mean_tension": 0.009028640278239176,
+              "mean_compression": 1.1708750918013166e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.008434435383365815,
+              "mean_tension": 0.007649550323554168,
+              "mean_compression": 1.1457695445010639e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.008577202920932822,
+              "mean_tension": 0.006832814373333852,
+              "mean_compression": 1.1516460060270845e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.008577202920932822,
+            "mean_tension": 0.006832814373333852,
+            "mean_compression": 1.1516460060270845e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 30
+          }
+        }
+      ],
+      "median_final": {
+        "potential_actual_alignment": 0.008577202920932822,
+        "mean_tension": 0.007009772574494226,
+        "mean_compression": 1.2119930461310036e-07,
+        "vortex_count": 30.0
+      }
+    },
+    {
+      "condition": "independent_potential_influences_actuality",
+      "parameters": {
+        "potential_transport": 0.03,
+        "potential_source_restore": 0.1,
+        "actuality_to_potential": 0.0,
+        "potential_to_actual": 0.1,
+        "potential_actual_tension": 0.0,
+        "potential_neighbor_tension": 0.0,
+        "relation_memory_rate": 0.0,
+        "relation_memory_decay": 0.0,
+        "relation_memory_tension": 0.0,
+        "alpha": 0.3,
+        "gamma": 0.01,
+        "kappa": 0.05,
+        "phase": 0.0,
+        "dipole": 0.0,
+        "triads": 0.0,
+        "curv": 0.04,
+        "gamma_soft": 0.7,
+        "kappa_soft": 0.5,
+        "curv_soft": 0.8,
+        "relax_geom": 0.03,
+        "theta_diff": 0.002,
+        "decay_tau": 0.02,
+        "geom_decay": 0.05,
+        "sigma_c2": 0.0625,
+        "tri_sigma2": 0.6400000000000001,
+        "lock_strength": 0.96,
+        "tri_lock_gain": 0.0,
+        "phase_lock_gain": 0.0,
+        "shell_geom_gain": 0.08
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.11879255946855002,
+              "mean_tension": 0.2731019538710676,
+              "mean_compression": 0.00023387031905528136,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 272
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.13765997598804303,
+              "mean_tension": 0.16530957093031126,
+              "mean_compression": 1.5645139378780873e-05,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 150
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.15142939718856352,
+              "mean_tension": 0.1267365917590582,
+              "mean_compression": 3.2951744773630886e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 104
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.1648181872894609,
+              "mean_tension": 0.11186566757783886,
+              "mean_compression": 2.7706456631579707e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 88
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.17562265259326074,
+              "mean_tension": 0.10680274388860131,
+              "mean_compression": 7.834549865289224e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 76
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.18360705070375183,
+              "mean_tension": 0.10513802273669381,
+              "mean_compression": 6.590642995511092e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 66
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.19032000054829043,
+              "mean_tension": 0.10318362212020375,
+              "mean_compression": 8.960551144835695e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 60
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.1969163312110206,
+              "mean_tension": 0.10259700648964576,
+              "mean_compression": 4.0465577646635517e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 56
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.20292978818886526,
+              "mean_tension": 0.10244349782519269,
+              "mean_compression": 3.7652648765016604e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 52
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.20982333220179467,
+              "mean_tension": 0.10158387765456875,
+              "mean_compression": 3.615388124898844e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 48
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.21728671548287307,
+              "mean_tension": 0.10073775743986138,
+              "mean_compression": 3.5654889357955197e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 48
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.2251903341157231,
+              "mean_tension": 0.10082403149964132,
+              "mean_compression": 3.371353550799118e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 46
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.23369371604338612,
+              "mean_tension": 0.10066125746320183,
+              "mean_compression": 3.341178641141614e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.24043277968750437,
+              "mean_tension": 0.10098329291763455,
+              "mean_compression": 5.069242012216623e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.2471583546559925,
+              "mean_tension": 0.10082931321974208,
+              "mean_compression": 4.369527160950512e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.25393564805905083,
+              "mean_tension": 0.10121720053039693,
+              "mean_compression": 3.8959355408031705e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.25920399395526206,
+              "mean_tension": 0.10127631833317133,
+              "mean_compression": 3.5062248990331937e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.26409719975550566,
+              "mean_tension": 0.10058443959639482,
+              "mean_compression": 3.1188853608467297e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.26907158027887246,
+              "mean_tension": 0.10055129712986288,
+              "mean_compression": 3.131273656955648e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.2732676484888479,
+              "mean_tension": 0.10031953898226448,
+              "mean_compression": 3.2012435587695667e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.2732676484888479,
+            "mean_tension": 0.10031953898226448,
+            "mean_compression": 3.2012435587695667e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 32
+          }
+        },
+        {
+          "seed": 2,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.1186513719511731,
+              "mean_tension": 0.27142694159974956,
+              "mean_compression": 0.0004650827055404285,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 268
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.14395168142150913,
+              "mean_tension": 0.16582264178897682,
+              "mean_compression": 0.00025485791584638185,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 134
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.1638443119341343,
+              "mean_tension": 0.12489453427854245,
+              "mean_compression": 0.00017656359138409984,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 88
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.18302608238918022,
+              "mean_tension": 0.11143222898250893,
+              "mean_compression": 6.735506888741539e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 68
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.1954451858611953,
+              "mean_tension": 0.1062756856231819,
+              "mean_compression": 9.799945713228354e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 56
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.20800674467231794,
+              "mean_tension": 0.10268509452870211,
+              "mean_compression": 1.0797736551640898e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 50
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.21871722363731538,
+              "mean_tension": 0.10136700466759822,
+              "mean_compression": 3.626129786573588e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 46
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.22618954113691428,
+              "mean_tension": 0.10204741552513526,
+              "mean_compression": 3.19943873635057e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.23161249139642928,
+              "mean_tension": 0.10194247551431136,
+              "mean_compression": 3.127942472243268e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.2366140576860865,
+              "mean_tension": 0.10177307087500188,
+              "mean_compression": 3.5014415028239846e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.2412527815280639,
+              "mean_tension": 0.10158818932970085,
+              "mean_compression": 3.169243916396551e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.24460902723565528,
+              "mean_tension": 0.10146458121144053,
+              "mean_compression": 3.031158350382794e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.24633591895716142,
+              "mean_tension": 0.10193752016654486,
+              "mean_compression": 3.726805250112304e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.24787080639495115,
+              "mean_tension": 0.10185853359711335,
+              "mean_compression": 3.05821185614427e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.24988979315434462,
+              "mean_tension": 0.10210488118277196,
+              "mean_compression": 3.1427704594190943e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.2523570276003906,
+              "mean_tension": 0.10143593979552103,
+              "mean_compression": 3.087395745145919e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.25534011775211646,
+              "mean_tension": 0.10109401035927051,
+              "mean_compression": 3.083521641694658e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.2579253402443237,
+              "mean_tension": 0.10083899884405823,
+              "mean_compression": 3.116112948352842e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.25992699687057363,
+              "mean_tension": 0.10111074940525441,
+              "mean_compression": 3.251961550200401e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.26063488116633865,
+              "mean_tension": 0.1018802272077835,
+              "mean_compression": 8.997438385757353e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.26063488116633865,
+            "mean_tension": 0.1018802272077835,
+            "mean_compression": 8.997438385757353e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 32
+          }
+        },
+        {
+          "seed": 3,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.13057327456585083,
+              "mean_tension": 0.26595978653105873,
+              "mean_compression": 0.000662768520795375,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 294
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.16391215614643384,
+              "mean_tension": 0.16542151079722447,
+              "mean_compression": 0.00022814618879763945,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 146
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.1885150072825354,
+              "mean_tension": 0.12563004971649055,
+              "mean_compression": 3.655661505426902e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 102
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.20595879931605582,
+              "mean_tension": 0.11080608085519823,
+              "mean_compression": 1.158502978265996e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 90
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.2240544274309309,
+              "mean_tension": 0.10736528607141077,
+              "mean_compression": 6.934081199265362e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 78
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.23628455834676795,
+              "mean_tension": 0.10588746845121277,
+              "mean_compression": 7.898996758975659e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 64
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.24818194186185416,
+              "mean_tension": 0.10434105262444678,
+              "mean_compression": 5.518636698628308e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 58
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.2614208084713809,
+              "mean_tension": 0.10303315188437123,
+              "mean_compression": 4.40756168245209e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 52
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.2707792969147204,
+              "mean_tension": 0.10270538439297779,
+              "mean_compression": 4.934500316012723e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 46
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.27843636284409795,
+              "mean_tension": 0.10234724630955117,
+              "mean_compression": 4.342859430246212e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.28507606431092014,
+              "mean_tension": 0.10167059211135414,
+              "mean_compression": 4.030882543572686e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.2893204993322666,
+              "mean_tension": 0.10152278060107209,
+              "mean_compression": 3.914722704327716e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.2935515109019089,
+              "mean_tension": 0.10134023344919427,
+              "mean_compression": 3.6692334970241613e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.29737678039142373,
+              "mean_tension": 0.10141495063942878,
+              "mean_compression": 3.4564569988019163e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.2999818292154125,
+              "mean_tension": 0.10175766843494875,
+              "mean_compression": 3.584072960492976e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.30073697285543477,
+              "mean_tension": 0.10281961144229079,
+              "mean_compression": 5.887306285749515e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.2997223346309133,
+              "mean_tension": 0.10260797077062336,
+              "mean_compression": 3.824082426255988e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.29962436547852267,
+              "mean_tension": 0.10193965571116324,
+              "mean_compression": 3.6123782996166026e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.29952088446367964,
+              "mean_tension": 0.10181154042949764,
+              "mean_compression": 4.1630866448508986e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.2982635699015659,
+              "mean_tension": 0.10205144990059367,
+              "mean_compression": 5.062701770945402e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.2982635699015659,
+            "mean_tension": 0.10205144990059367,
+            "mean_compression": 5.062701770945402e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 28
+          }
+        },
+        {
+          "seed": 4,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.11632343421372632,
+              "mean_tension": 0.2694678479451523,
+              "mean_compression": 0.00038832434797809784,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 300
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.13267185875613569,
+              "mean_tension": 0.17095720951807325,
+              "mean_compression": 0.000711867126181399,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 156
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.14607663835948487,
+              "mean_tension": 0.13060302216104677,
+              "mean_compression": 0.0007061259115961724,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 112
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.15906602474395803,
+              "mean_tension": 0.11572785895575896,
+              "mean_compression": 0.0007020035682251304,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 82
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.17017683355302096,
+              "mean_tension": 0.10904629564723226,
+              "mean_compression": 0.000705182695618554,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 76
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.18399365151856356,
+              "mean_tension": 0.10586863826195309,
+              "mean_compression": 0.0007106746551672292,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 68
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.19550113468070734,
+              "mean_tension": 0.10530873711859672,
+              "mean_compression": 0.0010665551138245486,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 62
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.20405694575225916,
+              "mean_tension": 0.1048529420395361,
+              "mean_compression": 0.0009593115378986336,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 54
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.21279971125634112,
+              "mean_tension": 0.10357334363996155,
+              "mean_compression": 0.0009609136498869414,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 50
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.21813775928792536,
+              "mean_tension": 0.10375806243413219,
+              "mean_compression": 0.0009610974697053156,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.22335741724971625,
+              "mean_tension": 0.10262232357733883,
+              "mean_compression": 0.0009617048160280921,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 42
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.2256361901109316,
+              "mean_tension": 0.10303264982171073,
+              "mean_compression": 0.0009626552949932296,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.22673950895838924,
+              "mean_tension": 0.10359352307469653,
+              "mean_compression": 0.0009641656413354238,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.22820883633655875,
+              "mean_tension": 0.10288988501931579,
+              "mean_compression": 0.0009632836838593697,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 34
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.22990476302853805,
+              "mean_tension": 0.102388637493364,
+              "mean_compression": 0.0009633369077395479,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 32
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.23240562271604254,
+              "mean_tension": 0.10258523835277869,
+              "mean_compression": 0.0009632424845406924,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.23266597580846787,
+              "mean_tension": 0.10270998156059834,
+              "mean_compression": 0.0009630250694503805,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 26
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.23403326985381503,
+              "mean_tension": 0.10194540281319972,
+              "mean_compression": 0.0009625231506902741,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 26
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.23562569715610993,
+              "mean_tension": 0.10172973187891847,
+              "mean_compression": 0.0009620175032602406,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 26
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.23704627010075968,
+              "mean_tension": 0.10170190922076132,
+              "mean_compression": 0.0009614297219973683,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 26
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.23704627010075968,
+            "mean_tension": 0.10170190922076132,
+            "mean_compression": 0.0009614297219973683,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 26
+          }
+        },
+        {
+          "seed": 5,
+          "samples": [
+            {
+              "frame": 100,
+              "potential_actual_alignment": 0.11807549221385502,
+              "mean_tension": 0.27053343091132426,
+              "mean_compression": 0.0007695042516051104,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 282
+            },
+            {
+              "frame": 200,
+              "potential_actual_alignment": 0.14161664745195096,
+              "mean_tension": 0.16711199314673492,
+              "mean_compression": 0.0007479467874658894,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 150
+            },
+            {
+              "frame": 300,
+              "potential_actual_alignment": 0.16200816172174148,
+              "mean_tension": 0.1267557174414894,
+              "mean_compression": 0.0006825358981400105,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 110
+            },
+            {
+              "frame": 400,
+              "potential_actual_alignment": 0.17778038039180571,
+              "mean_tension": 0.11396791653375937,
+              "mean_compression": 0.00045637524704781457,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 84
+            },
+            {
+              "frame": 500,
+              "potential_actual_alignment": 0.1943448237348009,
+              "mean_tension": 0.10748968664182357,
+              "mean_compression": 0.00023735225784158223,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 68
+            },
+            {
+              "frame": 600,
+              "potential_actual_alignment": 0.2077117329701318,
+              "mean_tension": 0.10538850681531434,
+              "mean_compression": 0.00023685097561974177,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 64
+            },
+            {
+              "frame": 700,
+              "potential_actual_alignment": 0.2195503427527168,
+              "mean_tension": 0.10464461530368584,
+              "mean_compression": 0.00028861939843601334,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 54
+            },
+            {
+              "frame": 800,
+              "potential_actual_alignment": 0.23117693335738582,
+              "mean_tension": 0.10363031401261733,
+              "mean_compression": 0.0002489549868806246,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 46
+            },
+            {
+              "frame": 900,
+              "potential_actual_alignment": 0.24161428162746632,
+              "mean_tension": 0.10216946195196691,
+              "mean_compression": 0.0002252919515091189,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 44
+            },
+            {
+              "frame": 1000,
+              "potential_actual_alignment": 0.2508727982036852,
+              "mean_tension": 0.10142033913984232,
+              "mean_compression": 0.00021430599714322802,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1100,
+              "potential_actual_alignment": 0.26016196575637407,
+              "mean_tension": 0.1005646217039611,
+              "mean_compression": 8.317622662945258e-05,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1200,
+              "potential_actual_alignment": 0.26834626999592903,
+              "mean_tension": 0.10018674620681091,
+              "mean_compression": 3.4052664217149764e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 40
+            },
+            {
+              "frame": 1300,
+              "potential_actual_alignment": 0.27568321579666977,
+              "mean_tension": 0.10093155353280552,
+              "mean_compression": 4.8603930331794e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 38
+            },
+            {
+              "frame": 1400,
+              "potential_actual_alignment": 0.2813801385264013,
+              "mean_tension": 0.10167958273668273,
+              "mean_compression": 5.780582905681836e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 36
+            },
+            {
+              "frame": 1500,
+              "potential_actual_alignment": 0.2853969127834024,
+              "mean_tension": 0.1028293149713577,
+              "mean_compression": 4.818372780463546e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 30
+            },
+            {
+              "frame": 1600,
+              "potential_actual_alignment": 0.2863832597746222,
+              "mean_tension": 0.10249490750907689,
+              "mean_compression": 4.1350968408898745e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 28
+            },
+            {
+              "frame": 1700,
+              "potential_actual_alignment": 0.2875827959495333,
+              "mean_tension": 0.10225941544927934,
+              "mean_compression": 3.8734561813613855e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 26
+            },
+            {
+              "frame": 1800,
+              "potential_actual_alignment": 0.2896920013533457,
+              "mean_tension": 0.10191809873572391,
+              "mean_compression": 3.723088136322434e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 24
+            },
+            {
+              "frame": 1900,
+              "potential_actual_alignment": 0.28924689445644863,
+              "mean_tension": 0.10256830808851494,
+              "mean_compression": 1.0616222469019382e-06,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 20
+            },
+            {
+              "frame": 2000,
+              "potential_actual_alignment": 0.2896351007110971,
+              "mean_tension": 0.10195897681320057,
+              "mean_compression": 4.7282454761056067e-07,
+              "mean_relation_memory": 0.0,
+              "vortex_count": 20
+            }
+          ],
+          "final": {
+            "frame": 2000,
+            "potential_actual_alignment": 0.2896351007110971,
+            "mean_tension": 0.10195897681320057,
+            "mean_compression": 4.7282454761056067e-07,
+            "mean_relation_memory": 0.0,
+            "vortex_count": 20
+          }
+        }
+      ],
+      "median_final": {
+        "potential_actual_alignment": 0.2732676484888479,
+        "mean_tension": 0.1018802272077835,
+        "mean_compression": 5.062701770945402e-07,
+        "vortex_count": 28.0
+      }
+    }
+  ]
+}

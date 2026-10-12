@@ -13,7 +13,11 @@ This is the fast re-entry point for the repository. The authoritative detailed s
 
 ## Active Milestone
 
-Map v2-beta parameter regimes. The separate rule-based beta engine preserves P/A distinction and passes paired interventions; now identify whether any regimes also support coherent, persistent structure before building v2 object census or visual tools. V1 remains the comparison baseline while continuity-aware identity and autonomy remain validation work for both engines.
+Build V2 from the V1 structural substrate. `src/genesis_v2_integrated/` now
+retains V1's tension-to-compression loop and adds distinct P/A/R state with a
+V1-parity regression test. The first P-to-A bridge run changed tension without
+P/A collapse, but has not shown structural stabilization or objects. Next:
+measure the relation-memory link against this baseline.
 
 ## Return Checklist
 

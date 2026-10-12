@@ -1,0 +1,2310 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This location control compares identical perturbations inside and outside an observer-defined gamma component. It tests a prerequisite for object-specific response; it does not establish autonomy or causal closure.",
+  "config": {
+    "N": 64,
+    "warmup_frames": 1200,
+    "recovery_frames": 400,
+    "seeds": 5,
+    "seed_start": 1,
+    "sample_interval": 20,
+    "cutoff": 0.75,
+    "min_area": 24,
+    "patch_radius": 4.0,
+    "buffer": 2,
+    "angle": 1.5707963267948966,
+    "potential_to_actual": 0.05,
+    "relation_difference_gain": 0.55,
+    "boundary_rate": 0.18,
+    "boundary_decay": 0.04,
+    "params": {
+      "potential_transport": 0.1,
+      "potential_source_restore": 0.08,
+      "potential_turn": 0.24,
+      "availability_replenish": 0.1,
+      "availability_tension_gain": 0.28,
+      "actualization_depletion": 0.35,
+      "actual_alignment": 0.28,
+      "potential_to_actual": 0.05,
+      "relation_rate": 0.12,
+      "relation_baseline": 0.2,
+      "relation_difference_gain": 0.55,
+      "boundary_rate": 0.18,
+      "boundary_decay": 0.04,
+      "boundary_permeability_floor": 0.04,
+      "boundary_permeability_span": 0.82
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "status": "measured",
+      "candidate": {
+        "area": 90,
+        "coherence": 0.5938739511054053,
+        "boundary_contrast": 0.3888809098736946,
+        "inside_cells": 37,
+        "outside_cells": 49
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 90
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 90,
+            "difference_in_candidate": 0.6457718232379019,
+            "difference_in_patch": 1.5707963267948968,
+            "difference_elsewhere": 0.0
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 90,
+            "difference_in_candidate": 0.0,
+            "difference_in_patch": 1.5707963267948966,
+            "difference_elsewhere": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 20,
+          "control": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113
+          },
+          "inside": {
+            "candidate_overlap": 0.4608695652173913,
+            "candidate_matched_area": 78,
+            "difference_in_candidate": 0.6130995105569528,
+            "difference_in_patch": 1.4284228811120678,
+            "difference_elsewhere": 0.0007379696663251075
+          },
+          "outside": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113,
+            "difference_in_candidate": 0.00011691014494967122,
+            "difference_in_patch": 1.447935418552857,
+            "difference_elsewhere": 0.001408000678313154
+          }
+        },
+        {
+          "frames_after_intervention": 40,
+          "control": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113
+          },
+          "inside": {
+            "candidate_overlap": 0.4608695652173913,
+            "candidate_matched_area": 78,
+            "difference_in_candidate": 0.5877268583367069,
+            "difference_in_patch": 1.3233837387169631,
+            "difference_elsewhere": 0.0013369331557198782
+          },
+          "outside": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113,
+            "difference_in_candidate": 0.0007339517030234785,
+            "difference_in_patch": 1.3590134719452636,
+            "difference_elsewhere": 0.0024094525108836863
+          }
+        },
+        {
+          "frames_after_intervention": 60,
+          "control": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113
+          },
+          "inside": {
+            "candidate_overlap": 0.4608695652173913,
+            "candidate_matched_area": 78,
+            "difference_in_candidate": 0.5691674908337657,
+            "difference_in_patch": 1.2480269809431963,
+            "difference_elsewhere": 0.0017986846335799076
+          },
+          "outside": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113,
+            "difference_in_candidate": 0.0018884682523176606,
+            "difference_in_patch": 1.2942193799889825,
+            "difference_elsewhere": 0.003120562671658785
+          }
+        },
+        {
+          "frames_after_intervention": 80,
+          "control": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113
+          },
+          "inside": {
+            "candidate_overlap": 0.4608695652173913,
+            "candidate_matched_area": 78,
+            "difference_in_candidate": 0.5554278260896295,
+            "difference_in_patch": 1.1917471643304915,
+            "difference_elsewhere": 0.0021635818205102955
+          },
+          "outside": {
+            "candidate_overlap": 0.75,
+            "candidate_matched_area": 113,
+            "difference_in_candidate": 0.0034675872105129233,
+            "difference_in_patch": 1.2433440998872811,
+            "difference_elsewhere": 0.003665497767539132
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.5958904109589042,
+            "candidate_matched_area": 143
+          },
+          "inside": {
+            "candidate_overlap": 0.38686131386861317,
+            "candidate_matched_area": 100,
+            "difference_in_candidate": 0.5449549853880361,
+            "difference_in_patch": 1.1478734484825581,
+            "difference_elsewhere": 0.0024656894555670004
+          },
+          "outside": {
+            "candidate_overlap": 0.5958904109589042,
+            "candidate_matched_area": 143,
+            "difference_in_candidate": 0.005363736855468383,
+            "difference_in_patch": 1.200832400233273,
+            "difference_elsewhere": 0.004111431591400934
+          }
+        },
+        {
+          "frames_after_intervention": 120,
+          "control": {
+            "candidate_overlap": 0.6013513513513513,
+            "candidate_matched_area": 147
+          },
+          "inside": {
+            "candidate_overlap": 0.38686131386861317,
+            "candidate_matched_area": 100,
+            "difference_in_candidate": 0.5367341937104583,
+            "difference_in_patch": 1.1124542482902362,
+            "difference_elsewhere": 0.0027245385880141993
+          },
+          "outside": {
+            "candidate_overlap": 0.6013513513513513,
+            "candidate_matched_area": 147,
+            "difference_in_candidate": 0.007498371217613711,
+            "difference_in_patch": 1.1638125968285835,
+            "difference_elsewhere": 0.00449414234823827
+          }
+        },
+        {
+          "frames_after_intervention": 140,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 0.6402877697841727,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.5301124044770262,
+            "difference_in_patch": 1.0830655582909217,
+            "difference_elsewhere": 0.0029533054460442157
+          },
+          "outside": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.009815941865221741,
+            "difference_in_patch": 1.1307102100868787,
+            "difference_elsewhere": 0.004831285414462416
+          }
+        },
+        {
+          "frames_after_intervention": 160,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 0.6402877697841727,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.5246581697208396,
+            "difference_in_patch": 1.058143401539884,
+            "difference_elsewhere": 0.003159738965919927
+          },
+          "outside": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.012275735556397879,
+            "difference_in_patch": 1.1005885267399071,
+            "difference_elsewhere": 0.005133757459488884
+          }
+        },
+        {
+          "frames_after_intervention": 180,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 0.6357142857142857,
+            "candidate_matched_area": 139,
+            "difference_in_candidate": 0.5200761959490542,
+            "difference_in_patch": 1.0366293420525046,
+            "difference_elsewhere": 0.0033496566447150868
+          },
+          "outside": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.014846316859754257,
+            "difference_in_patch": 1.0728448342686463,
+            "difference_elsewhere": 0.0054099350440168625
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 0.6357142857142857,
+            "candidate_matched_area": 139,
+            "difference_in_candidate": 0.5161577809114278,
+            "difference_in_patch": 1.0177775366058683,
+            "difference_elsewhere": 0.003526919314610464
+          },
+          "outside": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.017502298772140292,
+            "difference_in_patch": 1.0470644221181074,
+            "difference_elsewhere": 0.005664575957043141
+          }
+        },
+        {
+          "frames_after_intervention": 220,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 0.6357142857142857,
+            "candidate_matched_area": 139,
+            "difference_in_candidate": 0.5127517680137341,
+            "difference_in_patch": 1.001044918979624,
+            "difference_elsewhere": 0.0036942287537680106
+          },
+          "outside": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.02022257485978369,
+            "difference_in_patch": 1.0229459836161277,
+            "difference_elsewhere": 0.005900150448162267
+          }
+        },
+        {
+          "frames_after_intervention": 240,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 0.6357142857142857,
+            "candidate_matched_area": 139,
+            "difference_in_candidate": 0.5097471716492771,
+            "difference_in_patch": 0.9860255976027553,
+            "difference_elsewhere": 0.0038536488850359554
+          },
+          "outside": {
+            "candidate_overlap": 0.5816993464052288,
+            "candidate_matched_area": 152,
+            "difference_in_candidate": 0.022989342688884012,
+            "difference_in_patch": 1.0002609638429056,
+            "difference_elsewhere": 0.00611924486684987
+          }
+        },
+        {
+          "frames_after_intervention": 260,
+          "control": {
+            "candidate_overlap": 0.5816993464052288,
+            "candidate_matched_area": 152
+          },
+          "inside": {
+            "candidate_overlap": 0.6357142857142857,
+            "candidate_matched_area": 139,
+            "difference_in_candidate": 0.5070614234460001,
+            "difference_in_patch": 0.9724098605917137,
+            "difference_elsewhere": 0.004006631318850814
+          },
+          "outside": {
+            "candidate_overlap": 0.5816993464052288,
+            "candidate_matched_area": 152,
+            "difference_in_candidate": 0.02578730456808137,
+            "difference_in_patch": 0.9788300323335217,
+            "difference_elsewhere": 0.006323870439598767
+          }
+        },
+        {
+          "frames_after_intervention": 280,
+          "control": {
+            "candidate_overlap": 0.5741935483870968,
+            "candidate_matched_area": 154
+          },
+          "inside": {
+            "candidate_overlap": 0.6357142857142857,
+            "candidate_matched_area": 139,
+            "difference_in_candidate": 0.5046317014584584,
+            "difference_in_patch": 0.9599573434937927,
+            "difference_elsewhere": 0.004154190421546406
+          },
+          "outside": {
+            "candidate_overlap": 0.5741935483870968,
+            "candidate_matched_area": 154,
+            "difference_in_candidate": 0.02860318463860647,
+            "difference_in_patch": 0.9585087644071331,
+            "difference_elsewhere": 0.006515662998447674
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.46596858638743455,
+            "candidate_matched_area": 190
+          },
+          "inside": {
+            "candidate_overlap": 0.5,
+            "candidate_matched_area": 177,
+            "difference_in_candidate": 0.5024092907472154,
+            "difference_in_patch": 0.9484770357798935,
+            "difference_elsewhere": 0.004297061851740795
+          },
+          "outside": {
+            "candidate_overlap": 0.46596858638743455,
+            "candidate_matched_area": 190,
+            "difference_in_candidate": 0.03142567659398943,
+            "difference_in_patch": 0.9391785198195464,
+            "difference_elsewhere": 0.00669605693413086
+          }
+        },
+        {
+          "frames_after_intervention": 320,
+          "control": {
+            "candidate_overlap": 0.46113989637305697,
+            "candidate_matched_area": 192
+          },
+          "inside": {
+            "candidate_overlap": 0.49444444444444446,
+            "candidate_matched_area": 179,
+            "difference_in_candidate": 0.5003560617152771,
+            "difference_in_patch": 0.9378153558649442,
+            "difference_elsewhere": 0.0044357923728825166
+          },
+          "outside": {
+            "candidate_overlap": 0.46113989637305697,
+            "candidate_matched_area": 192,
+            "difference_in_candidate": 0.03424513219012513,
+            "difference_in_patch": 0.9207403808719982,
+            "difference_elsewhere": 0.006866385543080768
+          }
+        },
+        {
+          "frames_after_intervention": 340,
+          "control": {
+            "candidate_overlap": 0.42788461538461536,
+            "candidate_matched_area": 207
+          },
+          "inside": {
+            "candidate_overlap": 0.4564102564102564,
+            "candidate_matched_area": 194,
+            "difference_in_candidate": 0.4984421093120511,
+            "difference_in_patch": 0.9278488389827277,
+            "difference_elsewhere": 0.004570753883003502
+          },
+          "outside": {
+            "candidate_overlap": 0.42788461538461536,
+            "candidate_matched_area": 207,
+            "difference_in_candidate": 0.0370534684840309,
+            "difference_in_patch": 0.9031108921365448,
+            "difference_elsewhere": 0.007027479404579546
+          }
+        },
+        {
+          "frames_after_intervention": 360,
+          "control": {
+            "candidate_overlap": 0.4218009478672986,
+            "candidate_matched_area": 210
+          },
+          "inside": {
+            "candidate_overlap": 0.4472361809045226,
+            "candidate_matched_area": 198,
+            "difference_in_candidate": 0.4966434640491392,
+            "difference_in_patch": 0.9184773923566117,
+            "difference_elsewhere": 0.004702482896572023
+          },
+          "outside": {
+            "candidate_overlap": 0.4218009478672986,
+            "candidate_matched_area": 210,
+            "difference_in_candidate": 0.0398439894355564,
+            "difference_in_patch": 0.8862189123497265,
+            "difference_elsewhere": 0.00718027894819835
+          }
+        },
+        {
+          "frames_after_intervention": 380,
+          "control": {
+            "candidate_overlap": 0.4218009478672986,
+            "candidate_matched_area": 210
+          },
+          "inside": {
+            "candidate_overlap": 0.4405940594059406,
+            "candidate_matched_area": 201,
+            "difference_in_candidate": 0.49494064236490665,
+            "difference_in_patch": 0.909619260727567,
+            "difference_elsewhere": 0.004830985880784856
+          },
+          "outside": {
+            "candidate_overlap": 0.4218009478672986,
+            "candidate_matched_area": 210,
+            "difference_in_candidate": 0.04261119345072442,
+            "difference_in_patch": 0.8700032970984771,
+            "difference_elsewhere": 0.007325564245641636
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.4218009478672986,
+            "candidate_matched_area": 210
+          },
+          "inside": {
+            "candidate_overlap": 0.4405940594059406,
+            "candidate_matched_area": 201,
+            "difference_in_candidate": 0.49331763247242705,
+            "difference_in_patch": 0.9012072258806588,
+            "difference_elsewhere": 0.0049564435974211556
+          },
+          "outside": {
+            "candidate_overlap": 0.4218009478672986,
+            "candidate_matched_area": 210,
+            "difference_in_candidate": 0.0453505903137786,
+            "difference_in_patch": 0.8544116348190353,
+            "difference_elsewhere": 0.00746407717446055
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "status": "measured",
+      "candidate": {
+        "area": 148,
+        "coherence": 0.5152748962845863,
+        "boundary_contrast": 0.3429419280381398,
+        "inside_cells": 26,
+        "outside_cells": 49
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 148
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.27595070605856287,
+            "difference_in_patch": 1.5707963267948968,
+            "difference_elsewhere": 0.0
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.0,
+            "difference_in_patch": 1.5707963267948966,
+            "difference_elsewhere": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 20,
+          "control": {
+            "candidate_overlap": 0.9932885906040269,
+            "candidate_matched_area": 149
+          },
+          "inside": {
+            "candidate_overlap": 0.9865771812080537,
+            "candidate_matched_area": 148,
+            "difference_in_candidate": 0.2567849419924204,
+            "difference_in_patch": 1.3116480496830718,
+            "difference_elsewhere": 0.000608132599354648
+          },
+          "outside": {
+            "candidate_overlap": 0.9932885906040269,
+            "candidate_matched_area": 149,
+            "difference_in_candidate": 2.436124082616265e-06,
+            "difference_in_patch": 1.4520356595552064,
+            "difference_elsewhere": 0.0013917049649123869
+          }
+        },
+        {
+          "frames_after_intervention": 40,
+          "control": {
+            "candidate_overlap": 0.9801324503311258,
+            "candidate_matched_area": 151
+          },
+          "inside": {
+            "candidate_overlap": 0.9735099337748344,
+            "candidate_matched_area": 150,
+            "difference_in_candidate": 0.24153537009214354,
+            "difference_in_patch": 1.1353537567882033,
+            "difference_elsewhere": 0.0010640299574456583
+          },
+          "outside": {
+            "candidate_overlap": 0.9801324503311258,
+            "candidate_matched_area": 151,
+            "difference_in_candidate": 2.9374982900825052e-05,
+            "difference_in_patch": 1.3644268040762486,
+            "difference_elsewhere": 0.0024166709972145892
+          }
+        },
+        {
+          "frames_after_intervention": 60,
+          "control": {
+            "candidate_overlap": 0.9801324503311258,
+            "candidate_matched_area": 151
+          },
+          "inside": {
+            "candidate_overlap": 0.9735099337748344,
+            "candidate_matched_area": 150,
+            "difference_in_candidate": 0.22972786566083941,
+            "difference_in_patch": 1.017118438375982,
+            "difference_elsewhere": 0.001393572818150291
+          },
+          "outside": {
+            "candidate_overlap": 0.9801324503311258,
+            "candidate_matched_area": 151,
+            "difference_in_candidate": 0.00010503192921599903,
+            "difference_in_patch": 1.3017875829496781,
+            "difference_elsewhere": 0.0031439727780190174
+          }
+        },
+        {
+          "frames_after_intervention": 80,
+          "control": {
+            "candidate_overlap": 0.9801324503311258,
+            "candidate_matched_area": 151
+          },
+          "inside": {
+            "candidate_overlap": 0.9735099337748344,
+            "candidate_matched_area": 150,
+            "difference_in_candidate": 0.22025948266584713,
+            "difference_in_patch": 0.9314132725701303,
+            "difference_elsewhere": 0.0016398775352120976
+          },
+          "outside": {
+            "candidate_overlap": 0.9801324503311258,
+            "candidate_matched_area": 151,
+            "difference_in_candidate": 0.00023499239734001856,
+            "difference_in_patch": 1.2544101346645933,
+            "difference_elsewhere": 0.0036925338892332517
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.954248366013072,
+            "candidate_matched_area": 151
+          },
+          "inside": {
+            "candidate_overlap": 0.6973684210526315,
+            "candidate_matched_area": 110,
+            "difference_in_candidate": 0.21237683689780532,
+            "difference_in_patch": 0.8648386218154821,
+            "difference_elsewhere": 0.001831980301923765
+          },
+          "outside": {
+            "candidate_overlap": 0.954248366013072,
+            "candidate_matched_area": 151,
+            "difference_in_candidate": 0.0004124839586175416,
+            "difference_in_patch": 1.2164391304111897,
+            "difference_elsewhere": 0.004131776620354784
+          }
+        },
+        {
+          "frames_after_intervention": 120,
+          "control": {
+            "candidate_overlap": 0.954248366013072,
+            "candidate_matched_area": 151
+          },
+          "inside": {
+            "candidate_overlap": 0.6973684210526315,
+            "candidate_matched_area": 110,
+            "difference_in_candidate": 0.20560468569416318,
+            "difference_in_patch": 0.8104492657916063,
+            "difference_elsewhere": 0.00198751771752081
+          },
+          "outside": {
+            "candidate_overlap": 0.954248366013072,
+            "candidate_matched_area": 151,
+            "difference_in_candidate": 0.0006265605571066583,
+            "difference_in_patch": 1.1846754408951925,
+            "difference_elsewhere": 0.0045002441006330865
+          }
+        },
+        {
+          "frames_after_intervention": 140,
+          "control": {
+            "candidate_overlap": 0.8248587570621468,
+            "candidate_matched_area": 175
+          },
+          "inside": {
+            "candidate_overlap": 0.7039473684210527,
+            "candidate_matched_area": 111,
+            "difference_in_candidate": 0.1995980071724915,
+            "difference_in_patch": 0.7643773870187995,
+            "difference_elsewhere": 0.0021172639531465104
+          },
+          "outside": {
+            "candidate_overlap": 0.8248587570621468,
+            "candidate_matched_area": 175,
+            "difference_in_candidate": 0.0008664261614310356,
+            "difference_in_patch": 1.15731304423164,
+            "difference_elsewhere": 0.004819684533047637
+          }
+        },
+        {
+          "frames_after_intervention": 160,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.6484848484848484,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.19416867177573402,
+            "difference_in_patch": 0.7243036592196346,
+            "difference_elsewhere": 0.002228022557878739
+          },
+          "outside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.001123017229705221,
+            "difference_in_patch": 1.1332673049618898,
+            "difference_elsewhere": 0.00510322216931569
+          }
+        },
+        {
+          "frames_after_intervention": 180,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.189167310914611,
+            "difference_in_patch": 0.6887482450180654,
+            "difference_elsewhere": 0.0023242660224417383
+          },
+          "outside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.0013895156840056312,
+            "difference_in_patch": 1.1118433413258026,
+            "difference_elsewhere": 0.0053591935759150534
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.18449476661039074,
+            "difference_in_patch": 0.656718328258116,
+            "difference_elsewhere": 0.0024090575291757102
+          },
+          "outside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.0016733984220461593,
+            "difference_in_patch": 1.0925699017693424,
+            "difference_elsewhere": 0.005593192703839705
+          }
+        },
+        {
+          "frames_after_intervention": 220,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.18008568394795849,
+            "difference_in_patch": 0.6275203757756026,
+            "difference_elsewhere": 0.002484576133154073
+          },
+          "outside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.0019705113708085647,
+            "difference_in_patch": 1.075109593105192,
+            "difference_elsewhere": 0.005809269006690058
+          }
+        },
+        {
+          "frames_after_intervention": 240,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.17588774020689635,
+            "difference_in_patch": 0.6006536604753103,
+            "difference_elsewhere": 0.00255242596172338
+          },
+          "outside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.0022729060866990523,
+            "difference_in_patch": 1.0592114029790236,
+            "difference_elsewhere": 0.006010463756001564
+          }
+        },
+        {
+          "frames_after_intervention": 260,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.17186258945388797,
+            "difference_in_patch": 0.5757465571764973,
+            "difference_elsewhere": 0.0026138249119601843
+          },
+          "outside": {
+            "candidate_overlap": 0.7684210526315789,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.0025787506108593573,
+            "difference_in_patch": 1.0446838720800105,
+            "difference_elsewhere": 0.0061995634106604205
+          }
+        },
+        {
+          "frames_after_intervention": 280,
+          "control": {
+            "candidate_overlap": 0.7643979057591623,
+            "candidate_matched_area": 189
+          },
+          "inside": {
+            "candidate_overlap": 0.7643979057591623,
+            "candidate_matched_area": 189,
+            "difference_in_candidate": 0.1679838442220876,
+            "difference_in_patch": 0.5525167002730293,
+            "difference_elsewhere": 0.0026697293822515213
+          },
+          "outside": {
+            "candidate_overlap": 0.7643979057591623,
+            "candidate_matched_area": 189,
+            "difference_in_candidate": 0.002886687744100605,
+            "difference_in_patch": 1.0313784924855698,
+            "difference_elsewhere": 0.006380446566897353
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.7643979057591623,
+            "candidate_matched_area": 189
+          },
+          "inside": {
+            "candidate_overlap": 0.7604166666666666,
+            "candidate_matched_area": 190,
+            "difference_in_candidate": 0.16423091181377347,
+            "difference_in_patch": 0.5307451244856786,
+            "difference_elsewhere": 0.002720897762173617
+          },
+          "outside": {
+            "candidate_overlap": 0.7643979057591623,
+            "candidate_matched_area": 189,
+            "difference_in_candidate": 0.0031969149369710974,
+            "difference_in_patch": 1.0191767657842024,
+            "difference_elsewhere": 0.006552346599630731
+          }
+        },
+        {
+          "frames_after_intervention": 320,
+          "control": {
+            "candidate_overlap": 0.7564766839378239,
+            "candidate_matched_area": 191
+          },
+          "inside": {
+            "candidate_overlap": 0.7019230769230769,
+            "candidate_matched_area": 206,
+            "difference_in_candidate": 0.1605882117619943,
+            "difference_in_patch": 0.5102589482248128,
+            "difference_elsewhere": 0.002767943585748252
+          },
+          "outside": {
+            "candidate_overlap": 0.7564766839378239,
+            "candidate_matched_area": 191,
+            "difference_in_candidate": 0.003530345385469762,
+            "difference_in_patch": 1.0079802401715667,
+            "difference_elsewhere": 0.006716347870635693
+          }
+        },
+        {
+          "frames_after_intervention": 340,
+          "control": {
+            "candidate_overlap": 0.7525773195876289,
+            "candidate_matched_area": 192
+          },
+          "inside": {
+            "candidate_overlap": 0.6985645933014354,
+            "candidate_matched_area": 207,
+            "difference_in_candidate": 0.1570441492648496,
+            "difference_in_patch": 0.4909194614391517,
+            "difference_elsewhere": 0.002811374932597369
+          },
+          "outside": {
+            "candidate_overlap": 0.7525773195876289,
+            "candidate_matched_area": 192,
+            "difference_in_candidate": 0.003877331527940045,
+            "difference_in_patch": 0.9977035319419859,
+            "difference_elsewhere": 0.006873909064204793
+          }
+        },
+        {
+          "frames_after_intervention": 360,
+          "control": {
+            "candidate_overlap": 0.7487179487179487,
+            "candidate_matched_area": 193
+          },
+          "inside": {
+            "candidate_overlap": 0.6985645933014354,
+            "candidate_matched_area": 207,
+            "difference_in_candidate": 0.15359049407443048,
+            "difference_in_patch": 0.47261373427732006,
+            "difference_elsewhere": 0.002851613712775332
+          },
+          "outside": {
+            "candidate_overlap": 0.7487179487179487,
+            "candidate_matched_area": 193,
+            "difference_in_candidate": 0.0042300003925259885,
+            "difference_in_patch": 0.9882713893090606,
+            "difference_elsewhere": 0.007027210268170833
+          }
+        },
+        {
+          "frames_after_intervention": 380,
+          "control": {
+            "candidate_overlap": 0.6952380952380952,
+            "candidate_matched_area": 208
+          },
+          "inside": {
+            "candidate_overlap": 0.6985645933014354,
+            "candidate_matched_area": 207,
+            "difference_in_candidate": 0.15022129744350662,
+            "difference_in_patch": 0.45524857746467035,
+            "difference_elsewhere": 0.0028890105835506124
+          },
+          "outside": {
+            "candidate_overlap": 0.7487179487179487,
+            "candidate_matched_area": 193,
+            "difference_in_candidate": 0.004605241727336694,
+            "difference_in_patch": 0.9796166231368004,
+            "difference_elsewhere": 0.007175230954316744
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.7053140096618358,
+            "candidate_matched_area": 205
+          },
+          "inside": {
+            "candidate_overlap": 0.7053140096618358,
+            "candidate_matched_area": 205,
+            "difference_in_candidate": 0.14693254966548883,
+            "difference_in_patch": 0.43874610945987275,
+            "difference_elsewhere": 0.002923886371476417
+          },
+          "outside": {
+            "candidate_overlap": 0.7604166666666666,
+            "candidate_matched_area": 190,
+            "difference_in_candidate": 0.005018300603497897,
+            "difference_in_patch": 0.9716779990322347,
+            "difference_elsewhere": 0.007318547373671766
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "status": "measured",
+      "candidate": {
+        "area": 89,
+        "coherence": 0.9653013179170223,
+        "boundary_contrast": 0.8239879922362744,
+        "inside_cells": 28,
+        "outside_cells": 49
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89,
+            "difference_in_candidate": 0.4941831140478326,
+            "difference_in_patch": 1.5707963267948968,
+            "difference_elsewhere": 0.0
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89,
+            "difference_in_candidate": 0.0,
+            "difference_in_patch": 1.5707963267948966,
+            "difference_elsewhere": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 20,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89,
+            "difference_in_candidate": 0.46857331097997806,
+            "difference_in_patch": 1.3751962234019734,
+            "difference_elsewhere": 0.0006115452647277753
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89,
+            "difference_in_candidate": 2.211355179217588e-06,
+            "difference_in_patch": 1.4744739542235226,
+            "difference_elsewhere": 0.0009567455943381479
+          }
+        },
+        {
+          "frames_after_intervention": 40,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89,
+            "difference_in_candidate": 0.44867053432085013,
+            "difference_in_patch": 1.2394030444598143,
+            "difference_elsewhere": 0.001118822217682726
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 89,
+            "difference_in_candidate": 1.6099191499029094e-05,
+            "difference_in_patch": 1.3981400215164768,
+            "difference_elsewhere": 0.0016769733416258678
+          }
+        },
+        {
+          "frames_after_intervention": 60,
+          "control": {
+            "candidate_overlap": 0.7063492063492064,
+            "candidate_matched_area": 126
+          },
+          "inside": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122,
+            "difference_in_candidate": 0.43463080895614503,
+            "difference_in_patch": 1.148356347796678,
+            "difference_elsewhere": 0.001510411354039711
+          },
+          "outside": {
+            "candidate_overlap": 0.7063492063492064,
+            "candidate_matched_area": 126,
+            "difference_in_candidate": 4.948445656281837e-05,
+            "difference_in_patch": 1.340092914135272,
+            "difference_elsewhere": 0.00218805463646921
+          }
+        },
+        {
+          "frames_after_intervention": 80,
+          "control": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122
+          },
+          "inside": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122,
+            "difference_in_candidate": 0.42469227839591933,
+            "difference_in_patch": 1.0832528280395877,
+            "difference_elsewhere": 0.001821283316884146
+          },
+          "outside": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122,
+            "difference_in_candidate": 0.00010460717479208765,
+            "difference_in_patch": 1.2949123123623,
+            "difference_elsewhere": 0.0025565441360880566
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122
+          },
+          "inside": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122,
+            "difference_in_candidate": 0.4174684221845461,
+            "difference_in_patch": 1.0335479674721115,
+            "difference_elsewhere": 0.0020797272678864695
+          },
+          "outside": {
+            "candidate_overlap": 0.6746031746031746,
+            "candidate_matched_area": 122,
+            "difference_in_candidate": 0.00018111008978241832,
+            "difference_in_patch": 1.2583395700962285,
+            "difference_elsewhere": 0.0028280196306310116
+          }
+        },
+        {
+          "frames_after_intervention": 120,
+          "control": {
+            "candidate_overlap": 0.6439393939393939,
+            "candidate_matched_area": 128
+          },
+          "inside": {
+            "candidate_overlap": 0.6439393939393939,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.41205860610611356,
+            "difference_in_patch": 0.9936548845494784,
+            "difference_elsewhere": 0.0023038261895807887
+          },
+          "outside": {
+            "candidate_overlap": 0.6439393939393939,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.00027813465807901476,
+            "difference_in_patch": 1.2276150450161256,
+            "difference_elsewhere": 0.003034717294598133
+          }
+        },
+        {
+          "frames_after_intervention": 140,
+          "control": {
+            "candidate_overlap": 0.6343283582089553,
+            "candidate_matched_area": 130
+          },
+          "inside": {
+            "candidate_overlap": 0.6439393939393939,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.40789226943774737,
+            "difference_in_patch": 0.9604492109943729,
+            "difference_elsewhere": 0.0025048209019075582
+          },
+          "outside": {
+            "candidate_overlap": 0.6343283582089553,
+            "candidate_matched_area": 130,
+            "difference_in_candidate": 0.0003972132761855168,
+            "difference_in_patch": 1.2010015574332251,
+            "difference_elsewhere": 0.003196812385761822
+          }
+        },
+        {
+          "frames_after_intervention": 160,
+          "control": {
+            "candidate_overlap": 0.6343283582089553,
+            "candidate_matched_area": 130
+          },
+          "inside": {
+            "candidate_overlap": 0.6439393939393939,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.40460474719334605,
+            "difference_in_patch": 0.9320642367960172,
+            "difference_elsewhere": 0.002689601621555345
+          },
+          "outside": {
+            "candidate_overlap": 0.6343283582089553,
+            "candidate_matched_area": 130,
+            "difference_in_candidate": 0.0005399520905379966,
+            "difference_in_patch": 1.1773882306997798,
+            "difference_elsewhere": 0.0033270561666009454
+          }
+        },
+        {
+          "frames_after_intervention": 180,
+          "control": {
+            "candidate_overlap": 0.6343283582089553,
+            "candidate_matched_area": 130
+          },
+          "inside": {
+            "candidate_overlap": 0.6439393939393939,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.4019538628567029,
+            "difference_in_patch": 0.9073177920360636,
+            "difference_elsewhere": 0.002862535751342163
+          },
+          "outside": {
+            "candidate_overlap": 0.6343283582089553,
+            "candidate_matched_area": 130,
+            "difference_in_candidate": 0.0007070225033671107,
+            "difference_in_patch": 1.1560415547875003,
+            "difference_elsewhere": 0.0034351038902481973
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.5029585798816568,
+            "candidate_matched_area": 165
+          },
+          "inside": {
+            "candidate_overlap": 0.5089820359281437,
+            "candidate_matched_area": 163,
+            "difference_in_candidate": 0.39977860316017766,
+            "difference_in_patch": 0.885424698471284,
+            "difference_elsewhere": 0.0030264330111965995
+          },
+          "outside": {
+            "candidate_overlap": 0.5029585798816568,
+            "candidate_matched_area": 165,
+            "difference_in_candidate": 0.0008958455998976402,
+            "difference_in_patch": 1.1364590894070052,
+            "difference_elsewhere": 0.0035280667820108544
+          }
+        },
+        {
+          "frames_after_intervention": 220,
+          "control": {
+            "candidate_overlap": 0.4857142857142857,
+            "candidate_matched_area": 171
+          },
+          "inside": {
+            "candidate_overlap": 0.4913294797687861,
+            "candidate_matched_area": 169,
+            "difference_in_candidate": 0.3979713592551176,
+            "difference_in_patch": 0.865844391369663,
+            "difference_elsewhere": 0.0031831191697421573
+          },
+          "outside": {
+            "candidate_overlap": 0.4857142857142857,
+            "candidate_matched_area": 171,
+            "difference_in_candidate": 0.001102205900490066,
+            "difference_in_patch": 1.1182858971843308,
+            "difference_elsewhere": 0.003609295400073505
+          }
+        },
+        {
+          "frames_after_intervention": 240,
+          "control": {
+            "candidate_overlap": 0.47752808988764045,
+            "candidate_matched_area": 174
+          },
+          "inside": {
+            "candidate_overlap": 0.4885057471264368,
+            "candidate_matched_area": 170,
+            "difference_in_candidate": 0.3964548512567122,
+            "difference_in_patch": 0.8481919035621118,
+            "difference_elsewhere": 0.003333804366494791
+          },
+          "outside": {
+            "candidate_overlap": 0.47752808988764045,
+            "candidate_matched_area": 174,
+            "difference_in_candidate": 0.0013220788007518238,
+            "difference_in_patch": 1.1012652095003719,
+            "difference_elsewhere": 0.003681029632045514
+          }
+        },
+        {
+          "frames_after_intervention": 260,
+          "control": {
+            "candidate_overlap": 0.47752808988764045,
+            "candidate_matched_area": 174
+          },
+          "inside": {
+            "candidate_overlap": 0.5029585798816568,
+            "candidate_matched_area": 165,
+            "difference_in_candidate": 0.39514659830798443,
+            "difference_in_patch": 0.8321780905050733,
+            "difference_elsewhere": 0.0034799657130857122
+          },
+          "outside": {
+            "candidate_overlap": 0.47752808988764045,
+            "candidate_matched_area": 174,
+            "difference_in_candidate": 0.0015511469480374571,
+            "difference_in_patch": 1.0852079351549309,
+            "difference_elsewhere": 0.0037444408572186775
+          }
+        },
+        {
+          "frames_after_intervention": 280,
+          "control": {
+            "candidate_overlap": 0.4861878453038674,
+            "candidate_matched_area": 180
+          },
+          "inside": {
+            "candidate_overlap": 0.4941860465116279,
+            "candidate_matched_area": 168,
+            "difference_in_candidate": 0.3940303616369955,
+            "difference_in_patch": 0.8175819451758641,
+            "difference_elsewhere": 0.003621765894518107
+          },
+          "outside": {
+            "candidate_overlap": 0.4861878453038674,
+            "candidate_matched_area": 180,
+            "difference_in_candidate": 0.0017851259842254922,
+            "difference_in_patch": 1.0699645892800047,
+            "difference_elsewhere": 0.003800809593326696
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.4835164835164835,
+            "candidate_matched_area": 181
+          },
+          "inside": {
+            "candidate_overlap": 0.4941860465116279,
+            "candidate_matched_area": 168,
+            "difference_in_candidate": 0.3930944038670524,
+            "difference_in_patch": 0.8042389113593666,
+            "difference_elsewhere": 0.003759410665821178
+          },
+          "outside": {
+            "candidate_overlap": 0.4835164835164835,
+            "candidate_matched_area": 181,
+            "difference_in_candidate": 0.002020147586459123,
+            "difference_in_patch": 1.0554189129450646,
+            "difference_elsewhere": 0.003851222461767704
+          }
+        },
+        {
+          "frames_after_intervention": 320,
+          "control": {
+            "candidate_overlap": 0.4835164835164835,
+            "candidate_matched_area": 181
+          },
+          "inside": {
+            "candidate_overlap": 0.5116279069767442,
+            "candidate_matched_area": 171,
+            "difference_in_candidate": 0.39231940008850624,
+            "difference_in_patch": 0.7920139398911361,
+            "difference_elsewhere": 0.003893161965037196
+          },
+          "outside": {
+            "candidate_overlap": 0.4835164835164835,
+            "candidate_matched_area": 181,
+            "difference_in_candidate": 0.002253487590117264,
+            "difference_in_patch": 1.0414856779581398,
+            "difference_elsewhere": 0.0038972483688257576
+          }
+        },
+        {
+          "frames_after_intervention": 340,
+          "control": {
+            "candidate_overlap": 0.4835164835164835,
+            "candidate_matched_area": 181
+          },
+          "inside": {
+            "candidate_overlap": 0.5116279069767442,
+            "candidate_matched_area": 171,
+            "difference_in_candidate": 0.39168841815823713,
+            "difference_in_patch": 0.780791795194329,
+            "difference_elsewhere": 0.004023237144745586
+          },
+          "outside": {
+            "candidate_overlap": 0.4835164835164835,
+            "candidate_matched_area": 181,
+            "difference_in_candidate": 0.0024818384965634268,
+            "difference_in_patch": 1.0281022227760603,
+            "difference_elsewhere": 0.0039402379252088645
+          }
+        },
+        {
+          "frames_after_intervention": 360,
+          "control": {
+            "candidate_overlap": 0.4808743169398907,
+            "candidate_matched_area": 182
+          },
+          "inside": {
+            "candidate_overlap": 0.5086705202312138,
+            "candidate_matched_area": 172,
+            "difference_in_candidate": 0.39118517499836514,
+            "difference_in_patch": 0.7704708959445499,
+            "difference_elsewhere": 0.004149863814728113
+          },
+          "outside": {
+            "candidate_overlap": 0.4808743169398907,
+            "candidate_matched_area": 182,
+            "difference_in_candidate": 0.002703077091520088,
+            "difference_in_patch": 1.015223495126845,
+            "difference_elsewhere": 0.0039798133821052906
+          }
+        },
+        {
+          "frames_after_intervention": 380,
+          "control": {
+            "candidate_overlap": 0.4808743169398907,
+            "candidate_matched_area": 182
+          },
+          "inside": {
+            "candidate_overlap": 0.5028571428571429,
+            "candidate_matched_area": 174,
+            "difference_in_candidate": 0.39079342889661156,
+            "difference_in_patch": 0.7609622643039887,
+            "difference_elsewhere": 0.004273248271961074
+          },
+          "outside": {
+            "candidate_overlap": 0.4808743169398907,
+            "candidate_matched_area": 182,
+            "difference_in_candidate": 0.0029166760753887473,
+            "difference_in_patch": 1.0028172031297398,
+            "difference_elsewhere": 0.004016286061095837
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.4782608695652174,
+            "candidate_matched_area": 183
+          },
+          "inside": {
+            "candidate_overlap": 0.5,
+            "candidate_matched_area": 175,
+            "difference_in_candidate": 0.39049561370459684,
+            "difference_in_patch": 0.7521884107472233,
+            "difference_elsewhere": 0.00439348921403685
+          },
+          "outside": {
+            "candidate_overlap": 0.4782608695652174,
+            "candidate_matched_area": 183,
+            "difference_in_candidate": 0.0031254278294574056,
+            "difference_in_patch": 0.9908557772689885,
+            "difference_elsewhere": 0.004049517396830033
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "status": "measured",
+      "candidate": {
+        "area": 66,
+        "coherence": 0.9266451802234024,
+        "boundary_contrast": 0.2227735783582451,
+        "inside_cells": 31,
+        "outside_cells": 49
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66,
+            "difference_in_candidate": 0.7377982747066938,
+            "difference_in_patch": 1.570796326794897,
+            "difference_elsewhere": 0.0
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66,
+            "difference_in_candidate": 0.0,
+            "difference_in_patch": 1.5707963267948966,
+            "difference_elsewhere": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 20,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66
+          },
+          "inside": {
+            "candidate_overlap": 0.7575757575757576,
+            "candidate_matched_area": 50,
+            "difference_in_candidate": 0.6947052081055529,
+            "difference_in_patch": 1.370796886781531,
+            "difference_elsewhere": 0.0006057800810331012
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66,
+            "difference_in_candidate": 3.321580138464625e-05,
+            "difference_in_patch": 1.458036359689407,
+            "difference_elsewhere": 0.0012553062374784695
+          }
+        },
+        {
+          "frames_after_intervention": 40,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66
+          },
+          "inside": {
+            "candidate_overlap": 0.7575757575757576,
+            "candidate_matched_area": 50,
+            "difference_in_candidate": 0.6583191475213496,
+            "difference_in_patch": 1.2267629406416911,
+            "difference_elsewhere": 0.0010930868002580988
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 66,
+            "difference_in_candidate": 0.00022556305490076955,
+            "difference_in_patch": 1.3704375132053734,
+            "difference_elsewhere": 0.0022063849377254104
+          }
+        },
+        {
+          "frames_after_intervention": 60,
+          "control": {
+            "candidate_overlap": 0.9850746268656716,
+            "candidate_matched_area": 67
+          },
+          "inside": {
+            "candidate_overlap": 0.7575757575757576,
+            "candidate_matched_area": 50,
+            "difference_in_candidate": 0.6281087941402742,
+            "difference_in_patch": 1.1242002251558003,
+            "difference_elsewhere": 0.0014750548967561894
+          },
+          "outside": {
+            "candidate_overlap": 0.9850746268656716,
+            "candidate_matched_area": 67,
+            "difference_in_candidate": 0.0006257791334696293,
+            "difference_in_patch": 1.3041287080099024,
+            "difference_elsewhere": 0.002899582947477465
+          }
+        },
+        {
+          "frames_after_intervention": 80,
+          "control": {
+            "candidate_overlap": 0.9705882352941176,
+            "candidate_matched_area": 68
+          },
+          "inside": {
+            "candidate_overlap": 0.6363636363636364,
+            "candidate_matched_area": 42,
+            "difference_in_candidate": 0.6020891561783095,
+            "difference_in_patch": 1.0458775989787603,
+            "difference_elsewhere": 0.0017855414728991967
+          },
+          "outside": {
+            "candidate_overlap": 0.9705882352941176,
+            "candidate_matched_area": 68,
+            "difference_in_candidate": 0.0012284135952454962,
+            "difference_in_patch": 1.251487583796603,
+            "difference_elsewhere": 0.0034271149647938847
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.9428571428571428,
+            "candidate_matched_area": 70
+          },
+          "inside": {
+            "candidate_overlap": 0.6363636363636364,
+            "candidate_matched_area": 42,
+            "difference_in_candidate": 0.5789637171214457,
+            "difference_in_patch": 0.9823013765165243,
+            "difference_elsewhere": 0.0020460906227932093
+          },
+          "outside": {
+            "candidate_overlap": 0.9428571428571428,
+            "candidate_matched_area": 70,
+            "difference_in_candidate": 0.002009236539325818,
+            "difference_in_patch": 1.2075666050038678,
+            "difference_elsewhere": 0.0038488357763041907
+          }
+        },
+        {
+          "frames_after_intervention": 120,
+          "control": {
+            "candidate_overlap": 0.9428571428571428,
+            "candidate_matched_area": 70
+          },
+          "inside": {
+            "candidate_overlap": 0.6363636363636364,
+            "candidate_matched_area": 42,
+            "difference_in_candidate": 0.557968289115287,
+            "difference_in_patch": 0.9284669167486752,
+            "difference_elsewhere": 0.002269919580618041
+          },
+          "outside": {
+            "candidate_overlap": 0.9428571428571428,
+            "candidate_matched_area": 70,
+            "difference_in_candidate": 0.002936979955678197,
+            "difference_in_patch": 1.1694928449481932,
+            "difference_elsewhere": 0.004199616803712184
+          }
+        },
+        {
+          "frames_after_intervention": 140,
+          "control": {
+            "candidate_overlap": 0.5546218487394958,
+            "candidate_matched_area": 119
+          },
+          "inside": {
+            "candidate_overlap": 0.6363636363636364,
+            "candidate_matched_area": 42,
+            "difference_in_candidate": 0.5386363208367567,
+            "difference_in_patch": 0.8815613142436499,
+            "difference_elsewhere": 0.002465596175347701
+          },
+          "outside": {
+            "candidate_overlap": 0.5546218487394958,
+            "candidate_matched_area": 119,
+            "difference_in_candidate": 0.003989132277891619,
+            "difference_in_patch": 1.1355597621859186,
+            "difference_elsewhere": 0.00450041083984777
+          }
+        },
+        {
+          "frames_after_intervention": 160,
+          "control": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120
+          },
+          "inside": {
+            "candidate_overlap": 0.6363636363636364,
+            "candidate_matched_area": 42,
+            "difference_in_candidate": 0.5206635344069624,
+            "difference_in_patch": 0.8398730311625389,
+            "difference_elsewhere": 0.002639235981924884
+          },
+          "outside": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120,
+            "difference_in_candidate": 0.005130073752180253,
+            "difference_in_patch": 1.10470274937186,
+            "difference_elsewhere": 0.004764382269904523
+          }
+        },
+        {
+          "frames_after_intervention": 180,
+          "control": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120
+          },
+          "inside": {
+            "candidate_overlap": 0.7575757575757576,
+            "candidate_matched_area": 50,
+            "difference_in_candidate": 0.5038364029619448,
+            "difference_in_patch": 0.802282552919914,
+            "difference_elsewhere": 0.0027956188851897975
+          },
+          "outside": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120,
+            "difference_in_candidate": 0.006328645369100562,
+            "difference_in_patch": 1.0762212867029528,
+            "difference_elsewhere": 0.005000302640299422
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120
+          },
+          "inside": {
+            "candidate_overlap": 0.43103448275862066,
+            "candidate_matched_area": 100,
+            "difference_in_candidate": 0.48799206527009575,
+            "difference_in_patch": 0.7680112318555684,
+            "difference_elsewhere": 0.0029358563642730476
+          },
+          "outside": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120,
+            "difference_in_candidate": 0.007561008821760058,
+            "difference_in_patch": 1.049632298412442,
+            "difference_elsewhere": 0.005214410646339072
+          }
+        },
+        {
+          "frames_after_intervention": 220,
+          "control": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120
+          },
+          "inside": {
+            "candidate_overlap": 0.42735042735042733,
+            "candidate_matched_area": 101,
+            "difference_in_candidate": 0.4730016239416027,
+            "difference_in_patch": 0.7364889178012533,
+            "difference_elsewhere": 0.0030618719620234516
+          },
+          "outside": {
+            "candidate_overlap": 0.55,
+            "candidate_matched_area": 120,
+            "difference_in_candidate": 0.008806424480398128,
+            "difference_in_patch": 1.024594844135849,
+            "difference_elsewhere": 0.005411215326591911
+          }
+        },
+        {
+          "frames_after_intervention": 240,
+          "control": {
+            "candidate_overlap": 0.515625,
+            "candidate_matched_area": 128
+          },
+          "inside": {
+            "candidate_overlap": 0.42735042735042733,
+            "candidate_matched_area": 101,
+            "difference_in_candidate": 0.4587606442328721,
+            "difference_in_patch": 0.7072806571440012,
+            "difference_elsewhere": 0.0031749232781322885
+          },
+          "outside": {
+            "candidate_overlap": 0.5196850393700787,
+            "candidate_matched_area": 127,
+            "difference_in_candidate": 0.01004682583665271,
+            "difference_in_patch": 1.0008621314006643,
+            "difference_elsewhere": 0.005594072708610048
+          }
+        },
+        {
+          "frames_after_intervention": 260,
+          "control": {
+            "candidate_overlap": 0.515625,
+            "candidate_matched_area": 128
+          },
+          "inside": {
+            "candidate_overlap": 0.42735042735042733,
+            "candidate_matched_area": 101,
+            "difference_in_candidate": 0.4451811662311263,
+            "difference_in_patch": 0.6800430310916827,
+            "difference_elsewhere": 0.0032758871675846167
+          },
+          "outside": {
+            "candidate_overlap": 0.5196850393700787,
+            "candidate_matched_area": 127,
+            "difference_in_candidate": 0.011266986345711173,
+            "difference_in_patch": 0.978251191839512,
+            "difference_elsewhere": 0.005765531330216697
+          }
+        },
+        {
+          "frames_after_intervention": 280,
+          "control": {
+            "candidate_overlap": 0.515625,
+            "candidate_matched_area": 128
+          },
+          "inside": {
+            "candidate_overlap": 0.42735042735042733,
+            "candidate_matched_area": 101,
+            "difference_in_candidate": 0.4321879367120751,
+            "difference_in_patch": 0.6544987970735681,
+            "difference_elsewhere": 0.0033653859765419005
+          },
+          "outside": {
+            "candidate_overlap": 0.5196850393700787,
+            "candidate_matched_area": 127,
+            "difference_in_candidate": 0.01245455699688336,
+            "difference_in_patch": 0.9566232607250212,
+            "difference_elsewhere": 0.005927583723666271
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.49624060150375937,
+            "candidate_matched_area": 133
+          },
+          "inside": {
+            "candidate_overlap": 0.423728813559322,
+            "candidate_matched_area": 102,
+            "difference_in_candidate": 0.41971628963249097,
+            "difference_in_patch": 0.6304209440805416,
+            "difference_elsewhere": 0.0034438993799087688
+          },
+          "outside": {
+            "candidate_overlap": 0.5,
+            "candidate_matched_area": 132,
+            "difference_in_candidate": 0.013599851962318502,
+            "difference_in_patch": 0.9358709412450086,
+            "difference_elsewhere": 0.006081784977147315
+          }
+        },
+        {
+          "frames_after_intervention": 320,
+          "control": {
+            "candidate_overlap": 0.49624060150375937,
+            "candidate_matched_area": 133
+          },
+          "inside": {
+            "candidate_overlap": 0.423728813559322,
+            "candidate_matched_area": 102,
+            "difference_in_candidate": 0.4077040893041387,
+            "difference_in_patch": 0.6076219573288498,
+            "difference_elsewhere": 0.00351199663640435
+          },
+          "outside": {
+            "candidate_overlap": 0.5,
+            "candidate_matched_area": 132,
+            "difference_in_candidate": 0.014690711734027938,
+            "difference_in_patch": 0.9159102833854004,
+            "difference_elsewhere": 0.006229445645750558
+          }
+        },
+        {
+          "frames_after_intervention": 340,
+          "control": {
+            "candidate_overlap": 0.49624060150375937,
+            "candidate_matched_area": 133
+          },
+          "inside": {
+            "candidate_overlap": 0.423728813559322,
+            "candidate_matched_area": 102,
+            "difference_in_candidate": 0.39608957308689074,
+            "difference_in_patch": 0.5859458361954883,
+            "difference_elsewhere": 0.0035705316179673176
+          },
+          "outside": {
+            "candidate_overlap": 0.5,
+            "candidate_matched_area": 132,
+            "difference_in_candidate": 0.01572361589291437,
+            "difference_in_patch": 0.89667508281179,
+            "difference_elsewhere": 0.006371584684935069
+          }
+        },
+        {
+          "frames_after_intervention": 360,
+          "control": {
+            "candidate_overlap": 0.4925373134328358,
+            "candidate_matched_area": 134
+          },
+          "inside": {
+            "candidate_overlap": 0.4132231404958678,
+            "candidate_matched_area": 105,
+            "difference_in_candidate": 0.38484774181638814,
+            "difference_in_patch": 0.5652626950150889,
+            "difference_elsewhere": 0.0036195722916074874
+          },
+          "outside": {
+            "candidate_overlap": 0.49624060150375937,
+            "candidate_matched_area": 133,
+            "difference_in_candidate": 0.01670407858338186,
+            "difference_in_patch": 0.8781113055620553,
+            "difference_elsewhere": 0.006508885989338344
+          }
+        },
+        {
+          "frames_after_intervention": 380,
+          "control": {
+            "candidate_overlap": 0.4925373134328358,
+            "candidate_matched_area": 134
+          },
+          "inside": {
+            "candidate_overlap": 0.45864661654135336,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.37394659950969533,
+            "difference_in_patch": 0.5454656732326651,
+            "difference_elsewhere": 0.0036596894340220907
+          },
+          "outside": {
+            "candidate_overlap": 0.49624060150375937,
+            "candidate_matched_area": 133,
+            "difference_in_candidate": 0.0176238469731131,
+            "difference_in_patch": 0.8601731410655381,
+            "difference_elsewhere": 0.006642018251069245
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.48175182481751827,
+            "candidate_matched_area": 137
+          },
+          "inside": {
+            "candidate_overlap": 0.45864661654135336,
+            "candidate_matched_area": 128,
+            "difference_in_candidate": 0.3633587059002483,
+            "difference_in_patch": 0.5264674145614073,
+            "difference_elsewhere": 0.0036916197446727325
+          },
+          "outside": {
+            "candidate_overlap": 0.4852941176470588,
+            "candidate_matched_area": 136,
+            "difference_in_candidate": 0.01848365892151416,
+            "difference_in_patch": 0.8428203810585259,
+            "difference_elsewhere": 0.006771436096065335
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "status": "measured",
+      "candidate": {
+        "area": 124,
+        "coherence": 0.9694065776946839,
+        "boundary_contrast": 0.5004773454760774,
+        "inside_cells": 1,
+        "outside_cells": 49
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.012667712312862069,
+            "difference_in_patch": 1.5707963267948966,
+            "difference_elsewhere": 0.0
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.0,
+            "difference_in_patch": 1.5707963267948966,
+            "difference_elsewhere": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 20,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.010839304826959512,
+            "difference_in_patch": 0.9588747684970778,
+            "difference_elsewhere": 4.856855661694584e-05
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 6.972097493057784e-06,
+            "difference_in_patch": 1.4625156591868613,
+            "difference_elsewhere": 0.0013539477849486064
+          }
+        },
+        {
+          "frames_after_intervention": 40,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.00931068959776904,
+            "difference_in_patch": 0.5913443407366907,
+            "difference_elsewhere": 8.762143532723679e-05
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 5.255158680422095e-05,
+            "difference_in_patch": 1.3830354106419793,
+            "difference_elsewhere": 0.002352559569796761
+          }
+        },
+        {
+          "frames_after_intervention": 60,
+          "control": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124
+          },
+          "inside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.008257298293207682,
+            "difference_in_patch": 0.3970332749460219,
+            "difference_elsewhere": 0.00011202851971182393
+          },
+          "outside": {
+            "candidate_overlap": 1.0,
+            "candidate_matched_area": 124,
+            "difference_in_candidate": 0.00015729835996445535,
+            "difference_in_patch": 1.3252354154301373,
+            "difference_elsewhere": 0.0030851246038139414
+          }
+        },
+        {
+          "frames_after_intervention": 80,
+          "control": {
+            "candidate_overlap": 0.992,
+            "candidate_matched_area": 125
+          },
+          "inside": {
+            "candidate_overlap": 0.992,
+            "candidate_matched_area": 125,
+            "difference_in_candidate": 0.007536650501778808,
+            "difference_in_patch": 0.2901340005093749,
+            "difference_elsewhere": 0.0001287119711931544
+          },
+          "outside": {
+            "candidate_overlap": 0.992,
+            "candidate_matched_area": 125,
+            "difference_in_candidate": 0.0003263411675887177,
+            "difference_in_patch": 1.2806525946507152,
+            "difference_elsewhere": 0.003656910870415288
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.9841269841269841,
+            "candidate_matched_area": 126
+          },
+          "inside": {
+            "candidate_overlap": 0.9841269841269841,
+            "candidate_matched_area": 126,
+            "difference_in_candidate": 0.007024136236572271,
+            "difference_in_patch": 0.22689902735054845,
+            "difference_elsewhere": 0.00013987959837391065
+          },
+          "outside": {
+            "candidate_overlap": 0.9841269841269841,
+            "candidate_matched_area": 126,
+            "difference_in_candidate": 0.0005568180132173503,
+            "difference_in_patch": 1.2443716143224381,
+            "difference_elsewhere": 0.004128927047967694
+          }
+        },
+        {
+          "frames_after_intervention": 120,
+          "control": {
+            "candidate_overlap": 0.924812030075188,
+            "candidate_matched_area": 132
+          },
+          "inside": {
+            "candidate_overlap": 0.924812030075188,
+            "candidate_matched_area": 132,
+            "difference_in_candidate": 0.0066410492427121295,
+            "difference_in_patch": 0.1867244815984752,
+            "difference_elsewhere": 0.00014829817337385395
+          },
+          "outside": {
+            "candidate_overlap": 0.924812030075188,
+            "candidate_matched_area": 132,
+            "difference_in_candidate": 0.0008420052924765005,
+            "difference_in_patch": 1.2136541128355032,
+            "difference_elsewhere": 0.00453480179034325
+          }
+        },
+        {
+          "frames_after_intervention": 140,
+          "control": {
+            "candidate_overlap": 0.917910447761194,
+            "candidate_matched_area": 133
+          },
+          "inside": {
+            "candidate_overlap": 0.917910447761194,
+            "candidate_matched_area": 133,
+            "difference_in_candidate": 0.006339935318177883,
+            "difference_in_patch": 0.15949898571263432,
+            "difference_elsewhere": 0.00015466788445941599
+          },
+          "outside": {
+            "candidate_overlap": 0.917910447761194,
+            "candidate_matched_area": 133,
+            "difference_in_candidate": 0.0011742029831591908,
+            "difference_in_patch": 1.186930566181487,
+            "difference_elsewhere": 0.004893683037962721
+          }
+        },
+        {
+          "frames_after_intervention": 160,
+          "control": {
+            "candidate_overlap": 0.8978102189781022,
+            "candidate_matched_area": 136
+          },
+          "inside": {
+            "candidate_overlap": 0.8978102189781022,
+            "candidate_matched_area": 136,
+            "difference_in_candidate": 0.006092440822172735,
+            "difference_in_patch": 0.13999771417774998,
+            "difference_elsewhere": 0.00015948249596478437
+          },
+          "outside": {
+            "candidate_overlap": 0.8978102189781022,
+            "candidate_matched_area": 136,
+            "difference_in_candidate": 0.0015457193575282803,
+            "difference_in_patch": 1.1632302303377848,
+            "difference_elsewhere": 0.005217300848567339
+          }
+        },
+        {
+          "frames_after_intervention": 180,
+          "control": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138
+          },
+          "inside": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.005881202926090976,
+            "difference_in_patch": 0.1253540964874409,
+            "difference_elsewhere": 0.00016327665610727668
+          },
+          "outside": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.0019495667802010268,
+            "difference_in_patch": 1.1419085040921375,
+            "difference_elsewhere": 0.005513366349267599
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138
+          },
+          "inside": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.005695242534470553,
+            "difference_in_patch": 0.11390576255018915,
+            "difference_elsewhere": 0.00016628922767478928
+          },
+          "outside": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.0023795328314499212,
+            "difference_in_patch": 1.122511218881424,
+            "difference_elsewhere": 0.005787273028758016
+          }
+        },
+        {
+          "frames_after_intervention": 220,
+          "control": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138
+          },
+          "inside": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.005527380774723561,
+            "difference_in_patch": 0.10464030377554634,
+            "difference_elsewhere": 0.0001686502129119572
+          },
+          "outside": {
+            "candidate_overlap": 0.8848920863309353,
+            "candidate_matched_area": 138,
+            "difference_in_candidate": 0.0028310628555127653,
+            "difference_in_patch": 1.1046999394987422,
+            "difference_elsewhere": 0.006043003496924859
+          }
+        },
+        {
+          "frames_after_intervention": 240,
+          "control": {
+            "candidate_overlap": 0.6595744680851063,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.6595744680851063,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.005372847149153168,
+            "difference_in_patch": 0.09691871405962438,
+            "difference_elsewhere": 0.0001705450336718466
+          },
+          "outside": {
+            "candidate_overlap": 0.6595744680851063,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.003300844569543942,
+            "difference_in_patch": 1.0882211035853517,
+            "difference_elsewhere": 0.006283480530793242
+          }
+        },
+        {
+          "frames_after_intervention": 260,
+          "control": {
+            "candidate_overlap": 0.6595744680851063,
+            "candidate_matched_area": 188
+          },
+          "inside": {
+            "candidate_overlap": 0.6595744680851063,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.005228540261449112,
+            "difference_in_patch": 0.09033473295602512,
+            "difference_elsewhere": 0.0001721365729251761
+          },
+          "outside": {
+            "candidate_overlap": 0.6595744680851063,
+            "candidate_matched_area": 188,
+            "difference_in_candidate": 0.0037862779763375744,
+            "difference_in_patch": 1.072881211920537,
+            "difference_elsewhere": 0.00651092254514774
+          }
+        },
+        {
+          "frames_after_intervention": 280,
+          "control": {
+            "candidate_overlap": 0.6326530612244898,
+            "candidate_matched_area": 196
+          },
+          "inside": {
+            "candidate_overlap": 0.6326530612244898,
+            "candidate_matched_area": 196,
+            "difference_in_candidate": 0.005092463857297388,
+            "difference_in_patch": 0.0846233362954707,
+            "difference_elsewhere": 0.0001735638027635153
+          },
+          "outside": {
+            "candidate_overlap": 0.6326530612244898,
+            "candidate_matched_area": 196,
+            "difference_in_candidate": 0.004285847433601483,
+            "difference_in_patch": 1.0585303344822803,
+            "difference_elsewhere": 0.00672700276419978
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.6326530612244898,
+            "candidate_matched_area": 196
+          },
+          "inside": {
+            "candidate_overlap": 0.6326530612244898,
+            "candidate_matched_area": 196,
+            "difference_in_candidate": 0.004963304862278143,
+            "difference_in_patch": 0.07960299105744051,
+            "difference_elsewhere": 0.0001748995596811177
+          },
+          "outside": {
+            "candidate_overlap": 0.6326530612244898,
+            "candidate_matched_area": 196,
+            "difference_in_candidate": 0.004797514791846278,
+            "difference_in_patch": 1.0450507436890362,
+            "difference_elsewhere": 0.006933050883236105
+          }
+        },
+        {
+          "frames_after_intervention": 320,
+          "control": {
+            "candidate_overlap": 0.4460431654676259,
+            "candidate_matched_area": 278
+          },
+          "inside": {
+            "candidate_overlap": 0.4460431654676259,
+            "candidate_matched_area": 278,
+            "difference_in_candidate": 0.004840062588086689,
+            "difference_in_patch": 0.07513206923195924,
+            "difference_elsewhere": 0.00017613692408053233
+          },
+          "outside": {
+            "candidate_overlap": 0.4460431654676259,
+            "candidate_matched_area": 278,
+            "difference_in_candidate": 0.005318928849026565,
+            "difference_in_patch": 1.0323484124344198,
+            "difference_elsewhere": 0.00713018553912781
+          }
+        },
+        {
+          "frames_after_intervention": 340,
+          "control": {
+            "candidate_overlap": 0.4444444444444444,
+            "candidate_matched_area": 279
+          },
+          "inside": {
+            "candidate_overlap": 0.4444444444444444,
+            "candidate_matched_area": 279,
+            "difference_in_candidate": 0.004721871454503938,
+            "difference_in_patch": 0.07109439628307392,
+            "difference_elsewhere": 0.00017724612350326815
+          },
+          "outside": {
+            "candidate_overlap": 0.4444444444444444,
+            "candidate_matched_area": 279,
+            "difference_in_candidate": 0.005847900742692165,
+            "difference_in_patch": 1.0203475864930067,
+            "difference_elsewhere": 0.007319274403756958
+          }
+        },
+        {
+          "frames_after_intervention": 360,
+          "control": {
+            "candidate_overlap": 0.35327635327635326,
+            "candidate_matched_area": 351
+          },
+          "inside": {
+            "candidate_overlap": 0.35327635327635326,
+            "candidate_matched_area": 351,
+            "difference_in_candidate": 0.0046079685332791,
+            "difference_in_patch": 0.06739940327548366,
+            "difference_elsewhere": 0.00017820855428966786
+          },
+          "outside": {
+            "candidate_overlap": 0.35327635327635326,
+            "candidate_matched_area": 351,
+            "difference_in_candidate": 0.006382302500190784,
+            "difference_in_patch": 1.008986249910919,
+            "difference_elsewhere": 0.007501041487686849
+          }
+        },
+        {
+          "frames_after_intervention": 380,
+          "control": {
+            "candidate_overlap": 0.35127478753541075,
+            "candidate_matched_area": 353
+          },
+          "inside": {
+            "candidate_overlap": 0.3502824858757062,
+            "candidate_matched_area": 354,
+            "difference_in_candidate": 0.004497703383317376,
+            "difference_in_patch": 0.0639780841965556,
+            "difference_elsewhere": 0.0001790207422041873
+          },
+          "outside": {
+            "candidate_overlap": 0.35127478753541075,
+            "candidate_matched_area": 353,
+            "difference_in_candidate": 0.006920231087572593,
+            "difference_in_patch": 0.9982080383538687,
+            "difference_elsewhere": 0.007676128827846402
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.3492957746478873,
+            "candidate_matched_area": 355
+          },
+          "inside": {
+            "candidate_overlap": 0.3492957746478873,
+            "candidate_matched_area": 355,
+            "difference_in_candidate": 0.004390587726684946,
+            "difference_in_patch": 0.060778345116712096,
+            "difference_elsewhere": 0.00017966904078283504
+          },
+          "outside": {
+            "candidate_overlap": 0.3492957746478873,
+            "candidate_matched_area": 355,
+            "difference_in_candidate": 0.007460058641330228,
+            "difference_in_patch": 0.9879620267595959,
+            "difference_elsewhere": 0.00784516751351674
+          }
+        }
+      ]
+    }
+  ]
+}

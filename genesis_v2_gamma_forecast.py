@@ -12,7 +12,7 @@ import numpy as np
 from src.genesis_grid.backend import to_cpu
 from src.genesis_v2_beta.objects import detect_relation_domains
 from src.genesis_v2_gamma import GammaParams, GammaState, step
-from src.genesis_v2_gamma.probes import best_overlap
+from src.genesis_v2_gamma.probes import best_overlap, translated_background_mask
 
 
 def boundary_permeability(state, mask: np.ndarray) -> float:
@@ -22,18 +22,6 @@ def boundary_permeability(state, mask: np.ndarray) -> float:
     values = [rx[right], ry[down]]
     values = [value for value in values if value.size]
     return float(np.mean(np.concatenate(values))) if values else 0.0
-
-
-def background_mask(mask: np.ndarray, occupied: np.ndarray) -> np.ndarray | None:
-    """Translate a candidate shape into the least occupied available location."""
-    height, width = mask.shape
-    shifts = [(height // 2, width // 2), (height // 2, width // 3), (height // 3, width // 2), (height // 3, 2 * width // 3), (2 * height // 3, width // 3), (height // 4, width // 2), (height // 2, width // 4)]
-    options = []
-    for shift_y, shift_x in shifts:
-        translated = np.roll(mask, (shift_y, shift_x), axis=(0, 1))
-        options.append((float(np.logical_and(translated, occupied).sum() / translated.sum()), translated))
-    overlap, selected = min(options, key=lambda option: option[0])
-    return selected if overlap <= 0.10 else None
 
 
 def run_one(args, seed: int, params: GammaParams) -> dict:
@@ -49,7 +37,7 @@ def run_one(args, seed: int, params: GammaParams) -> dict:
             step(future, params)
         future_domains = detect_relation_domains(future, args.cutoff, args.min_area)
         for rank, domain in enumerate(sorted(domains, key=lambda item: item.area, reverse=True)[:args.candidates_per_sample], start=1):
-            background = background_mask(domain.mask, occupied)
+            background = translated_background_mask(domain.mask, occupied)
             if background is None:
                 continue
             candidate_overlap, _ = best_overlap(domain.mask, future_domains)

@@ -54,12 +54,24 @@ The larger held-out dataset confirms that the present four attributes do not
 materially explain variation within that candidate class beyond size, cutoff,
 and area.
 
+Direct boundary intervention now shows that the candidate perimeter is an
+active constraint: weakening it reduces later identity in all ten matched
+seeds, while matched background interventions leave the candidate near
+control. A 1,000-frame follow-up finds partial boundary rebuilding but not
+return to control. Fixed-mask overlap becomes inadequate at that horizon
+because the unperturbed candidate itself changes location or form.
+
+Motion-aware tracking shows the key limit: candidates often remain traceable
+but coarsen into much larger domains. Gamma has causal bounded structure and
+continuity, but not stable bounded individuation.
+
 ## Next Gate
 
-Before adding any more dynamics, perform a causal boundary intervention:
-weaken or strengthen a selected candidate's perimeter relations and compare
-identity and recovery with the same intervention on an equal-sized background
-region. Then test whether candidate domains show both:
+Before adding any more dynamics, specify a minimal scale-selection or renewal
+hypothesis that can oppose coarsening. A pulsed or cyclic mechanism is
+admissible only with a defined role and a counterfactual: it must improve the
+bounded-area distribution and bounded-track survival under the same observer
+sweep. Then test whether candidate domains show both:
 
 1. a scale that is robust across a modest observer sweep; and
 2. a distinct response or recovery under a localized perturbation.
@@ -73,7 +85,15 @@ identifies a specific missing mechanism.
 - `findings/2026-10-11_v2_gamma_finite_size.md`
 - `findings/2026-10-11_v2_gamma_identity_forecast.md`
 - `findings/2026-10-11_v2_gamma_attribute_model.md`
+- `findings/2026-10-11_v2_gamma_boundary_causality.md`
+- `findings/2026-10-11_v2_gamma_recovery.md`
+- `findings/2026-10-11_v2_gamma_dynamic_continuity.md`
 - `results/v2_gamma_domains.json`
 - `results/v2_gamma_finite_size.json`
 - `results/v2_gamma_forecast.json`
 - `results/v2_gamma_attribute_model.json`
+- `results/v2_gamma_boundary_causality.json`
+- `results/v2_gamma_recovery.json`
+- `results/v2_gamma_dynamic_recovery_batch1.json`
+- `results/v2_gamma_dynamic_recovery_batch2.json`
+- `results/v2_gamma_dynamic_recovery_batch3.json`

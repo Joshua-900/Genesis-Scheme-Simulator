@@ -1,0 +1,165 @@
+{
+  "claim_boundary": "Regime screen only; no object claim.",
+  "conditions": [
+    {
+      "damping": 0,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 126,
+          "long": 41,
+          "compression": 0.06316263401620367,
+          "inhibitor": 0.32179062539339714
+        },
+        {
+          "seed": 2,
+          "persistent": 94,
+          "long": 31,
+          "compression": 0.06668776777891339,
+          "inhibitor": 0.3392651986349223
+        },
+        {
+          "seed": 3,
+          "persistent": 123,
+          "long": 41,
+          "compression": 0.06840433697539779,
+          "inhibitor": 0.3454322948682177
+        }
+      ],
+      "median": {
+        "persistent": 123.0,
+        "long": 41.0,
+        "compression": 0.06668776777891339,
+        "inhibitor": 0.3392651986349223
+      }
+    },
+    {
+      "damping": 0.25,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 123,
+          "long": 43,
+          "compression": 0.04091232664599123,
+          "inhibitor": 0.2046451598376213
+        },
+        {
+          "seed": 2,
+          "persistent": 85,
+          "long": 22,
+          "compression": 0.04275008485273857,
+          "inhibitor": 0.21378096360986926
+        },
+        {
+          "seed": 3,
+          "persistent": 116,
+          "long": 42,
+          "compression": 0.04972174645406188,
+          "inhibitor": 0.24890118014414012
+        }
+      ],
+      "median": {
+        "persistent": 116.0,
+        "long": 42.0,
+        "compression": 0.04275008485273857,
+        "inhibitor": 0.21378096360986926
+      }
+    },
+    {
+      "damping": 0.5,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 111,
+          "long": 41,
+          "compression": 0.03382184233169939,
+          "inhibitor": 0.16911356354675866
+        },
+        {
+          "seed": 2,
+          "persistent": 83,
+          "long": 21,
+          "compression": 0.036177546367706544,
+          "inhibitor": 0.18089265634680862
+        },
+        {
+          "seed": 3,
+          "persistent": 115,
+          "long": 41,
+          "compression": 0.040619436093682924,
+          "inhibitor": 0.20327638922817903
+        }
+      ],
+      "median": {
+        "persistent": 111.0,
+        "long": 41.0,
+        "compression": 0.036177546367706544,
+        "inhibitor": 0.18089265634680862
+      }
+    },
+    {
+      "damping": 1,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 109,
+          "long": 40,
+          "compression": 0.028245659526400888,
+          "inhibitor": 0.1412325845913473
+        },
+        {
+          "seed": 2,
+          "persistent": 87,
+          "long": 21,
+          "compression": 0.02857233905580608,
+          "inhibitor": 0.1428522376232064
+        },
+        {
+          "seed": 3,
+          "persistent": 120,
+          "long": 44,
+          "compression": 0.03133600553640755,
+          "inhibitor": 0.15675902025220056
+        }
+      ],
+      "median": {
+        "persistent": 109.0,
+        "long": 40.0,
+        "compression": 0.02857233905580608,
+        "inhibitor": 0.1428522376232064
+      }
+    },
+    {
+      "damping": 2,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 120,
+          "long": 40,
+          "compression": 0.020043631930612472,
+          "inhibitor": 0.1002158418750567
+        },
+        {
+          "seed": 2,
+          "persistent": 88,
+          "long": 23,
+          "compression": 0.02269142610428488,
+          "inhibitor": 0.11345401526647557
+        },
+        {
+          "seed": 3,
+          "persistent": 118,
+          "long": 42,
+          "compression": 0.022469824600941456,
+          "inhibitor": 0.112354668304595
+        }
+      ],
+      "median": {
+        "persistent": 118.0,
+        "long": 40.0,
+        "compression": 0.022469824600941456,
+        "inhibitor": 0.112354668304595
+      }
+    }
+  ]
+}

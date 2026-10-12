@@ -38,3 +38,21 @@ try:
     engine_registry.register(GenesisV2GammaEngine())
 except ImportError:
     pass
+
+try:
+    from src.genesis_v2_delta.adapter import GenesisV2DeltaEngine
+    engine_registry.register(GenesisV2DeltaEngine())
+except ImportError:
+    pass
+
+try:
+    from src.genesis_v2_epsilon.adapter import GenesisV2EpsilonEngine
+    engine_registry.register(GenesisV2EpsilonEngine())
+except ImportError:
+    pass
+
+try:
+    from src.genesis_v2_zeta.adapter import GenesisV2ZetaEngine
+    engine_registry.register(GenesisV2ZetaEngine())
+except ImportError:
+    pass

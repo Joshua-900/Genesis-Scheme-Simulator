@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This compares observer-defined candidate masks with equal-shape translated background masks. It tests predictive identity persistence, not autonomous causal closure or natural kinds.",
+  "config": {
+    "N": 64,
+    "warmup_frames": 1200,
+    "checkpoints": 5,
+    "sample_interval": 100,
+    "horizon_frames": 200,
+    "candidates_per_sample": 3,
+    "seeds": 5,
+    "seed_start": 1,
+    "cutoff": 0.75,
+    "min_area": 24,
+    "potential_to_actual": 0.05,
+    "relation_difference_gain": 0.55,
+    "boundary_rate": 0.18,
+    "boundary_decay": 0.04,
+    "params": {
+      "potential_transport": 0.1,
+      "potential_source_restore": 0.08,
+      "potential_turn": 0.24,
+      "availability_replenish": 0.1,
+      "availability_tension_gain": 0.28,
+      "actualization_depletion": 0.35,
+      "actual_alignment": 0.28,
+      "potential_to_actual": 0.05,
+      "relation_rate": 0.12,
+      "relation_baseline": 0.2,
+      "relation_difference_gain": 0.55,
+      "boundary_rate": 0.18,
+      "boundary_decay": 0.04,
+      "boundary_permeability_floor": 0.04,
+      "boundary_permeability_span": 0.82
+    }
+  },
+  "aggregate": {
+    "record_count": 22,
+    "median_candidate_overlap": 0.7286967418546366,
+    "median_background_overlap": 0.1559635722679201,
+    "median_identity_advantage": 0.5577647456069182,
+    "candidate_win_fraction": 1.0
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "records": [
+        {
+          "checkpoint": 0,
+          "rank": 1,
+          "area_fraction": 0.02197265625,
+          "coherence": 0.5938739511054053,
+          "boundary_contrast": 0.3888809098736946,
+          "boundary_permeability": 0.5205644209945404,
+          "future_identity_overlap": 0.5973154362416108,
+          "background_future_overlap": 0.18803418803418803,
+          "identity_advantage": 0.40928124820742273
+        },
+        {
+          "checkpoint": 0,
+          "rank": 2,
+          "area_fraction": 0.02197265625,
+          "coherence": 0.8553789254265871,
+          "boundary_contrast": 0.7374429331617318,
+          "boundary_permeability": 0.36838247988457545,
+          "future_identity_overlap": 0.8541666666666666,
+          "background_future_overlap": 0.3238095238095238,
+          "identity_advantage": 0.5303571428571427
+        },
+        {
+          "checkpoint": 0,
+          "rank": 3,
+          "area_fraction": 0.021240234375,
+          "coherence": 0.8620954249385604,
+          "boundary_contrast": 0.29571823545572584,
+          "boundary_permeability": 0.3868849276137465,
+          "future_identity_overlap": 0.564935064935065,
+          "background_future_overlap": 0.17142857142857143,
+          "identity_advantage": 0.3935064935064935
+        },
+        {
+          "checkpoint": 1,
+          "rank": 1,
+          "area_fraction": 0.034912109375,
+          "coherence": 0.4956504721960248,
+          "boundary_contrast": 0.47281114396932983,
+          "boundary_permeability": 0.49237858994275613,
+          "future_identity_overlap": 0.7526315789473684,
+          "background_future_overlap": 0.1554054054054054,
+          "identity_advantage": 0.5972261735419631
+        },
+        {
+          "checkpoint": 1,
+          "rank": 3,
+          "area_fraction": 0.022705078125,
+          "coherence": 0.8576823268401272,
+          "boundary_contrast": 0.28465790372055677,
+          "boundary_permeability": 0.3821549434804636,
+          "future_identity_overlap": 0.6038961038961039,
+          "background_future_overlap": 0.1565217391304348,
+          "identity_advantage": 0.44737436476566916
+        },
+        {
+          "checkpoint": 2,
+          "rank": 2,
+          "area_fraction": 0.0361328125,
+          "coherence": 0.4837933476499544,
+          "boundary_contrast": 0.46826841202208175,
+          "boundary_permeability": 0.5039016852089834,
+          "future_identity_overlap": 0.7047619047619048,
+          "background_future_overlap": 0.3048780487804878,
+          "identity_advantage": 0.399883855981417
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "records": [
+        {
+          "checkpoint": 0,
+          "rank": 2,
+          "area_fraction": 0.025146484375,
+          "coherence": 0.7026442628724017,
+          "boundary_contrast": 0.6060662266603702,
+          "boundary_permeability": 0.39190337450019225,
+          "future_identity_overlap": 0.9196428571428571,
+          "background_future_overlap": 0.031007751937984496,
+          "identity_advantage": 0.8886351052048727
+        },
+        {
+          "checkpoint": 2,
+          "rank": 3,
+          "area_fraction": 0.0302734375,
+          "coherence": 0.5302394222041076,
+          "boundary_contrast": 0.3037684063104904,
+          "boundary_permeability": 0.4923537067463158,
+          "future_identity_overlap": 0.8857142857142857,
+          "background_future_overlap": 0.09558823529411764,
+          "identity_advantage": 0.790126050420168
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "records": [
+        {
+          "checkpoint": 0,
+          "rank": 1,
+          "area_fraction": 0.021728515625,
+          "coherence": 0.9653013179170223,
+          "boundary_contrast": 0.8239879922362744,
+          "boundary_permeability": 0.3400291382715848,
+          "future_identity_overlap": 0.5029585798816568,
+          "background_future_overlap": 0.2978723404255319,
+          "identity_advantage": 0.20508623945612492
+        },
+        {
+          "checkpoint": 0,
+          "rank": 2,
+          "area_fraction": 0.021240234375,
+          "coherence": 0.9346851709281491,
+          "boundary_contrast": 0.6801732022601038,
+          "boundary_permeability": 0.40955184117975935,
+          "future_identity_overlap": 0.9021739130434783,
+          "background_future_overlap": 0.06707317073170732,
+          "identity_advantage": 0.8351007423117709
+        },
+        {
+          "checkpoint": 1,
+          "rank": 3,
+          "area_fraction": 0.021728515625,
+          "coherence": 0.9384169109970394,
+          "boundary_contrast": 0.7045896781141117,
+          "boundary_permeability": 0.40348182372795854,
+          "future_identity_overlap": 0.8947368421052632,
+          "background_future_overlap": 0.3225806451612903,
+          "identity_advantage": 0.5721561969439728
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "records": [
+        {
+          "checkpoint": 0,
+          "rank": 1,
+          "area_fraction": 0.01611328125,
+          "coherence": 0.9266451802234024,
+          "boundary_contrast": 0.2227735783582451,
+          "boundary_permeability": 0.535122344340462,
+          "future_identity_overlap": 0.55,
+          "background_future_overlap": 0.17391304347826086,
+          "identity_advantage": 0.3760869565217392
+        },
+        {
+          "checkpoint": 0,
+          "rank": 2,
+          "area_fraction": 0.014892578125,
+          "coherence": 0.8320707972311093,
+          "boundary_contrast": 0.5860763338900199,
+          "boundary_permeability": 0.4339392611619329,
+          "future_identity_overlap": 0.48031496062992124,
+          "background_future_overlap": 0.0,
+          "identity_advantage": 0.48031496062992124
+        },
+        {
+          "checkpoint": 0,
+          "rank": 3,
+          "area_fraction": 0.013916015625,
+          "coherence": 0.9628655404360991,
+          "boundary_contrast": 0.5123565455766382,
+          "boundary_permeability": 0.41494172004001123,
+          "future_identity_overlap": 0.7714285714285715,
+          "background_future_overlap": 0.17391304347826086,
+          "identity_advantage": 0.5975155279503106
+        },
+        {
+          "checkpoint": 1,
+          "rank": 1,
+          "area_fraction": 0.0205078125,
+          "coherence": 0.927818352501777,
+          "boundary_contrast": 0.48816230434713725,
+          "boundary_permeability": 0.4225242795384441,
+          "future_identity_overlap": 0.5616438356164384,
+          "background_future_overlap": 0.013043478260869565,
+          "identity_advantage": 0.5486003573555688
+        },
+        {
+          "checkpoint": 1,
+          "rank": 2,
+          "area_fraction": 0.017578125,
+          "coherence": 0.9720406466191504,
+          "boundary_contrast": 0.7158199551357485,
+          "boundary_permeability": 0.35431178114599576,
+          "future_identity_overlap": 0.8205128205128205,
+          "background_future_overlap": 0.008333333333333333,
+          "identity_advantage": 0.8121794871794872
+        },
+        {
+          "checkpoint": 1,
+          "rank": 3,
+          "area_fraction": 0.017578125,
+          "coherence": 0.7530990934462215,
+          "boundary_contrast": 0.4814628241973931,
+          "boundary_permeability": 0.48951648049599733,
+          "future_identity_overlap": 0.5669291338582677,
+          "background_future_overlap": 0.0,
+          "identity_advantage": 0.5669291338582677
+        },
+        {
+          "checkpoint": 2,
+          "rank": 1,
+          "area_fraction": 0.032958984375,
+          "coherence": 0.6346217584397925,
+          "boundary_contrast": 0.9276282735646645,
+          "boundary_permeability": 0.3741534897373331,
+          "future_identity_overlap": 0.7988165680473372,
+          "background_future_overlap": 0.2097902097902098,
+          "identity_advantage": 0.5890263582571275
+        },
+        {
+          "checkpoint": 2,
+          "rank": 2,
+          "area_fraction": 0.031005859375,
+          "coherence": 0.8333187812116079,
+          "boundary_contrast": 0.42005933298984677,
+          "boundary_permeability": 0.4992319790459698,
+          "future_identity_overlap": 0.9545454545454546,
+          "background_future_overlap": 0.023809523809523808,
+          "identity_advantage": 0.9307359307359307
+        },
+        {
+          "checkpoint": 3,
+          "rank": 2,
+          "area_fraction": 0.03515625,
+          "coherence": 0.6682994023464482,
+          "boundary_contrast": 0.9197991353181578,
+          "boundary_permeability": 0.3821535956867506,
+          "future_identity_overlap": 0.8470588235294118,
+          "background_future_overlap": 0.20710059171597633,
+          "identity_advantage": 0.6399582318134354
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "records": [
+        {
+          "checkpoint": 0,
+          "rank": 3,
+          "area_fraction": 0.017333984375,
+          "coherence": 0.9750947761532066,
+          "boundary_contrast": 0.26901449837298297,
+          "boundary_permeability": 0.5488400397010058,
+          "future_identity_overlap": 0.26394052044609667,
+          "background_future_overlap": 0.12790697674418605,
+          "identity_advantage": 0.13603354370191062
+        },
+        {
+          "checkpoint": 1,
+          "rank": 1,
+          "area_fraction": 0.035400390625,
+          "coherence": 0.9084132366983506,
+          "boundary_contrast": 0.7324327430827724,
+          "boundary_permeability": 0.4133515397206053,
+          "future_identity_overlap": 0.3908355795148248,
+          "background_future_overlap": 0.1554054054054054,
+          "identity_advantage": 0.23543017410941938
+        }
+      ]
+    }
+  ]
+}

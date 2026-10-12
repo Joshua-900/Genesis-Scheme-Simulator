@@ -1,0 +1,1419 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This measures recovery after a direct candidate-boundary weakening against control and matched-background weakening. It tests model-level restoration, not autonomous self-maintenance.",
+  "config": {
+    "N": 64,
+    "warmup_frames": 1200,
+    "recovery_frames": 1000,
+    "seeds": 6,
+    "seed_start": 1,
+    "sample_interval": 100,
+    "cutoff": 0.75,
+    "min_area": 24,
+    "strength": 0.85,
+    "max_background_overlap": 0.25,
+    "potential_to_actual": 0.05,
+    "relation_difference_gain": 0.55,
+    "boundary_rate": 0.18,
+    "boundary_decay": 0.04,
+    "params": {
+      "potential_transport": 0.1,
+      "potential_source_restore": 0.08,
+      "potential_turn": 0.24,
+      "availability_replenish": 0.1,
+      "availability_tension_gain": 0.28,
+      "actualization_depletion": 0.35,
+      "actual_alignment": 0.28,
+      "potential_to_actual": 0.05,
+      "relation_rate": 0.12,
+      "relation_baseline": 0.2,
+      "relation_difference_gain": 0.55,
+      "boundary_rate": 0.18,
+      "boundary_decay": 0.04,
+      "boundary_permeability_floor": 0.04,
+      "boundary_permeability_span": 0.82
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "status": "measured",
+      "candidate": {
+        "area": 90,
+        "initial_perimeter_boundary": 0.2703691021949323
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 90,
+            "candidate_perimeter_boundary": 0.2703691021949323
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.6081081081081081,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.040555365329239854,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 90,
+            "candidate_perimeter_boundary": 0.2703691021949323,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.5958904109589042,
+            "matched_area": 143,
+            "candidate_perimeter_boundary": 0.25671366757664044
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.514792899408284,
+            "matched_area": 166,
+            "candidate_perimeter_boundary": 0.06762674908383105,
+            "candidate_state_difference": 0.0367173453921192
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5958904109589042,
+            "matched_area": 143,
+            "candidate_perimeter_boundary": 0.25671366757664,
+            "candidate_state_difference": 2.7944390628636345e-14
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.24433564809685357
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.52046783625731,
+            "matched_area": 170,
+            "candidate_perimeter_boundary": 0.08576087987352422,
+            "candidate_state_difference": 0.04759284109251844
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5973154362416108,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.24433564809521247,
+            "candidate_state_difference": 5.380890752261348e-11
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.46596858638743455,
+            "matched_area": 190,
+            "candidate_perimeter_boundary": 0.23308318111679477
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4238095238095238,
+            "matched_area": 209,
+            "candidate_perimeter_boundary": 0.09980697732000339,
+            "candidate_state_difference": 0.04985867661194007
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.46596858638743455,
+            "matched_area": 190,
+            "candidate_perimeter_boundary": 0.23308318103197295,
+            "candidate_state_difference": 2.596931077414784e-09
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.4218009478672986,
+            "matched_area": 210,
+            "candidate_perimeter_boundary": 0.2226625906956449
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.40454545454545454,
+            "matched_area": 219,
+            "candidate_perimeter_boundary": 0.10820467156939816,
+            "candidate_state_difference": 0.04799832791257326
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.4218009478672986,
+            "matched_area": 210,
+            "candidate_perimeter_boundary": 0.22266258971973923,
+            "candidate_state_difference": 2.9354959981856307e-08
+          }
+        },
+        {
+          "frames_after_intervention": 500,
+          "control": {
+            "candidate_overlap": 0.5028248587570622,
+            "matched_area": 176,
+            "candidate_perimeter_boundary": 0.21302147493313248
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3617886178861789,
+            "matched_area": 245,
+            "candidate_perimeter_boundary": 0.11499030008208942,
+            "candidate_state_difference": 0.04394759203075251
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5028248587570622,
+            "matched_area": 176,
+            "candidate_perimeter_boundary": 0.2130214692914224,
+            "candidate_state_difference": 1.7527656670536055e-07
+          }
+        },
+        {
+          "frames_after_intervention": 600,
+          "control": {
+            "candidate_overlap": 0.48633879781420764,
+            "matched_area": 182,
+            "candidate_perimeter_boundary": 0.20422769486033635
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3436293436293436,
+            "matched_area": 258,
+            "candidate_perimeter_boundary": 0.1194238548203168,
+            "candidate_state_difference": 0.039084038380572346
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.48633879781420764,
+            "matched_area": 182,
+            "candidate_perimeter_boundary": 0.20422767236298464,
+            "candidate_state_difference": 7.947843421760719e-07
+          }
+        },
+        {
+          "frames_after_intervention": 700,
+          "control": {
+            "candidate_overlap": 0.49171270718232046,
+            "matched_area": 180,
+            "candidate_perimeter_boundary": 0.19628669971754115
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.37037037037037035,
+            "matched_area": 243,
+            "candidate_perimeter_boundary": 0.12216797923799305,
+            "candidate_state_difference": 0.03449937126312231
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.49171270718232046,
+            "matched_area": 180,
+            "candidate_perimeter_boundary": 0.1962866343579084,
+            "candidate_state_difference": 3.1644367186029305e-06
+          }
+        },
+        {
+          "frames_after_intervention": 800,
+          "control": {
+            "candidate_overlap": 0.4918032786885246,
+            "matched_area": 183,
+            "candidate_perimeter_boundary": 0.1891393707682159
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3557312252964427,
+            "matched_area": 253,
+            "candidate_perimeter_boundary": 0.12411553703144816,
+            "candidate_state_difference": 0.03041028956433498
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.4918032786885246,
+            "matched_area": 183,
+            "candidate_perimeter_boundary": 0.18913921632311104,
+            "candidate_state_difference": 9.720319227532986e-06
+          }
+        },
+        {
+          "frames_after_intervention": 900,
+          "control": {
+            "candidate_overlap": 0.47619047619047616,
+            "matched_area": 189,
+            "candidate_perimeter_boundary": 0.1827049986519223
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3488372093023256,
+            "matched_area": 258,
+            "candidate_perimeter_boundary": 0.12541387650229674,
+            "candidate_state_difference": 0.026939966384466402
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.47619047619047616,
+            "matched_area": 189,
+            "candidate_perimeter_boundary": 0.1827046845818877,
+            "candidate_state_difference": 2.3233435658159985e-05
+          }
+        },
+        {
+          "frames_after_intervention": 1000,
+          "control": {
+            "candidate_overlap": 0.1727447216890595,
+            "matched_area": 521,
+            "candidate_perimeter_boundary": 0.17692098758190122
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.140625,
+            "matched_area": 640,
+            "candidate_perimeter_boundary": 0.1262069543395363,
+            "candidate_state_difference": 0.024792337174803118
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.13761467889908258,
+            "matched_area": 654,
+            "candidate_perimeter_boundary": 0.1769204023497617,
+            "candidate_state_difference": 4.399150955543367e-05
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "status": "measured",
+      "candidate": {
+        "area": 148,
+        "initial_perimeter_boundary": 0.30554991231926354
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.30554991231926354
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.43529411764705883,
+            "matched_area": 340,
+            "candidate_perimeter_boundary": 0.04583248684788955,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.30554991231926354,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.954248366013072,
+            "matched_area": 151,
+            "candidate_perimeter_boundary": 0.2907124411411707
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.44785276073619634,
+            "matched_area": 324,
+            "candidate_perimeter_boundary": 0.09148112746536684,
+            "candidate_state_difference": 0.018054985130953282
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.954248366013072,
+            "matched_area": 151,
+            "candidate_perimeter_boundary": 0.29071277276863416,
+            "candidate_state_difference": 4.1700737573619995e-06
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "matched_area": 188,
+            "candidate_perimeter_boundary": 0.2776875577602545
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4899328859060403,
+            "matched_area": 296,
+            "candidate_perimeter_boundary": 0.12489499391106701,
+            "candidate_state_difference": 0.02076986522445086
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.7684210526315789,
+            "matched_area": 188,
+            "candidate_perimeter_boundary": 0.2776930647582814,
+            "candidate_state_difference": 4.358107846385903e-05
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.7643979057591623,
+            "matched_area": 189,
+            "candidate_perimeter_boundary": 0.2662092754604809
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4866666666666667,
+            "matched_area": 298,
+            "candidate_perimeter_boundary": 0.143262356856714,
+            "candidate_state_difference": 0.01977591787574335
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.7643979057591623,
+            "matched_area": 189,
+            "candidate_perimeter_boundary": 0.26623196912994146,
+            "candidate_state_difference": 0.00014431995107736824
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.7053140096618358,
+            "matched_area": 205,
+            "candidate_perimeter_boundary": 0.25604607052702266
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.44785276073619634,
+            "matched_area": 324,
+            "candidate_perimeter_boundary": 0.15561980515351603,
+            "candidate_state_difference": 0.019354075569807946
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.7053140096618358,
+            "matched_area": 205,
+            "candidate_perimeter_boundary": 0.2561013088100629,
+            "candidate_state_difference": 0.0002892960756330943
+          }
+        },
+        {
+          "frames_after_intervention": 500,
+          "control": {
+            "candidate_overlap": 0.46794871794871795,
+            "matched_area": 310,
+            "candidate_perimeter_boundary": 0.24720154779765605
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3060796645702306,
+            "matched_area": 475,
+            "candidate_perimeter_boundary": 0.1654052441378484,
+            "candidate_state_difference": 0.01929001864406498
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.46794871794871795,
+            "matched_area": 310,
+            "candidate_perimeter_boundary": 0.24730381927900597,
+            "candidate_state_difference": 0.0004474944737304319
+          }
+        },
+        {
+          "frames_after_intervention": 600,
+          "control": {
+            "candidate_overlap": 0.32229580573951433,
+            "matched_area": 451,
+            "candidate_perimeter_boundary": 0.23919549965995585
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.31808278867102396,
+            "matched_area": 457,
+            "candidate_perimeter_boundary": 0.1724696757148226,
+            "candidate_state_difference": 0.01925790507215382
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.2879684418145957,
+            "matched_area": 505,
+            "candidate_perimeter_boundary": 0.2393046101613241,
+            "candidate_state_difference": 0.0006219874125670183
+          }
+        },
+        {
+          "frames_after_intervention": 700,
+          "control": {
+            "candidate_overlap": 0.2896825396825397,
+            "matched_area": 502,
+            "candidate_perimeter_boundary": 0.2315197195857762
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.2857142857142857,
+            "matched_area": 509,
+            "candidate_perimeter_boundary": 0.1771499694140258,
+            "candidate_state_difference": 0.01975363955946343
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.28185328185328185,
+            "matched_area": 516,
+            "candidate_perimeter_boundary": 0.2316433573804917,
+            "candidate_state_difference": 0.0008085713674330097
+          }
+        },
+        {
+          "frames_after_intervention": 800,
+          "control": {
+            "candidate_overlap": 0.13657623947614594,
+            "matched_area": 1067,
+            "candidate_perimeter_boundary": 0.22451270532947865
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.13581395348837208,
+            "matched_area": 1073,
+            "candidate_perimeter_boundary": 0.17950420112607152,
+            "candidate_state_difference": 0.020685178061114553
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.13333333333333333,
+            "matched_area": 1093,
+            "candidate_perimeter_boundary": 0.22461779656939698,
+            "candidate_state_difference": 0.0010745751766036663
+          }
+        },
+        {
+          "frames_after_intervention": 900,
+          "control": {
+            "candidate_overlap": 0.12096106048053024,
+            "matched_area": 1205,
+            "candidate_perimeter_boundary": 0.21797658965689834
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.12076095947063689,
+            "matched_area": 1207,
+            "candidate_perimeter_boundary": 0.18043232065698522,
+            "candidate_state_difference": 0.022214399008161922
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.12056151940545004,
+            "matched_area": 1209,
+            "candidate_perimeter_boundary": 0.21802553133489697,
+            "candidate_state_difference": 0.0014599680700480668
+          }
+        },
+        {
+          "frames_after_intervention": 1000,
+          "control": {
+            "candidate_overlap": 0.07491021036428938,
+            "matched_area": 1947,
+            "candidate_perimeter_boundary": 0.21183090935731808
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.07483341875961046,
+            "matched_area": 1949,
+            "candidate_perimeter_boundary": 0.1805209843859401,
+            "candidate_state_difference": 0.02443902435726796
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.0743002544529262,
+            "matched_area": 1963,
+            "candidate_perimeter_boundary": 0.21176473076724148,
+            "candidate_state_difference": 0.0019247302780224266
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "status": "measured",
+      "candidate": {
+        "area": 89,
+        "initial_perimeter_boundary": 0.40871925923318414
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 89,
+            "candidate_perimeter_boundary": 0.40871925923318414
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.5527950310559007,
+            "matched_area": 161,
+            "candidate_perimeter_boundary": 0.061307888884977624,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 89,
+            "candidate_perimeter_boundary": 0.40871925923318414,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.6746031746031746,
+            "matched_area": 122,
+            "candidate_perimeter_boundary": 0.39214607507995597
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.6197183098591549,
+            "matched_area": 141,
+            "candidate_perimeter_boundary": 0.1183493525122081,
+            "candidate_state_difference": 0.08762400834201506
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.6746031746031746,
+            "matched_area": 122,
+            "candidate_perimeter_boundary": 0.3921460750799563,
+            "candidate_state_difference": 2.4075622893556768e-16
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.5029585798816568,
+            "matched_area": 165,
+            "candidate_perimeter_boundary": 0.3759798471420658
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4320388349514563,
+            "matched_area": 206,
+            "candidate_perimeter_boundary": 0.15086755672060656,
+            "candidate_state_difference": 0.11813616483448444
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5029585798816568,
+            "matched_area": 165,
+            "candidate_perimeter_boundary": 0.37597984714169413,
+            "candidate_state_difference": 8.123158824742077e-13
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.4835164835164835,
+            "matched_area": 181,
+            "candidate_perimeter_boundary": 0.3599053517840009
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.41784037558685444,
+            "matched_area": 213,
+            "candidate_perimeter_boundary": 0.1739149262593515,
+            "candidate_state_difference": 0.12816415691665242
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.4835164835164835,
+            "matched_area": 181,
+            "candidate_perimeter_boundary": 0.35990535172875676,
+            "candidate_state_difference": 1.5621054091326294e-10
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.4782608695652174,
+            "matched_area": 183,
+            "candidate_perimeter_boundary": 0.343998994327205
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4063926940639269,
+            "matched_area": 219,
+            "candidate_perimeter_boundary": 0.18695864887513927,
+            "candidate_state_difference": 0.13197802301986006
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.4782608695652174,
+            "matched_area": 183,
+            "candidate_perimeter_boundary": 0.3439989934953235,
+            "candidate_state_difference": 3.8325610319563406e-09
+          }
+        },
+        {
+          "frames_after_intervention": 500,
+          "control": {
+            "candidate_overlap": 0.49444444444444446,
+            "matched_area": 180,
+            "candidate_perimeter_boundary": 0.32926531266343545
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.40825688073394495,
+            "matched_area": 218,
+            "candidate_perimeter_boundary": 0.19189067517776243,
+            "candidate_state_difference": 0.1361202761715855
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.49444444444444446,
+            "matched_area": 180,
+            "candidate_perimeter_boundary": 0.3292653079794053,
+            "candidate_state_difference": 3.383843449600486e-08
+          }
+        },
+        {
+          "frames_after_intervention": 600,
+          "control": {
+            "candidate_overlap": 0.11633986928104575,
+            "matched_area": 765,
+            "candidate_perimeter_boundary": 0.3136746567708968
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.11125,
+            "matched_area": 800,
+            "candidate_perimeter_boundary": 0.19231014345233713,
+            "candidate_state_difference": 0.14032079728539132
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.11633986928104575,
+            "matched_area": 765,
+            "candidate_perimeter_boundary": 0.3136746407006833,
+            "candidate_state_difference": 1.6377159125886004e-07
+          }
+        },
+        {
+          "frames_after_intervention": 700,
+          "control": {
+            "candidate_overlap": 0.11180904522613065,
+            "matched_area": 796,
+            "candidate_perimeter_boundary": 0.2968725502355235
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.10722891566265061,
+            "matched_area": 830,
+            "candidate_perimeter_boundary": 0.1879453088542625,
+            "candidate_state_difference": 0.14612414038164886
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.11166875784190715,
+            "matched_area": 797,
+            "candidate_perimeter_boundary": 0.29687250808295024,
+            "candidate_state_difference": 5.409272367813961e-07
+          }
+        },
+        {
+          "frames_after_intervention": 800,
+          "control": {
+            "candidate_overlap": 0.08460076045627377,
+            "matched_area": 1052,
+            "candidate_perimeter_boundary": 0.2813993250252457
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.08054298642533937,
+            "matched_area": 1105,
+            "candidate_perimeter_boundary": 0.18293008914070716,
+            "candidate_state_difference": 0.1549860250440728
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.08460076045627377,
+            "matched_area": 1052,
+            "candidate_perimeter_boundary": 0.2813992349190451,
+            "candidate_state_difference": 1.3863652796542827e-06
+          }
+        },
+        {
+          "frames_after_intervention": 900,
+          "control": {
+            "candidate_overlap": 0.0639367816091954,
+            "matched_area": 1392,
+            "candidate_perimeter_boundary": 0.2677326355828128
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.05832241153342071,
+            "matched_area": 1526,
+            "candidate_perimeter_boundary": 0.17809942474660825,
+            "candidate_state_difference": 0.16502900021252856
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.0639367816091954,
+            "matched_area": 1392,
+            "candidate_perimeter_boundary": 0.2677324697632489,
+            "candidate_state_difference": 2.974850936240791e-06
+          }
+        },
+        {
+          "frames_after_intervention": 1000,
+          "control": {
+            "candidate_overlap": 0.06064782908339077,
+            "matched_area": 1450,
+            "candidate_perimeter_boundary": 0.255862441981575
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.055834378920953574,
+            "matched_area": 1594,
+            "candidate_perimeter_boundary": 0.17365302083264708,
+            "candidate_state_difference": 0.17546714661495638
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.06064782908339077,
+            "matched_area": 1450,
+            "candidate_perimeter_boundary": 0.2558621724297852,
+            "candidate_state_difference": 5.601169776091023e-06
+          }
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "status": "measured",
+      "candidate": {
+        "area": 66,
+        "initial_perimeter_boundary": 0.29577771280757253
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 66,
+            "candidate_perimeter_boundary": 0.29577771280757253
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4429530201342282,
+            "matched_area": 149,
+            "candidate_perimeter_boundary": 0.04436665692113588,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.9428571428571428,
+            "matched_area": 70,
+            "candidate_perimeter_boundary": 0.29577771280757253,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.9428571428571428,
+            "matched_area": 70,
+            "candidate_perimeter_boundary": 0.2743019597938621
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4074074074074074,
+            "matched_area": 162,
+            "candidate_perimeter_boundary": 0.07224420223101616,
+            "candidate_state_difference": 0.01760931272109294
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.8918918918918919,
+            "matched_area": 74,
+            "candidate_perimeter_boundary": 0.27433481521126674,
+            "candidate_state_difference": 0.0005626965229687989
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.55,
+            "matched_area": 120,
+            "candidate_perimeter_boundary": 0.2562787969382897
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3567567567567568,
+            "matched_area": 185,
+            "candidate_perimeter_boundary": 0.09457830307922571,
+            "candidate_state_difference": 0.019995564274843888
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.532258064516129,
+            "matched_area": 124,
+            "candidate_perimeter_boundary": 0.256224245642982,
+            "candidate_state_difference": 0.003554865231909805
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.49624060150375937,
+            "matched_area": 133,
+            "candidate_perimeter_boundary": 0.24168533995933014
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3548387096774194,
+            "matched_area": 186,
+            "candidate_perimeter_boundary": 0.10930948702327851,
+            "candidate_state_difference": 0.019998149994848467
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.48175182481751827,
+            "matched_area": 137,
+            "candidate_perimeter_boundary": 0.24145768996958614,
+            "candidate_state_difference": 0.007346779936577971
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.48175182481751827,
+            "matched_area": 137,
+            "candidate_perimeter_boundary": 0.23010499389108954
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3548387096774194,
+            "matched_area": 186,
+            "candidate_perimeter_boundary": 0.1205387324134974,
+            "candidate_state_difference": 0.01948978462262878
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.4714285714285714,
+            "matched_area": 140,
+            "candidate_perimeter_boundary": 0.22969343630382658,
+            "candidate_state_difference": 0.010314231298260609
+          }
+        },
+        {
+          "frames_after_intervention": 500,
+          "control": {
+            "candidate_overlap": 0.4782608695652174,
+            "matched_area": 138,
+            "candidate_perimeter_boundary": 0.22124969168230668
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.27615062761506276,
+            "matched_area": 239,
+            "candidate_perimeter_boundary": 0.13034519449372717,
+            "candidate_state_difference": 0.018767337491144946
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.46808510638297873,
+            "matched_area": 141,
+            "candidate_perimeter_boundary": 0.22067343329364503,
+            "candidate_state_difference": 0.012245750632618707
+          }
+        },
+        {
+          "frames_after_intervention": 600,
+          "control": {
+            "candidate_overlap": 0.39520958083832336,
+            "matched_area": 167,
+            "candidate_perimeter_boundary": 0.2145301723621594
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.275,
+            "matched_area": 240,
+            "candidate_perimeter_boundary": 0.13932413611897548,
+            "candidate_state_difference": 0.018297980257099365
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.38823529411764707,
+            "matched_area": 170,
+            "candidate_perimeter_boundary": 0.2138157888448888,
+            "candidate_state_difference": 0.013315394104095463
+          }
+        },
+        {
+          "frames_after_intervention": 700,
+          "control": {
+            "candidate_overlap": 0.26104417670682734,
+            "matched_area": 248,
+            "candidate_perimeter_boundary": 0.20941309789319232
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.23157894736842105,
+            "matched_area": 285,
+            "candidate_perimeter_boundary": 0.14801203863724638,
+            "candidate_state_difference": 0.018015810026443965
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.25793650793650796,
+            "matched_area": 251,
+            "candidate_perimeter_boundary": 0.20858802949680616,
+            "candidate_state_difference": 0.013745374914295333
+          }
+        },
+        {
+          "frames_after_intervention": 800,
+          "control": {
+            "candidate_overlap": 0.22807017543859648,
+            "matched_area": 284,
+            "candidate_perimeter_boundary": 0.20661074235883692
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.19879518072289157,
+            "matched_area": 332,
+            "candidate_perimeter_boundary": 0.1567880903988378,
+            "candidate_state_difference": 0.017782460458433322
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.22569444444444445,
+            "matched_area": 287,
+            "candidate_perimeter_boundary": 0.20570249099735888,
+            "candidate_state_difference": 0.013724328951526497
+          }
+        },
+        {
+          "frames_after_intervention": 900,
+          "control": {
+            "candidate_overlap": 0.1111111111111111,
+            "matched_area": 594,
+            "candidate_perimeter_boundary": 0.20554120953575922
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.10410094637223975,
+            "matched_area": 634,
+            "candidate_perimeter_boundary": 0.16398174148190295,
+            "candidate_state_difference": 0.017436092657903215
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.11055276381909548,
+            "matched_area": 597,
+            "candidate_perimeter_boundary": 0.20457914300608768,
+            "candidate_state_difference": 0.013392805131163255
+          }
+        },
+        {
+          "frames_after_intervention": 1000,
+          "control": {
+            "candidate_overlap": 0.08638743455497382,
+            "matched_area": 764,
+            "candidate_perimeter_boundary": 0.204823213868758
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.08627450980392157,
+            "matched_area": 765,
+            "candidate_perimeter_boundary": 0.1710127118534039,
+            "candidate_state_difference": 0.016616015661642433
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.08604954367666232,
+            "matched_area": 767,
+            "candidate_perimeter_boundary": 0.20383507470575546,
+            "candidate_state_difference": 0.012798452745908276
+          }
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "status": "measured",
+      "candidate": {
+        "area": 124,
+        "initial_perimeter_boundary": 0.31376940607591736
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 124,
+            "candidate_perimeter_boundary": 0.31376940607591736
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.6595744680851063,
+            "matched_area": 188,
+            "candidate_perimeter_boundary": 0.04706541091138762,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 124,
+            "candidate_perimeter_boundary": 0.31376940607591736,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.9841269841269841,
+            "matched_area": 126,
+            "candidate_perimeter_boundary": 0.2932331379322121
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.6492146596858639,
+            "matched_area": 191,
+            "candidate_perimeter_boundary": 0.07424371440952231,
+            "candidate_state_difference": 0.03826220049064411
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.9841269841269841,
+            "matched_area": 126,
+            "candidate_perimeter_boundary": 0.2932331379322121,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.8848920863309353,
+            "matched_area": 138,
+            "candidate_perimeter_boundary": 0.2728591304854866
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.754601226993865,
+            "matched_area": 162,
+            "candidate_perimeter_boundary": 0.08799967544300423,
+            "candidate_state_difference": 0.044653186118763254
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.8848920863309353,
+            "matched_area": 138,
+            "candidate_perimeter_boundary": 0.2728591304854866,
+            "candidate_state_difference": 1.2534776084477573e-17
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.6326530612244898,
+            "matched_area": 196,
+            "candidate_perimeter_boundary": 0.2535304181528692
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.5210084033613446,
+            "matched_area": 238,
+            "candidate_perimeter_boundary": 0.09714596280202582,
+            "candidate_state_difference": 0.04363682385364275
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.6326530612244898,
+            "matched_area": 196,
+            "candidate_perimeter_boundary": 0.25353041815287153,
+            "candidate_state_difference": 1.357337181719143e-15
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.3492957746478873,
+            "matched_area": 355,
+            "candidate_perimeter_boundary": 0.2362848799277972
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.3147208121827411,
+            "matched_area": 394,
+            "candidate_perimeter_boundary": 0.1034729582197133,
+            "candidate_state_difference": 0.04172682816538881
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.3492957746478873,
+            "matched_area": 355,
+            "candidate_perimeter_boundary": 0.23628487992785802,
+            "candidate_state_difference": 3.0815851662539224e-14
+          }
+        },
+        {
+          "frames_after_intervention": 500,
+          "control": {
+            "candidate_overlap": 0.3502824858757062,
+            "matched_area": 354,
+            "candidate_perimeter_boundary": 0.22135395239410255
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.2824601366742597,
+            "matched_area": 439,
+            "candidate_perimeter_boundary": 0.10779493544213321,
+            "candidate_state_difference": 0.04027125671078502
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.3502824858757062,
+            "matched_area": 354,
+            "candidate_perimeter_boundary": 0.22135395239478495,
+            "candidate_state_difference": 3.6788672466792787e-13
+          }
+        },
+        {
+          "frames_after_intervention": 600,
+          "control": {
+            "candidate_overlap": 0.23709369024856597,
+            "matched_area": 523,
+            "candidate_perimeter_boundary": 0.2085191746855291
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.22103386809269163,
+            "matched_area": 561,
+            "candidate_perimeter_boundary": 0.11065355797245631,
+            "candidate_state_difference": 0.03907702089034844
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.22962962962962963,
+            "matched_area": 540,
+            "candidate_perimeter_boundary": 0.20851917468997536,
+            "candidate_state_difference": 2.752373597853501e-12
+          }
+        },
+        {
+          "frames_after_intervention": 700,
+          "control": {
+            "candidate_overlap": 0.24313725490196078,
+            "matched_area": 510,
+            "candidate_perimeter_boundary": 0.19750539032639328
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.22794117647058823,
+            "matched_area": 544,
+            "candidate_perimeter_boundary": 0.11245015575347733,
+            "candidate_state_difference": 0.037805779992140125
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.24361493123772102,
+            "matched_area": 509,
+            "candidate_perimeter_boundary": 0.19750539034660405,
+            "candidate_state_difference": 1.3740209686875827e-11
+          }
+        },
+        {
+          "frames_after_intervention": 800,
+          "control": {
+            "candidate_overlap": 0.24171539961013644,
+            "matched_area": 513,
+            "candidate_perimeter_boundary": 0.18807206972832005
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.22627737226277372,
+            "matched_area": 548,
+            "candidate_perimeter_boundary": 0.11350687800066424,
+            "candidate_state_difference": 0.036237464303147324
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.2421875,
+            "matched_area": 512,
+            "candidate_perimeter_boundary": 0.18807206980012983,
+            "candidate_state_difference": 5.0357050071055704e-11
+          }
+        },
+        {
+          "frames_after_intervention": 900,
+          "control": {
+            "candidate_overlap": 0.2016260162601626,
+            "matched_area": 615,
+            "candidate_perimeter_boundary": 0.18002421315973863
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.19195046439628483,
+            "matched_area": 646,
+            "candidate_perimeter_boundary": 0.11357635806368153,
+            "candidate_state_difference": 0.034527116592936995
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.19935691318327975,
+            "matched_area": 622,
+            "candidate_perimeter_boundary": 0.18002421337553298,
+            "candidate_state_difference": 1.451497202001776e-10
+          }
+        },
+        {
+          "frames_after_intervention": 1000,
+          "control": {
+            "candidate_overlap": 0.16294349540078842,
+            "matched_area": 761,
+            "candidate_perimeter_boundary": 0.17322711642417657
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.13205537806176784,
+            "matched_area": 939,
+            "candidate_perimeter_boundary": 0.1134897540684251,
+            "candidate_state_difference": 0.03270002354539578
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.16124837451235371,
+            "matched_area": 769,
+            "candidate_perimeter_boundary": 0.17322711700473903,
+            "candidate_state_difference": 3.5884297862913907e-10
+          }
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "status": "measured",
+      "candidate": {
+        "area": 99,
+        "initial_perimeter_boundary": 0.3078799769831647
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 99,
+            "candidate_perimeter_boundary": 0.3078799769831647
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.31528662420382164,
+            "matched_area": 314,
+            "candidate_perimeter_boundary": 0.046181996547474714,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 99,
+            "candidate_perimeter_boundary": 0.3078799769831647,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.6513157894736842,
+            "matched_area": 152,
+            "candidate_perimeter_boundary": 0.28781208026938637
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.29464285714285715,
+            "matched_area": 336,
+            "candidate_perimeter_boundary": 0.0721616339818204,
+            "candidate_state_difference": 0.033418857017647366
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.6513157894736842,
+            "matched_area": 152,
+            "candidate_perimeter_boundary": 0.2878105982255768,
+            "candidate_state_difference": 0.0004775635852040072
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.6387096774193548,
+            "matched_area": 155,
+            "candidate_perimeter_boundary": 0.27057781310973805
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.2742382271468144,
+            "matched_area": 361,
+            "candidate_perimeter_boundary": 0.08910016278531721,
+            "candidate_state_difference": 0.03839405359356037
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.6387096774193548,
+            "matched_area": 155,
+            "candidate_perimeter_boundary": 0.27057557316430253,
+            "candidate_state_difference": 0.0020623680606930293
+          }
+        },
+        {
+          "frames_after_intervention": 300,
+          "control": {
+            "candidate_overlap": 0.6111111111111112,
+            "matched_area": 162,
+            "candidate_perimeter_boundary": 0.25546572459336897
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.2538860103626943,
+            "matched_area": 385,
+            "candidate_perimeter_boundary": 0.10219462718512305,
+            "candidate_state_difference": 0.03783060431324849
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.6111111111111112,
+            "matched_area": 162,
+            "candidate_perimeter_boundary": 0.2553387952510718,
+            "candidate_state_difference": 0.0038428527395270467
+          }
+        },
+        {
+          "frames_after_intervention": 400,
+          "control": {
+            "candidate_overlap": 0.5975609756097561,
+            "matched_area": 163,
+            "candidate_perimeter_boundary": 0.2416596503762025
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.2506393861892583,
+            "matched_area": 390,
+            "candidate_perimeter_boundary": 0.11167387641591754,
+            "candidate_state_difference": 0.03571697052779613
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.593939393939394,
+            "matched_area": 164,
+            "candidate_perimeter_boundary": 0.24119580417603145,
+            "candidate_state_difference": 0.005579791962429276
+          }
+        },
+        {
+          "frames_after_intervention": 500,
+          "control": {
+            "candidate_overlap": 0.5773809523809523,
+            "matched_area": 166,
+            "candidate_perimeter_boundary": 0.22904166015782143
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.24129353233830847,
+            "matched_area": 400,
+            "candidate_perimeter_boundary": 0.11852037070474011,
+            "candidate_state_difference": 0.033075573730325956
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5739644970414202,
+            "matched_area": 167,
+            "candidate_perimeter_boundary": 0.22813770458707158,
+            "candidate_state_difference": 0.007116463348659938
+          }
+        },
+        {
+          "frames_after_intervention": 600,
+          "control": {
+            "candidate_overlap": 0.20421052631578948,
+            "matched_area": 473,
+            "candidate_perimeter_boundary": 0.2176477463979599
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.1592775041050903,
+            "matched_area": 607,
+            "candidate_perimeter_boundary": 0.12413705087371435,
+            "candidate_state_difference": 0.030044243778630103
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.20378151260504201,
+            "matched_area": 474,
+            "candidate_perimeter_boundary": 0.21636635717094663,
+            "candidate_state_difference": 0.008160720647511296
+          }
+        },
+        {
+          "frames_after_intervention": 700,
+          "control": {
+            "candidate_overlap": 0.1480916030534351,
+            "matched_area": 653,
+            "candidate_perimeter_boundary": 0.20747749009624633
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.1229404309252218,
+            "matched_area": 787,
+            "candidate_perimeter_boundary": 0.12870369520417863,
+            "candidate_state_difference": 0.02696608721232549
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.14786585365853658,
+            "matched_area": 654,
+            "candidate_perimeter_boundary": 0.20602354740341944,
+            "candidate_state_difference": 0.008527636411903967
+          }
+        },
+        {
+          "frames_after_intervention": 800,
+          "control": {
+            "candidate_overlap": 0.0737082066869301,
+            "matched_area": 1314,
+            "candidate_perimeter_boundary": 0.1985193656847343
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.07049418604651163,
+            "matched_area": 1374,
+            "candidate_perimeter_boundary": 0.13238061990540495,
+            "candidate_state_difference": 0.024022121287555695
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.07365223993925589,
+            "matched_area": 1315,
+            "candidate_perimeter_boundary": 0.1971027651963562,
+            "candidate_state_difference": 0.00828853267942121
+          }
+        },
+        {
+          "frames_after_intervention": 900,
+          "control": {
+            "candidate_overlap": 0.06923625981441828,
+            "matched_area": 1399,
+            "candidate_perimeter_boundary": 0.19074575340356012
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.06648389307745031,
+            "matched_area": 1457,
+            "candidate_perimeter_boundary": 0.13532289309322212,
+            "candidate_state_difference": 0.021475889096341405
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.06918687589158345,
+            "matched_area": 1400,
+            "candidate_perimeter_boundary": 0.18949068693892565,
+            "candidate_state_difference": 0.007629131666156923
+          }
+        },
+        {
+          "frames_after_intervention": 1000,
+          "control": {
+            "candidate_overlap": 0.06470980653769179,
+            "matched_area": 1497,
+            "candidate_perimeter_boundary": 0.18406351810769436
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.06520292747837658,
+            "matched_area": 1502,
+            "candidate_perimeter_boundary": 0.1376514944613957,
+            "candidate_state_difference": 0.019376757516269272
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.06466666666666666,
+            "matched_area": 1498,
+            "candidate_perimeter_boundary": 0.183009445299582,
+            "candidate_state_difference": 0.006727457081531297
+          }
+        }
+      ]
+    }
+  ]
+}

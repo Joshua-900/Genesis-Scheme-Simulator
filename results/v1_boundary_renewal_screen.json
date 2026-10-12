@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "Regime screen only; no object claim.",
+  "conditions": [
+    {
+      "boundary_renewal": 0.0,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent_pairs": 126,
+          "long_lived_pairs": 41,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06316263401620367,
+          "mean_tension": 0.04259192370444846
+        },
+        {
+          "seed": 2,
+          "persistent_pairs": 94,
+          "long_lived_pairs": 31,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06668776777891339,
+          "mean_tension": 0.04913744498953203
+        },
+        {
+          "seed": 3,
+          "persistent_pairs": 123,
+          "long_lived_pairs": 41,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06840433697539779,
+          "mean_tension": 0.04713672882056007
+        },
+        {
+          "seed": 4,
+          "persistent_pairs": 136,
+          "long_lived_pairs": 48,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06251959600466746,
+          "mean_tension": 0.04495692104796584
+        },
+        {
+          "seed": 5,
+          "persistent_pairs": 110,
+          "long_lived_pairs": 35,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06600671470009753,
+          "mean_tension": 0.046151152523849534
+        }
+      ],
+      "median": {
+        "persistent_pairs": 123.0,
+        "long_lived_pairs": 41.0,
+        "median_pair_age": 25.0,
+        "mean_compression": 0.06600671470009753,
+        "mean_tension": 0.046151152523849534
+      }
+    },
+    {
+      "boundary_renewal": 0.1,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent_pairs": 123,
+          "long_lived_pairs": 35,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.061598749921413884,
+          "mean_tension": 0.04088407122229251
+        },
+        {
+          "seed": 2,
+          "persistent_pairs": 90,
+          "long_lived_pairs": 31,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06908497649191851,
+          "mean_tension": 0.04641813831788416
+        },
+        {
+          "seed": 3,
+          "persistent_pairs": 119,
+          "long_lived_pairs": 43,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.07041912925823215,
+          "mean_tension": 0.04705220011521369
+        },
+        {
+          "seed": 4,
+          "persistent_pairs": 129,
+          "long_lived_pairs": 46,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06802815587170429,
+          "mean_tension": 0.046734022881309324
+        },
+        {
+          "seed": 5,
+          "persistent_pairs": 113,
+          "long_lived_pairs": 34,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06599011865699791,
+          "mean_tension": 0.04644793131952071
+        }
+      ],
+      "median": {
+        "persistent_pairs": 119.0,
+        "long_lived_pairs": 35.0,
+        "median_pair_age": 25.0,
+        "mean_compression": 0.06802815587170429,
+        "mean_tension": 0.04644793131952071
+      }
+    },
+    {
+      "boundary_renewal": 0.3,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent_pairs": 123,
+          "long_lived_pairs": 37,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06422794789254771,
+          "mean_tension": 0.04434106185489503
+        },
+        {
+          "seed": 2,
+          "persistent_pairs": 90,
+          "long_lived_pairs": 26,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06934471321564462,
+          "mean_tension": 0.04881083011469753
+        },
+        {
+          "seed": 3,
+          "persistent_pairs": 117,
+          "long_lived_pairs": 41,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06926036746424044,
+          "mean_tension": 0.046856783466851376
+        },
+        {
+          "seed": 4,
+          "persistent_pairs": 132,
+          "long_lived_pairs": 47,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06949297336429794,
+          "mean_tension": 0.047798419402027933
+        },
+        {
+          "seed": 5,
+          "persistent_pairs": 116,
+          "long_lived_pairs": 38,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06315066006406361,
+          "mean_tension": 0.0458022189272782
+        }
+      ],
+      "median": {
+        "persistent_pairs": 117.0,
+        "long_lived_pairs": 38.0,
+        "median_pair_age": 25.0,
+        "mean_compression": 0.06926036746424044,
+        "mean_tension": 0.046856783466851376
+      }
+    },
+    {
+      "boundary_renewal": 0.6,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent_pairs": 117,
+          "long_lived_pairs": 38,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.0632866950090839,
+          "mean_tension": 0.04381523125992756
+        },
+        {
+          "seed": 2,
+          "persistent_pairs": 87,
+          "long_lived_pairs": 25,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06555653793629257,
+          "mean_tension": 0.04565191007314127
+        },
+        {
+          "seed": 3,
+          "persistent_pairs": 122,
+          "long_lived_pairs": 41,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06933694089320128,
+          "mean_tension": 0.04759686495024364
+        },
+        {
+          "seed": 4,
+          "persistent_pairs": 141,
+          "long_lived_pairs": 48,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06573191359845368,
+          "mean_tension": 0.046144844673382916
+        },
+        {
+          "seed": 5,
+          "persistent_pairs": 114,
+          "long_lived_pairs": 39,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.0652057470140816,
+          "mean_tension": 0.04628699059309658
+        }
+      ],
+      "median": {
+        "persistent_pairs": 117.0,
+        "long_lived_pairs": 39.0,
+        "median_pair_age": 25.0,
+        "mean_compression": 0.06555653793629257,
+        "mean_tension": 0.046144844673382916
+      }
+    },
+    {
+      "boundary_renewal": 1.0,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent_pairs": 114,
+          "long_lived_pairs": 35,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06229007548122051,
+          "mean_tension": 0.04316481802700945
+        },
+        {
+          "seed": 2,
+          "persistent_pairs": 91,
+          "long_lived_pairs": 25,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06254033160347812,
+          "mean_tension": 0.04392249676492441
+        },
+        {
+          "seed": 3,
+          "persistent_pairs": 119,
+          "long_lived_pairs": 43,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06387817634151492,
+          "mean_tension": 0.04732201986518324
+        },
+        {
+          "seed": 4,
+          "persistent_pairs": 135,
+          "long_lived_pairs": 48,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.06181948508367945,
+          "mean_tension": 0.04719861633631392
+        },
+        {
+          "seed": 5,
+          "persistent_pairs": 120,
+          "long_lived_pairs": 40,
+          "median_pair_age": 25.0,
+          "mean_compression": 0.05856084322295276,
+          "mean_tension": 0.04609304582947864
+        }
+      ],
+      "median": {
+        "persistent_pairs": 119.0,
+        "long_lived_pairs": 40.0,
+        "median_pair_age": 25.0,
+        "mean_compression": 0.06229007548122051,
+        "mean_tension": 0.04609304582947864
+      }
+    }
+  ]
+}

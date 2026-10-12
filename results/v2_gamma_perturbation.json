@@ -1,0 +1,1064 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This paired perturbation test measures continuity and disturbance propagation of an observer-defined gamma component. It does not establish autonomy or causal closure.",
+  "config": {
+    "N": 64,
+    "warmup_frames": 1200,
+    "recovery_frames": 400,
+    "seeds": 5,
+    "seed_start": 1,
+    "sample_interval": 20,
+    "cutoff": 0.75,
+    "min_area": 24,
+    "patch_radius": 4.0,
+    "angle": 1.5707963267948966,
+    "potential_to_actual": 0.05,
+    "relation_difference_gain": 0.55,
+    "boundary_rate": 0.18,
+    "boundary_decay": 0.04,
+    "params": {
+      "potential_transport": 0.1,
+      "potential_source_restore": 0.08,
+      "potential_turn": 0.24,
+      "availability_replenish": 0.1,
+      "availability_tension_gain": 0.28,
+      "actualization_depletion": 0.35,
+      "actual_alignment": 0.28,
+      "potential_to_actual": 0.05,
+      "relation_rate": 0.12,
+      "relation_baseline": 0.2,
+      "relation_difference_gain": 0.55,
+      "boundary_rate": 0.18,
+      "boundary_decay": 0.04,
+      "boundary_permeability_floor": 0.04,
+      "boundary_permeability_span": 0.82
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "status": "measured",
+      "candidate": {
+        "area": 90,
+        "centroid": [
+          33.13333333333333,
+          49.75555555555555
+        ],
+        "coherence": 0.5938739511054053,
+        "boundary_contrast": 0.3888809098736946,
+        "perturbed_cells": 37
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 90,
+          "perturbed_matched_area": 90,
+          "inside_difference": 0.6457718232379019,
+          "outside_difference": 0.0
+        },
+        {
+          "frames_after_intervention": 20,
+          "control_overlap": 0.75,
+          "perturbed_overlap": 0.7565217391304347,
+          "control_matched_area": 113,
+          "perturbed_matched_area": 112,
+          "inside_difference": 0.6129044963355421,
+          "outside_difference": 0.0007423607405844489
+        },
+        {
+          "frames_after_intervention": 40,
+          "control_overlap": 0.75,
+          "perturbed_overlap": 0.7565217391304347,
+          "control_matched_area": 113,
+          "perturbed_matched_area": 112,
+          "inside_difference": 0.5870311729957507,
+          "outside_difference": 0.0013526392565165934
+        },
+        {
+          "frames_after_intervention": 60,
+          "control_overlap": 0.75,
+          "perturbed_overlap": 0.7565217391304347,
+          "control_matched_area": 113,
+          "perturbed_matched_area": 112,
+          "inside_difference": 0.5679464577843691,
+          "outside_difference": 0.001826838202261731
+        },
+        {
+          "frames_after_intervention": 80,
+          "control_overlap": 0.75,
+          "perturbed_overlap": 0.7565217391304347,
+          "control_matched_area": 113,
+          "perturbed_matched_area": 112,
+          "inside_difference": 0.5537740627752267,
+          "outside_difference": 0.0022025552923757353
+        },
+        {
+          "frames_after_intervention": 100,
+          "control_overlap": 0.5958904109589042,
+          "perturbed_overlap": 0.635036496350365,
+          "control_matched_area": 143,
+          "perturbed_matched_area": 134,
+          "inside_difference": 0.5429808755879939,
+          "outside_difference": 0.0025133604048973154
+        },
+        {
+          "frames_after_intervention": 120,
+          "control_overlap": 0.6013513513513513,
+          "perturbed_overlap": 0.6258992805755396,
+          "control_matched_area": 147,
+          "perturbed_matched_area": 136,
+          "inside_difference": 0.5345415535800928,
+          "outside_difference": 0.0027788162709847823
+        },
+        {
+          "frames_after_intervention": 140,
+          "control_overlap": 0.5973154362416108,
+          "perturbed_overlap": 0.6402877697841727,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 138,
+          "inside_difference": 0.5277852047715357,
+          "outside_difference": 0.003012460981441528
+        },
+        {
+          "frames_after_intervention": 160,
+          "control_overlap": 0.5973154362416108,
+          "perturbed_overlap": 0.6402877697841727,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 138,
+          "inside_difference": 0.5222624513189797,
+          "outside_difference": 0.003222398534598096
+        },
+        {
+          "frames_after_intervention": 180,
+          "control_overlap": 0.5973154362416108,
+          "perturbed_overlap": 0.6357142857142857,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 139,
+          "inside_difference": 0.517662287766784,
+          "outside_difference": 0.0034147406015042187
+        },
+        {
+          "frames_after_intervention": 200,
+          "control_overlap": 0.5973154362416108,
+          "perturbed_overlap": 0.6357142857142857,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 139,
+          "inside_difference": 0.5137630619110388,
+          "outside_difference": 0.0035936345210234484
+        },
+        {
+          "frames_after_intervention": 220,
+          "control_overlap": 0.5973154362416108,
+          "perturbed_overlap": 0.6357142857142857,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 139,
+          "inside_difference": 0.5104032885253458,
+          "outside_difference": 0.0037620096176399645
+        },
+        {
+          "frames_after_intervention": 240,
+          "control_overlap": 0.5973154362416108,
+          "perturbed_overlap": 0.6357142857142857,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 139,
+          "inside_difference": 0.5074637850547643,
+          "outside_difference": 0.00392197616774933
+        },
+        {
+          "frames_after_intervention": 260,
+          "control_overlap": 0.5816993464052288,
+          "perturbed_overlap": 0.6357142857142857,
+          "control_matched_area": 152,
+          "perturbed_matched_area": 139,
+          "inside_difference": 0.5048555847616462,
+          "outside_difference": 0.004075171346507183
+        },
+        {
+          "frames_after_intervention": 280,
+          "control_overlap": 0.5741935483870968,
+          "perturbed_overlap": 0.6357142857142857,
+          "control_matched_area": 154,
+          "perturbed_matched_area": 139,
+          "inside_difference": 0.5025112223168228,
+          "outside_difference": 0.0042227023572698275
+        },
+        {
+          "frames_after_intervention": 300,
+          "control_overlap": 0.46596858638743455,
+          "perturbed_overlap": 0.5,
+          "control_matched_area": 190,
+          "perturbed_matched_area": 177,
+          "inside_difference": 0.5003785930890199,
+          "outside_difference": 0.0043654301950397
+        },
+        {
+          "frames_after_intervention": 320,
+          "control_overlap": 0.46113989637305697,
+          "perturbed_overlap": 0.49444444444444446,
+          "control_matched_area": 192,
+          "perturbed_matched_area": 179,
+          "inside_difference": 0.49841712745966277,
+          "outside_difference": 0.004504055544552036
+        },
+        {
+          "frames_after_intervention": 340,
+          "control_overlap": 0.42788461538461536,
+          "perturbed_overlap": 0.4494949494949495,
+          "control_matched_area": 207,
+          "perturbed_matched_area": 197,
+          "inside_difference": 0.4965952621442479,
+          "outside_difference": 0.0046389200055946
+        },
+        {
+          "frames_after_intervention": 360,
+          "control_overlap": 0.4218009478672986,
+          "perturbed_overlap": 0.4472361809045226,
+          "control_matched_area": 210,
+          "perturbed_matched_area": 198,
+          "inside_difference": 0.49488799271835177,
+          "outside_difference": 0.004770312800465093
+        },
+        {
+          "frames_after_intervention": 380,
+          "control_overlap": 0.4218009478672986,
+          "perturbed_overlap": 0.4405940594059406,
+          "control_matched_area": 210,
+          "perturbed_matched_area": 201,
+          "inside_difference": 0.4932752484305283,
+          "outside_difference": 0.0048984628326384895
+        },
+        {
+          "frames_after_intervention": 400,
+          "control_overlap": 0.4218009478672986,
+          "perturbed_overlap": 0.4405940594059406,
+          "control_matched_area": 210,
+          "perturbed_matched_area": 201,
+          "inside_difference": 0.49174073978991995,
+          "outside_difference": 0.0050237684866832905
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "status": "measured",
+      "candidate": {
+        "area": 148,
+        "centroid": [
+          18.58783783783784,
+          14.22972972972973
+        ],
+        "coherence": 0.5152748962845863,
+        "boundary_contrast": 0.3429419280381398,
+        "perturbed_cells": 29
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 148,
+          "perturbed_matched_area": 148,
+          "inside_difference": 0.3077911721422433,
+          "outside_difference": 0.0
+        },
+        {
+          "frames_after_intervention": 20,
+          "control_overlap": 0.9932885906040269,
+          "perturbed_overlap": 0.9932885906040269,
+          "control_matched_area": 149,
+          "perturbed_matched_area": 149,
+          "inside_difference": 0.28774689999231223,
+          "outside_difference": 0.0006314856618268893
+        },
+        {
+          "frames_after_intervention": 40,
+          "control_overlap": 0.9801324503311258,
+          "perturbed_overlap": 0.9801324503311258,
+          "control_matched_area": 151,
+          "perturbed_matched_area": 151,
+          "inside_difference": 0.2715023791824967,
+          "outside_difference": 0.0011175071486754157
+        },
+        {
+          "frames_after_intervention": 60,
+          "control_overlap": 0.9801324503311258,
+          "perturbed_overlap": 0.7086092715231788,
+          "control_matched_area": 151,
+          "perturbed_matched_area": 110,
+          "inside_difference": 0.25854411014542594,
+          "outside_difference": 0.001483077436867298
+        },
+        {
+          "frames_after_intervention": 80,
+          "control_overlap": 0.9801324503311258,
+          "perturbed_overlap": 0.7086092715231788,
+          "control_matched_area": 151,
+          "perturbed_matched_area": 110,
+          "inside_difference": 0.24793586619584118,
+          "outside_difference": 0.001764770908943103
+        },
+        {
+          "frames_after_intervention": 100,
+          "control_overlap": 0.954248366013072,
+          "perturbed_overlap": 0.7039473684210527,
+          "control_matched_area": 151,
+          "perturbed_matched_area": 111,
+          "inside_difference": 0.23901793750087313,
+          "outside_difference": 0.001988400860824159
+        },
+        {
+          "frames_after_intervention": 120,
+          "control_overlap": 0.954248366013072,
+          "perturbed_overlap": 0.7039473684210527,
+          "control_matched_area": 151,
+          "perturbed_matched_area": 111,
+          "inside_difference": 0.23133197261163058,
+          "outside_difference": 0.0021708531964494816
+        },
+        {
+          "frames_after_intervention": 140,
+          "control_overlap": 0.8248587570621468,
+          "perturbed_overlap": 0.7039473684210527,
+          "control_matched_area": 175,
+          "perturbed_matched_area": 111,
+          "inside_difference": 0.22451963256243854,
+          "outside_difference": 0.0023230121883183164
+        },
+        {
+          "frames_after_intervention": 160,
+          "control_overlap": 0.7684210526315789,
+          "perturbed_overlap": 0.6484848484848484,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.2183792768876364,
+          "outside_difference": 0.002452476298538544
+        },
+        {
+          "frames_after_intervention": 180,
+          "control_overlap": 0.7684210526315789,
+          "perturbed_overlap": 0.6484848484848484,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.21275002749405364,
+          "outside_difference": 0.0025645343337467865
+        },
+        {
+          "frames_after_intervention": 200,
+          "control_overlap": 0.7684210526315789,
+          "perturbed_overlap": 0.6484848484848484,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.20751814033753577,
+          "outside_difference": 0.0026628760775408056
+        },
+        {
+          "frames_after_intervention": 220,
+          "control_overlap": 0.7684210526315789,
+          "perturbed_overlap": 0.5661375661375662,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 148,
+          "inside_difference": 0.20260257937640666,
+          "outside_difference": 0.0027501523698671483
+        },
+        {
+          "frames_after_intervention": 240,
+          "control_overlap": 0.7684210526315789,
+          "perturbed_overlap": 0.5661375661375662,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 148,
+          "inside_difference": 0.19794303435108332,
+          "outside_difference": 0.0028283491204639704
+        },
+        {
+          "frames_after_intervention": 260,
+          "control_overlap": 0.7684210526315789,
+          "perturbed_overlap": 0.5661375661375662,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 148,
+          "inside_difference": 0.19349001789280101,
+          "outside_difference": 0.002898985618933432
+        },
+        {
+          "frames_after_intervention": 280,
+          "control_overlap": 0.7643979057591623,
+          "perturbed_overlap": 0.5661375661375662,
+          "control_matched_area": 189,
+          "perturbed_matched_area": 148,
+          "inside_difference": 0.18920832319479416,
+          "outside_difference": 0.002963245582460906
+        },
+        {
+          "frames_after_intervention": 300,
+          "control_overlap": 0.7643979057591623,
+          "perturbed_overlap": 0.5631578947368421,
+          "control_matched_area": 189,
+          "perturbed_matched_area": 149,
+          "inside_difference": 0.1850726278618966,
+          "outside_difference": 0.0030220660451963626
+        },
+        {
+          "frames_after_intervention": 320,
+          "control_overlap": 0.7564766839378239,
+          "perturbed_overlap": 0.5631578947368421,
+          "control_matched_area": 191,
+          "perturbed_matched_area": 149,
+          "inside_difference": 0.18106265325762694,
+          "outside_difference": 0.0030762009474521496
+        },
+        {
+          "frames_after_intervention": 340,
+          "control_overlap": 0.7525773195876289,
+          "perturbed_overlap": 0.6985645933014354,
+          "control_matched_area": 192,
+          "perturbed_matched_area": 207,
+          "inside_difference": 0.17716367767979557,
+          "outside_difference": 0.0031262516901639586
+        },
+        {
+          "frames_after_intervention": 360,
+          "control_overlap": 0.7487179487179487,
+          "perturbed_overlap": 0.6985645933014354,
+          "control_matched_area": 193,
+          "perturbed_matched_area": 207,
+          "inside_difference": 0.17336401949701502,
+          "outside_difference": 0.00317271042745286
+        },
+        {
+          "frames_after_intervention": 380,
+          "control_overlap": 0.6952380952380952,
+          "perturbed_overlap": 0.6985645933014354,
+          "control_matched_area": 208,
+          "perturbed_matched_area": 207,
+          "inside_difference": 0.1696555420202009,
+          "outside_difference": 0.0032159888570760195
+        },
+        {
+          "frames_after_intervention": 400,
+          "control_overlap": 0.7053140096618358,
+          "perturbed_overlap": 0.6547085201793722,
+          "control_matched_area": 205,
+          "perturbed_matched_area": 221,
+          "inside_difference": 0.16603261135764671,
+          "outside_difference": 0.0032564307545644533
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "status": "measured",
+      "candidate": {
+        "area": 89,
+        "centroid": [
+          31.764044943820224,
+          37.60674157303371
+        ],
+        "coherence": 0.9653013179170223,
+        "boundary_contrast": 0.8239879922362744,
+        "perturbed_cells": 27
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 89,
+          "perturbed_matched_area": 89,
+          "inside_difference": 0.4765337171175529,
+          "outside_difference": 0.0
+        },
+        {
+          "frames_after_intervention": 20,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 89,
+          "perturbed_matched_area": 89,
+          "inside_difference": 0.4505451754128216,
+          "outside_difference": 0.0006195177360727953
+        },
+        {
+          "frames_after_intervention": 40,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 0.9775280898876404,
+          "control_matched_area": 89,
+          "perturbed_matched_area": 87,
+          "inside_difference": 0.4299469345335531,
+          "outside_difference": 0.001139785047955759
+        },
+        {
+          "frames_after_intervention": 60,
+          "control_overlap": 0.7063492063492064,
+          "perturbed_overlap": 0.6825396825396826,
+          "control_matched_area": 126,
+          "perturbed_matched_area": 123,
+          "inside_difference": 0.41480582178398584,
+          "outside_difference": 0.0015558093871917676
+        },
+        {
+          "frames_after_intervention": 80,
+          "control_overlap": 0.6746031746031746,
+          "perturbed_overlap": 0.6746031746031746,
+          "control_matched_area": 122,
+          "perturbed_matched_area": 122,
+          "inside_difference": 0.4037109858853365,
+          "outside_difference": 0.0018932301315465847
+        },
+        {
+          "frames_after_intervention": 100,
+          "control_overlap": 0.6746031746031746,
+          "perturbed_overlap": 0.42857142857142855,
+          "control_matched_area": 122,
+          "perturbed_matched_area": 91,
+          "inside_difference": 0.395440647773028,
+          "outside_difference": 0.0021761624145988545
+        },
+        {
+          "frames_after_intervention": 120,
+          "control_overlap": 0.6439393939393939,
+          "perturbed_overlap": 0.42857142857142855,
+          "control_matched_area": 128,
+          "perturbed_matched_area": 91,
+          "inside_difference": 0.38914870137900953,
+          "outside_difference": 0.002421130215476175
+        },
+        {
+          "frames_after_intervention": 140,
+          "control_overlap": 0.6343283582089553,
+          "perturbed_overlap": 0.42857142857142855,
+          "control_matched_area": 130,
+          "perturbed_matched_area": 91,
+          "inside_difference": 0.3842730311120456,
+          "outside_difference": 0.00263901087712965
+        },
+        {
+          "frames_after_intervention": 160,
+          "control_overlap": 0.6343283582089553,
+          "perturbed_overlap": 0.42857142857142855,
+          "control_matched_area": 130,
+          "perturbed_matched_area": 91,
+          "inside_difference": 0.3804378154740085,
+          "outside_difference": 0.002836894443789384
+        },
+        {
+          "frames_after_intervention": 180,
+          "control_overlap": 0.6343283582089553,
+          "perturbed_overlap": 0.42857142857142855,
+          "control_matched_area": 130,
+          "perturbed_matched_area": 91,
+          "inside_difference": 0.37734333004868237,
+          "outside_difference": 0.0030204334248950045
+        },
+        {
+          "frames_after_intervention": 200,
+          "control_overlap": 0.5029585798816568,
+          "perturbed_overlap": 0.33540372670807456,
+          "control_matched_area": 165,
+          "perturbed_matched_area": 126,
+          "inside_difference": 0.3747965717424951,
+          "outside_difference": 0.0031930799368879753
+        },
+        {
+          "frames_after_intervention": 220,
+          "control_overlap": 0.4857142857142857,
+          "perturbed_overlap": 0.3263157894736842,
+          "control_matched_area": 171,
+          "perturbed_matched_area": 37,
+          "inside_difference": 0.3726705871608785,
+          "outside_difference": 0.0033569609957536752
+        },
+        {
+          "frames_after_intervention": 240,
+          "control_overlap": 0.47752808988764045,
+          "perturbed_overlap": 0.4885057471264368,
+          "control_matched_area": 174,
+          "perturbed_matched_area": 170,
+          "inside_difference": 0.3708707363080501,
+          "outside_difference": 0.0035136243900122377
+        },
+        {
+          "frames_after_intervention": 260,
+          "control_overlap": 0.47752808988764045,
+          "perturbed_overlap": 0.4885057471264368,
+          "control_matched_area": 174,
+          "perturbed_matched_area": 170,
+          "inside_difference": 0.3693281172147956,
+          "outside_difference": 0.0036640953131669724
+        },
+        {
+          "frames_after_intervention": 280,
+          "control_overlap": 0.4861878453038674,
+          "perturbed_overlap": 0.480225988700565,
+          "control_matched_area": 180,
+          "perturbed_matched_area": 173,
+          "inside_difference": 0.3680179173647013,
+          "outside_difference": 0.0038085267271901068
+        },
+        {
+          "frames_after_intervention": 300,
+          "control_overlap": 0.4835164835164835,
+          "perturbed_overlap": 0.4941860465116279,
+          "control_matched_area": 181,
+          "perturbed_matched_area": 168,
+          "inside_difference": 0.36691667258817773,
+          "outside_difference": 0.003947298101942655
+        },
+        {
+          "frames_after_intervention": 320,
+          "control_overlap": 0.4835164835164835,
+          "perturbed_overlap": 0.4941860465116279,
+          "control_matched_area": 181,
+          "perturbed_matched_area": 168,
+          "inside_difference": 0.3660012185931007,
+          "outside_difference": 0.004081069760582376
+        },
+        {
+          "frames_after_intervention": 340,
+          "control_overlap": 0.4835164835164835,
+          "perturbed_overlap": 0.4941860465116279,
+          "control_matched_area": 181,
+          "perturbed_matched_area": 168,
+          "inside_difference": 0.3652533797977626,
+          "outside_difference": 0.004210522988457095
+        },
+        {
+          "frames_after_intervention": 360,
+          "control_overlap": 0.4808743169398907,
+          "perturbed_overlap": 0.4913294797687861,
+          "control_matched_area": 182,
+          "perturbed_matched_area": 169,
+          "inside_difference": 0.36465698600687874,
+          "outside_difference": 0.004336154365998925
+        },
+        {
+          "frames_after_intervention": 380,
+          "control_overlap": 0.4808743169398907,
+          "perturbed_overlap": 0.48295454545454547,
+          "control_matched_area": 182,
+          "perturbed_matched_area": 172,
+          "inside_difference": 0.36419565366140894,
+          "outside_difference": 0.0044584247828882975
+        },
+        {
+          "frames_after_intervention": 400,
+          "control_overlap": 0.4782608695652174,
+          "perturbed_overlap": 0.48295454545454547,
+          "control_matched_area": 183,
+          "perturbed_matched_area": 172,
+          "inside_difference": 0.36385261514341205,
+          "outside_difference": 0.00457762808667145
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "status": "measured",
+      "candidate": {
+        "area": 66,
+        "centroid": [
+          44.03030303030303,
+          20.484848484848484
+        ],
+        "coherence": 0.9266451802234024,
+        "boundary_contrast": 0.2227735783582451,
+        "perturbed_cells": 32
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 66,
+          "perturbed_matched_area": 66,
+          "inside_difference": 0.761598219052071,
+          "outside_difference": 0.0
+        },
+        {
+          "frames_after_intervention": 20,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 66,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.7146508794263454,
+          "outside_difference": 0.000670659511071045
+        },
+        {
+          "frames_after_intervention": 40,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 66,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.6769725854007334,
+          "outside_difference": 0.0011817966404912262
+        },
+        {
+          "frames_after_intervention": 60,
+          "control_overlap": 0.9850746268656716,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 67,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.6462613468850404,
+          "outside_difference": 0.001574388269477004
+        },
+        {
+          "frames_after_intervention": 80,
+          "control_overlap": 0.9705882352941176,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 68,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.6199513939822632,
+          "outside_difference": 0.0018916298939597917
+        },
+        {
+          "frames_after_intervention": 100,
+          "control_overlap": 0.9428571428571428,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 70,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.5966126450087106,
+          "outside_difference": 0.002157716271506302
+        },
+        {
+          "frames_after_intervention": 120,
+          "control_overlap": 0.9428571428571428,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 70,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.5754433156482874,
+          "outside_difference": 0.0023854730830970344
+        },
+        {
+          "frames_after_intervention": 140,
+          "control_overlap": 0.5546218487394958,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 119,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.5559585134722452,
+          "outside_difference": 0.002584020026284851
+        },
+        {
+          "frames_after_intervention": 160,
+          "control_overlap": 0.55,
+          "perturbed_overlap": 0.6060606060606061,
+          "control_matched_area": 120,
+          "perturbed_matched_area": 40,
+          "inside_difference": 0.5378418110723362,
+          "outside_difference": 0.0027596691259668196
+        },
+        {
+          "frames_after_intervention": 180,
+          "control_overlap": 0.55,
+          "perturbed_overlap": 0.47413793103448276,
+          "control_matched_area": 120,
+          "perturbed_matched_area": 105,
+          "inside_difference": 0.5208710358149705,
+          "outside_difference": 0.002916543764931761
+        },
+        {
+          "frames_after_intervention": 200,
+          "control_overlap": 0.55,
+          "perturbed_overlap": 0.4700854700854701,
+          "control_matched_area": 120,
+          "perturbed_matched_area": 106,
+          "inside_difference": 0.5048804748125876,
+          "outside_difference": 0.0030572087366625986
+        },
+        {
+          "frames_after_intervention": 220,
+          "control_overlap": 0.55,
+          "perturbed_overlap": 0.4700854700854701,
+          "control_matched_area": 120,
+          "perturbed_matched_area": 106,
+          "inside_difference": 0.48974040844466793,
+          "outside_difference": 0.003183502500510378
+        },
+        {
+          "frames_after_intervention": 240,
+          "control_overlap": 0.515625,
+          "perturbed_overlap": 0.4700854700854701,
+          "control_matched_area": 128,
+          "perturbed_matched_area": 106,
+          "inside_difference": 0.47534500501568394,
+          "outside_difference": 0.0032967806522153234
+        },
+        {
+          "frames_after_intervention": 260,
+          "control_overlap": 0.515625,
+          "perturbed_overlap": 0.4700854700854701,
+          "control_matched_area": 128,
+          "perturbed_matched_area": 106,
+          "inside_difference": 0.46160511533817206,
+          "outside_difference": 0.0033978838654651973
+        },
+        {
+          "frames_after_intervention": 280,
+          "control_overlap": 0.515625,
+          "perturbed_overlap": 0.4700854700854701,
+          "control_matched_area": 128,
+          "perturbed_matched_area": 106,
+          "inside_difference": 0.4484447097588776,
+          "outside_difference": 0.0034874565077479126
+        },
+        {
+          "frames_after_intervention": 300,
+          "control_overlap": 0.49624060150375937,
+          "perturbed_overlap": 0.4661016949152542,
+          "control_matched_area": 133,
+          "perturbed_matched_area": 107,
+          "inside_difference": 0.4357987394439846,
+          "outside_difference": 0.0035659742016114658
+        },
+        {
+          "frames_after_intervention": 320,
+          "control_overlap": 0.49624060150375937,
+          "perturbed_overlap": 0.4661016949152542,
+          "control_matched_area": 133,
+          "perturbed_matched_area": 107,
+          "inside_difference": 0.423604999407372,
+          "outside_difference": 0.0036339600685665035
+        },
+        {
+          "frames_after_intervention": 340,
+          "control_overlap": 0.49624060150375937,
+          "perturbed_overlap": 0.46218487394957986,
+          "control_matched_area": 133,
+          "perturbed_matched_area": 108,
+          "inside_difference": 0.41180711423294286,
+          "outside_difference": 0.0036920328673133783
+        },
+        {
+          "frames_after_intervention": 360,
+          "control_overlap": 0.4925373134328358,
+          "perturbed_overlap": 0.45454545454545453,
+          "control_matched_area": 134,
+          "perturbed_matched_area": 110,
+          "inside_difference": 0.4003763108750561,
+          "outside_difference": 0.0037406037892675085
+        },
+        {
+          "frames_after_intervention": 380,
+          "control_overlap": 0.4925373134328358,
+          "perturbed_overlap": 0.4263565891472868,
+          "control_matched_area": 134,
+          "perturbed_matched_area": 118,
+          "inside_difference": 0.38927975772675266,
+          "outside_difference": 0.003780307024003347
+        },
+        {
+          "frames_after_intervention": 400,
+          "control_overlap": 0.48175182481751827,
+          "perturbed_overlap": 0.4263565891472868,
+          "control_matched_area": 137,
+          "perturbed_matched_area": 118,
+          "inside_difference": 0.3784903528501358,
+          "outside_difference": 0.003811756184789268
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "status": "measured",
+      "candidate": {
+        "area": 124,
+        "centroid": [
+          49.83064516129032,
+          7.338709677419355
+        ],
+        "coherence": 0.9694065776946839,
+        "boundary_contrast": 0.5004773454760774,
+        "perturbed_cells": 1
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 124,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.012667712312862069,
+          "outside_difference": 0.0
+        },
+        {
+          "frames_after_intervention": 20,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 124,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.010839304826959512,
+          "outside_difference": 4.856855661694584e-05
+        },
+        {
+          "frames_after_intervention": 40,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 124,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.00931068959776904,
+          "outside_difference": 8.762143532723679e-05
+        },
+        {
+          "frames_after_intervention": 60,
+          "control_overlap": 1.0,
+          "perturbed_overlap": 1.0,
+          "control_matched_area": 124,
+          "perturbed_matched_area": 124,
+          "inside_difference": 0.008257298293207682,
+          "outside_difference": 0.00011202851971182393
+        },
+        {
+          "frames_after_intervention": 80,
+          "control_overlap": 0.992,
+          "perturbed_overlap": 0.992,
+          "control_matched_area": 125,
+          "perturbed_matched_area": 125,
+          "inside_difference": 0.007536650501778808,
+          "outside_difference": 0.0001287119711931544
+        },
+        {
+          "frames_after_intervention": 100,
+          "control_overlap": 0.9841269841269841,
+          "perturbed_overlap": 0.9841269841269841,
+          "control_matched_area": 126,
+          "perturbed_matched_area": 126,
+          "inside_difference": 0.007024136236572271,
+          "outside_difference": 0.00013987959837391065
+        },
+        {
+          "frames_after_intervention": 120,
+          "control_overlap": 0.924812030075188,
+          "perturbed_overlap": 0.924812030075188,
+          "control_matched_area": 132,
+          "perturbed_matched_area": 132,
+          "inside_difference": 0.0066410492427121295,
+          "outside_difference": 0.00014829817337385395
+        },
+        {
+          "frames_after_intervention": 140,
+          "control_overlap": 0.917910447761194,
+          "perturbed_overlap": 0.917910447761194,
+          "control_matched_area": 133,
+          "perturbed_matched_area": 133,
+          "inside_difference": 0.006339935318177883,
+          "outside_difference": 0.00015466788445941599
+        },
+        {
+          "frames_after_intervention": 160,
+          "control_overlap": 0.8978102189781022,
+          "perturbed_overlap": 0.8978102189781022,
+          "control_matched_area": 136,
+          "perturbed_matched_area": 136,
+          "inside_difference": 0.006092440822172735,
+          "outside_difference": 0.00015948249596478437
+        },
+        {
+          "frames_after_intervention": 180,
+          "control_overlap": 0.8848920863309353,
+          "perturbed_overlap": 0.8848920863309353,
+          "control_matched_area": 138,
+          "perturbed_matched_area": 138,
+          "inside_difference": 0.005881202926090976,
+          "outside_difference": 0.00016327665610727668
+        },
+        {
+          "frames_after_intervention": 200,
+          "control_overlap": 0.8848920863309353,
+          "perturbed_overlap": 0.8848920863309353,
+          "control_matched_area": 138,
+          "perturbed_matched_area": 138,
+          "inside_difference": 0.005695242534470553,
+          "outside_difference": 0.00016628922767478928
+        },
+        {
+          "frames_after_intervention": 220,
+          "control_overlap": 0.8848920863309353,
+          "perturbed_overlap": 0.8848920863309353,
+          "control_matched_area": 138,
+          "perturbed_matched_area": 138,
+          "inside_difference": 0.005527380774723561,
+          "outside_difference": 0.0001686502129119572
+        },
+        {
+          "frames_after_intervention": 240,
+          "control_overlap": 0.6595744680851063,
+          "perturbed_overlap": 0.6595744680851063,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 188,
+          "inside_difference": 0.005372847149153168,
+          "outside_difference": 0.0001705450336718466
+        },
+        {
+          "frames_after_intervention": 260,
+          "control_overlap": 0.6595744680851063,
+          "perturbed_overlap": 0.6595744680851063,
+          "control_matched_area": 188,
+          "perturbed_matched_area": 188,
+          "inside_difference": 0.005228540261449112,
+          "outside_difference": 0.0001721365729251761
+        },
+        {
+          "frames_after_intervention": 280,
+          "control_overlap": 0.6326530612244898,
+          "perturbed_overlap": 0.6326530612244898,
+          "control_matched_area": 196,
+          "perturbed_matched_area": 196,
+          "inside_difference": 0.005092463857297388,
+          "outside_difference": 0.0001735638027635153
+        },
+        {
+          "frames_after_intervention": 300,
+          "control_overlap": 0.6326530612244898,
+          "perturbed_overlap": 0.6326530612244898,
+          "control_matched_area": 196,
+          "perturbed_matched_area": 196,
+          "inside_difference": 0.004963304862278143,
+          "outside_difference": 0.0001748995596811177
+        },
+        {
+          "frames_after_intervention": 320,
+          "control_overlap": 0.4460431654676259,
+          "perturbed_overlap": 0.4460431654676259,
+          "control_matched_area": 278,
+          "perturbed_matched_area": 278,
+          "inside_difference": 0.004840062588086689,
+          "outside_difference": 0.00017613692408053233
+        },
+        {
+          "frames_after_intervention": 340,
+          "control_overlap": 0.4444444444444444,
+          "perturbed_overlap": 0.4444444444444444,
+          "control_matched_area": 279,
+          "perturbed_matched_area": 279,
+          "inside_difference": 0.004721871454503938,
+          "outside_difference": 0.00017724612350326815
+        },
+        {
+          "frames_after_intervention": 360,
+          "control_overlap": 0.35327635327635326,
+          "perturbed_overlap": 0.35327635327635326,
+          "control_matched_area": 351,
+          "perturbed_matched_area": 351,
+          "inside_difference": 0.0046079685332791,
+          "outside_difference": 0.00017820855428966786
+        },
+        {
+          "frames_after_intervention": 380,
+          "control_overlap": 0.35127478753541075,
+          "perturbed_overlap": 0.3502824858757062,
+          "control_matched_area": 353,
+          "perturbed_matched_area": 354,
+          "inside_difference": 0.004497703383317376,
+          "outside_difference": 0.0001790207422041873
+        },
+        {
+          "frames_after_intervention": 400,
+          "control_overlap": 0.3492957746478873,
+          "perturbed_overlap": 0.3492957746478873,
+          "control_matched_area": 355,
+          "perturbed_matched_area": 355,
+          "inside_difference": 0.004390587726684946,
+          "outside_difference": 0.00017966904078283504
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This tests strict continuation of a tracked pair after a localized structural perturbation; it does not establish higher-order objects.",
+  "experiment": {
+    "name": "v1_matched_local_structure_perturbation",
+    "parameters": {
+      "N": 64,
+      "burn_in_frames": 1000,
+      "follow_frames": 1000,
+      "seeds": 10,
+      "seed_start": 21,
+      "sample_interval": 25,
+      "max_pair_distance": 64.0,
+      "kappa": 0.1,
+      "radius": 5.0,
+      "weaken_strength": 1.0,
+      "output": "results\\v1_local_structure_perturbation_30seed_batch3.json"
+    }
+  },
+  "runs": [
+    {
+      "seed": 21,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          322,
+          741
+        ],
+        "age": 600,
+        "midpoint": [
+          23.5,
+          52.0
+        ],
+        "mean_line_compression": 0.8090053881560444
+      },
+      "background_center": [
+        24.0,
+        38.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 22,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          292,
+          727
+        ],
+        "age": 825,
+        "midpoint": [
+          39.0,
+          43.0
+        ],
+        "mean_line_compression": 0.45570049171841487
+      },
+      "background_center": [
+        49.0,
+        23.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          25,
+          460
+        ],
+        "age": 950,
+        "midpoint": [
+          12.5,
+          4.0
+        ],
+        "mean_line_compression": 0.7710174618577877
+      },
+      "background_center": [
+        2.0,
+        44.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 24,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          152,
+          591
+        ],
+        "age": 950,
+        "midpoint": [
+          50.5,
+          23.0
+        ],
+        "mean_line_compression": 0.7128893475721283
+      },
+      "background_center": [
+        24.0,
+        21.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 20,
+          "last_seen_frame": 1500,
+          "survived_to_end": false
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 5,
+          "last_seen_frame": 1125,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 20,
+          "last_seen_frame": 1500,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 25,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          125,
+          509
+        ],
+        "age": 925,
+        "midpoint": [
+          56.0,
+          15.5
+        ],
+        "mean_line_compression": 0.4592284771457876
+      },
+      "background_center": [
+        32.0,
+        10.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        },
+        "background": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 26,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          197,
+          675
+        ],
+        "age": 950,
+        "midpoint": [
+          16.0,
+          29.0
+        ],
+        "mean_line_compression": 0.7861986192754428
+      },
+      "background_center": [
+        55.0,
+        31.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 2,
+          "last_seen_frame": 1050,
+          "survived_to_end": false
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 2,
+          "last_seen_frame": 1050,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 27,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          276,
+          710
+        ],
+        "age": 50,
+        "midpoint": [
+          12.0,
+          39.5
+        ],
+        "mean_line_compression": 0.7644800061967029
+      },
+      "background_center": [
+        0.0,
+        44.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 3,
+          "last_seen_frame": 1075,
+          "survived_to_end": false
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 3,
+          "last_seen_frame": 1075,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 28,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          295,
+          693
+        ],
+        "age": 925,
+        "midpoint": [
+          21.0,
+          41.0
+        ],
+        "mean_line_compression": 0.47661219492576207
+      },
+      "background_center": [
+        42.0,
+        54.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 21,
+          "last_seen_frame": 1525,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          285,
+          735
+        ],
+        "age": 550,
+        "midpoint": [
+          29.5,
+          43.0
+        ],
+        "mean_line_compression": 0.7527878305534028
+      },
+      "background_center": [
+        59.0,
+        3.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 0,
+          "last_seen_frame": 1000,
+          "survived_to_end": false
+        }
+      }
+    },
+    {
+      "seed": 30,
+      "status": "tested",
+      "candidate": {
+        "pair_key": [
+          342,
+          749
+        ],
+        "age": 900,
+        "midpoint": [
+          36.5,
+          51.5
+        ],
+        "mean_line_compression": 0.5724849407092558
+      },
+      "background_center": [
+        6.0,
+        15.0
+      ],
+      "branches": {
+        "untouched": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        },
+        "candidate_neighborhood": {
+          "continuation_samples": 13,
+          "last_seen_frame": 1325,
+          "survived_to_end": false
+        },
+        "background": {
+          "continuation_samples": 40,
+          "last_seen_frame": 2000,
+          "survived_to_end": true
+        }
+      }
+    }
+  ],
+  "summary": {
+    "untouched": {
+      "tested": 10,
+      "survived_to_end": 4,
+      "median_continuation_samples": 11.5
+    },
+    "candidate_neighborhood": {
+      "tested": 10,
+      "survived_to_end": 2,
+      "median_continuation_samples": 2.5
+    },
+    "background": {
+      "tested": 10,
+      "survived_to_end": 4,
+      "median_continuation_samples": 11.5
+    }
+  }
+}

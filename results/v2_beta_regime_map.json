@@ -1,0 +1,1251 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This is a parameter characterization of beta. It does not identify objects or validate a metaphysical claim.",
+  "config": {
+    "N": 64,
+    "frames": 2000,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "log_interval": 20,
+    "tail_fraction": 0.25,
+    "potential_to_actual": [
+      0.05,
+      0.2,
+      0.45
+    ],
+    "relation_difference_gain": [
+      0.2,
+      0.55,
+      0.9
+    ]
+  },
+  "conditions": [
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.2
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.15257929147052188,
+              "std": 0.0017017715839251872
+            },
+            "potential_strength": {
+              "mean": 0.3293273698623145,
+              "std": 0.002637874504448725
+            },
+            "potential_actual_alignment": {
+              "mean": 0.23631419471242823,
+              "std": 0.02052123946288726
+            },
+            "relation_mean": {
+              "mean": 0.21153360446629432,
+              "std": 0.0005407202605196649
+            },
+            "availability_std": {
+              "mean": 0.15272573591804675,
+              "std": 0.0007505782562768266
+            },
+            "neighbor_coherence": {
+              "mean": 0.8998819874679792,
+              "std": 0.00529801478579934
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.07428005676483636,
+              "std": 0.0007512898936622119
+            },
+            "potential_strength": {
+              "mean": 0.354074464429787,
+              "std": 0.003581142144056599
+            },
+            "potential_actual_alignment": {
+              "mean": 0.3713940418170761,
+              "std": 0.025752054494598327
+            },
+            "relation_mean": {
+              "mean": 0.21076694081461195,
+              "std": 0.0005896543792225475
+            },
+            "availability_std": {
+              "mean": 0.14746376365825878,
+              "std": 0.0011200063305885197
+            },
+            "neighbor_coherence": {
+              "mean": 0.8994642606158875,
+              "std": 0.005229607426584007
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.1609089079390471,
+              "std": 0.004333010406162317
+            },
+            "potential_strength": {
+              "mean": 0.37980354275757666,
+              "std": 0.0038602151645919466
+            },
+            "potential_actual_alignment": {
+              "mean": 0.4716125930467243,
+              "std": 0.020068413990547707
+            },
+            "relation_mean": {
+              "mean": 0.21102372596130786,
+              "std": 0.0005755357581522969
+            },
+            "availability_std": {
+              "mean": 0.14361778523751392,
+              "std": 0.0010725251719563814
+            },
+            "neighbor_coherence": {
+              "mean": 0.9023745417597193,
+              "std": 0.004532223922106363
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.12925608539146843,
+          "tail_mean_std_across_seeds": 0.03902237324318264,
+          "tail_temporal_std_mean": 0.0022620239612499054
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.3544017923498927,
+          "tail_mean_std_across_seeds": 0.020608111108874273,
+          "tail_temporal_std_mean": 0.0033597439376990904
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.35977360985874285,
+          "tail_mean_std_across_seeds": 0.09641096028234189,
+          "tail_temporal_std_mean": 0.02211390264934443
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.2111080904140714,
+          "tail_mean_std_across_seeds": 0.00031862340295956944,
+          "tail_temporal_std_mean": 0.0005686367992981697
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.14793576160460647,
+          "tail_mean_std_across_seeds": 0.0037332539824101564,
+          "tail_temporal_std_mean": 0.0009810365862739092
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9005735966145286,
+          "tail_mean_std_across_seeds": 0.001284828521043167,
+          "tail_temporal_std_mean": 0.00501994871149657
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.16888733790635588,
+              "std": 0.001625587209808336
+            },
+            "potential_strength": {
+              "mean": 0.32278450243756796,
+              "std": 0.0025835757124622735
+            },
+            "potential_actual_alignment": {
+              "mean": 0.21989641656815814,
+              "std": 0.019489345191392813
+            },
+            "relation_mean": {
+              "mean": 0.23098567709643428,
+              "std": 0.0013363580575194453
+            },
+            "availability_std": {
+              "mean": 0.14965256648077935,
+              "std": 0.000479840349106527
+            },
+            "neighbor_coherence": {
+              "mean": 0.9053390053447268,
+              "std": 0.0035913821035239006
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.09254411184188527,
+              "std": 0.0014118414016262228
+            },
+            "potential_strength": {
+              "mean": 0.34188480388529435,
+              "std": 0.0028099393735754063
+            },
+            "potential_actual_alignment": {
+              "mean": 0.3174973699089375,
+              "std": 0.020480316643070432
+            },
+            "relation_mean": {
+              "mean": 0.2288854359006404,
+              "std": 0.0014508811210418291
+            },
+            "availability_std": {
+              "mean": 0.14872862435547704,
+              "std": 0.0007867857087613342
+            },
+            "neighbor_coherence": {
+              "mean": 0.9072718132792389,
+              "std": 0.0042547710021842424
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.15413597412305136,
+              "std": 0.004770489984224948
+            },
+            "potential_strength": {
+              "mean": 0.36782937907361724,
+              "std": 0.0031756970325956843
+            },
+            "potential_actual_alignment": {
+              "mean": 0.42769871837889667,
+              "std": 0.01807471920788794
+            },
+            "relation_mean": {
+              "mean": 0.22996820285549713,
+              "std": 0.0012776572569290717
+            },
+            "availability_std": {
+              "mean": 0.1447958150639713,
+              "std": 0.00092824034086091
+            },
+            "neighbor_coherence": {
+              "mean": 0.909389521759842,
+              "std": 0.004345573213592141
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.13852247462376416,
+          "tail_mean_std_across_seeds": 0.033064664587677255,
+          "tail_temporal_std_mean": 0.002602639531886502
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.34416622846549316,
+          "tail_mean_std_across_seeds": 0.018460117395357595,
+          "tail_temporal_std_mean": 0.002856404039544455
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.3216975016186641,
+          "tail_mean_std_across_seeds": 0.08488690511201596,
+          "tail_temporal_std_mean": 0.01934812701411706
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.22994643861752392,
+          "tail_mean_std_across_seeds": 0.0008575579792520721,
+          "tail_temporal_std_mean": 0.001354965478496782
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.14772566863340922,
+          "tail_mean_std_across_seeds": 0.002105777562879198,
+          "tail_temporal_std_mean": 0.0007316221329095904
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9073334467946026,
+          "tail_mean_std_across_seeds": 0.0016541906026697837,
+          "tail_temporal_std_mean": 0.004063908773100094
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.05,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.9
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.15494522125697707,
+              "std": 0.0004227575520855726
+            },
+            "potential_strength": {
+              "mean": 0.3159307943102681,
+              "std": 0.0028078013146835825
+            },
+            "potential_actual_alignment": {
+              "mean": 0.18937921771342597,
+              "std": 0.016514492253032795
+            },
+            "relation_mean": {
+              "mean": 0.24958566602154827,
+              "std": 0.0017173680423179724
+            },
+            "availability_std": {
+              "mean": 0.1495537910257931,
+              "std": 0.0001745081698134241
+            },
+            "neighbor_coherence": {
+              "mean": 0.9083248914762931,
+              "std": 0.0016941489375672367
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.09942304481326535,
+              "std": 0.00273292081339253
+            },
+            "potential_strength": {
+              "mean": 0.3332292357114383,
+              "std": 0.002718548439148019
+            },
+            "potential_actual_alignment": {
+              "mean": 0.28072309429341963,
+              "std": 0.018614958701112343
+            },
+            "relation_mean": {
+              "mean": 0.24629133537054373,
+              "std": 0.0018254116714273316
+            },
+            "availability_std": {
+              "mean": 0.14939102359362932,
+              "std": 0.0005498931386871221
+            },
+            "neighbor_coherence": {
+              "mean": 0.9102801814302727,
+              "std": 0.002037842659525826
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.13765740999282086,
+              "std": 0.0011888353403335975
+            },
+            "potential_strength": {
+              "mean": 0.360148812035675,
+              "std": 0.0028370986056777078
+            },
+            "potential_actual_alignment": {
+              "mean": 0.395319194476296,
+              "std": 0.015236088677985435
+            },
+            "relation_mean": {
+              "mean": 0.24866423727029185,
+              "std": 0.0016706889611566864
+            },
+            "availability_std": {
+              "mean": 0.14485479476475274,
+              "std": 0.0006265042313738905
+            },
+            "neighbor_coherence": {
+              "mean": 0.908172153858027,
+              "std": 0.002459359654253276
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.13067522535435444,
+          "tail_mean_std_across_seeds": 0.023198292983261964,
+          "tail_temporal_std_mean": 0.0014481712352705668
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.3364362806857938,
+          "tail_mean_std_across_seeds": 0.018193810778975614,
+          "tail_temporal_std_mean": 0.0027878161198364366
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.28847383549438055,
+          "tail_mean_std_across_seeds": 0.0842530869825989,
+          "tail_temporal_std_mean": 0.01678851321071019
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.2481804128874613,
+          "tail_mean_std_across_seeds": 0.0013877363185185272,
+          "tail_temporal_std_mean": 0.0017378228916339969
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.14793320312805838,
+          "tail_mean_std_across_seeds": 0.0021777774370055855,
+          "tail_temporal_std_mean": 0.0004503018466248122
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9089257422548642,
+          "tail_mean_std_across_seeds": 0.0009597608399732277,
+          "tail_temporal_std_mean": 0.0020637837504487795
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.2,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.2
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.025997412983838286,
+              "std": 0.007326599113589451
+            },
+            "potential_strength": {
+              "mean": 0.5196941917991615,
+              "std": 0.002819335781919547
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9216223239464807,
+              "std": 0.012715706507097952
+            },
+            "relation_mean": {
+              "mean": 0.21108736525740385,
+              "std": 0.0006284378788922631
+            },
+            "availability_std": {
+              "mean": 0.07772088879135769,
+              "std": 0.005630786266697072
+            },
+            "neighbor_coherence": {
+              "mean": 0.9045023190324086,
+              "std": 0.005674181496092543
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.12395527027431101,
+              "std": 0.0012909698578627302
+            },
+            "potential_strength": {
+              "mean": 0.5243657974381388,
+              "std": 0.0010849035767079502
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9474953301388813,
+              "std": 0.0065737809461599295
+            },
+            "relation_mean": {
+              "mean": 0.20968054379798917,
+              "std": 0.0005567948552921239
+            },
+            "availability_std": {
+              "mean": 0.06728496581439505,
+              "std": 0.002930518456292652
+            },
+            "neighbor_coherence": {
+              "mean": 0.9203378961234452,
+              "std": 0.0040606473908710375
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.18646787159761324,
+              "std": 0.005322245873428036
+            },
+            "potential_strength": {
+              "mean": 0.5237742489214929,
+              "std": 0.0010311606970477346
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9354629639353033,
+              "std": 0.007598881494957171
+            },
+            "relation_mean": {
+              "mean": 0.21036930066186826,
+              "std": 0.0005920274855581493
+            },
+            "availability_std": {
+              "mean": 0.07003501723250423,
+              "std": 0.003420892060760969
+            },
+            "neighbor_coherence": {
+              "mean": 0.9138163067708321,
+              "std": 0.004644856083248037
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.11214018495192085,
+          "tail_mean_std_across_seeds": 0.0660423561199444,
+          "tail_temporal_std_mean": 0.004646604948293406
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.5226114127195978,
+          "tail_mean_std_across_seeds": 0.0020768751905783154,
+          "tail_temporal_std_mean": 0.0016451333518917438
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.9348602060068885,
+          "tail_mean_std_across_seeds": 0.010571206181516548,
+          "tail_temporal_std_mean": 0.008962789649405018
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.21037906990575375,
+          "tail_mean_std_across_seeds": 0.0005743739973582718,
+          "tail_temporal_std_mean": 0.0005924200732475121
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.07168029061275233,
+          "tail_mean_std_across_seeds": 0.004416432607666427,
+          "tail_temporal_std_mean": 0.0039940655945835644
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9128855073088953,
+          "tail_mean_std_across_seeds": 0.006498264700687246,
+          "tail_temporal_std_mean": 0.004793228323403872
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.2,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.07794428719976039,
+              "std": 0.007254376934061596
+            },
+            "potential_strength": {
+              "mean": 0.4918638161644905,
+              "std": 0.005033024371217635
+            },
+            "potential_actual_alignment": {
+              "mean": 0.8397148129905436,
+              "std": 0.020799951295472168
+            },
+            "relation_mean": {
+              "mean": 0.23017857653882987,
+              "std": 0.0016401287647397217
+            },
+            "availability_std": {
+              "mean": 0.10179965339689168,
+              "std": 0.00526900772036143
+            },
+            "neighbor_coherence": {
+              "mean": 0.9089524570869963,
+              "std": 0.005136203940867566
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.13667182222848737,
+              "std": 0.005323027273224224
+            },
+            "potential_strength": {
+              "mean": 0.5080196321160336,
+              "std": 0.002924370156119609
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9074153243062328,
+              "std": 0.014262239915319788
+            },
+            "relation_mean": {
+              "mean": 0.22672386438778327,
+              "std": 0.0017561693374238475
+            },
+            "availability_std": {
+              "mean": 0.0769852195150745,
+              "std": 0.005439135266954038
+            },
+            "neighbor_coherence": {
+              "mean": 0.9232221046392026,
+              "std": 0.005045973146651785
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.17729633897459865,
+              "std": 0.005119370583831183
+            },
+            "potential_strength": {
+              "mean": 0.5054592485251057,
+              "std": 0.002898811119936954
+            },
+            "potential_actual_alignment": {
+              "mean": 0.8896166191005537,
+              "std": 0.011734197742990343
+            },
+            "relation_mean": {
+              "mean": 0.22785531749140256,
+              "std": 0.0014084770971259106
+            },
+            "availability_std": {
+              "mean": 0.08222633580896758,
+              "std": 0.004429602350612236
+            },
+            "neighbor_coherence": {
+              "mean": 0.9182710396275399,
+              "std": 0.004399980171201223
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.1306374828009488,
+          "tail_mean_std_across_seeds": 0.040784126709726955,
+          "tail_temporal_std_mean": 0.0058989249303723346
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.5017808989352099,
+          "tail_mean_std_across_seeds": 0.007089912507412614,
+          "tail_temporal_std_mean": 0.003618735215758066
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.8789155854657767,
+          "tail_mean_std_across_seeds": 0.02865570215205474,
+          "tail_temporal_std_mean": 0.015598796317927432
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.22825258613933858,
+          "tail_mean_std_across_seeds": 0.0014380833994410566,
+          "tail_temporal_std_mean": 0.0016015917330964933
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.08700373624031126,
+          "tail_mean_std_across_seeds": 0.0106788482019308,
+          "tail_temporal_std_mean": 0.005045915112642568
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9168152004512463,
+          "tail_mean_std_across_seeds": 0.005915815587415937,
+          "tail_temporal_std_mean": 0.0048607190862401915
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.2,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.9
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.07595254779186589,
+              "std": 0.010230924686155399
+            },
+            "potential_strength": {
+              "mean": 0.47926689457853344,
+              "std": 0.005984079387744734
+            },
+            "potential_actual_alignment": {
+              "mean": 0.8075123166818554,
+              "std": 0.024869935702182218
+            },
+            "relation_mean": {
+              "mean": 0.24898586766243178,
+              "std": 0.0028035087102391463
+            },
+            "availability_std": {
+              "mean": 0.10495715245502557,
+              "std": 0.005976030749678517
+            },
+            "neighbor_coherence": {
+              "mean": 0.9105550461141984,
+              "std": 0.005415259293551846
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.13219300134524364,
+              "std": 0.002019152104491453
+            },
+            "potential_strength": {
+              "mean": 0.4921667336699784,
+              "std": 0.004284319178290394
+            },
+            "potential_actual_alignment": {
+              "mean": 0.8639502789084835,
+              "std": 0.016893200754816047
+            },
+            "relation_mean": {
+              "mean": 0.24385904630610142,
+              "std": 0.0029214476622133278
+            },
+            "availability_std": {
+              "mean": 0.08835679586303272,
+              "std": 0.005719298956816603
+            },
+            "neighbor_coherence": {
+              "mean": 0.924221952704,
+              "std": 0.0052071247242451045
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.1774786063948553,
+              "std": 0.0026261757029299253
+            },
+            "potential_strength": {
+              "mean": 0.4978072206949627,
+              "std": 0.0037499288909421187
+            },
+            "potential_actual_alignment": {
+              "mean": 0.8714489576788487,
+              "std": 0.012094057079748099
+            },
+            "relation_mean": {
+              "mean": 0.24518072947371194,
+              "std": 0.0020990523494147893
+            },
+            "availability_std": {
+              "mean": 0.08478775937551833,
+              "std": 0.004342439507987505
+            },
+            "neighbor_coherence": {
+              "mean": 0.9232408813878713,
+              "std": 0.00341674617259907
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.1285413851773216,
+          "tail_mean_std_across_seeds": 0.0415281901792247,
+          "tail_temporal_std_mean": 0.004958750831192259
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.48974694964782484,
+          "tail_mean_std_across_seeds": 0.007760044637384045,
+          "tail_temporal_std_mean": 0.004672775818992415
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.8476371844230626,
+          "tail_mean_std_across_seeds": 0.028537242383270604,
+          "tail_temporal_std_mean": 0.01795239784558212
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.2460085478140817,
+          "tail_mean_std_across_seeds": 0.002173328738505472,
+          "tail_temporal_std_mean": 0.002608002907289088
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.0927005692311922,
+          "tail_mean_std_across_seeds": 0.008788339987520107,
+          "tail_temporal_std_mean": 0.005345923071494209
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9193392934020232,
+          "tail_mean_std_across_seeds": 0.006224300525203692,
+          "tail_temporal_std_mean": 0.004679710063465341
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.45,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.2
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.03357919586091428,
+              "std": 0.0004975801293323008
+            },
+            "potential_strength": {
+              "mean": 0.5525993270219075,
+              "std": 0.0019537993002285564
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9966277241739444,
+              "std": 2.8042430509996254e-05
+            },
+            "relation_mean": {
+              "mean": 0.21080973534633685,
+              "std": 0.0004494864351601945
+            },
+            "availability_std": {
+              "mean": 0.055508370251865106,
+              "std": 0.0006975700890196579
+            },
+            "neighbor_coherence": {
+              "mean": 0.9052265966852445,
+              "std": 0.0027523630679740976
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.13569013655337442,
+              "std": 0.003643552053382824
+            },
+            "potential_strength": {
+              "mean": 0.5484360940745289,
+              "std": 0.0018536527058345853
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9965339126606483,
+              "std": 2.9952297299208117e-05
+            },
+            "relation_mean": {
+              "mean": 0.2099788612543618,
+              "std": 0.0004307565213301412
+            },
+            "availability_std": {
+              "mean": 0.054045405946175434,
+              "std": 0.000999388353335312
+            },
+            "neighbor_coherence": {
+              "mean": 0.9135561057613918,
+              "std": 0.003300288145161747
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.17646253392166242,
+              "std": 0.004422874270563726
+            },
+            "potential_strength": {
+              "mean": 0.5518938439650515,
+              "std": 0.0019452828214789096
+            },
+            "potential_actual_alignment": {
+              "mean": 0.996524743163044,
+              "std": 2.818690485470163e-05
+            },
+            "relation_mean": {
+              "mean": 0.21066707485878117,
+              "std": 0.00046663126515797675
+            },
+            "availability_std": {
+              "mean": 0.055010480699366565,
+              "std": 0.0011406475850431537
+            },
+            "neighbor_coherence": {
+              "mean": 0.906958695749716,
+              "std": 0.0033736310688420165
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.11524395544531704,
+          "tail_mean_std_across_seeds": 0.06009684858777606,
+          "tail_temporal_std_mean": 0.0028546688177596173
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.5509764216871627,
+          "tail_mean_std_across_seeds": 0.0018192260021796527,
+          "tail_temporal_std_mean": 0.0019175782758473505
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.9965621266658788,
+          "tail_mean_std_across_seeds": 4.653525344570444e-05,
+          "tail_temporal_std_mean": 2.8727210887968666e-05
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.2104852238198266,
+          "tail_mean_std_across_seeds": 0.00036275822017378705,
+          "tail_temporal_std_mean": 0.00044895807388277084
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.0548547522991357,
+          "tail_mean_std_across_seeds": 0.0006073190489955913,
+          "tail_temporal_std_mean": 0.0009458686757993746
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9085804660654507,
+          "tail_mean_std_across_seeds": 0.0035886659155507715,
+          "tail_temporal_std_mean": 0.0031420940939926203
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.45,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.55
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.03063780565982302,
+              "std": 0.0014962493310871478
+            },
+            "potential_strength": {
+              "mean": 0.5505704886865177,
+              "std": 0.0015276316288526063
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9933020253232371,
+              "std": 0.00042958732702057766
+            },
+            "relation_mean": {
+              "mean": 0.22963877618497236,
+              "std": 0.0011552906099109971
+            },
+            "availability_std": {
+              "mean": 0.05399303267278079,
+              "std": 0.0004212405015955053
+            },
+            "neighbor_coherence": {
+              "mean": 0.9061552921475693,
+              "std": 0.0020674998118572854
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.1317133258384378,
+              "std": 0.0024033873438600055
+            },
+            "potential_strength": {
+              "mean": 0.5456308830384736,
+              "std": 0.0015851054839319102
+            },
+            "potential_actual_alignment": {
+              "mean": 0.995095404127177,
+              "std": 0.0003773876771786248
+            },
+            "relation_mean": {
+              "mean": 0.226352044296658,
+              "std": 0.0011490477287349064
+            },
+            "availability_std": {
+              "mean": 0.05095958203432677,
+              "std": 0.0009296757951988189
+            },
+            "neighbor_coherence": {
+              "mean": 0.9181091232132605,
+              "std": 0.0031755365708690266
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.17806035797209038,
+              "std": 0.0070357387084986215
+            },
+            "potential_strength": {
+              "mean": 0.5506993996400279,
+              "std": 0.001317222541343702
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9938454357283798,
+              "std": 0.0014061267952966022
+            },
+            "relation_mean": {
+              "mean": 0.22969162437634574,
+              "std": 0.0013251972966373503
+            },
+            "availability_std": {
+              "mean": 0.05233465720327259,
+              "std": 0.0012284992858550363
+            },
+            "neighbor_coherence": {
+              "mean": 0.9068052999770395,
+              "std": 0.004220409269686801
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.11347049649011708,
+          "tail_mean_std_across_seeds": 0.0615518905723172,
+          "tail_temporal_std_mean": 0.0036451251278152583
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.5489669237883398,
+          "tail_mean_std_across_seeds": 0.0023595240229135465,
+          "tail_temporal_std_mean": 0.0014766532180427395
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.9940809550595979,
+          "tail_mean_std_across_seeds": 0.0007508457010324374,
+          "tail_temporal_std_mean": 0.0007377005998319349
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.2285608149526587,
+          "tail_mean_std_across_seeds": 0.0015619857214328543,
+          "tail_temporal_std_mean": 0.0012098452117610846
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.052429090636793386,
+          "tail_mean_std_across_seeds": 0.0012401999701685687,
+          "tail_temporal_std_mean": 0.0008598051942164535
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9103565717792897,
+          "tail_mean_std_across_seeds": 0.005488300759911319,
+          "tail_temporal_std_mean": 0.0031544818841377042
+        }
+      }
+    },
+    {
+      "params": {
+        "potential_transport": 0.1,
+        "potential_source_restore": 0.08,
+        "potential_turn": 0.24,
+        "availability_replenish": 0.1,
+        "availability_tension_gain": 0.28,
+        "actualization_depletion": 0.35,
+        "actual_alignment": 0.28,
+        "potential_to_actual": 0.45,
+        "relation_rate": 0.12,
+        "relation_baseline": 0.2,
+        "relation_difference_gain": 0.9
+      },
+      "runs": [
+        {
+          "seed": 1,
+          "tail": {
+            "actual_order": {
+              "mean": 0.03964320693200062,
+              "std": 0.003937655145256014
+            },
+            "potential_strength": {
+              "mean": 0.5469571802348242,
+              "std": 0.0013720019743151553
+            },
+            "potential_actual_alignment": {
+              "mean": 0.985116519968626,
+              "std": 0.0011660711823502697
+            },
+            "relation_mean": {
+              "mean": 0.24859404441065877,
+              "std": 0.0022365034043665168
+            },
+            "availability_std": {
+              "mean": 0.05375092355868007,
+              "std": 0.0009378389044423227
+            },
+            "neighbor_coherence": {
+              "mean": 0.9084044561810041,
+              "std": 0.002780971936021979
+            }
+          }
+        },
+        {
+          "seed": 2,
+          "tail": {
+            "actual_order": {
+              "mean": 0.135267856049506,
+              "std": 0.003291262195374548
+            },
+            "potential_strength": {
+              "mean": 0.5438484962336448,
+              "std": 0.0013431095272882735
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9915299522141643,
+              "std": 0.0007426091693310957
+            },
+            "relation_mean": {
+              "mean": 0.243463024682064,
+              "std": 0.0019011392509067915
+            },
+            "availability_std": {
+              "mean": 0.04969423634871618,
+              "std": 0.0009714275987630186
+            },
+            "neighbor_coherence": {
+              "mean": 0.9176263628650827,
+              "std": 0.0032218971675569085
+            }
+          }
+        },
+        {
+          "seed": 3,
+          "tail": {
+            "actual_order": {
+              "mean": 0.17510306988535804,
+              "std": 0.007668083256586039
+            },
+            "potential_strength": {
+              "mean": 0.544717015568892,
+              "std": 0.0011339124671888522
+            },
+            "potential_actual_alignment": {
+              "mean": 0.9782960249741166,
+              "std": 0.0021743349803478385
+            },
+            "relation_mean": {
+              "mean": 0.24864780791246047,
+              "std": 0.0021493595514565918
+            },
+            "availability_std": {
+              "mean": 0.055375026559272914,
+              "std": 0.0019096404511687332
+            },
+            "neighbor_coherence": {
+              "mean": 0.9073823834582438,
+              "std": 0.003671380773741771
+            }
+          }
+        }
+      ],
+      "aggregate": {
+        "actual_order": {
+          "tail_mean_across_seeds": 0.11667137762228821,
+          "tail_mean_std_across_seeds": 0.05684314895837536,
+          "tail_temporal_std_mean": 0.0049656668657388665
+        },
+        "potential_strength": {
+          "tail_mean_across_seeds": 0.5451742306791203,
+          "tail_mean_std_across_seeds": 0.00130964710197391,
+          "tail_temporal_std_mean": 0.001283007989597427
+        },
+        "potential_actual_alignment": {
+          "tail_mean_across_seeds": 0.9849808323856356,
+          "tail_mean_std_across_seeds": 0.005403580040976065,
+          "tail_temporal_std_mean": 0.0013610051106764014
+        },
+        "relation_mean": {
+          "tail_mean_across_seeds": 0.2469016256683944,
+          "tail_mean_std_across_seeds": 0.0024315571397667377,
+          "tail_temporal_std_mean": 0.0020956674022433
+        },
+        "availability_std": {
+          "tail_mean_across_seeds": 0.05294006215555638,
+          "tail_mean_std_across_seeds": 0.0023889979092213665,
+          "tail_temporal_std_mean": 0.0012729689847913582
+        },
+        "neighbor_coherence": {
+          "tail_mean_across_seeds": 0.9111377341681102,
+          "tail_mean_std_across_seeds": 0.004607087651147513,
+          "tail_temporal_std_mean": 0.003224749959106886
+        }
+      }
+    }
+  ]
+}

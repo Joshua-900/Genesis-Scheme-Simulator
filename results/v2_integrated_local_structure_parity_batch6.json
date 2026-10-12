@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This compares a validated local structural continuation measurement across P/A conditions; it does not establish higher-order objects.",
+  "experiment": {
+    "name": "v2_integrated_local_structure_probe",
+    "parameters": {
+      "N": 64,
+      "burn_in_frames": 1000,
+      "follow_frames": 1000,
+      "seeds": 5,
+      "seed_start": 26,
+      "sample_interval": 25,
+      "max_pair_distance": 64.0,
+      "radius": 5.0,
+      "weaken_strength": 1.0,
+      "condition": "parity",
+      "output": "results\\v2_integrated_local_structure_parity_batch6.json"
+    }
+  },
+  "conditions": [
+    {
+      "condition": "v1_parity",
+      "runs": [
+        {
+          "seed": 26,
+          "status": "tested",
+          "potential_actual_alignment": -0.0020266474747342163,
+          "candidate_line_compression": 0.7861986192754428,
+          "branches": {
+            "untouched": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 2,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 27,
+          "status": "tested",
+          "potential_actual_alignment": -0.006270696360620401,
+          "candidate_line_compression": 0.7644800061967029,
+          "branches": {
+            "untouched": {
+              "continuation_samples": 3,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 3,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 28,
+          "status": "tested",
+          "potential_actual_alignment": -0.00669895423077505,
+          "candidate_line_compression": 0.47661219492576207,
+          "branches": {
+            "untouched": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 21,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            }
+          }
+        },
+        {
+          "seed": 29,
+          "status": "tested",
+          "potential_actual_alignment": -0.004592567106729532,
+          "candidate_line_compression": 0.7527878305534028,
+          "branches": {
+            "untouched": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 0,
+              "survived_to_end": false
+            }
+          }
+        },
+        {
+          "seed": 30,
+          "status": "tested",
+          "potential_actual_alignment": 0.006398054433466185,
+          "candidate_line_compression": 0.5724849407092558,
+          "branches": {
+            "untouched": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            },
+            "candidate_neighborhood": {
+              "continuation_samples": 13,
+              "survived_to_end": false
+            },
+            "background": {
+              "continuation_samples": 40,
+              "survived_to_end": true
+            }
+          }
+        }
+      ],
+      "summary": {
+        "untouched": {
+          "tested": 5,
+          "survived_to_end": 2,
+          "median_continuation_samples": 3.0
+        },
+        "candidate_neighborhood": {
+          "tested": 5,
+          "survived_to_end": 0,
+          "median_continuation_samples": 0.0
+        },
+        "background": {
+          "tested": 5,
+          "survived_to_end": 2,
+          "median_continuation_samples": 3.0
+        }
+      }
+    }
+  ]
+}

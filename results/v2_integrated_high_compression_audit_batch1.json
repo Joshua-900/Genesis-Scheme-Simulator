@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "Field-level audit only; no object claim.",
+  "experiment": {
+    "name": "v2_integrated_high_compression_pa_audit",
+    "N": 64,
+    "frames": 2000,
+    "seeds": 5
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "parity": {
+        "pa_alignment": -0.0006611526574079266,
+        "actual_order": 0.15207801800093212,
+        "mean_tension": 0.04259192370444846,
+        "mean_compression": 0.06316263401620367,
+        "vortex_count": 32
+      },
+      "potential": {
+        "pa_alignment": 0.2545169427246116,
+        "actual_order": 0.16241993232878502,
+        "mean_tension": 0.11360024254997658,
+        "mean_compression": 0.06179195755024535,
+        "vortex_count": 32
+      }
+    },
+    {
+      "seed": 2,
+      "parity": {
+        "pa_alignment": 0.015384958874402832,
+        "actual_order": 0.19625615982640793,
+        "mean_tension": 0.04913744498953203,
+        "mean_compression": 0.06668776777891339,
+        "vortex_count": 24
+      },
+      "potential": {
+        "pa_alignment": 0.24880316504334762,
+        "actual_order": 0.1921882478225621,
+        "mean_tension": 0.1127082883180135,
+        "mean_compression": 0.06387731084177203,
+        "vortex_count": 38
+      }
+    },
+    {
+      "seed": 3,
+      "parity": {
+        "pa_alignment": 0.012161587234769023,
+        "actual_order": 0.3039658118522023,
+        "mean_tension": 0.04713672882056007,
+        "mean_compression": 0.06840433697539779,
+        "vortex_count": 36
+      },
+      "potential": {
+        "pa_alignment": 0.279533924807569,
+        "actual_order": 0.3436355600278121,
+        "mean_tension": 0.11384903863749474,
+        "mean_compression": 0.06857149967992215,
+        "vortex_count": 30
+      }
+    },
+    {
+      "seed": 4,
+      "parity": {
+        "pa_alignment": 0.00100332386773593,
+        "actual_order": 0.17530296223860328,
+        "mean_tension": 0.04495692104796584,
+        "mean_compression": 0.06251959600466746,
+        "vortex_count": 38
+      },
+      "potential": {
+        "pa_alignment": 0.22720872067981676,
+        "actual_order": 0.2249776498501677,
+        "mean_tension": 0.1162208103050002,
+        "mean_compression": 0.07636268035210447,
+        "vortex_count": 36
+      }
+    },
+    {
+      "seed": 5,
+      "parity": {
+        "pa_alignment": 0.01261667493107938,
+        "actual_order": 0.13910624983073544,
+        "mean_tension": 0.046151152523849534,
+        "mean_compression": 0.06600671470009753,
+        "vortex_count": 32
+      },
+      "potential": {
+        "pa_alignment": 0.28443625793071814,
+        "actual_order": 0.24894227681948836,
+        "mean_tension": 0.11408622924991699,
+        "mean_compression": 0.06790686589031666,
+        "vortex_count": 32
+      }
+    }
+  ],
+  "medians": {
+    "pa_alignment": {
+      "parity": 0.012161587234769023,
+      "potential": 0.2545169427246116
+    },
+    "actual_order": {
+      "parity": 0.17530296223860328,
+      "potential": 0.2249776498501677
+    },
+    "mean_tension": {
+      "parity": 0.046151152523849534,
+      "potential": 0.11384903863749474
+    },
+    "mean_compression": {
+      "parity": 0.06600671470009753,
+      "potential": 0.06790686589031666
+    },
+    "vortex_count": {
+      "parity": 32.0,
+      "potential": 32.0
+    }
+  }
+}

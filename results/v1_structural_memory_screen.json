@@ -1,0 +1,165 @@
+{
+  "claim_boundary": "Regime screen only; no object claim.",
+  "conditions": [
+    {
+      "gain": 0,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 126,
+          "long": 41,
+          "compression": 0.06316263401620367,
+          "memory": 0.07757254697438937
+        },
+        {
+          "seed": 2,
+          "persistent": 94,
+          "long": 31,
+          "compression": 0.06668776777891339,
+          "memory": 0.07991435363598853
+        },
+        {
+          "seed": 3,
+          "persistent": 123,
+          "long": 41,
+          "compression": 0.06840433697539779,
+          "memory": 0.08089716864922016
+        }
+      ],
+      "median": {
+        "persistent": 123.0,
+        "long": 41.0,
+        "compression": 0.06668776777891339,
+        "memory": 0.07991435363598853
+      }
+    },
+    {
+      "gain": 0.1,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 126,
+          "long": 42,
+          "compression": 0.0643375849004863,
+          "memory": 0.07902866152388444
+        },
+        {
+          "seed": 2,
+          "persistent": 94,
+          "long": 31,
+          "compression": 0.06704499821657159,
+          "memory": 0.08018880464709993
+        },
+        {
+          "seed": 3,
+          "persistent": 125,
+          "long": 43,
+          "compression": 0.06649299038153583,
+          "memory": 0.08015174351843019
+        }
+      ],
+      "median": {
+        "persistent": 125.0,
+        "long": 42.0,
+        "compression": 0.06649299038153583,
+        "memory": 0.08015174351843019
+      }
+    },
+    {
+      "gain": 0.3,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 134,
+          "long": 43,
+          "compression": 0.06581281804542534,
+          "memory": 0.08073062572665643
+        },
+        {
+          "seed": 2,
+          "persistent": 94,
+          "long": 31,
+          "compression": 0.06934724663224745,
+          "memory": 0.08265894023484918
+        },
+        {
+          "seed": 3,
+          "persistent": 126,
+          "long": 44,
+          "compression": 0.0680955712412596,
+          "memory": 0.08110875339367923
+        }
+      ],
+      "median": {
+        "persistent": 126.0,
+        "long": 43.0,
+        "compression": 0.0680955712412596,
+        "memory": 0.08110875339367923
+      }
+    },
+    {
+      "gain": 0.6,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 129,
+          "long": 43,
+          "compression": 0.06901223234316091,
+          "memory": 0.08200711387064519
+        },
+        {
+          "seed": 2,
+          "persistent": 94,
+          "long": 31,
+          "compression": 0.0718829660977474,
+          "memory": 0.08471552857181788
+        },
+        {
+          "seed": 3,
+          "persistent": 124,
+          "long": 42,
+          "compression": 0.06806007708637199,
+          "memory": 0.08107254225461051
+        }
+      ],
+      "median": {
+        "persistent": 124.0,
+        "long": 42.0,
+        "compression": 0.06901223234316091,
+        "memory": 0.08200711387064519
+      }
+    },
+    {
+      "gain": 1,
+      "runs": [
+        {
+          "seed": 1,
+          "persistent": 125,
+          "long": 40,
+          "compression": 0.07092820470215376,
+          "memory": 0.08313079775171606
+        },
+        {
+          "seed": 2,
+          "persistent": 96,
+          "long": 32,
+          "compression": 0.07274652536106595,
+          "memory": 0.08611755136713879
+        },
+        {
+          "seed": 3,
+          "persistent": 123,
+          "long": 44,
+          "compression": 0.06946926145380794,
+          "memory": 0.08236922525130216
+        }
+      ],
+      "median": {
+        "persistent": 123.0,
+        "long": 40.0,
+        "compression": 0.07092820470215376,
+        "memory": 0.08313079775171606
+      }
+    }
+  ]
+}

@@ -13,6 +13,9 @@ class GenesisState:
         self.ux    = xp.zeros((N, N))
         self.uy    = xp.zeros((N, N))
         self.C     = xp.zeros((N, N))   # compression field
+        self.inhibitor = xp.zeros((N, N))  # optional scale-selection memory
+        self.memory_x = xp.zeros((N, N))
+        self.memory_y = xp.zeros((N, N))
 
         x = xp.arange(N)
         y = xp.arange(N)
@@ -47,6 +50,20 @@ class GenesisParams:
         self.tri_lock_gain   = 0.0 #3.0    # amplify triads in compressed cores
         self.phase_lock_gain = 0.0 #2.5    # amplify phase wells in compressed cores
         self.shell_geom_gain = 0.08   # compression gradients push geometry outward
+        # Experimental: compressed neighborhoods can restore local orientation
+        # coherence. Zero keeps every existing V1 pipeline unchanged.
+        self.boundary_renewal = 0.0
+        # Experimental activator-inhibitor scale selection.  All zero means
+        # no state change and preserves the existing V1 update exactly.
+        self.inhibitor_source = 0.0
+        self.inhibitor_decay = 0.0
+        self.inhibitor_diffusion = 0.0
+        self.inhibitor_tension_damping = 0.0
+        # Experimental structural-template memory.  The template is written
+        # only in compressed regions and can later restore their orientation.
+        self.template_write_rate = 0.0
+        self.template_decay = 0.0
+        self.template_restore_gain = 0.0
 
 # ---------- helper: angle_diff ----------
 
