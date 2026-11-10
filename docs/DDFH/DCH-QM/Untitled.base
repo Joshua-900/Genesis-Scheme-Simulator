@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - file.links
+      - file.tags
+    columnSize:
+      file.links: 590
