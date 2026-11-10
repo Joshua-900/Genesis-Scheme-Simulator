@@ -1,0 +1,208 @@
+{
+  "main": {
+    "id": "fba64f73568bd177",
+    "type": "split",
+    "children": [
+      {
+        "id": "69fc2ce5c87bc935",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa164e062d0bfda1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PoolCorp Software Wiki/Poolcorp Software Wiki/Quality-Assurance-Wiki/Postman-Automation-and-Pipeline.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Postman-Automation-and-Pipeline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "236c43a973a6b783",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7bc4f68242a2ded",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d626ab5d96b3c8b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8a0fa198c262f5f5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fab69679eab9497d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "45d009b97179f60d",
+    "type": "split",
+    "children": [
+      {
+        "id": "31dfe14709390d72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26a03dd9732fdfbe",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "cbf5d84fd976a168",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "e9df6b3cc73490b6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "72b90d29d1ca1a14",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "aa164e062d0bfda1",
+  "lastOpenFiles": [
+    "_TOC_.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Software-Engineering-Wiki/Apps/Azure-Notifier/NotificationAssistant-(.NET-Package)/Email/Demos.md",
+    "DCH-QM/Dimensional Accessibility Experiment Plan (Formal).md",
+    "DCH-QM/Deterministic Dimensional Flow Hypothesis (DDFH) Dashboard.md",
+    "DCH-QM/Definitions (Formal).md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Splunk/Splunk-Dashboards-and-Visualization.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Splunk/Getting-Started-with-Splunk.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Splunk/Splunk-Alerts-and-Notifications.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/ContentSquare/Getting-Started-with-Contentsquare.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Application-Insights/Application-Insights-Alerts-and-Notifications.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/ContentSquare/Contentsquare-Dashboards-and-Visualization.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/ContentSquare/Contentsquare-Alerts-and-Notifications.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Application-Insights/Getting-Started-with-Application-Insights.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Application-Insights/Application-Insights-Dashboards-and-Visualization.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Health-Checks/Best-Practice%3A-Health-Checks-in-ASP.NET-Core.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Eliminate-Noise-from-Telemetry/Best-Practice%3A-Logging-404-API-responses.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/Performance-Monitoring-across-the-Development-Lifecycle/Monitoring-and-Observability-Requirements-Examples.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Splunk.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Splunk",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/ContentSquare.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/ContentSquare",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Application-Insights.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools/Application-Insights",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Semantic-Logging.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Health-Checks.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Health-Checks",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Eliminate-Noise-from-Telemetry.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices/Best-Practice%3A-Eliminate-Noise-from-Telemetry",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/Application-Performance-Monitoring.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/Performance-Monitoring-across-the-Development-Lifecycle.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/Performance-Monitoring-across-the-Development-Lifecycle",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/Introduction-to-APM.md",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Tools",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance/APM-Best-Practices",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Application-Performance",
+    "PoolCorp Software Wiki/Poolcorp Software Wiki/Agile-Release-Train/Feature-Teams/Order-Central-Feature-Team/Order-Entry-Pipelines"
+  ]
+}
