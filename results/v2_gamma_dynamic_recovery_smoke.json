@@ -1,0 +1,941 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This uses incremental overlap to track a candidate through movement or transformation after boundary weakening. It measures model continuity, not autonomous identity or metaphysical validity.",
+  "config": {
+    "N": 64,
+    "warmup_frames": 1200,
+    "recovery_frames": 200,
+    "seeds": 2,
+    "seed_start": 1,
+    "sample_interval": 25,
+    "cutoff": 0.75,
+    "min_area": 24,
+    "min_iou": 0.15,
+    "max_missed": 2,
+    "strength": 0.85,
+    "max_background_overlap": 0.25,
+    "potential_to_actual": 0.05,
+    "relation_difference_gain": 0.55,
+    "boundary_rate": 0.18,
+    "boundary_decay": 0.04,
+    "params": {
+      "potential_transport": 0.1,
+      "potential_source_restore": 0.08,
+      "potential_turn": 0.24,
+      "availability_replenish": 0.1,
+      "availability_tension_gain": 0.28,
+      "actualization_depletion": 0.35,
+      "actual_alignment": 0.28,
+      "potential_to_actual": 0.05,
+      "relation_rate": 0.12,
+      "relation_baseline": 0.2,
+      "relation_difference_gain": 0.55,
+      "boundary_rate": 0.18,
+      "boundary_decay": 0.04,
+      "boundary_permeability_floor": 0.04,
+      "boundary_permeability_span": 0.82
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "status": "measured",
+      "candidate": {
+        "area": 90,
+        "initial_perimeter_boundary": 0.2703691021949323
+      },
+      "tracks": {
+        "control": {
+          "status": "active",
+          "samples": 9,
+          "last_seen_frame": 200,
+          "max_area": 148,
+          "final_area": 148,
+          "history": [
+            {
+              "frame": 0,
+              "area": 90,
+              "centroid": [
+                33.13333333333333,
+                49.75555555555555
+              ],
+              "coherence": 0.5938739511054053,
+              "boundary_contrast": 0.3888809098736946,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 25,
+              "area": 112,
+              "centroid": [
+                34.42857142857143,
+                50.660714285714285
+              ],
+              "coherence": 0.41325950230232966,
+              "boundary_contrast": 0.3394307172795127,
+              "overlap_with_previous": 0.7565217391304347
+            },
+            {
+              "frame": 50,
+              "area": 113,
+              "centroid": [
+                34.4070796460177,
+                50.68141592920354
+              ],
+              "coherence": 0.4141841635627693,
+              "boundary_contrast": 0.4046457720282479,
+              "overlap_with_previous": 0.9911504424778761
+            },
+            {
+              "frame": 75,
+              "area": 113,
+              "centroid": [
+                34.4070796460177,
+                50.68141592920354
+              ],
+              "coherence": 0.41136031455441946,
+              "boundary_contrast": 0.40134050545799893,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 100,
+              "area": 143,
+              "centroid": [
+                34.92307692307692,
+                49.67832167832168
+              ],
+              "coherence": 0.4956504721960248,
+              "boundary_contrast": 0.47281114396932983,
+              "overlap_with_previous": 0.7902097902097902
+            },
+            {
+              "frame": 125,
+              "area": 147,
+              "centroid": [
+                34.7891156462585,
+                49.673469387755105
+              ],
+              "coherence": 0.48607602867949196,
+              "boundary_contrast": 0.47595804411188664,
+              "overlap_with_previous": 0.9727891156462585
+            },
+            {
+              "frame": 150,
+              "area": 148,
+              "centroid": [
+                34.777027027027025,
+                49.66216216216216
+              ],
+              "coherence": 0.4872550224820963,
+              "boundary_contrast": 0.47267454870498377,
+              "overlap_with_previous": 0.9932432432432432
+            },
+            {
+              "frame": 175,
+              "area": 148,
+              "centroid": [
+                34.777027027027025,
+                49.66216216216216
+              ],
+              "coherence": 0.4854597878756687,
+              "boundary_contrast": 0.47046920079485743,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 200,
+              "area": 148,
+              "centroid": [
+                34.777027027027025,
+                49.66216216216216
+              ],
+              "coherence": 0.4837933476499544,
+              "boundary_contrast": 0.46826841202208175,
+              "overlap_with_previous": 1.0
+            }
+          ]
+        },
+        "candidate_weaken": {
+          "status": "active",
+          "samples": 9,
+          "last_seen_frame": 200,
+          "max_area": 170,
+          "final_area": 170,
+          "history": [
+            {
+              "frame": 0,
+              "area": 90,
+              "centroid": [
+                33.13333333333333,
+                49.75555555555555
+              ],
+              "coherence": 0.5938739511054053,
+              "boundary_contrast": 0.3888809098736946,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 25,
+              "area": 144,
+              "centroid": [
+                34.50694444444444,
+                50.645833333333336
+              ],
+              "coherence": 0.37497973187562245,
+              "boundary_contrast": 0.6485898140953101,
+              "overlap_with_previous": 0.5918367346938775
+            },
+            {
+              "frame": 50,
+              "area": 144,
+              "centroid": [
+                34.50694444444444,
+                50.645833333333336
+              ],
+              "coherence": 0.372712989164701,
+              "boundary_contrast": 0.6513723885182245,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 75,
+              "area": 144,
+              "centroid": [
+                34.34722222222222,
+                50.541666666666664
+              ],
+              "coherence": 0.3811150379239371,
+              "boundary_contrast": 0.6210246789659781,
+              "overlap_with_previous": 0.9726027397260274
+            },
+            {
+              "frame": 100,
+              "area": 166,
+              "centroid": [
+                34.9277108433735,
+                49.90963855421687
+              ],
+              "coherence": 0.4338450933811059,
+              "boundary_contrast": 0.6293305473530298,
+              "overlap_with_previous": 0.8674698795180723
+            },
+            {
+              "frame": 125,
+              "area": 170,
+              "centroid": [
+                34.811764705882354,
+                49.9
+              ],
+              "coherence": 0.4267940301476412,
+              "boundary_contrast": 0.640900500801895,
+              "overlap_with_previous": 0.9764705882352941
+            },
+            {
+              "frame": 150,
+              "area": 170,
+              "centroid": [
+                34.811764705882354,
+                49.9
+              ],
+              "coherence": 0.42519155082095234,
+              "boundary_contrast": 0.6397230877366363,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 175,
+              "area": 170,
+              "centroid": [
+                34.811764705882354,
+                49.9
+              ],
+              "coherence": 0.4238243292339746,
+              "boundary_contrast": 0.6386874597959245,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 200,
+              "area": 170,
+              "centroid": [
+                34.811764705882354,
+                49.9
+              ],
+              "coherence": 0.4226970155551853,
+              "boundary_contrast": 0.6377703882015169,
+              "overlap_with_previous": 1.0
+            }
+          ]
+        },
+        "background_weaken": {
+          "status": "active",
+          "samples": 9,
+          "last_seen_frame": 200,
+          "max_area": 148,
+          "final_area": 148,
+          "history": [
+            {
+              "frame": 0,
+              "area": 90,
+              "centroid": [
+                33.13333333333333,
+                49.75555555555555
+              ],
+              "coherence": 0.5938739511054053,
+              "boundary_contrast": 0.3888809098736946,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 25,
+              "area": 112,
+              "centroid": [
+                34.42857142857143,
+                50.660714285714285
+              ],
+              "coherence": 0.41325950230232966,
+              "boundary_contrast": 0.3394307172795127,
+              "overlap_with_previous": 0.7565217391304347
+            },
+            {
+              "frame": 50,
+              "area": 113,
+              "centroid": [
+                34.4070796460177,
+                50.68141592920354
+              ],
+              "coherence": 0.4141841635627693,
+              "boundary_contrast": 0.40464577202824786,
+              "overlap_with_previous": 0.9911504424778761
+            },
+            {
+              "frame": 75,
+              "area": 113,
+              "centroid": [
+                34.4070796460177,
+                50.68141592920354
+              ],
+              "coherence": 0.4113603145544186,
+              "boundary_contrast": 0.4013405054579936,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 100,
+              "area": 143,
+              "centroid": [
+                34.92307692307692,
+                49.67832167832168
+              ],
+              "coherence": 0.49565047219989117,
+              "boundary_contrast": 0.4728111439723171,
+              "overlap_with_previous": 0.7902097902097902
+            },
+            {
+              "frame": 125,
+              "area": 147,
+              "centroid": [
+                34.7891156462585,
+                49.673469387755105
+              ],
+              "coherence": 0.486076028711862,
+              "boundary_contrast": 0.47595804414500203,
+              "overlap_with_previous": 0.9727891156462585
+            },
+            {
+              "frame": 150,
+              "area": 148,
+              "centroid": [
+                34.777027027027025,
+                49.66216216216216
+              ],
+              "coherence": 0.4872550226374,
+              "boundary_contrast": 0.47267454887664007,
+              "overlap_with_previous": 0.9932432432432432
+            },
+            {
+              "frame": 175,
+              "area": 148,
+              "centroid": [
+                34.777027027027025,
+                49.66216216216216
+              ],
+              "coherence": 0.4854597884134605,
+              "boundary_contrast": 0.47046920140761594,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 200,
+              "area": 148,
+              "centroid": [
+                34.777027027027025,
+                49.66216216216216
+              ],
+              "coherence": 0.48379334915450534,
+              "boundary_contrast": 0.4682684138421069,
+              "overlap_with_previous": 1.0
+            }
+          ]
+        }
+      },
+      "boundary_series": {
+        "control": [
+          {
+            "frame": 0,
+            "reference_perimeter_boundary": 0.2703691021949323
+          },
+          {
+            "frame": 25,
+            "reference_perimeter_boundary": 0.266821812006049
+          },
+          {
+            "frame": 50,
+            "reference_perimeter_boundary": 0.263367458838013
+          },
+          {
+            "frame": 75,
+            "reference_perimeter_boundary": 0.2599996440865851
+          },
+          {
+            "frame": 100,
+            "reference_perimeter_boundary": 0.25671366757664044
+          },
+          {
+            "frame": 125,
+            "reference_perimeter_boundary": 0.2535062389979392
+          },
+          {
+            "frame": 150,
+            "reference_perimeter_boundary": 0.25037514122985016
+          },
+          {
+            "frame": 175,
+            "reference_perimeter_boundary": 0.2473187729171925
+          },
+          {
+            "frame": 200,
+            "reference_perimeter_boundary": 0.24433564809685357
+          }
+        ],
+        "candidate_weaken": [
+          {
+            "frame": 0,
+            "reference_perimeter_boundary": 0.040555365329239854
+          },
+          {
+            "frame": 25,
+            "reference_perimeter_boundary": 0.04920682376569363
+          },
+          {
+            "frame": 50,
+            "reference_perimeter_boundary": 0.05614400814099835
+          },
+          {
+            "frame": 75,
+            "reference_perimeter_boundary": 0.06217704784816004
+          },
+          {
+            "frame": 100,
+            "reference_perimeter_boundary": 0.06762674908383105
+          },
+          {
+            "frame": 125,
+            "reference_perimeter_boundary": 0.07264141986499721
+          },
+          {
+            "frame": 150,
+            "reference_perimeter_boundary": 0.0773030136165483
+          },
+          {
+            "frame": 175,
+            "reference_perimeter_boundary": 0.08166387565186366
+          },
+          {
+            "frame": 200,
+            "reference_perimeter_boundary": 0.08576087987352422
+          }
+        ],
+        "background_weaken": [
+          {
+            "frame": 0,
+            "reference_perimeter_boundary": 0.2703691021949323
+          },
+          {
+            "frame": 25,
+            "reference_perimeter_boundary": 0.266821812006049
+          },
+          {
+            "frame": 50,
+            "reference_perimeter_boundary": 0.263367458838013
+          },
+          {
+            "frame": 75,
+            "reference_perimeter_boundary": 0.2599996440865851
+          },
+          {
+            "frame": 100,
+            "reference_perimeter_boundary": 0.25671366757664
+          },
+          {
+            "frame": 125,
+            "reference_perimeter_boundary": 0.2535062389979313
+          },
+          {
+            "frame": 150,
+            "reference_perimeter_boundary": 0.25037514122978105
+          },
+          {
+            "frame": 175,
+            "reference_perimeter_boundary": 0.24731877291680054
+          },
+          {
+            "frame": 200,
+            "reference_perimeter_boundary": 0.24433564809521247
+          }
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "status": "measured",
+      "candidate": {
+        "area": 148,
+        "initial_perimeter_boundary": 0.30554991231926354
+      },
+      "tracks": {
+        "control": {
+          "status": "active",
+          "samples": 9,
+          "last_seen_frame": 200,
+          "max_area": 188,
+          "final_area": 188,
+          "history": [
+            {
+              "frame": 0,
+              "area": 148,
+              "centroid": [
+                18.58783783783784,
+                14.22972972972973
+              ],
+              "coherence": 0.5152748962845863,
+              "boundary_contrast": 0.3429419280381398,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 25,
+              "area": 149,
+              "centroid": [
+                18.550335570469798,
+                14.25503355704698
+              ],
+              "coherence": 0.519044337376501,
+              "boundary_contrast": 0.341485958508025,
+              "overlap_with_previous": 0.9932885906040269
+            },
+            {
+              "frame": 50,
+              "area": 151,
+              "centroid": [
+                18.43046357615894,
+                14.251655629139073
+              ],
+              "coherence": 0.5156132568077906,
+              "boundary_contrast": 0.3397271714994799,
+              "overlap_with_previous": 0.9867549668874173
+            },
+            {
+              "frame": 75,
+              "area": 151,
+              "centroid": [
+                18.43046357615894,
+                14.251655629139073
+              ],
+              "coherence": 0.5169853529651045,
+              "boundary_contrast": 0.338214787510395,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 100,
+              "area": 151,
+              "centroid": [
+                18.397350993377483,
+                14.079470198675496
+              ],
+              "coherence": 0.5375427979350047,
+              "boundary_contrast": 0.3400117909029627,
+              "overlap_with_previous": 0.9738562091503268
+            },
+            {
+              "frame": 125,
+              "area": 151,
+              "centroid": [
+                18.397350993377483,
+                14.079470198675496
+              ],
+              "coherence": 0.5391386564911718,
+              "boundary_contrast": 0.33885872323092137,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 150,
+              "area": 188,
+              "centroid": [
+                18.319148936170212,
+                14.51595744680851
+              ],
+              "coherence": 0.6025983032457325,
+              "boundary_contrast": 0.5146332281533915,
+              "overlap_with_previous": 0.8031914893617021
+            },
+            {
+              "frame": 175,
+              "area": 188,
+              "centroid": [
+                18.319148936170212,
+                14.51595744680851
+              ],
+              "coherence": 0.6040147041009858,
+              "boundary_contrast": 0.5111480896189827,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 200,
+              "area": 188,
+              "centroid": [
+                18.319148936170212,
+                14.51595744680851
+              ],
+              "coherence": 0.6054066278318456,
+              "boundary_contrast": 0.507633724908806,
+              "overlap_with_previous": 1.0
+            }
+          ]
+        },
+        "candidate_weaken": {
+          "status": "active",
+          "samples": 9,
+          "last_seen_frame": 200,
+          "max_area": 359,
+          "final_area": 296,
+          "history": [
+            {
+              "frame": 0,
+              "area": 148,
+              "centroid": [
+                18.58783783783784,
+                14.22972972972973
+              ],
+              "coherence": 0.5152748962845863,
+              "boundary_contrast": 0.3429419280381398,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 25,
+              "area": 341,
+              "centroid": [
+                20.712609970674485,
+                16.175953079178885
+              ],
+              "coherence": 0.2739563254742361,
+              "boundary_contrast": 0.6715636597215924,
+              "overlap_with_previous": 0.4340175953079179
+            },
+            {
+              "frame": 50,
+              "area": 352,
+              "centroid": [
+                21.125,
+                14.440340909090908
+              ],
+              "coherence": 0.27036977457864136,
+              "boundary_contrast": 0.6316875531221432,
+              "overlap_with_previous": 0.8381962864721485
+            },
+            {
+              "frame": 75,
+              "area": 359,
+              "centroid": [
+                21.228412256267408,
+                14.454038997214484
+              ],
+              "coherence": 0.27106694433235257,
+              "boundary_contrast": 0.689196595450697,
+              "overlap_with_previous": 0.975
+            },
+            {
+              "frame": 100,
+              "area": 324,
+              "centroid": [
+                20.996913580246915,
+                12.753086419753087
+              ],
+              "coherence": 0.40869618402564534,
+              "boundary_contrast": 0.6343528813328794,
+              "overlap_with_previous": 0.8509485094850948
+            },
+            {
+              "frame": 125,
+              "area": 328,
+              "centroid": [
+                21.015243902439025,
+                12.652439024390244
+              ],
+              "coherence": 0.4155719533840493,
+              "boundary_contrast": 0.6344227007676961,
+              "overlap_with_previous": 0.9878048780487805
+            },
+            {
+              "frame": 150,
+              "area": 299,
+              "centroid": [
+                20.836120401337794,
+                12.48494983277592
+              ],
+              "coherence": 0.37804622247624126,
+              "boundary_contrast": 0.5679615445496153,
+              "overlap_with_previous": 0.9115853658536586
+            },
+            {
+              "frame": 175,
+              "area": 299,
+              "centroid": [
+                20.836120401337794,
+                12.48494983277592
+              ],
+              "coherence": 0.3792091791459801,
+              "boundary_contrast": 0.5634194051790735,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 200,
+              "area": 296,
+              "centroid": [
+                20.9222972972973,
+                12.493243243243244
+              ],
+              "coherence": 0.3742029409119011,
+              "boundary_contrast": 0.5456791642247102,
+              "overlap_with_previous": 0.9899665551839465
+            }
+          ]
+        },
+        "background_weaken": {
+          "status": "active",
+          "samples": 9,
+          "last_seen_frame": 200,
+          "max_area": 188,
+          "final_area": 188,
+          "history": [
+            {
+              "frame": 0,
+              "area": 148,
+              "centroid": [
+                18.58783783783784,
+                14.22972972972973
+              ],
+              "coherence": 0.5152748962845863,
+              "boundary_contrast": 0.3429419280381398,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 25,
+              "area": 149,
+              "centroid": [
+                18.550335570469798,
+                14.25503355704698
+              ],
+              "coherence": 0.5190443447699868,
+              "boundary_contrast": 0.34148599389907636,
+              "overlap_with_previous": 0.9932885906040269
+            },
+            {
+              "frame": 50,
+              "area": 151,
+              "centroid": [
+                18.43046357615894,
+                14.251655629139073
+              ],
+              "coherence": 0.5156133442278733,
+              "boundary_contrast": 0.3397276875600367,
+              "overlap_with_previous": 0.9867549668874173
+            },
+            {
+              "frame": 75,
+              "area": 151,
+              "centroid": [
+                18.43046357615894,
+                14.251655629139073
+              ],
+              "coherence": 0.5169855899603977,
+              "boundary_contrast": 0.33821724454444,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 100,
+              "area": 151,
+              "centroid": [
+                18.397350993377483,
+                14.079470198675496
+              ],
+              "coherence": 0.5375431120192375,
+              "boundary_contrast": 0.3400186460824999,
+              "overlap_with_previous": 0.9738562091503268
+            },
+            {
+              "frame": 125,
+              "area": 151,
+              "centroid": [
+                18.397350993377483,
+                14.079470198675496
+              ],
+              "coherence": 0.5391388870198144,
+              "boundary_contrast": 0.3388729428346536,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 150,
+              "area": 188,
+              "centroid": [
+                18.319148936170212,
+                14.51595744680851
+              ],
+              "coherence": 0.6025981536391779,
+              "boundary_contrast": 0.5146554934858706,
+              "overlap_with_previous": 0.8031914893617021
+            },
+            {
+              "frame": 175,
+              "area": 188,
+              "centroid": [
+                18.319148936170212,
+                14.51595744680851
+              ],
+              "coherence": 0.604014957777009,
+              "boundary_contrast": 0.5111820469893865,
+              "overlap_with_previous": 1.0
+            },
+            {
+              "frame": 200,
+              "area": 188,
+              "centroid": [
+                18.319148936170212,
+                14.51595744680851
+              ],
+              "coherence": 0.6054085385379967,
+              "boundary_contrast": 0.5076817014192817,
+              "overlap_with_previous": 1.0
+            }
+          ]
+        }
+      },
+      "boundary_series": {
+        "control": [
+          {
+            "frame": 0,
+            "reference_perimeter_boundary": 0.30554991231926354
+          },
+          {
+            "frame": 25,
+            "reference_perimeter_boundary": 0.30165567712041075
+          },
+          {
+            "frame": 50,
+            "reference_perimeter_boundary": 0.2978869666681896
+          },
+          {
+            "frame": 75,
+            "reference_perimeter_boundary": 0.29424047703538203
+          },
+          {
+            "frame": 100,
+            "reference_perimeter_boundary": 0.2907124411411707
+          },
+          {
+            "frame": 125,
+            "reference_perimeter_boundary": 0.28729733868857715
+          },
+          {
+            "frame": 150,
+            "reference_perimeter_boundary": 0.28399067866100364
+          },
+          {
+            "frame": 175,
+            "reference_perimeter_boundary": 0.28078872247288816
+          },
+          {
+            "frame": 200,
+            "reference_perimeter_boundary": 0.2776875577602545
+          }
+        ],
+        "candidate_weaken": [
+          {
+            "frame": 0,
+            "reference_perimeter_boundary": 0.04583248684788955
+          },
+          {
+            "frame": 25,
+            "reference_perimeter_boundary": 0.058584247350509704
+          },
+          {
+            "frame": 50,
+            "reference_perimeter_boundary": 0.07029173764434622
+          },
+          {
+            "frame": 75,
+            "reference_perimeter_boundary": 0.08121493062581943
+          },
+          {
+            "frame": 100,
+            "reference_perimeter_boundary": 0.09148112746536684
+          },
+          {
+            "frame": 125,
+            "reference_perimeter_boundary": 0.10116604448595871
+          },
+          {
+            "frame": 150,
+            "reference_perimeter_boundary": 0.11025540435298552
+          },
+          {
+            "frame": 175,
+            "reference_perimeter_boundary": 0.11794944428913265
+          },
+          {
+            "frame": 200,
+            "reference_perimeter_boundary": 0.12489499391106701
+          }
+        ],
+        "background_weaken": [
+          {
+            "frame": 0,
+            "reference_perimeter_boundary": 0.30554991231926354
+          },
+          {
+            "frame": 25,
+            "reference_perimeter_boundary": 0.30165567755134165
+          },
+          {
+            "frame": 50,
+            "reference_perimeter_boundary": 0.29788698050003326
+          },
+          {
+            "frame": 75,
+            "reference_perimeter_boundary": 0.29424056912244967
+          },
+          {
+            "frame": 100,
+            "reference_perimeter_boundary": 0.29071277276863416
+          },
+          {
+            "frame": 125,
+            "reference_perimeter_boundary": 0.2872981975703833
+          },
+          {
+            "frame": 150,
+            "reference_perimeter_boundary": 0.28399248993857645
+          },
+          {
+            "frame": 175,
+            "reference_perimeter_boundary": 0.28079204385798795
+          },
+          {
+            "frame": 200,
+            "reference_perimeter_boundary": 0.2776930647582814
+          }
+        ]
+      }
+    }
+  ]
+}

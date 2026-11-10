@@ -1,6 +1,6 @@
 ---
 Area: Governance
-datetime_stamp: 2026-10-11T00:00:00-05:00
+datetime_stamp: 2026-10-31T00:00:00-05:00
 status: complete
 confidence: vetted
 tags:
@@ -46,6 +46,14 @@ Before using an experiment as evidence:
 - Distinguish observation from interpretation.
 - State what the experiment can and cannot establish.
 - Link the result to the claim it supports or challenges.
+
+## Cumulative audit coverage
+
+Apply [[Cumulative Audit Protocol]] and consult [[Audit Ledger]] before
+commissioning another audit. Inherit unchanged, explicitly scoped coverage;
+future reviews identify a parent and examine affected changes, new regimes or
+specific reopened claims. Do not restart a baseline audit merely because a
+new session lacks its context. Preserve V1 and V2 and all closed raw records.
 
 ## Documentation changes
 

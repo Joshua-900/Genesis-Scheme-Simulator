@@ -1,0 +1,828 @@
+{
+  "stage": "B2: distinct temporary dynamic probe calibration",
+  "case_count": 16,
+  "reference_checks": [
+    {
+      "seed": 1005,
+      "archived_positions_replay_exact": true,
+      "native_release_exact": true
+    },
+    {
+      "seed": 3001,
+      "archived_positions_replay_exact": true,
+      "native_release_exact": true
+    }
+  ],
+  "levels_calibrated": {
+    "0.05": false,
+    "0.1": false
+  },
+  "selected_speed": null,
+  "safety_pass_count": 16,
+  "movement_resolved_count": 8,
+  "decision": "Neither fixed input level calibrates every mode on both states. No binding inference or dose escalation.",
+  "records": [
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        1.0,
+        0.0
+      ],
+      "separation_change_at_release": 0.9587492698255922,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.043436655665542445,
+      "external_angle_increment_l1_total": 17.043076308322654,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "stretch",
+      "file": "seed1005_v0050_stretch.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        1.0
+      ],
+      "separation_change_at_release": -1.8967705980158183,
+      "differential_movement_norm_at_release": 2.0,
+      "peak_external_angle_increment": 0.04343686015672294,
+      "external_angle_increment_l1_total": 16.751201814057623,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "compress",
+      "file": "seed1005_v0050_compress.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        1.0,
+        0.0
+      ],
+      "separation_change_at_release": -0.9523598680619259,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.04343671355802921,
+      "external_angle_increment_l1_total": 16.477517276337977,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "translate_plus",
+      "file": "seed1005_v0050_translate_plus.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        1.0
+      ],
+      "separation_change_at_release": 0.0,
+      "differential_movement_norm_at_release": 0.0,
+      "peak_external_angle_increment": 0.04343686015672294,
+      "external_angle_increment_l1_total": 17.316760846039987,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "translate_minus",
+      "file": "seed1005_v0050_translate_minus.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        1.0
+      ],
+      "separation_change_at_release": 1.9227041875245803,
+      "differential_movement_norm_at_release": 2.0,
+      "peak_external_angle_increment": 0.08687353699546906,
+      "external_angle_increment_l1_total": 32.511142477082636,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "stretch",
+      "file": "seed1005_v0100_stretch.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        2.0
+      ],
+      "separation_change_at_release": -2.8311408944664365,
+      "differential_movement_norm_at_release": 3.0,
+      "peak_external_angle_increment": 0.08687371154001915,
+      "external_angle_increment_l1_total": 32.27522966244741,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "compress",
+      "file": "seed1005_v0100_compress.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        1.0
+      ],
+      "separation_change_at_release": 0.0,
+      "differential_movement_norm_at_release": 0.0,
+      "peak_external_angle_increment": 0.08687353699546906,
+      "external_angle_increment_l1_total": 32.17263365226765,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "translate_plus",
+      "file": "seed1005_v0100_translate_plus.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        2.0
+      ],
+      "separation_change_at_release": -0.9523598680619259,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.08687371154001915,
+      "external_angle_increment_l1_total": 32.61373848723726,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "translate_minus",
+      "file": "seed1005_v0100_translate_minus.npz",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        0.0,
+        1.0
+      ],
+      "separation_change_at_release": 0.9931273898388682,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.043435962699186446,
+      "external_angle_increment_l1_total": 13.150505444097936,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "stretch",
+      "file": "seed3001_v0050_stretch.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        0.0,
+        1.0
+      ],
+      "separation_change_at_release": -0.9911899364330736,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.043436861547547896,
+      "external_angle_increment_l1_total": 13.588757105768885,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "compress",
+      "file": "seed3001_v0050_compress.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        0.0,
+        1.0
+      ],
+      "separation_change_at_release": 0.9931273898388682,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.04343596269930538,
+      "external_angle_increment_l1_total": 13.311556900259264,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "translate_plus",
+      "file": "seed3001_v0050_translate_plus.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        0.0,
+        1.0
+      ],
+      "separation_change_at_release": -0.9911899364330736,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.043436861547547896,
+      "external_angle_increment_l1_total": 13.427711902430792,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "translate_minus",
+      "file": "seed3001_v0050_translate_minus.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        0.0,
+        2.0
+      ],
+      "separation_change_at_release": 1.9876178728223408,
+      "differential_movement_norm_at_release": 2.0,
+      "peak_external_angle_increment": 0.08687318426791768,
+      "external_angle_increment_l1_total": 24.86801421061753,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "stretch",
+      "file": "seed3001_v0100_stretch.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        1.0
+      ],
+      "separation_change_at_release": -1.9794952180003298,
+      "differential_movement_norm_at_release": 2.0,
+      "peak_external_angle_increment": 0.08687372309509579,
+      "external_angle_increment_l1_total": 25.74563080219286,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "compress",
+      "file": "seed3001_v0100_compress.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": true,
+      "calibrated": true,
+      "axial_movement_at_release": [
+        1.0,
+        2.0
+      ],
+      "separation_change_at_release": 0.9931273898388682,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.08687318426837373,
+      "external_angle_increment_l1_total": 25.129832488601384,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "translate_plus",
+      "file": "seed3001_v0100_translate_plus.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "safety_pass": true,
+      "safety": {
+        "selected_identities_observed_through_pulse": true,
+        "no_excess_vortex_count_during_pulse": true,
+        "no_excess_tracked_births_during_pulse": true,
+        "finite_fields": true,
+        "native_release_exact": true,
+        "post_cutoff_input_exact_zero": true,
+        "bounded_external_angle_increment": true
+      },
+      "movement_resolved": false,
+      "calibrated": false,
+      "axial_movement_at_release": [
+        0.0,
+        1.0
+      ],
+      "separation_change_at_release": -0.9911899364330736,
+      "differential_movement_norm_at_release": 1.0,
+      "peak_external_angle_increment": 0.08687372309509579,
+      "external_angle_increment_l1_total": 25.483874242227607,
+      "maximum_excess_vortex_count": 0,
+      "tracked_births_during_pulse": 0,
+      "reference_tracked_births": 0,
+      "selected_identities_observed_at_followup": true,
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "translate_minus",
+      "file": "seed3001_v0100_translate_minus.npz",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "directions": [
+        [
+          -0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    }
+  ],
+  "baseline_and_inherited_inputs_unchanged": true,
+  "protocol_sha256": "d56a9a40504a022c6d4b3e0b190d96929ad5c32373b157e5cb033a3624efd7db"
+}

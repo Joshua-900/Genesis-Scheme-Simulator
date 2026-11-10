@@ -1,0 +1,311 @@
+{
+  "format": "genesis-sandbox",
+  "version": 1,
+  "seed": 1,
+  "n": 64,
+  "update": 1400,
+  "parameters": {
+    "geometry_on": {
+      "tri0": 0.8,
+      "tri_sigma2": 0.6400000000000001,
+      "tri_sigma": 0.8,
+      "alpha0": 0.3,
+      "tri_lock_gain": 3.0,
+      "dt": 0.05,
+      "sigma_c2": 0.0625,
+      "kappa0": 0.015,
+      "sigma_c": 0.25,
+      "dipole0": 0.3,
+      "lock_strength": 0.75,
+      "decay_tau": 0.02,
+      "phase_lock_gain": 2.5,
+      "gamma0": 0.015,
+      "curv0": 0.4,
+      "shell_geom_gain": 0.08,
+      "geom_decay": 0.05,
+      "well0": 0.6
+    },
+    "geometry_off": {
+      "tri0": 0.8,
+      "tri_sigma2": 0.6400000000000001,
+      "tri_sigma": 0.8,
+      "alpha0": 0.3,
+      "tri_lock_gain": 3.0,
+      "dt": 0.05,
+      "sigma_c2": 0.0625,
+      "kappa0": 0.0,
+      "sigma_c": 0.25,
+      "dipole0": 0.3,
+      "lock_strength": 0.75,
+      "decay_tau": 0.02,
+      "phase_lock_gain": 2.5,
+      "gamma0": 0.015,
+      "curv0": 0.0,
+      "shell_geom_gain": 0.0,
+      "geom_decay": 0.05,
+      "well0": 0.6
+    }
+  },
+  "edits": [
+    {
+      "update": 1000,
+      "x": 24.0,
+      "y": 24.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 24.0,
+      "y": 25.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 24.0,
+      "y": 26.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 24.0,
+      "y": 27.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 25.0,
+      "y": 28.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 25.0,
+      "y": 29.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 25.0,
+      "y": 30.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 26.0,
+      "y": 31.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 26.0,
+      "y": 32.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 26.0,
+      "y": 33.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 27.0,
+      "y": 34.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 28.0,
+      "y": 35.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 28.0,
+      "y": 36.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 29.0,
+      "y": 36.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 30.0,
+      "y": 37.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 31.0,
+      "y": 38.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 32.0,
+      "y": 38.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 33.0,
+      "y": 38.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 34.0,
+      "y": 39.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 35.0,
+      "y": 38.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 36.0,
+      "y": 38.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 37.0,
+      "y": 38.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 38.0,
+      "y": 37.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 39.0,
+      "y": 36.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 40.0,
+      "y": 36.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 40.0,
+      "y": 35.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 41.0,
+      "y": 34.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 41.0,
+      "y": 33.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 41.0,
+      "y": 32.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 42.0,
+      "y": 31.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    },
+    {
+      "update": 1000,
+      "x": 42.0,
+      "y": 30.0,
+      "radius": 4.0,
+      "angle": 3.141592653589793,
+      "mode": "set"
+    }
+  ],
+  "source_sha256": {
+    "genesis_fields_pretty.py": "3409ff5271d3a0d0a1abb2e9aa375fdcab6af4e157104ad43d28849163be886a",
+    "src/genesis_gallery/legacy.py": "4552b344d57b706f5ed48584e521a4e95d3937d5eacc159b48abdca948d217d6",
+    "src/genesis_sandbox/model.py": "3ab1f7e8a3a683a035e3c009d51c4253a2bf768496f84e883b10283e1c766c98"
+  },
+  "initialization": "default_rng(seed) uniform theta; other fields zero in both lanes",
+  "brush": "cosine disk clipped at grid edges; turn adds angle, set uses shortest circular path",
+  "created_utc": "2026-11-01T13:43:59.617295+00:00",
+  "visible_field": "theta",
+  "numpy_version": "1.26.4",
+  "snapshot_precision": "float64",
+  "presentation_source_sha256": "ab9cdbdabdacc42fe7cc6e59f1c0b122848a78672f794542e4d57dc2a7b8e04f"
+}

@@ -1,0 +1,1242 @@
+{
+  "stage": "B: no-evolution relocation calibration",
+  "all_cases_pass": false,
+  "case_count": 10,
+  "passed_case_count": 2,
+  "decision": "Intervention not calibrated under declared bounds; stop before response study. This is not a binding result.",
+  "records": [
+    {
+      "passes": true,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": true,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        4,
+        58
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 13.601470508735444,
+      "relocated_separation": 13.601470508735444,
+      "relative_vector_change": [
+        0.0,
+        0.0
+      ],
+      "center_displacement": [
+        0.0,
+        0.0
+      ],
+      "constituent_displacement_magnitudes": [
+        0.0,
+        0.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.0,
+        "tau_relative_l2": 0.0,
+        "displacement_relative_l2": 0.0,
+        "C_relative_l2": 0.0
+      },
+      "protected_core_max_errors": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "tau": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "ux": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "uy": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "C": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 1,
+      "inverse_step_error": 0.0,
+      "inverse_residual": 0.0,
+      "lipschitz_bound": 0.0,
+      "determinant_lower_bound": 1.0,
+      "phase_norm_min": 1.0,
+      "seed": 1005,
+      "arm": "sham",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "shifts": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          1.5,
+          8.5
+        ],
+        [
+          5.5,
+          57.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          1.5,
+          8.5
+        ],
+        [
+          5.5,
+          57.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        4,
+        57
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 13.601470508735444,
+      "relocated_separation": 15.524174696260024,
+      "relative_vector_change": [
+        0.0,
+        -2.0
+      ],
+      "center_displacement": [
+        0.0,
+        0.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.03344469937418339,
+        "tau_relative_l2": 0.24710525061838695,
+        "displacement_relative_l2": 0.3521629249521371,
+        "C_relative_l2": 0.18521107417548946
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.4595688280702444,
+          "max_abs": 1.9867158826799507
+        },
+        "tau": {
+          "rms": 0.055121907105761016,
+          "max_abs": 0.1850586771318825
+        },
+        "ux": {
+          "rms": 0.2785460160324,
+          "max_abs": 0.9436135717578072
+        },
+        "uy": {
+          "rms": 0.25582794735623493,
+          "max_abs": 0.9055015703246032
+        },
+        "C": {
+          "rms": 0.2642367262063644,
+          "max_abs": 0.9787661051344168
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9454179125839332,
+      "seed": 1005,
+      "arm": "stretch",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "shifts": [
+        [
+          -0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          1.5,
+          6.5
+        ],
+        [
+          5.5,
+          59.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          1.5,
+          6.5
+        ],
+        [
+          5.5,
+          59.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        4,
+        58
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 13.601470508735444,
+      "relocated_separation": 11.704699910719626,
+      "relative_vector_change": [
+        0.0,
+        2.0
+      ],
+      "center_displacement": [
+        0.0,
+        0.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.03800885471369249,
+        "tau_relative_l2": 0.14536770285112507,
+        "displacement_relative_l2": 0.4560167777241885,
+        "C_relative_l2": 0.4672064283518986
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.4616522230908257,
+          "max_abs": 1.9867158826799503
+        },
+        "tau": {
+          "rms": 0.05584724060529636,
+          "max_abs": 0.1850586771318825
+        },
+        "ux": {
+          "rms": 0.280864233440739,
+          "max_abs": 1.0088221693812598
+        },
+        "uy": {
+          "rms": 0.2571160290585293,
+          "max_abs": 0.9055015703246032
+        },
+        "C": {
+          "rms": 0.26734081465799847,
+          "max_abs": 0.9787671545748283
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9477541858447105,
+      "seed": 1005,
+      "arm": "compress",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "shifts": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          1.5,
+          6.5
+        ],
+        [
+          5.5,
+          57.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          1.5,
+          6.5
+        ],
+        [
+          5.5,
+          57.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        4,
+        57
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 13.601470508735444,
+      "relocated_separation": 13.601470508735444,
+      "relative_vector_change": [
+        0.0,
+        0.0
+      ],
+      "center_displacement": [
+        0.0,
+        -1.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.03836197871441943,
+        "tau_relative_l2": 0.21857513305925147,
+        "displacement_relative_l2": 0.514083795606187,
+        "C_relative_l2": 0.47712367245389364
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.4618063266519378,
+          "max_abs": 1.9867158826799507
+        },
+        "tau": {
+          "rms": 0.05708376304685447,
+          "max_abs": 0.1850586771318825
+        },
+        "ux": {
+          "rms": 0.28704242319327733,
+          "max_abs": 1.0088221693812598
+        },
+        "uy": {
+          "rms": 0.2540703033430151,
+          "max_abs": 0.9055015703246032
+        },
+        "C": {
+          "rms": 0.27384877305449207,
+          "max_abs": 0.9787671545748283
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9477541858447105,
+      "seed": 1005,
+      "arm": "translate_plus",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "shifts": [
+        [
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          1.5,
+          8.5
+        ],
+        [
+          5.5,
+          59.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          1.5,
+          8.5
+        ],
+        [
+          5.5,
+          59.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        4,
+        58
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 13.601470508735444,
+      "relocated_separation": 13.601470508735444,
+      "relative_vector_change": [
+        0.0,
+        0.0
+      ],
+      "center_displacement": [
+        0.0,
+        1.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.03303906085212648,
+        "tau_relative_l2": 0.18552003968175337,
+        "displacement_relative_l2": 0.26016894198180646,
+        "C_relative_l2": 0.15791766802573437
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.4594139739742394,
+          "max_abs": 1.9867158826799503
+        },
+        "tau": {
+          "rms": 0.05384034660561336,
+          "max_abs": 0.1850586771318825
+        },
+        "ux": {
+          "rms": 0.27217503184735276,
+          "max_abs": 0.9436135717578072
+        },
+        "uy": {
+          "rms": 0.2588529930414544,
+          "max_abs": 0.9055015703246032
+        },
+        "C": {
+          "rms": 0.2574859377807044,
+          "max_abs": 0.9787661051344168
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9454179125839332,
+      "seed": 1005,
+      "arm": "translate_minus",
+      "source_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "shifts": [
+        [
+          -0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "passes": true,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": true,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        18,
+        55
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 8.06225774829855,
+      "relocated_separation": 8.06225774829855,
+      "relative_vector_change": [
+        0.0,
+        0.0
+      ],
+      "center_displacement": [
+        0.0,
+        0.0
+      ],
+      "constituent_displacement_magnitudes": [
+        0.0,
+        0.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.0,
+        "tau_relative_l2": 0.0,
+        "displacement_relative_l2": 0.0,
+        "C_relative_l2": 0.0
+      },
+      "protected_core_max_errors": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "tau": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "ux": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "uy": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        },
+        "C": {
+          "rms": 0.0,
+          "max_abs": 0.0
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 1,
+      "inverse_step_error": 0.0,
+      "inverse_residual": 0.0,
+      "lipschitz_bound": 0.0,
+      "determinant_lower_bound": 1.0,
+      "phase_norm_min": 1.0,
+      "seed": 3001,
+      "arm": "sham",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "shifts": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          14.5,
+          32.5
+        ],
+        [
+          13.5,
+          42.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          14.5,
+          32.5
+        ],
+        [
+          13.5,
+          42.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        18,
+        55
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 8.06225774829855,
+      "relocated_separation": 10.04987562112089,
+      "relative_vector_change": [
+        0.0,
+        2.0
+      ],
+      "center_displacement": [
+        0.0,
+        0.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.048835606145467995,
+        "tau_relative_l2": 0.21208299063947925,
+        "displacement_relative_l2": 0.2858406837020052,
+        "C_relative_l2": 0.2747354234345272
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.46679173496436344,
+          "max_abs": 1.9754614275414668
+        },
+        "tau": {
+          "rms": 0.05908144501880129,
+          "max_abs": 0.23987627162916386
+        },
+        "ux": {
+          "rms": 0.32438505182359995,
+          "max_abs": 1.2658042559153224
+        },
+        "uy": {
+          "rms": 0.3735330345775556,
+          "max_abs": 1.358038810205012
+        },
+        "C": {
+          "rms": 0.2995590582359549,
+          "max_abs": 0.9541453269188195
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9054663001641647,
+      "seed": 3001,
+      "arm": "stretch",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "shifts": [
+        [
+          -0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": false,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          14.5,
+          34.5
+        ],
+        [
+          13.5,
+          40.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          14.5,
+          34.5
+        ],
+        [
+          13.5,
+          40.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        18,
+        55
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 8.06225774829855,
+      "relocated_separation": 6.082762530298219,
+      "relative_vector_change": [
+        0.0,
+        -2.0
+      ],
+      "center_displacement": [
+        0.0,
+        0.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.04906259634235829,
+        "tau_relative_l2": 0.3256611045337186,
+        "displacement_relative_l2": 0.39830482287490204,
+        "C_relative_l2": 0.32851939606096425
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.46505162340028416,
+          "max_abs": 1.9754614275414668
+        },
+        "tau": {
+          "rms": 0.05979217090069544,
+          "max_abs": 0.27447106930080667
+        },
+        "ux": {
+          "rms": 0.3507347646490269,
+          "max_abs": 1.4483577107772203
+        },
+        "uy": {
+          "rms": 0.3725883026504734,
+          "max_abs": 1.347404507780424
+        },
+        "C": {
+          "rms": 0.30941491731633636,
+          "max_abs": 0.9321790031524568
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9054663001641649,
+      "seed": 3001,
+      "arm": "compress",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "shifts": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": false,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          14.5,
+          34.5
+        ],
+        [
+          13.5,
+          42.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          14.5,
+          34.5
+        ],
+        [
+          13.5,
+          42.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        18,
+        55
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 8.06225774829855,
+      "relocated_separation": 8.06225774829855,
+      "relative_vector_change": [
+        0.0,
+        0.0
+      ],
+      "center_displacement": [
+        0.0,
+        1.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.05289098346474201,
+        "tau_relative_l2": 0.30438478256624474,
+        "displacement_relative_l2": 0.3031731527859172,
+        "C_relative_l2": 0.3490537598374431
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.46601353571727927,
+          "max_abs": 1.9754614275414668
+        },
+        "tau": {
+          "rms": 0.05980294110374125,
+          "max_abs": 0.27447106930080667
+        },
+        "ux": {
+          "rms": 0.34169207875272223,
+          "max_abs": 1.4483577107772203
+        },
+        "uy": {
+          "rms": 0.3685353352191519,
+          "max_abs": 1.358038810205012
+        },
+        "C": {
+          "rms": 0.3052587731293907,
+          "max_abs": 0.9321790031524568
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9054663001641649,
+      "seed": 3001,
+      "arm": "translate_plus",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "shifts": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "passes": false,
+      "tests": {
+        "source_pair_charges": true,
+        "inverse_converged": true,
+        "phase_interpolation_resolved": true,
+        "entire_winding_map_matches_expected": true,
+        "fresh_tracker_assignments_unique": true,
+        "off_support_exact": true,
+        "protected_core_values_transported": true,
+        "finite_fields": true,
+        "nonnegative_tension": true,
+        "compression_bounds": true,
+        "phase_roundtrip": true,
+        "tau_roundtrip": true,
+        "displacement_roundtrip": false,
+        "compression_roundtrip": true,
+        "arm_geometry_correct": true
+      },
+      "expected_pair": [
+        [
+          14.5,
+          32.5
+        ],
+        [
+          13.5,
+          40.5
+        ]
+      ],
+      "measured_pair": [
+        [
+          14.5,
+          32.5
+        ],
+        [
+          13.5,
+          40.5
+        ]
+      ],
+      "fresh_tracker_ids": [
+        18,
+        55
+      ],
+      "old_ids_inherited": false,
+      "initial_separation": 8.06225774829855,
+      "relocated_separation": 8.06225774829855,
+      "relative_vector_change": [
+        0.0,
+        0.0
+      ],
+      "center_displacement": [
+        0.0,
+        -1.0
+      ],
+      "constituent_displacement_magnitudes": [
+        1.0,
+        1.0
+      ],
+      "roundtrip_errors": {
+        "theta_phasor_rms": 0.04466092985575701,
+        "tau_relative_l2": 0.24162833870803926,
+        "displacement_relative_l2": 0.3852760929703319,
+        "C_relative_l2": 0.24812500724706124
+      },
+      "protected_core_max_errors": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "changes_within_support": {
+        "theta": {
+          "rms": 0.46583142958216156,
+          "max_abs": 1.9754614275414668
+        },
+        "tau": {
+          "rms": 0.059070543267097736,
+          "max_abs": 0.23987627162916386
+        },
+        "ux": {
+          "rms": 0.33389678090339747,
+          "max_abs": 1.2658042559153224
+        },
+        "uy": {
+          "rms": 0.37753235343157737,
+          "max_abs": 1.347404507780424
+        },
+        "C": {
+          "rms": 0.3037931892861107,
+          "max_abs": 0.9541453269188195
+        }
+      },
+      "forward_winding_mismatched_plaquettes": 0,
+      "inverse_iterations": 101,
+      "inverse_step_error": 8.668621376273222e-13,
+      "inverse_residual": 6.608047442568932e-13,
+      "lipschitz_bound": 0.7853981633974483,
+      "determinant_lower_bound": 0.21460183660255172,
+      "phase_norm_min": 0.9054663001641647,
+      "seed": 3001,
+      "arm": "translate_minus",
+      "source_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "shifts": [
+        [
+          -0.0,
+          -1.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    }
+  ],
+  "baseline_unchanged": true,
+  "inherited_inputs_unchanged": true,
+  "protocol_sha256": "7755d77286624ec4535bd15a24a690e319c3969b45782c3e0467e9f694490d56"
+}

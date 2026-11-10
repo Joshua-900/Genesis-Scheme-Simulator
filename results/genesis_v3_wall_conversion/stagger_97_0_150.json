@@ -1,0 +1,195 @@
+{
+  "turns": 0,
+  "stagger": 0.14,
+  "size": 97,
+  "seed": null,
+  "penalty": 0.0002,
+  "easy_axis": 150,
+  "dt": 9.379103357719002e-07,
+  "quench_time": 0.0,
+  "records": [
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.4999999999999996,
+          "y": 0.49999999999999956,
+          "charge": 0.0,
+          "radius_cells": 19.124279312569545
+        }
+      ],
+      "max_disk_charge": 0.0,
+      "time": 0.0,
+      "energy": 149.51052298846653,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.5,
+          "y": 0.5000000000000009,
+          "charge": 0.0,
+          "radius_cells": 14.439285835884782
+        }
+      ],
+      "time": 0.005,
+      "energy": 26.80454757657336,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.01,
+      "energy": 12.602465212502823,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.015000000000000003,
+      "energy": 3.186508359719844,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.02,
+      "energy": 0.573769572954816,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.025,
+      "energy": 0.10046511243788658,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.030000000000000006,
+      "energy": 0.017924124598434312,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.035,
+      "energy": 0.003240817531041256,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.04,
+      "energy": 0.0005899809379131452,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.045,
+      "energy": 0.0001077522584877695,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.05,
+      "energy": 1.9708940049741437e-05,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.05500000000000001,
+      "energy": 3.6074193057698145e-06,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.06000000000000001,
+      "energy": 6.604881252760696e-07,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.065,
+      "energy": 1.2094691978826366e-07,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.07,
+      "energy": 2.2148918308808604e-08,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.075,
+      "energy": 4.0562331690500025e-09,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.08,
+      "energy": 7.428464710160959e-10,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.085,
+      "energy": 1.360435119104154e-10,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.09,
+      "energy": 2.491482228448398e-11,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.095,
+      "energy": 4.562872076082367e-12,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.1,
+      "energy": 8.356396489716294e-13,
+      "dt": 9.379103357719002e-07
+    }
+  ]
+}

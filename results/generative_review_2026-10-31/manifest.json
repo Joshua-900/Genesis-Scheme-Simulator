@@ -1,0 +1,61 @@
+{
+  "study_id": "generative_review_2026-10-31",
+  "parent_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "collection_source_hashes_match": true,
+  "preserved_engines_and_legacy_match": true,
+  "animation": {
+    "frames": 81,
+    "size": [
+      1000,
+      760
+    ]
+  },
+  "tests": "41 tests pass; see test_log.txt",
+  "snapshot_precision": "float32; reported metrics computed before quantization, so tiny activity cannot be reconstructed accurately from saved snapshots.",
+  "current_review_sources": {
+    "src/genesis_gallery/legacy.py": "4552b344d57b706f5ed48584e521a4e95d3937d5eacc159b48abdca948d217d6",
+    "src/genesis_gallery/render.py": "0ad46fb5e4afb4247d87d8ef80247b18cafccc29dbd68df764b95de82a2a7633",
+    "src/genesis_gallery/review.py": "f419af29cd76f1b3ae188e9ce3232e48731cc8d0928c3de5353e5d7d6a2d5859",
+    "src/genesis_gallery/__init__.py": "1b3d6a7ef7967a347355dbfd8247fa8f190d22fb3427fbc9f7a58082a971ccd5",
+    "tests/test_generative_review.py": "0850b2f7febc4f920a97e917245fda61e5f4cd9d611aad9b7a14d114d81ef674"
+  },
+  "artifacts": {
+    "activity.png": "f1034f7a314a19b1634e05837d3122755de4ca043afebda9d00c051d8bf94e5d",
+    "alignment_seed1.npz": "914427ffef69b113aa288b513b144cdaf4114d824ecf540ab340fa796365d218",
+    "alignment_seed42.npz": "f3d33f194e79d26169341ab33f8c274f384c0861be41a7a15df53f8aef457ac8",
+    "alignment_seed7.npz": "3eead99ad36541967f03197f4660f3283de82408ffd38b05017e30b426c8ba5d",
+    "all_seeds.png": "0089dc4df970891577429ed932e2b6ea184dcf814256daffa5568eabf1b8a258",
+    "comparison.gif": "f096bd16143d634d466581fded9b3271d3c4ce43184babafdac82ee42e88c095",
+    "comparison.png": "b39a69a82461d0afa2166eb205a7934e59e6e9cf672fe1793efc24a6caa430c7",
+    "compression.png": "3f6471835be591ce1e618b2e08613c50dfff7e253903eca3c91fcb1c97bbdd96",
+    "legacy_full_seed1.npz": "ebdc8477c98f448c2f208c7a819af91ae68c2e859da0c1f114d72f4f0dc7b7e2",
+    "legacy_full_seed42.npz": "e5d6208344876bab2c85a7e614cb87c88c7610f8183bd14e81706d37cbe5aced",
+    "legacy_full_seed7.npz": "2816ce9bcfd52a94a27745830dc5e81365340736d503e6336dca8e83ce332aa0",
+    "legacy_no_geometry_seed1.npz": "4f1f53692944d4ff17199279591b1956ade338690f03f3ef59fd7ba98f6b4cc4",
+    "legacy_no_geometry_seed42.npz": "5ef37316576d6b57574d6d40c766bde51185f4d52e3c446005c8378025de908c",
+    "legacy_no_geometry_seed7.npz": "a7c38736dcdd849999b48e2cef5a9fa8792283159e0ae6787fab87e25c73a312",
+    "progress.json": "5defeb7b0b73c3801995b27b6dda6d1bfcbe2e65ba1fc13ef5198a45317ab97b",
+    "protocol.json": "acba4410baa7fa325555e663c9a85d489d09a113e61487fcefbd664f45ea6cff",
+    "pulse.png": "b49b3781bd91b67fdb6ac3ff6f5d99b6c2cc75b2783dddbc9606af9ed11803a3",
+    "report.json": "7423a102007400190ff0e71db8be502ad85aee994fc866a71715c5c6663230d5",
+    "summary.md": "cc4fc9d7bd9273b97dbe2d8bfd1fc1d525f3888337534c65d87b72b682b956db",
+    "test_log.txt": "e1f53c8a8ce9f8264f91dcb316e7325c1f7ce9ce401cfc01b816e366517eaba5",
+    "v1_no_geometry_seed1.npz": "bf8f1ffa35cc6c0efef6be1e0a0cf8ec8410c72e555f30c0e07d8ee8b6dd5c44",
+    "v1_no_geometry_seed42.npz": "1df952afc462f32f7cc8cea8d428bdd1f25a33c80cee8ea7e12cdd5e25a215ae",
+    "v1_no_geometry_seed7.npz": "e2e2b171cf41701f4412a6ea63e94d47bd2ac3af16da929ca9afd20595ed7680",
+    "v1_seed1.npz": "2656a85612e478009b7ee46d3d3b3a9ed60173397dc5f287a7db9cabbe34f73f",
+    "v1_seed42.npz": "fa3a36f030863f5a127ab827e04a4ba4dc7ea4449633ca1c7c429a4a607cb723",
+    "v1_seed7.npz": "3b3cb08d3917963c576d27bdcbdd9e8e5625e840c649719a4aac3db8eba30ac6",
+    "v2_integrated_seed1.npz": "4be690961b96a9bbd0715f2ff27d6cd6f198e60d53183854c677cfdcc8854cc4",
+    "v2_integrated_seed42.npz": "577878fc8eb589db44e1852c2a244ddba2d9d41b0f50b34f2ca72fcc9ad48874",
+    "v2_integrated_seed7.npz": "5d4e19d6335dc54aa17530234878cb7d21de0e0a188be2fe648b05d612ba7e0b"
+  }
+}

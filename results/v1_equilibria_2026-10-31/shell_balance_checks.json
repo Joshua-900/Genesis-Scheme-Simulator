@@ -1,0 +1,72 @@
+{
+  "kind": "post-search analytic refinement; frozen search unchanged",
+  "source_sha256": "b711a7c7cf81e964b7aba25e81629e0b1f665f4bcf564bc1eb27271ebc01460b",
+  "checks": [
+    {
+      "N": 4,
+      "seed": 1,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 0.0,
+      "weighted_budget_identity_error": 0.0
+    },
+    {
+      "N": 4,
+      "seed": 2,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 0.0,
+      "weighted_budget_identity_error": 1.1102230246251565e-16
+    },
+    {
+      "N": 4,
+      "seed": 3,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 1.6653345369377348e-16,
+      "weighted_budget_identity_error": 0.0
+    },
+    {
+      "N": 6,
+      "seed": 1,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 1.6653345369377348e-16,
+      "weighted_budget_identity_error": 0.0
+    },
+    {
+      "N": 6,
+      "seed": 2,
+      "decomposition_max_error": 1.1102230246251565e-16,
+      "weighted_neighbour_sum_error": 5.204170427930421e-17,
+      "weighted_budget_identity_error": 3.3306690738754696e-16
+    },
+    {
+      "N": 6,
+      "seed": 3,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 1.1102230246251565e-16,
+      "weighted_budget_identity_error": 1.1102230246251565e-16
+    },
+    {
+      "N": 8,
+      "seed": 1,
+      "decomposition_max_error": 3.3306690738754696e-16,
+      "weighted_neighbour_sum_error": 1.1102230246251565e-16,
+      "weighted_budget_identity_error": 2.220446049250313e-16
+    },
+    {
+      "N": 8,
+      "seed": 2,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 1.942890293094024e-16,
+      "weighted_budget_identity_error": 2.220446049250313e-16
+    },
+    {
+      "N": 8,
+      "seed": 3,
+      "decomposition_max_error": 2.220446049250313e-16,
+      "weighted_neighbour_sum_error": 0.0,
+      "weighted_budget_identity_error": 0.0
+    }
+  ],
+  "shell_off_exact_equilibrium_weighted_mean_tau_bound": 4e-09,
+  "scope": "Constructed fields obey displacement equilibrium form only. Random C is not asserted to satisfy the nonlinear compression relation or to be a full fixed point. These check algebraic identities, not equilibrium existence or stability.",
+  "numerical_caution": "Exact-equilibrium bounds require residual allowances when applied to approximate roots; raw/source acceptance at1e-8 is not exact equality."
+}

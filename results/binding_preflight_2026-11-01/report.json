@@ -1,0 +1,880 @@
+{
+  "milestone": "binding_response_preparation",
+  "status": "preflight_complete_not_a_binding_result",
+  "purpose": "Inspect existing full-state snapshots and controls; no trajectories generated and no prior gates changed.",
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "source_directory": "results/vortex_motion_2026-10-31",
+  "source_sha256": {
+    "protocol.json": "f9ad150cdbe80a9aa4c801d3311f296d252ca80f8d88eb4d6b011b0a5e5c6ab2",
+    "report.json": "3108d817485d52fb69ea6221627b3e929bccaaca6647d46c44b28ca6cfe5decf",
+    "seed_1001.npz": "a6c76157cfd4f46e45309419e06a27d0b1571754b9b38507bc30439700a664f8",
+    "seed_1002.npz": "e1bb10d699bf8597643fc891b4c3c1d722a3f94274f193749af5aa62e560ee36",
+    "seed_1003.npz": "e2c18254a391aeff4d930d8ec1aefdb64957b625122c22f479107cbb0d5d8b39",
+    "seed_1004.npz": "0a21a1360b520264da7b16e7962fd0f2d1d69e95cec26bb6f445b4ee5e911f38",
+    "seed_1005.npz": "cb563361fb299f604ce1c846052c5f74ba8e933edc088fe844f318abb740644a",
+    "seed_1006.npz": "50106bc822157e8abcedb6a46e1cbe01665013c6139cf18309b41591583cf0ce",
+    "seed_1007.npz": "dd3790d89ad4a4ed2ccf2e22b7b642b3803639ef661fe11894db2a1499185a4c",
+    "seed_1008.npz": "8efe676f199c0388a073d3828cf50f2c2e53a9fb8d86643e11cf319f9d493a8e",
+    "seed_2001.npz": "af8fff0ab3c70a0fbc7f593b964220a20b5bb9c0607352d17e0ef5ae9bd53863",
+    "seed_2002.npz": "c16b4500227a8292607b7da042c7ae1240801065339fa92d88a69b9548f25e56",
+    "seed_2003.npz": "54a9f4ea93b8bef563bf9920f567e04e3b49c3ba880e9cd7bdf809266479e86f",
+    "seed_2004.npz": "24f1bbcc3fd6795ec3d9d55d7ee8351d4a9c20b6553b63dfbdd163f7d4739135",
+    "seed_2005.npz": "1dadf20478c6f577bea69375f269117f7184fdbc6b24abef30804a5af142bb53",
+    "seed_2006.npz": "a2f99043b521e1c339f53592947bc3697e57529dbe2a85e47f355c1b6c3e22cf",
+    "seed_2007.npz": "1c8b7d564c59cae7b47b881de100c15988f39df0714d9724a1ffce30904b874a",
+    "seed_2008.npz": "98ebf488d22f80a010c2e5e38d5062b87807da647496403c441b35e6361fe5a7",
+    "seed_3001.npz": "81e692c51d3dd2144d9aafccf80ad59bbae2aab61d8c7f394f4c46b6be5c009a",
+    "seed_3002.npz": "e94180be2d5d3a79738f854bc08aab00aee2c938876d535df04d5d2fc6b8ef58",
+    "seed_3003.npz": "522c3305545f8109d6d800d907d8874e91729a6012f78411f0dabb88d15a661c",
+    "seed_3004.npz": "6bfb2e4ac18bd3fb4f2c4b55a23ec5d819dc5900389d9f16f154bc392e90888d",
+    "seed_3005.npz": "6bc292f48921538228e74a18b4cc5f7e952e238e312b748ef8fbe1992d65f962",
+    "seed_3006.npz": "08a37fbebc92ec757c2307d1eea6fd429d0b0dd4bc32ecb99cca5f7a07a58c13",
+    "seed_3007.npz": "19c4cf78dc121816e40764c7a93556d048207f3f51e91872c15077343c273a15",
+    "seed_3008.npz": "87b2ad4b8d033cf2520080d68f06ab4bfef18134e0e7f8ba6546f812a71939f5"
+  },
+  "preflight_source_sha256": "8111dbdad2cd1940533a5d062e035669964d3c2fa8273596165852fe551cc703",
+  "summary": {
+    "archives_present": 24,
+    "full_state_and_initial_charge_checks_pass": true,
+    "seeds_with_initial_calibration_clearance": [
+      1005,
+      3001
+    ],
+    "first_calibration_seed_by_initial_geometry": 1005,
+    "original_pairs_with_no_grid_motion_before_first_joint_loss": 10,
+    "original_pairs_observed_at_end": 12
+  },
+  "records": [
+    {
+      "seed": 1001,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          3.5,
+          35.5
+        ],
+        [
+          5.5,
+          32.5
+        ]
+      ],
+      "initial_separation": 3.605551275463989,
+      "total_vortex_plaquettes": 48,
+      "nearest_other_defect_distances": [
+        2.8284271247461903,
+        5.0
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 74,
+      "contiguous_joint_updates": 365,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.4142135623730951,
+      "separation_range_in_contiguous_prefix": [
+        1.0,
+        3.605551275463989
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 1002,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          8.5,
+          56.5
+        ],
+        [
+          63.5,
+          2.5
+        ]
+      ],
+      "initial_separation": 13.45362404707371,
+      "total_vortex_plaquettes": 56,
+      "nearest_other_defect_distances": [
+        7.211102550927978,
+        2.23606797749979
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        13.45362404707371,
+        13.45362404707371
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 1003,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          41.5,
+          4.5
+        ],
+        [
+          35.5,
+          0.5
+        ]
+      ],
+      "initial_separation": 7.211102550927978,
+      "total_vortex_plaquettes": 66,
+      "nearest_other_defect_distances": [
+        4.123105625617661,
+        9.219544457292887
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        7.211102550927978,
+        7.211102550927978
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 1004,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          23.5,
+          46.5
+        ],
+        [
+          21.5,
+          43.5
+        ]
+      ],
+      "initial_separation": 3.605551275463989,
+      "total_vortex_plaquettes": 58,
+      "nearest_other_defect_distances": [
+        6.4031242374328485,
+        3.1622776601683795
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        2.23606797749979,
+        3.605551275463989
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 1005,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          1.5,
+          7.5
+        ],
+        [
+          5.5,
+          58.5
+        ]
+      ],
+      "initial_separation": 13.601470508735444,
+      "total_vortex_plaquettes": 60,
+      "nearest_other_defect_distances": [
+        5.0,
+        8.54400374531753
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": true,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        13.601470508735444,
+        13.601470508735444
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 1006,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          36.5,
+          42.5
+        ],
+        [
+          50.5,
+          49.5
+        ]
+      ],
+      "initial_separation": 15.652475842498529,
+      "total_vortex_plaquettes": 62,
+      "nearest_other_defect_distances": [
+        1.4142135623730951,
+        3.1622776601683795
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 47,
+      "contiguous_joint_updates": 230,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        15.231546211727817,
+        15.652475842498529
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 1007,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          57.5,
+          29.5
+        ],
+        [
+          63.5,
+          21.5
+        ]
+      ],
+      "initial_separation": 10.0,
+      "total_vortex_plaquettes": 66,
+      "nearest_other_defect_distances": [
+        2.8284271247461903,
+        3.605551275463989
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        10.0,
+        10.0
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 1008,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          17.5,
+          31.5
+        ],
+        [
+          26.5,
+          29.5
+        ]
+      ],
+      "initial_separation": 9.219544457292887,
+      "total_vortex_plaquettes": 74,
+      "nearest_other_defect_distances": [
+        4.47213595499958,
+        2.0
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 20,
+      "contiguous_joint_updates": 95,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        9.219544457292887,
+        9.486832980505138
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 2001,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          36.5,
+          42.5
+        ],
+        [
+          38.5,
+          29.5
+        ]
+      ],
+      "initial_separation": 13.152946437965905,
+      "total_vortex_plaquettes": 56,
+      "nearest_other_defect_distances": [
+        2.23606797749979,
+        4.242640687119285
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 32,
+      "contiguous_joint_updates": 155,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        13.152946437965905,
+        14.142135623730951
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 2002,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          12.5,
+          37.5
+        ],
+        [
+          17.5,
+          47.5
+        ]
+      ],
+      "initial_separation": 11.180339887498949,
+      "total_vortex_plaquettes": 62,
+      "nearest_other_defect_distances": [
+        2.23606797749979,
+        4.47213595499958
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 50,
+      "contiguous_joint_updates": 245,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.4142135623730951,
+      "separation_range_in_contiguous_prefix": [
+        11.180339887498949,
+        12.529964086141668
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 2003,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          31.5,
+          8.5
+        ],
+        [
+          26.5,
+          4.5
+        ]
+      ],
+      "initial_separation": 6.4031242374328485,
+      "total_vortex_plaquettes": 62,
+      "nearest_other_defect_distances": [
+        5.385164807134504,
+        8.06225774829855
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        6.4031242374328485,
+        6.4031242374328485
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 2004,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          30.5,
+          40.5
+        ],
+        [
+          17.5,
+          43.5
+        ]
+      ],
+      "initial_separation": 13.341664064126334,
+      "total_vortex_plaquettes": 56,
+      "nearest_other_defect_distances": [
+        3.605551275463989,
+        4.123105625617661
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        13.341664064126334,
+        13.601470508735444
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 2005,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          35.5,
+          54.5
+        ],
+        [
+          37.5,
+          1.5
+        ]
+      ],
+      "initial_separation": 11.180339887498949,
+      "total_vortex_plaquettes": 60,
+      "nearest_other_defect_distances": [
+        3.1622776601683795,
+        2.8284271247461903
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        11.180339887498949,
+        11.180339887498949
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 2006,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          44.5,
+          59.5
+        ],
+        [
+          47.5,
+          0.5
+        ]
+      ],
+      "initial_separation": 5.830951894845301,
+      "total_vortex_plaquettes": 64,
+      "nearest_other_defect_distances": [
+        6.4031242374328485,
+        4.47213595499958
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        5.385164807134504,
+        5.830951894845301
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 2007,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          40.5,
+          63.5
+        ],
+        [
+          37.5,
+          4.5
+        ]
+      ],
+      "initial_separation": 5.830951894845301,
+      "total_vortex_plaquettes": 50,
+      "nearest_other_defect_distances": [
+        5.0,
+        1.4142135623730951
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 48,
+      "contiguous_joint_updates": 235,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        5.830951894845301,
+        6.4031242374328485
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 2008,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          47.5,
+          5.5
+        ],
+        [
+          62.5,
+          4.5
+        ]
+      ],
+      "initial_separation": 15.033296378372908,
+      "total_vortex_plaquettes": 64,
+      "nearest_other_defect_distances": [
+        1.0,
+        2.8284271247461903
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 23,
+      "contiguous_joint_updates": 110,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        15.033296378372908,
+        16.0312195418814
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 3001,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          14.5,
+          33.5
+        ],
+        [
+          13.5,
+          41.5
+        ]
+      ],
+      "initial_separation": 8.06225774829855,
+      "total_vortex_plaquettes": 66,
+      "nearest_other_defect_distances": [
+        5.0990195135927845,
+        4.47213595499958
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": true,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        8.06225774829855,
+        8.06225774829855
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 3002,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          11.5,
+          49.5
+        ],
+        [
+          5.5,
+          55.5
+        ]
+      ],
+      "initial_separation": 8.48528137423857,
+      "total_vortex_plaquettes": 50,
+      "nearest_other_defect_distances": [
+        3.0,
+        6.0
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 39,
+      "contiguous_joint_updates": 190,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        8.48528137423857,
+        8.48528137423857
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 3003,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          54.5,
+          51.5
+        ],
+        [
+          42.5,
+          46.5
+        ]
+      ],
+      "initial_separation": 13.0,
+      "total_vortex_plaquettes": 62,
+      "nearest_other_defect_distances": [
+        3.1622776601683795,
+        6.082762530298219
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        13.0,
+        13.92838827718412
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 3004,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          5.5,
+          15.5
+        ],
+        [
+          8.5,
+          17.5
+        ]
+      ],
+      "initial_separation": 3.605551275463989,
+      "total_vortex_plaquettes": 68,
+      "nearest_other_defect_distances": [
+        8.48528137423857,
+        7.0
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 66,
+      "contiguous_joint_updates": 325,
+      "maximum_grid_displacement_in_contiguous_prefix": 2.0,
+      "separation_range_in_contiguous_prefix": [
+        1.0,
+        3.605551275463989
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 3005,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          19.5,
+          51.5
+        ],
+        [
+          23.5,
+          46.5
+        ]
+      ],
+      "initial_separation": 6.4031242374328485,
+      "total_vortex_plaquettes": 72,
+      "nearest_other_defect_distances": [
+        1.0,
+        5.385164807134504
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 28,
+      "contiguous_joint_updates": 135,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        6.4031242374328485,
+        6.4031242374328485
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 3006,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          7.5,
+          58.5
+        ],
+        [
+          7.5,
+          44.5
+        ]
+      ],
+      "initial_separation": 14.0,
+      "total_vortex_plaquettes": 64,
+      "nearest_other_defect_distances": [
+        4.242640687119285,
+        2.23606797749979
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 52,
+      "contiguous_joint_updates": 255,
+      "maximum_grid_displacement_in_contiguous_prefix": 0.0,
+      "separation_range_in_contiguous_prefix": [
+        14.0,
+        14.0
+      ],
+      "both_original_identities_observed_at_end": false
+    },
+    {
+      "seed": 3007,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          11.5,
+          5.5
+        ],
+        [
+          16.5,
+          11.5
+        ]
+      ],
+      "initial_separation": 7.810249675906654,
+      "total_vortex_plaquettes": 66,
+      "nearest_other_defect_distances": [
+        5.0,
+        5.385164807134504
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 81,
+      "contiguous_joint_updates": 400,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        7.810249675906654,
+        8.602325267042627
+      ],
+      "both_original_identities_observed_at_end": true
+    },
+    {
+      "seed": 3008,
+      "archive_present": true,
+      "n": 64,
+      "initial_charges": [
+        1,
+        -1
+      ],
+      "initial_pair": [
+        [
+          17.5,
+          28.5
+        ],
+        [
+          19.5,
+          19.5
+        ]
+      ],
+      "initial_separation": 9.219544457292887,
+      "total_vortex_plaquettes": 76,
+      "nearest_other_defect_distances": [
+        2.0,
+        5.385164807134504
+      ],
+      "initial_clearance_for_radius3_relocation_calibration": false,
+      "contiguous_joint_samples": 54,
+      "contiguous_joint_updates": 265,
+      "maximum_grid_displacement_in_contiguous_prefix": 1.0,
+      "separation_range_in_contiguous_prefix": [
+        9.219544457292887,
+        9.486832980505138
+      ],
+      "both_original_identities_observed_at_end": false
+    }
+  ],
+  "limitations": [
+    "Grid-level persistence does not establish binding or restoring response.",
+    "Tracker loss does not establish annihilation.",
+    "Old candidates inhabit populated fields; background pinning must be distinguished from pair cohesion.",
+    "Initial clearance is a geometric prerequisite for calibration, not a scientific object criterion.",
+    "Old cohorts are for method development only; confirmatory seed design and acceptance thresholds remain to be frozen before any new response collection."
+  ]
+}

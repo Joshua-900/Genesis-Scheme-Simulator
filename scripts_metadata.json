@@ -5,6 +5,15 @@
     "schema_version": 2
   },
   "scripts": {
+    "genesis_multiscale_audit.py": {
+      "description": "Isolated classical multiscale organization audit with matched planar summaries and independent perturbation-response cohorts. Preserves V1 and V2.",
+      "category": "Measurements",
+      "status": "exploratory",
+      "quality": "validated audit; first predictive gate not passed",
+      "notes": "Writes a frozen protocol, raw snapshots and targets, held-out predictions and metrics. Refuses existing output directories. Does not establish a bulk or holographic correspondence. See the vault implementation note.",
+      "findings": ["findings/2026-10-31_multiscale_organization_audit.md"],
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
     "genesis_measure.py": {
       "description": "Headless measurement harness — runs the active genesis_grid pipeline and logs observables to JSON/CSV. Single-run, multi-seed, kappa-sweep, and geometry-compare modes.",
       "category": "Measurements",

@@ -1,0 +1,34 @@
+N=16 v1 seed=1: 2 matched perturbations
+N=16 v1 seed=2: 2 matched perturbations
+N=16 v1 seed=3: 2 matched perturbations
+N=16 v1 seed=101: 2 matched perturbations
+N=16 v1 seed=102: 2 matched perturbations
+N=16 v1 seed=103: 2 matched perturbations
+N=16 v1 seed=201: 2 matched perturbations
+N=16 v1 seed=202: 2 matched perturbations
+N=16 v1 seed=203: 2 matched perturbations
+Completed: C:\Users\joshu\Source\Repos\Genesis-Scheme-Simulator\work\tmpesrgiemv\audit\report.json; primary gate passes=False
+test_block_mean_treats_angle_wrap_circularly (test_multiscale_audit.DescriptorTests.test_block_mean_treats_angle_wrap_circularly) ... ok
+test_controls_preserve_expected_marginals_and_do_not_mutate (test_multiscale_audit.DescriptorTests.test_controls_preserve_expected_marginals_and_do_not_mutate) ... ok
+test_nested_and_planar_masks_have_same_footprint_without_mutation (test_multiscale_audit.DescriptorTests.test_nested_and_planar_masks_have_same_footprint_without_mutation) ... ok
+test_periodic_winding_matches_existing_detector (test_multiscale_audit.DescriptorTests.test_periodic_winding_matches_existing_detector) ... ok
+test_zero_and_wrapped_responses (test_multiscale_audit.DescriptorTests.test_zero_and_wrapped_responses) ... ok
+test_context_shuffle_respects_seed_and_preserves_local_inputs (test_multiscale_audit.EvaluationTests.test_context_shuffle_respects_seed_and_preserves_local_inputs) ... ok
+test_equal_representations_cannot_pass_gate (test_multiscale_audit.EvaluationTests.test_equal_representations_cannot_pass_gate) ... ok
+test_test_rows_do_not_affect_training_standardization (test_multiscale_audit.EvaluationTests.test_test_rows_do_not_affect_training_standardization) ... ok
+test_adapter_has_exact_existing_v1_preset_parity (test_multiscale_audit.PreservationTests.test_adapter_has_exact_existing_v1_preset_parity) ... ok
+test_clone_and_snapshot_are_detached (test_multiscale_audit.PreservationTests.test_clone_and_snapshot_are_detached) ... ok
+test_creation_does_not_consume_global_rng (test_multiscale_audit.PreservationTests.test_creation_does_not_consume_global_rng) ... ok
+test_geometry_ablation_has_no_displacement (test_multiscale_audit.PreservationTests.test_geometry_ablation_has_no_displacement) ... ok
+test_invalid_cohorts_rejected_before_any_output (test_multiscale_audit.PreservationTests.test_invalid_cohorts_rejected_before_any_output) ... ok
+test_tiny_end_to_end_run_preserves_sources_and_refuses_overwrite (test_multiscale_audit.PreservationTests.test_tiny_end_to_end_run_preserves_sources_and_refuses_overwrite) ... ok
+test_potentiality_can_change_actuality_without_replacing_v1_structure (test_v2_integrated.V2IntegratedTests.test_potentiality_can_change_actuality_without_replacing_v1_structure) ... ok
+test_relation_memory_has_no_effect_until_explicitly_enabled (test_v2_integrated.V2IntegratedTests.test_relation_memory_has_no_effect_until_explicitly_enabled) ... ok
+test_relation_memory_tension_changes_the_inherited_tension_field (test_v2_integrated.V2IntegratedTests.test_relation_memory_tension_changes_the_inherited_tension_field) ... ok
+test_zero_potential_coupling_has_v1_parity (test_v2_integrated.V2IntegratedTests.test_zero_potential_coupling_has_v1_parity)
+The bridge must not change V1 until a named V2 coupling is enabled. ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.878s
+
+OK

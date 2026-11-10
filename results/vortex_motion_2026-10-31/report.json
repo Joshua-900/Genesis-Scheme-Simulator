@@ -1,0 +1,1511 @@
+{
+  "experiment_id": "vortex_motion_2026-10-31",
+  "source_and_baseline_unchanged": true,
+  "engine_source_sha256_after": {
+    "src/genesis_grid/__init__.py": "fb7ca20c2cc8b5a3bfc45b10f58bbc403aea1fd7cea6d367051efe3c5e751474",
+    "src/genesis_grid/adapter.py": "a15453170f229f8166c6df1e15e05dcdbb79a8a3edf09077bea356afa6d524c5",
+    "src/genesis_grid/backend.py": "a3b68297debe80ca4f1fffe1e6f3f0aa47199410e57ee5445aae720824bdbbee",
+    "src/genesis_grid/collector.py": "f1be06d31efa7c515903eb11b72f8042c6af434a0d78ece484cbcdd16972a5ec",
+    "src/genesis_grid/compression_tracker.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/genesis_grid/core.py": "65c4f0dff0845d942d5723aff90da2e55fbd0ab27e29a19fc72ed45de17e9ccd",
+    "src/genesis_grid/course_objects.py": "25bd6df6e8ff23ce0f0b3509979ffeaf88d84c7e629ec0e515b24092b73860e0",
+    "src/genesis_grid/defect_tracker.py": "595c34f53ceeecfacc890adb6d60c4dc1449f4f6663e8da5e039f5395aee5cc9",
+    "src/genesis_grid/diagnostics.py": "940d21ff4e6b300688692cadbde4c431773521aebdd39b835ddc1a1a9c935cef",
+    "src/genesis_grid/pairline_tracker.py": "a01e4720965162a2e84a03a370af75ba06e161d4184c8a6af26856a0ead0d710",
+    "src/genesis_grid/relax.py": "a552ad4aab51a4b283a12425568768b224d309d184fdaaa8f09264520177f9cf",
+    "src/genesis_grid/rules_alignment.py": "24999d2d7fedb2cef8dbe6cd21386b2552f438922113c5870e42f4eefc3dc3b9",
+    "src/genesis_grid/rules_boundary_renewal.py": "2b3022f96fe118675a30d12c96ebb79911f7538c5ca385c017087d17d89f897a",
+    "src/genesis_grid/rules_compression.py": "f09ffdaf0830965e13291e9d471fcbb08831f421f86e0e9813df952614c93155",
+    "src/genesis_grid/rules_curvature.py": "c6da7545cdfba2cb4205ca09ea0a91cf186e39c3d91061188fd857682a2119e4",
+    "src/genesis_grid/rules_dipoles.py": "1f5df6b561795f7d734606f1f850c3d580788abc61ccf761903b6bd750344a6d",
+    "src/genesis_grid/rules_locking.py": "17b4d3c657f2ce59e9552747edd43c5e631d45cab5ea28609ef81ae7e4aed64d",
+    "src/genesis_grid/rules_phase.py": "d4ea2a8837d637747894c2dc43181d947211d83aca06ac019999d8f7977a0936",
+    "src/genesis_grid/rules_scale_selection.py": "35c100a625822e30369c56526a41985dd4dd07cbcbbbbbf272e6aa386f144dfd",
+    "src/genesis_grid/rules_structural_memory.py": "076d3ecdb2f28e0f666e1b8fa610762c05c8dd30e48d736a7271058adca14641",
+    "src/genesis_grid/rules_triads.py": "9cd846abcbdab543f5dff1ff1ead65577bce12ac8bfc9715ecf3f24723373e82",
+    "src/genesis_grid/rules_triads_relative.py": "74177df4ded4e4fc83eb9c2a7a7a81d8ee09856177277b3c07c8368b7f397946",
+    "src/genesis_grid/ui_matplotlib.py": "0a1eb2b55f6ed75c434709c1539bbe578ec89b43baa93fed104b42da45cbcdc1",
+    "src/genesis_grid/ui_matplotlib2.py": "79f7673a525bf6db6fb19be100f3b6ffce332ba9aaebb94b585b5a22d3f033a8",
+    "src/genesis_grid/ui_matplotlib3.py": "96608e74e4100949866add53a57a295f93163ee5af4f63151d50ae438dabf566",
+    "src/genesis_grid/ui_napari.py": "19f038eca13f61c5eb0b028c9f2cfb6ad0813501d625c10d47a34cc5e5fefc39",
+    "src/genesis_grid/ui_napari_2.py": "d3b05ae762f89dbeeca02917f28ba5ea6e2691ca6a36a5a8d09ec98b9244ad2a",
+    "src/genesis_grid/ui_vispy.py": "328c789cec93f95e6157a62189ba72ca4f5982a15971e57c4df22c3b3ae5232a",
+    "src/genesis_grid/ui_vispy2.py": "f02a9db75951b1601a40a793e6d957d4b15fbe346ef6acf32ed981fcbb5865be",
+    "src/genesis_grid/ui_vispy3.py": "7fcc65deb616fbd245f7cf4d52e63045af31342333cbf928759864ff6601e3b3",
+    "src/genesis_v2/__init__.py": "3c9d63c36504d0e937d54ce0047921f63d78ed52de510f4cf5204e061f0e92bb",
+    "src/genesis_v2/adapter.py": "93c4f281cdf43a1ea4e1dc1adb67e763547bb53299b2a89302f4104773f14599",
+    "src/genesis_v2/core.py": "c115658f0562e0359e647a94c8b7e2f2b5f3afbdf828c318835bdadd0d10064f",
+    "src/genesis_v2_beta/__init__.py": "689db4ca6cabd99b39ddd8f5531e77e78705fb4afa20a2a3d26af7b0330a8d2e",
+    "src/genesis_v2_beta/adapter.py": "903d18422c8b9f18b551d6c095a729aabc7576ca7e7c8dc3eb5ed9799660791f",
+    "src/genesis_v2_beta/core.py": "f29af9bdaa0a3ac70787b85c2735ce5b69db9c04a819fab466d777b8165f7e8b",
+    "src/genesis_v2_beta/objects.py": "294d399aa5892d915376247b621242c6a78275d70a5c0a9bbd7c2887ace40ea7",
+    "src/genesis_v2_delta/__init__.py": "42e07740e157bf71f0fd76e5bc1bdbf3285993114d168a1ad8dd0b2fe0bb3c6d",
+    "src/genesis_v2_delta/adapter.py": "899c786aee6658ed8b9c196dc8b333bd7027274c274d4a5e1b8da9a291c72d86",
+    "src/genesis_v2_delta/core.py": "366b22c68dcb606da977114810af0673519c9d79e523e9b3ff20cbb310b0f64d",
+    "src/genesis_v2_epsilon/__init__.py": "b220678094eefadc20bd99ac1eea734bc794164584f3ebfedf1425975951245f",
+    "src/genesis_v2_epsilon/adapter.py": "7835c4da457b58f42ad610abf630e1bb6093755a67e88fd501f850c2619c6147",
+    "src/genesis_v2_epsilon/core.py": "91ee1bc48e53dfd23b61eca7e533fd4f7f67601288c2bb92f438a8d897a83ef7",
+    "src/genesis_v2_gamma/__init__.py": "212a0b27fd3b41e4ff75bec2159f145463e816181a2fada6de2138ebb1ededfa",
+    "src/genesis_v2_gamma/adapter.py": "98b775eaf2117cc9c61797737de222879f191c119c1a74dbc0f031aad5fb9ce7",
+    "src/genesis_v2_gamma/core.py": "c48de6a868c84bf0e1798ae0ea8333f52d719c51cd8e93748480cdee0ccdcafd",
+    "src/genesis_v2_gamma/interventions.py": "9b6b66970fa0168891b5929aa0a438a7e0714b4a67fe29c1aeea76dc83ad455f",
+    "src/genesis_v2_gamma/probes.py": "399ca3ccdf57291452aa040ff2165e2ea67cef0bc9794ee3203c01e4860c1458",
+    "src/genesis_v2_integrated/__init__.py": "e8759061421e27f6e95a008fe104c95ee646cdce83350d8a06d829f35768d550",
+    "src/genesis_v2_integrated/core.py": "dd199359efc8b262a05e98d29aa9c89df87c447c336751c5ee807f6d80552dd0",
+    "src/genesis_v2_zeta/__init__.py": "58c76f94d3e52fc80841cebe3cd295f86f6ada792743ec6655dc01a8e1b73f4b",
+    "src/genesis_v2_zeta/adapter.py": "1143912966c078e895ff5313ce092d24294ac80672a185e84c6cba254759f09a",
+    "src/genesis_v2_zeta/core.py": "6cb8df68e8c14e7c8eff112aaad69a296c6c861afb5108e4a48e7b0d9b86893a"
+  },
+  "visual_seed": 1001,
+  "skipped_seeds": [],
+  "selection_coverage": 24,
+  "forecast_records": 8102,
+  "seeds": [
+    {
+      "seed": 1001,
+      "pair_ids": [
+        14,
+        38
+      ],
+      "midpoint": [
+        4.5,
+        34.0
+      ],
+      "background": [
+        36.5,
+        2.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 73,
+          "pair_observed_at_end": false,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 71,
+          "pair_observed_at_end": false,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 73,
+          "pair_observed_at_end": false,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.7071067811865476,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1002,
+      "pair_ids": [
+        32,
+        36
+      ],
+      "midpoint": [
+        4.0,
+        61.5
+      ],
+      "background": [
+        36.0,
+        29.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1003,
+      "pair_ids": [
+        2,
+        36
+      ],
+      "midpoint": [
+        38.5,
+        2.5
+      ],
+      "background": [
+        6.5,
+        34.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1004,
+      "pair_ids": [
+        23,
+        56
+      ],
+      "midpoint": [
+        22.5,
+        45.0
+      ],
+      "background": [
+        54.5,
+        13.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.7071067811865476,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1005,
+      "pair_ids": [
+        5,
+        61
+      ],
+      "midpoint": [
+        3.5,
+        1.0
+      ],
+      "background": [
+        35.5,
+        33.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1006,
+      "pair_ids": [
+        21,
+        61
+      ],
+      "midpoint": [
+        43.5,
+        46.0
+      ],
+      "background": [
+        11.5,
+        14.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 46,
+          "pair_observed_at_end": false,
+          "forecast_records": 108
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 46,
+          "pair_observed_at_end": false,
+          "forecast_records": 108
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 46,
+          "pair_observed_at_end": false,
+          "forecast_records": 108
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1007,
+      "pair_ids": [
+        16,
+        51
+      ],
+      "midpoint": [
+        60.5,
+        25.5
+      ],
+      "background": [
+        28.5,
+        57.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 1008,
+      "pair_ids": [
+        19,
+        55
+      ],
+      "midpoint": [
+        22.0,
+        30.5
+      ],
+      "background": [
+        54.0,
+        62.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 19,
+          "pair_observed_at_end": false,
+          "forecast_records": 81
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 16,
+          "pair_observed_at_end": false,
+          "forecast_records": 78
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 19,
+          "pair_observed_at_end": false,
+          "forecast_records": 81
+        }
+      },
+      "joint_observed_at_horizon": false
+    },
+    {
+      "seed": 2001,
+      "pair_ids": [
+        25,
+        52
+      ],
+      "midpoint": [
+        37.5,
+        36.0
+      ],
+      "background": [
+        5.5,
+        4.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 31,
+          "pair_observed_at_end": false,
+          "forecast_records": 93
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 31,
+          "pair_observed_at_end": false,
+          "forecast_records": 93
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 31,
+          "pair_observed_at_end": false,
+          "forecast_records": 93
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2002,
+      "pair_ids": [
+        23,
+        62
+      ],
+      "midpoint": [
+        15.0,
+        42.5
+      ],
+      "background": [
+        47.0,
+        10.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 49,
+          "pair_observed_at_end": false,
+          "forecast_records": 111
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 49,
+          "pair_observed_at_end": false,
+          "forecast_records": 111
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 49,
+          "pair_observed_at_end": false,
+          "forecast_records": 111
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2003,
+      "pair_ids": [
+        5,
+        35
+      ],
+      "midpoint": [
+        29.0,
+        6.5
+      ],
+      "background": [
+        61.0,
+        38.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.7071067811865476,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2004,
+      "pair_ids": [
+        23,
+        57
+      ],
+      "midpoint": [
+        24.0,
+        42.0
+      ],
+      "background": [
+        56.0,
+        10.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2005,
+      "pair_ids": [
+        30,
+        37
+      ],
+      "midpoint": [
+        36.5,
+        60.0
+      ],
+      "background": [
+        4.5,
+        28.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2006,
+      "pair_ids": [
+        34,
+        36
+      ],
+      "midpoint": [
+        46.0,
+        62.0
+      ],
+      "background": [
+        14.0,
+        30.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2007,
+      "pair_ids": [
+        28,
+        32
+      ],
+      "midpoint": [
+        39.0,
+        2.0
+      ],
+      "background": [
+        7.0,
+        34.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 47,
+          "pair_observed_at_end": false,
+          "forecast_records": 109
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 48,
+          "pair_observed_at_end": false,
+          "forecast_records": 110
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 47,
+          "pair_observed_at_end": false,
+          "forecast_records": 109
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 2008,
+      "pair_ids": [
+        4,
+        39
+      ],
+      "midpoint": [
+        55.0,
+        5.0
+      ],
+      "background": [
+        23.0,
+        37.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 22,
+          "pair_observed_at_end": false,
+          "forecast_records": 84
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 22,
+          "pair_observed_at_end": false,
+          "forecast_records": 84
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 22,
+          "pair_observed_at_end": false,
+          "forecast_records": 84
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3001,
+      "pair_ids": [
+        19,
+        58
+      ],
+      "midpoint": [
+        14.0,
+        37.5
+      ],
+      "background": [
+        46.0,
+        5.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3002,
+      "pair_ids": [
+        22,
+        52
+      ],
+      "midpoint": [
+        8.5,
+        52.5
+      ],
+      "background": [
+        40.5,
+        20.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 38,
+          "pair_observed_at_end": false,
+          "forecast_records": 100
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 37,
+          "pair_observed_at_end": false,
+          "forecast_records": 99
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 38,
+          "pair_observed_at_end": false,
+          "forecast_records": 100
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3003,
+      "pair_ids": [
+        26,
+        57
+      ],
+      "midpoint": [
+        48.5,
+        49.0
+      ],
+      "background": [
+        16.5,
+        17.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3004,
+      "pair_ids": [
+        7,
+        45
+      ],
+      "midpoint": [
+        7.0,
+        16.5
+      ],
+      "background": [
+        39.0,
+        48.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 65,
+          "pair_observed_at_end": false,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 58,
+          "pair_observed_at_end": false,
+          "forecast_records": 118
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 65,
+          "pair_observed_at_end": false,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3005,
+      "pair_ids": [
+        28,
+        60
+      ],
+      "midpoint": [
+        21.5,
+        49.0
+      ],
+      "background": [
+        53.5,
+        17.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 27,
+          "pair_observed_at_end": false,
+          "forecast_records": 89
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 4,
+          "pair_observed_at_end": false,
+          "forecast_records": 66
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 27,
+          "pair_observed_at_end": false,
+          "forecast_records": 89
+        }
+      },
+      "joint_observed_at_horizon": false
+    },
+    {
+      "seed": 3006,
+      "pair_ids": [
+        31,
+        54
+      ],
+      "midpoint": [
+        7.5,
+        51.5
+      ],
+      "background": [
+        39.5,
+        19.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 51,
+          "pair_observed_at_end": false,
+          "forecast_records": 113
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 51,
+          "pair_observed_at_end": false,
+          "forecast_records": 113
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 51,
+          "pair_observed_at_end": false,
+          "forecast_records": 113
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3007,
+      "pair_ids": [
+        3,
+        48
+      ],
+      "midpoint": [
+        14.0,
+        8.5
+      ],
+      "background": [
+        46.0,
+        40.5
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 80,
+          "pair_observed_at_end": true,
+          "forecast_records": 122
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    },
+    {
+      "seed": 3008,
+      "pair_ids": [
+        20,
+        53
+      ],
+      "midpoint": [
+        18.5,
+        24.0
+      ],
+      "background": [
+        50.5,
+        56.0
+      ],
+      "branches": {
+        "untouched": {
+          "pair_observed_samples_after_start": 53,
+          "pair_observed_at_end": false,
+          "forecast_records": 115
+        },
+        "selected_structure": {
+          "pair_observed_samples_after_start": 52,
+          "pair_observed_at_end": false,
+          "forecast_records": 114
+        },
+        "background_structure": {
+          "pair_observed_samples_after_start": 53,
+          "pair_observed_at_end": false,
+          "forecast_records": 115
+        }
+      },
+      "joint_observed_at_horizon": true,
+      "horizon_position_divergence": {
+        "selected_structure": 0.0,
+        "background_structure": 0.0
+      }
+    }
+  ],
+  "conditional_motion_contrast": {
+    "joint_observed_seed_count": 22,
+    "eligible_seed_count": 24,
+    "seed_ids": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      3001,
+      3002,
+      3003,
+      3004,
+      3006,
+      3007,
+      3008
+    ],
+    "mean_selected_minus_background_position_divergence": 0.09642365197998376,
+    "paired_seed_bootstrap_95_interval": [
+      0.0,
+      0.2249885212866288
+    ],
+    "positive_conditional_motion_contrast": false,
+    "coverage_limit": "Conditional on strict observation of both identities in all arms at the horizon; report lost identities separately."
+  },
+  "forecast": {
+    "cohorts": {
+      "test": {
+        "motion": {
+          "status": "evaluated",
+          "records_train": 2597,
+          "records_test": 2416,
+          "seeds": [
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008
+          ],
+          "loss_unit": "squared grid sites, mean over x/y",
+          "mean_loss": {
+            "kinematic": 0.08291328837916362,
+            "local_field": 0.1363252490989886,
+            "field_matched": 0.7686255197302101,
+            "structural": 0.18723031820328073,
+            "shuffled_structure": 0.15176381876801284,
+            "persistence": 0.07415341794667327,
+            "training_mean": 0.07400408296577263
+          },
+          "per_seed_loss": {
+            "kinematic": [
+              0.08386628003001381,
+              0.13918385245834036,
+              0.05350670406261492,
+              0.07656389457017307,
+              0.00407678651621157,
+              0.08476369870016671,
+              0.0920826964194276,
+              0.12926239427636096
+            ],
+            "local_field": [
+              0.030545101069758204,
+              0.1075517605148012,
+              0.15285968546069104,
+              0.22825639600146877,
+              0.08409526257354634,
+              0.1188180933683835,
+              0.10885120623172308,
+              0.2596244875715368
+            ],
+            "field_matched": [
+              1.4870125618892485,
+              0.2925487971435317,
+              0.2561739271489871,
+              1.0657321274031941,
+              0.03594255886250362,
+              1.6113657108505062,
+              0.9046825578439955,
+              0.49554591669971454
+            ],
+            "structural": [
+              0.05739447308135722,
+              0.42764633464551793,
+              0.08067806786351073,
+              0.20521944916272566,
+              0.09008371989627387,
+              0.1122912197699883,
+              0.20467297036360504,
+              0.3198563108432672
+            ],
+            "shuffled_structure": [
+              0.04538643711866398,
+              0.1362463401931583,
+              0.16422862744561545,
+              0.28829147873782224,
+              0.07935928696362222,
+              0.1165263806245441,
+              0.11376250839690967,
+              0.2703094906637668
+            ],
+            "persistence": [
+              0.07534246575342465,
+              0.10622710622710622,
+              0.040983606557377046,
+              0.08196721311475409,
+              0.0,
+              0.08196721311475409,
+              0.08955223880597014,
+              0.1171875
+            ],
+            "training_mean": [
+              0.07108309196632044,
+              0.11320249455169805,
+              0.04148209352636128,
+              0.07728948793478967,
+              0.0004984869689842359,
+              0.08074029603408876,
+              0.09005072577495436,
+              0.1176859869689842
+            ]
+          },
+          "comparisons": {
+            "field_matched": {
+              "relative_gain": 0.7564089229446881,
+              "interval": [
+                0.4535546223278446,
+                0.8883339552128201
+              ],
+              "wins": 6,
+              "passes": true
+            },
+            "shuffled_structure": {
+              "relative_gain": -0.23369535455273574,
+              "interval": [
+                -0.9163085420897342,
+                0.1977893154530572
+              ],
+              "wins": 3,
+              "passes": false
+            },
+            "persistence": {
+              "relative_gain": -1.524904763498908,
+              "interval": [
+                -2.3798301729135924,
+                -0.725693606763506
+              ],
+              "wins": 1,
+              "passes": false
+            }
+          },
+          "informative_variation": true,
+          "moving_records": 332,
+          "continuation_fraction": 1.0,
+          "passes": false
+        },
+        "continuation": {
+          "status": "evaluated",
+          "records_train": 2760,
+          "records_test": 2656,
+          "seeds": [
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008
+          ],
+          "loss_unit": "Brier error for strict observed continuation",
+          "mean_loss": {
+            "kinematic": 0.09074011022655448,
+            "local_field": 0.14410280393433242,
+            "field_matched": 0.15891944225355437,
+            "structural": 0.22185326989839854,
+            "shuffled_structure": 0.1424229508574727,
+            "persistence": 0.10203200137307139,
+            "training_mean": 0.09346823935413698
+          },
+          "per_seed_loss": {
+            "kinematic": [
+              0.21061917139796163,
+              0.13583824232833808,
+              0.0047077434291036245,
+              0.006204010532473174,
+              0.008902332243053713,
+              0.005506672101550169,
+              0.16697940218092272,
+              0.18716330759903269
+            ],
+            "local_field": [
+              0.06959644750460924,
+              0.19313654480487358,
+              0.10226199132137412,
+              0.19716010607118128,
+              0.04289136785423209,
+              0.0680696782712282,
+              0.21691971797094745,
+              0.26278657767621344
+            ],
+            "field_matched": [
+              0.256691687595025,
+              0.14932044151919546,
+              0.002967242284161189,
+              0.4173959216315354,
+              0.0,
+              0.0,
+              0.18560679531066723,
+              0.2593734496878506
+            ],
+            "structural": [
+              0.06829298243984042,
+              0.2022244409204823,
+              0.3208742004103528,
+              0.4873609492979364,
+              0.01565853740265025,
+              0.1487993605347555,
+              0.26264306863017517,
+              0.26897261955099544
+            ],
+            "shuffled_structure": [
+              0.07415776077335326,
+              0.1958089041885584,
+              0.0982561307925766,
+              0.17755201828593958,
+              0.03349387562044844,
+              0.06927436944939773,
+              0.23249571237670993,
+              0.2583448353727976
+            ],
+            "persistence": [
+              0.21505376344086022,
+              0.18018018018018017,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.18292682926829268,
+              0.23809523809523808
+            ],
+            "training_mean": [
+              0.19314032952551308,
+              0.1623858724035945,
+              0.003487843940348664,
+              0.003487843940348664,
+              0.003487843940348664,
+              0.003487843940348664,
+              0.16480809844724156,
+              0.21346023869535213
+            ]
+          },
+          "comparisons": {
+            "field_matched": {
+              "relative_gain": -0.3960108766580862,
+              "interval": [
+                -2.1958534728566965,
+                0.1737144183553995
+              ],
+              "wins": 1,
+              "passes": false
+            },
+            "shuffled_structure": {
+              "relative_gain": -0.5577072976139524,
+              "interval": [
+                -1.2929604311659642,
+                -0.06821834381086943
+              ],
+              "wins": 2,
+              "passes": false
+            },
+            "persistence": {
+              "relative_gain": -1.1743498795756324,
+              "interval": [
+                -7.648528738807797,
+                0.03573381871346998
+              ],
+              "wins": 1,
+              "passes": false
+            }
+          },
+          "informative_variation": true,
+          "moving_records": null,
+          "continuation_fraction": 0.9096385542168675,
+          "passes": false
+        }
+      },
+      "replication": {
+        "motion": {
+          "status": "evaluated",
+          "records_train": 2597,
+          "records_test": 2361,
+          "seeds": [
+            3001,
+            3002,
+            3003,
+            3004,
+            3005,
+            3006,
+            3007,
+            3008
+          ],
+          "loss_unit": "squared grid sites, mean over x/y",
+          "mean_loss": {
+            "kinematic": 0.06542076418587703,
+            "local_field": 0.14414392759711966,
+            "field_matched": 0.47777257520403227,
+            "structural": 0.4098839585345835,
+            "shuffled_structure": 0.1465643599918725,
+            "persistence": 0.056812327527506,
+            "training_mean": 0.05758123206820297
+          },
+          "per_seed_loss": {
+            "kinematic": [
+              0.006154926849904605,
+              0.007299480314291205,
+              0.10872957313128082,
+              0.20259945681879077,
+              0.007943778878761009,
+              0.014377939483925108,
+              0.09559776135740851,
+              0.08066319665265416
+            ],
+            "local_field": [
+              0.07437833762954338,
+              0.04358595548515645,
+              0.2111423332307536,
+              0.49243637468719303,
+              0.03138874943762008,
+              0.11969740070745591,
+              0.09192834909334181,
+              0.08859392050589314
+            ],
+            "field_matched": [
+              0.5757813922817883,
+              0.13307695586984003,
+              0.40137596522679286,
+              0.26639912176423425,
+              0.9586467890024695,
+              0.11803540844562017,
+              0.1419525450779476,
+              1.2269124239635656
+            ],
+            "structural": [
+              0.10526684890167173,
+              0.2807771572418453,
+              0.34308558391480687,
+              1.2521951367124668,
+              0.5864774975701216,
+              0.08584056784177684,
+              0.4730900726474668,
+              0.15233880344651188
+            ],
+            "shuffled_structure": [
+              0.05776907146345203,
+              0.09429077310586446,
+              0.24507224595007154,
+              0.3446160622296142,
+              0.0561969441123515,
+              0.14945244365778074,
+              0.12892609851029355,
+              0.09619124090555203
+            ],
+            "persistence": [
+              0.00273224043715847,
+              0.0,
+              0.08196721311475409,
+              0.21564885496183206,
+              0.0,
+              0.0,
+              0.08196721311475409,
+              0.0721830985915493
+            ],
+            "training_mean": [
+              0.003230727406142706,
+              0.0004984869689842359,
+              0.08246570008373832,
+              0.21313447035556943,
+              0.0004984869689842358,
+              0.0004984869689842359,
+              0.087641912232687,
+              0.07268158556053353
+            ]
+          },
+          "comparisons": {
+            "field_matched": {
+              "relative_gain": 0.14209400077109288,
+              "interval": [
+                -1.161715813057628,
+                0.6602966263505491
+              ],
+              "wins": 5,
+              "passes": false
+            },
+            "shuffled_structure": {
+              "relative_gain": -1.7966141192668732,
+              "interval": [
+                -3.080963358180584,
+                -0.5828870535037967
+              ],
+              "wins": 1,
+              "passes": false
+            },
+            "persistence": {
+              "relative_gain": -6.214701040652417,
+              "interval": [
+                -19.72875721217865,
+                -3.747651515418552
+              ],
+              "wins": 0,
+              "passes": false
+            }
+          },
+          "informative_variation": true,
+          "moving_records": 276,
+          "continuation_fraction": 1.0,
+          "passes": false
+        },
+        "continuation": {
+          "status": "evaluated",
+          "records_train": 2760,
+          "records_test": 2686,
+          "seeds": [
+            3001,
+            3002,
+            3003,
+            3004,
+            3005,
+            3006,
+            3007,
+            3008
+          ],
+          "loss_unit": "Brier error for strict observed continuation",
+          "mean_loss": {
+            "kinematic": 0.11242420469412966,
+            "local_field": 0.10328187664976507,
+            "field_matched": 0.1706219429668231,
+            "structural": 0.1356964012297035,
+            "shuffled_structure": 0.09492803288468138,
+            "persistence": 0.12659349685569493,
+            "training_mean": 0.11512863066018977
+          },
+          "per_seed_loss": {
+            "kinematic": [
+              0.0057870125333653434,
+              0.1731894177921004,
+              0.008942951868094047,
+              0.23961794866329023,
+              0.16880752302401628,
+              0.13494698519362636,
+              0.006986990540324865,
+              0.16111480793821983
+            ],
+            "local_field": [
+              0.07451695938925965,
+              0.20265347525524524,
+              0.0,
+              0.2036988596169751,
+              0.06422419836799743,
+              0.12268306422342987,
+              0.0600636240373922,
+              0.09841483230782105
+            ],
+            "field_matched": [
+              0.12782995992960347,
+              0.20066889632107024,
+              0.002539901701745637,
+              0.40739258892721675,
+              0.18744903289649034,
+              0.3249946127431199,
+              0.0029034829742495285,
+              0.11119706824108905
+            ],
+            "structural": [
+              0.06642766374192283,
+              0.2006714589960333,
+              0.0034535548954816035,
+              0.419087199245159,
+              0.07359950347006564,
+              0.13473998748666102,
+              0.09511977324987614,
+              0.09247206875242858
+            ],
+            "shuffled_structure": [
+              0.05288132191422194,
+              0.20270163699409835,
+              1.5356737927946684e-05,
+              0.15974757952747448,
+              0.06682607101021987,
+              0.10921777253705649,
+              0.07188886876415818,
+              0.09614565559229377
+            ],
+            "persistence": [
+              0.0,
+              0.20066889632107024,
+              0.0,
+              0.27624309392265195,
+              0.18442622950819673,
+              0.17699115044247787,
+              0.0,
+              0.1744186046511628
+            ],
+            "training_mean": [
+              0.003487843940348664,
+              0.18045454453653884,
+              0.003487843940348664,
+              0.24710222459532502,
+              0.16613039561533083,
+              0.15957351791751936,
+              0.003487843940348664,
+              0.15730483079575816
+            ]
+          },
+          "comparisons": {
+            "field_matched": {
+              "relative_gain": 0.20469548716785363,
+              "interval": [
+                -0.17034076648384114,
+                0.49941604761760183
+              ],
+              "wins": 4,
+              "passes": false
+            },
+            "shuffled_structure": {
+              "relative_gain": -0.4294660608268113,
+              "interval": [
+                -1.0592528391779368,
+                -0.040097970771505495
+              ],
+              "wins": 2,
+              "passes": false
+            },
+            "persistence": {
+              "relative_gain": -0.07190657182323554,
+              "interval": [
+                -0.8130941146089651,
+                0.34625875833634384
+              ],
+              "wins": 3,
+              "passes": false
+            }
+          },
+          "informative_variation": true,
+          "moving_records": null,
+          "continuation_fraction": 0.8790022338049144,
+          "passes": false
+        }
+      }
+    },
+    "gate_passes": false,
+    "continuation_gate_passes": false
+  },
+  "claim_boundary": "Specific-regime observed vortex trajectories and compact forecasts under joint structural-state interventions; not a universal interaction law, autonomous matter, emergent time or holography."
+}

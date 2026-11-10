@@ -1,0 +1,21 @@
+{
+  "parent_audit_inputs_unchanged": true,
+  "engine_sources_verified": 53,
+  "search_kernel_and_test_sources_match_frozen_protocol": true,
+  "candidate_archive_count": 54,
+  "all_acceptance_flags_reproduced_from_saved_states": true,
+  "regression_tests_passed": 36,
+  "shell_identity_cases_verified": 9,
+  "shell_check_max_error": 3.3306690738754696e-16,
+  "no_qualifying_larger_grid_witness_tests_triggered": true,
+  "links_and_metadata_verified": true,
+  "environment": {
+    "python": "3.12.10",
+    "numpy": "1.26.4",
+    "scipy": "1.16.3"
+  },
+  "documentation_sha256": {
+    "docs/Genesis Scheme Vault/40-Experiments/V1 Equilibria \u2014 Search and Shell Balance.md": "ada4004340ca1d7280ff47414433b04e1c0be1f55fa18f73e8c806cb19e92284",
+    "docs/Genesis Scheme Vault/50-Research/V1 Equilibrium Search \u2014 Mathematical Review.md": "e7302376c5d4e424986693edd8e28d794c445eb193a94fbdacec2baf921829c8"
+  }
+}

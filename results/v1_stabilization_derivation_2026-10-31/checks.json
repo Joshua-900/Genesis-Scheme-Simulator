@@ -1,0 +1,340 @@
+{
+  "scalar_derivations": {
+    "q_minimum": 0.040000000000000036,
+    "maximum_same_torque_slowdown": 24.99999999999998,
+    "compression_denominator": 0.06250001,
+    "strong_slowdown_thresholds": {
+      "2": {
+        "required_C": 0.5208333333333334,
+        "maximum_abs_detF": 0.2019166428275106
+      },
+      "5": {
+        "required_C": 0.8333333333333334,
+        "maximum_abs_detF": 0.10674782959310099
+      },
+      "10": {
+        "required_C": 0.9375000000000001,
+        "maximum_abs_detF": 0.06351108735081933
+      },
+      "20": {
+        "required_C": 0.9895833333333334,
+        "maximum_abs_detF": 0.025582344427729036
+      }
+    },
+    "tau_bound_zero_initialization": 2.0,
+    "u_component_bound_zero_initialization": 4.8,
+    "maximum_torque_bound": 3.572232032205074,
+    "maximum_single_angle_increment_bound": 0.1786116016102537,
+    "bound_excludes_2pi_fixedpoint_alias": true,
+    "source_free_tau_half_life_updates": 34.309618491520645,
+    "unforced_u_half_life_updates": 13.513407333964874,
+    "ten_half_life_review_window_updates": 344,
+    "direct_initial_tau_fraction_after_window": 0.0009588927570509432,
+    "direct_initial_u_fraction_after_window": 2.1723020866129304e-08,
+    "no_curvature_stationary_torque_positive_a_coefficient": 0.35,
+    "no_curvature_stationary_torque_negative_a_coefficient": 0.25,
+    "zero_laplacian_epsilon_turn_bound_per_update": 2.0000000000000002e-11,
+    "frozen_mobility_alignment_mode_at_mu8_unlocked": 0.88,
+    "frozen_mobility_alignment_mode_at_mu8_max_locked": 0.9952,
+    "detF_examples": [
+      {
+        "J": 1.0,
+        "C": 1.1253546280962882e-07,
+        "q": 0.9999998919659557
+      },
+      {
+        "J": 0.5,
+        "C": 0.018315650610744937,
+        "q": 0.9824169754136849
+      },
+      {
+        "J": 0.25,
+        "C": 0.36787950003214814,
+        "q": 0.6468356799691378
+      },
+      {
+        "J": 0.1,
+        "C": 0.8521438107810891,
+        "q": 0.18194194165015443
+      },
+      {
+        "J": 0.0,
+        "C": 1.0,
+        "q": 0.040000000000000036
+      }
+    ],
+    "limits": [
+      "Slowdown is a fixed-torque one-update ratio, not a global lifetime bound.",
+      "Memory half-lives concern homogeneous carryover only. New alignment and shell sources may continually regenerate state.",
+      "The Fourier mode factors hold for the isolated linear alignment part with mobility frozen, not the coupled spectrum.",
+      "Bounds and no-alias conclusion concern this preset and nonnegative tension; other parameters need separate bounds."
+    ]
+  },
+  "archived_state_one_update_checks": [
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1001.npz",
+      "map_max_absolute_residuals": {
+        "theta": 1.1102230246251565e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.687305432311665e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1002.npz",
+      "map_max_absolute_residuals": {
+        "theta": 2.220446049250313e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.881648671729692e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1003.npz",
+      "map_max_absolute_residuals": {
+        "theta": 1.3877787807814457e-17,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.500145032286355e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1004.npz",
+      "map_max_absolute_residuals": {
+        "theta": 1.734723475976807e-18,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.713732860265999e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1005.npz",
+      "map_max_absolute_residuals": {
+        "theta": 8.673617379884035e-19,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.686627805953862e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1006.npz",
+      "map_max_absolute_residuals": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.304988641238964e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1007.npz",
+      "map_max_absolute_residuals": {
+        "theta": 2.7755575615628914e-17,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.813479460134666e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_1008.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.613647447218431e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2001.npz",
+      "map_max_absolute_residuals": {
+        "theta": 5.421010862427522e-20,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.531586895288434e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2002.npz",
+      "map_max_absolute_residuals": {
+        "theta": 2.168404344971009e-19,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.684459401608891e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2003.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.786916506908771e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2004.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.864436962241484e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2005.npz",
+      "map_max_absolute_residuals": {
+        "theta": 8.673617379884035e-19,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.856305445947843e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2006.npz",
+      "map_max_absolute_residuals": {
+        "theta": 1.3877787807814457e-17,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.763335109657211e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2007.npz",
+      "map_max_absolute_residuals": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.742193167293744e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_2008.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.496621375225777e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3001.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.685797713665552e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3002.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.878260539940674e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3003.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.7847481025638e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3004.npz",
+      "map_max_absolute_residuals": {
+        "theta": 1.1102230246251565e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.738669510233166e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3005.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.845056848408306e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3006.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.719289396399987e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3007.npz",
+      "map_max_absolute_residuals": {
+        "theta": 4.440892098500626e-16,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.4985187290276265e-16
+    },
+    {
+      "archive": "results/vortex_motion_2026-10-31/seed_3008.npz",
+      "map_max_absolute_residuals": {
+        "theta": 0.0,
+        "tau": 0.0,
+        "ux": 0.0,
+        "uy": 0.0,
+        "C": 0.0
+      },
+      "locked_unlocked_same_torque_relation_max_error": 8.752086512117674e-16
+    }
+  ],
+  "baseline_unchanged": true
+}

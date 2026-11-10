@@ -1,0 +1,47 @@
+{
+  "stage": "B2 temporary angular-probe calibration",
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "parent_and_archive_and_producer_hashes_match": true,
+  "tests": "60 pass; see test_log.txt",
+  "collection_protocol_sha256": "d56a9a40504a022c6d4b3e0b190d96929ad5c32373b157e5cb033a3624efd7db",
+  "postcollection_analysis_source_sha256": "ffe4065176c7e0413cbe5f244a1a579dfdf4abb0c758aa95a706d504361f720f",
+  "artifacts": {
+    "descriptive_release.json": "bbf8a771113ceca26d6107e516081b434ed3fc2353e5a41b859bfda559ede3da",
+    "field_activity.png": "4fbef63c4ebaccc6b6ba312e35752dcbde734760b307d130b4facf04278ffd04",
+    "probe_release.png": "7a0adae2845cb7aae3e75aa9fd0bd9fba820941e67a8e67f114b4f9b99be2f29",
+    "protocol.json": "d56a9a40504a022c6d4b3e0b190d96929ad5c32373b157e5cb033a3624efd7db",
+    "report.json": "e632c3c0eaf374790d84b2c006319b4e5fb1072fbfb9fc59151a81769ac70511",
+    "seed1005_reference.npz": "67a5ee0d5475427e858fdc93cf4a6249df3ed9e7ed10c8c54cf9703e583ab94c",
+    "seed1005_v0050_compress.npz": "99c1ff60dff0a50f5fa8d1fcf8f36692f90d7fd82b7af283af1fc5412c30e491",
+    "seed1005_v0050_stretch.npz": "dfb39b17ac0f1ff8ed845dc8ea4528266ba968b4121bf331432e88d988f5a209",
+    "seed1005_v0050_translate_minus.npz": "99526494dbc628b22068d7bee2eeea426dcf25340f73cb85ae884c79740b88a2",
+    "seed1005_v0050_translate_plus.npz": "5dbd20e11faa26ff9b6635330b9b94a164aa8485be456ca8174bad243ab5ce3f",
+    "seed1005_v0100_compress.npz": "634c7ef914d390d431bae5a196872df049c6a8d9c40ee3e82a003d496eda1665",
+    "seed1005_v0100_stretch.npz": "4afb14acd56621fedbf6f7b2098698c1cf9c165617994bd065c230d0b367eb5f",
+    "seed1005_v0100_translate_minus.npz": "54322a0c83e5e880aa1b2b1319fd7f1d0f2986e60b821b4513aac40a9eb0547b",
+    "seed1005_v0100_translate_plus.npz": "3225bb41eea164a8df7dcfe332107f6508ee22955fd691361e5c04184c365562",
+    "seed3001_reference.npz": "37b5f5665ddecbf9096eb3eca4ee808dfed71469d938dd1323466cd8eb01f1c9",
+    "seed3001_v0050_compress.npz": "a1500e7106ccc563c1f1f69a401273f2f3337ae9f9dcf755da38d4a27786c91f",
+    "seed3001_v0050_stretch.npz": "467512cee7f8a628f23c77cc398086801de315f0a381bc81d4409b715c36b3cc",
+    "seed3001_v0050_translate_minus.npz": "a3bd26ad030aaf61db3d293b19df14a59ba1bf0b0fdc0bd1ce6096d75f93caee",
+    "seed3001_v0050_translate_plus.npz": "423262a318529f4d3fab0b01b3e5448f751d5db97769be6efc716324677be721",
+    "seed3001_v0100_compress.npz": "74673d1b07a0a033f110ff462592ea087a5568e1e31ade976c028dd3b1bc1929",
+    "seed3001_v0100_stretch.npz": "3d075cc6294fb6a934062dd0629f3ffd55ad799a8feb7628a6d18b01b7401620",
+    "seed3001_v0100_translate_minus.npz": "1e34725f81b35698f11bf378201b3632c2bcf28f171e91df389922f8f59795fb",
+    "seed3001_v0100_translate_plus.npz": "78f123be66a631439425870be4026d4cb0153b46cdada92157fe5ac6acb1f728",
+    "summary.md": "7377440013e68798be5e0f8d7b5a5a20b61a2961e3141951b4922bf16f04cfe6",
+    "test_log.txt": "245c748b88c40b2138b012b56a95c2297470e8bb13d986876fe3879f12e6f12f"
+  },
+  "documentation_sha256": {
+    "findings/2026-11-01_binding_dynamic_probe.md": "594b32bfd02a44fd812a0a8e0496eff0a877fadda9b9e1f30a48a0b6e588ba89",
+    "docs/Genesis Scheme Vault/40-Experiments/Structural Binding Response \u2014 Dynamic Probe Calibration.md": "8048e627503edb1c813123a3097d9f0711b51845d93abe6d314c077c104544bf"
+  }
+}

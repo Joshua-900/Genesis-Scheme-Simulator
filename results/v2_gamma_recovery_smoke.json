@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This measures recovery after a direct candidate-boundary weakening against control and matched-background weakening. It tests model-level restoration, not autonomous self-maintenance.",
+  "config": {
+    "N": 64,
+    "warmup_frames": 1200,
+    "recovery_frames": 200,
+    "seeds": 2,
+    "seed_start": 1,
+    "sample_interval": 100,
+    "cutoff": 0.75,
+    "min_area": 24,
+    "strength": 0.85,
+    "max_background_overlap": 0.25,
+    "potential_to_actual": 0.05,
+    "relation_difference_gain": 0.55,
+    "boundary_rate": 0.18,
+    "boundary_decay": 0.04,
+    "params": {
+      "potential_transport": 0.1,
+      "potential_source_restore": 0.08,
+      "potential_turn": 0.24,
+      "availability_replenish": 0.1,
+      "availability_tension_gain": 0.28,
+      "actualization_depletion": 0.35,
+      "actual_alignment": 0.28,
+      "potential_to_actual": 0.05,
+      "relation_rate": 0.12,
+      "relation_baseline": 0.2,
+      "relation_difference_gain": 0.55,
+      "boundary_rate": 0.18,
+      "boundary_decay": 0.04,
+      "boundary_permeability_floor": 0.04,
+      "boundary_permeability_span": 0.82
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "status": "measured",
+      "candidate": {
+        "area": 90,
+        "initial_perimeter_boundary": 0.2703691021949323
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 90,
+            "candidate_perimeter_boundary": 0.2703691021949323
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.6081081081081081,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.040555365329239854,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 90,
+            "candidate_perimeter_boundary": 0.2703691021949323,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.5958904109589042,
+            "matched_area": 143,
+            "candidate_perimeter_boundary": 0.25671366757664044
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.514792899408284,
+            "matched_area": 166,
+            "candidate_perimeter_boundary": 0.06762674908383105,
+            "candidate_state_difference": 0.0367173453921192
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5958904109589042,
+            "matched_area": 143,
+            "candidate_perimeter_boundary": 0.25671366757664,
+            "candidate_state_difference": 2.7944390628636345e-14
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.5973154362416108,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.24433564809685357
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.52046783625731,
+            "matched_area": 170,
+            "candidate_perimeter_boundary": 0.08576087987352422,
+            "candidate_state_difference": 0.04759284109251844
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.5973154362416108,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.24433564809521247,
+            "candidate_state_difference": 5.380890752261348e-11
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "status": "measured",
+      "candidate": {
+        "area": 148,
+        "initial_perimeter_boundary": 0.30554991231926354
+      },
+      "series": [
+        {
+          "frames_after_intervention": 0,
+          "control": {
+            "candidate_overlap": 1.0,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.30554991231926354
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.43529411764705883,
+            "matched_area": 340,
+            "candidate_perimeter_boundary": 0.04583248684788955,
+            "candidate_state_difference": 0.0
+          },
+          "background_weaken": {
+            "candidate_overlap": 1.0,
+            "matched_area": 148,
+            "candidate_perimeter_boundary": 0.30554991231926354,
+            "candidate_state_difference": 0.0
+          }
+        },
+        {
+          "frames_after_intervention": 100,
+          "control": {
+            "candidate_overlap": 0.954248366013072,
+            "matched_area": 151,
+            "candidate_perimeter_boundary": 0.2907124411411707
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.44785276073619634,
+            "matched_area": 324,
+            "candidate_perimeter_boundary": 0.09148112746536684,
+            "candidate_state_difference": 0.018054985130953282
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.954248366013072,
+            "matched_area": 151,
+            "candidate_perimeter_boundary": 0.29071277276863416,
+            "candidate_state_difference": 4.1700737573619995e-06
+          }
+        },
+        {
+          "frames_after_intervention": 200,
+          "control": {
+            "candidate_overlap": 0.7684210526315789,
+            "matched_area": 188,
+            "candidate_perimeter_boundary": 0.2776875577602545
+          },
+          "candidate_weaken": {
+            "candidate_overlap": 0.4899328859060403,
+            "matched_area": 296,
+            "candidate_perimeter_boundary": 0.12489499391106701,
+            "candidate_state_difference": 0.02076986522445086
+          },
+          "background_weaken": {
+            "candidate_overlap": 0.7684210526315789,
+            "matched_area": 188,
+            "candidate_perimeter_boundary": 0.2776930647582814,
+            "candidate_state_difference": 4.358107846385903e-05
+          }
+        }
+      ]
+    }
+  ]
+}

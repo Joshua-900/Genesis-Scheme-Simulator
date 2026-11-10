@@ -1,0 +1,2332 @@
+{
+  "size": 97,
+  "duration": 0.035,
+  "dt": 1.0775862068965518e-05,
+  "separation": 0.2708333333333333,
+  "runs": {
+    "isolated_rest": [
+      {
+        "energy": 19.283005778301035,
+        "charge": -1.0000000000000002,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 4.406461512053774,
+        "core_radius": 0.04590064075056014,
+        "tilt_radius": 0.05836183930781226,
+        "halves": {
+          "left": {
+            "charge": -1.0000000000000002,
+            "x": -0.13541666666666666
+          },
+          "right": {
+            "charge": 0.0,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9973275041752291,
+        "total_moment": 0.021401184413255902,
+        "regions": {
+          "left": {
+            "moment": 0.02084056348473129,
+            "fixed_moment": 0.02084056348473129,
+            "phase": 0.0,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0,
+            "fixed_moment": 0.0,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0
+      },
+      {
+        "energy": 19.27967502194684,
+        "charge": -0.9999985383816161,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 4.1073621666150775,
+        "core_radius": 0.04278502256890705,
+        "tilt_radius": 0.05836183930781223,
+        "halves": {
+          "left": {
+            "charge": -0.9974561081132187,
+            "x": -0.13585158224584545
+          },
+          "right": {
+            "charge": -0.0025424302683972996,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9929626147771381,
+        "total_moment": 0.021401184413255874,
+        "regions": {
+          "left": {
+            "moment": 0.0188250544957405,
+            "fixed_moment": 0.0188250544957405,
+            "phase": -0.2255608301710322,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 5.036579419624677e-05,
+            "fixed_moment": 5.036579419624677e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.00125
+      },
+      {
+        "energy": 19.275463799631382,
+        "charge": -0.9999983942339858,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.058361839307812205,
+        "halves": {
+          "left": {
+            "charge": -0.9934753477323739,
+            "x": -0.13653528972247822
+          },
+          "right": {
+            "charge": -0.006523046501612022,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9970708667821032,
+        "total_moment": 0.021401184413255864,
+        "regions": {
+          "left": {
+            "moment": 0.015573067562418033,
+            "fixed_moment": 0.015573067562418033,
+            "phase": -0.2844883720632987,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00011111102159997722,
+            "fixed_moment": 0.00011111102159997722,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0025
+      },
+      {
+        "energy": 19.271731631867265,
+        "charge": -0.9999982991245545,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.385137501286538,
+        "core_radius": 0.03526184897173477,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.992576060627504,
+            "x": -0.13679621264368602
+          },
+          "right": {
+            "charge": -0.007422238497050574,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9964075575041522,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.0141285425818576,
+            "fixed_moment": 0.0141285425818576,
+            "phase": -0.20220131383801027,
+            "center": [
+              -0.1345486111111111,
+              0.0002893518518518601
+            ]
+          },
+          "right": {
+            "moment": 0.0002671290224302953,
+            "fixed_moment": 0.0002671290224302953,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0037500000000000003
+      },
+      {
+        "energy": 19.2683873554965,
+        "charge": -0.9999982033306459,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0901936161855166,
+        "core_radius": 0.032189516835265795,
+        "tilt_radius": 0.058361839307812205,
+        "halves": {
+          "left": {
+            "charge": -0.9933320287421628,
+            "x": -0.13676703759863248
+          },
+          "right": {
+            "charge": -0.006666174588483344,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9919678283663007,
+        "total_moment": 0.02140118441325586,
+        "regions": {
+          "left": {
+            "moment": 0.013511462673908403,
+            "fixed_moment": 0.013511462673908403,
+            "phase": -0.0959637639624683,
+            "center": [
+              -0.13506944444444446,
+              0.0010416666666666075
+            ]
+          },
+          "right": {
+            "moment": 0.00037440795383143527,
+            "fixed_moment": 0.00037440795383143527,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.005
+      },
+      {
+        "energy": 19.265347938944007,
+        "charge": -0.9999980301910296,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.141274657157109,
+        "core_radius": 0.03272161101205322,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9943954257987005,
+            "x": -0.136638855500878
+          },
+          "right": {
+            "charge": -0.0056026043923291585,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9982112270058674,
+        "total_moment": 0.021401184413255864,
+        "regions": {
+          "left": {
+            "moment": 0.013217097336492893,
+            "fixed_moment": 0.013217097336492893,
+            "phase": 0.006962156795113064,
+            "center": [
+              -0.13608870967741937,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0003876630619253675,
+            "fixed_moment": 0.0003876630619253675,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.00625
+      },
+      {
+        "energy": 19.262558385054643,
+        "charge": -0.9999978941407452,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0901936161855166,
+        "core_radius": 0.032189516835265795,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9931494703584324,
+            "x": -0.1368122661266349
+          },
+          "right": {
+            "charge": -0.006848423782312989,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.995557491266812,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.013078264662565932,
+            "fixed_moment": 0.013078264662565932,
+            "phase": 0.1073635289620056,
+            "center": [
+              -0.13437500000000002,
+              0.0003472222222221655
+            ]
+          },
+          "right": {
+            "moment": 0.0003608766749650581,
+            "fixed_moment": 0.0003608766749650581,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.007500000000000001
+      },
+      {
+        "energy": 19.259984356547285,
+        "charge": -0.9999978223012682,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0901936161855166,
+        "core_radius": 0.032189516835265795,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.996902162983279,
+            "x": -0.13625792257219313
+          },
+          "right": {
+            "charge": -0.0030956593179889496,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9915074383192015,
+        "total_moment": 0.02140118441325587,
+        "regions": {
+          "left": {
+            "moment": 0.013043216192423534,
+            "fixed_moment": 0.013043216192423534,
+            "phase": 0.20564243376518895,
+            "center": [
+              -0.13645833333333335,
+              -0.000347222222222221
+            ]
+          },
+          "right": {
+            "moment": 0.00032632253586890273,
+            "fixed_moment": 0.00032632253586890273,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.00875
+      },
+      {
+        "energy": 19.257593064434726,
+        "charge": -0.9999977736759569,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2897623212397704,
+        "core_radius": 0.03426835751291427,
+        "tilt_radius": 0.058361839307812226,
+        "halves": {
+          "left": {
+            "charge": -0.9973567116639075,
+            "x": -0.13617747475711242
+          },
+          "right": {
+            "charge": -0.0026410620120492223,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9998993023583551,
+        "total_moment": 0.02140118441325587,
+        "regions": {
+          "left": {
+            "moment": 0.013103544752220414,
+            "fixed_moment": 0.013159492300305307,
+            "phase": 0.2926186980970427,
+            "center": [
+              -0.13756127450980393,
+              0.0009191176470587648
+            ]
+          },
+          "right": {
+            "moment": 0.000284183480263728,
+            "fixed_moment": 0.000284183480263728,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.01
+      },
+      {
+        "energy": 19.25535214287043,
+        "charge": -0.9999976049520848,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.141274657157109,
+        "core_radius": 0.03272161101205322,
+        "tilt_radius": 0.058361839307812226,
+        "halves": {
+          "left": {
+            "charge": -0.9946172363814483,
+            "x": -0.13650188008163394
+          },
+          "right": {
+            "charge": -0.0053803685706363055,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.996965343443152,
+        "total_moment": 0.02140118441325587,
+        "regions": {
+          "left": {
+            "moment": 0.01327704603826593,
+            "fixed_moment": 0.013326343617843933,
+            "phase": 0.3678296946331122,
+            "center": [
+              -0.13676075268817212,
+              0.0013440860215053752
+            ]
+          },
+          "right": {
+            "moment": 0.0002550780243924087,
+            "fixed_moment": 0.0002550780243924087,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.011250000000000001
+      },
+      {
+        "energy": 19.253237399141298,
+        "charge": -0.9999975131619027,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2410224072142872,
+        "core_radius": 0.03376065007514882,
+        "tilt_radius": 0.058361839307812226,
+        "halves": {
+          "left": {
+            "charge": -0.99583468403987,
+            "x": -0.13644979478887384
+          },
+          "right": {
+            "charge": -0.0041628291220326685,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9918499086081111,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.013323552551308923,
+            "fixed_moment": 0.013360576558167893,
+            "phase": 0.4340152855783367,
+            "center": [
+              -0.1341540404040404,
+              0.0012626262626262985
+            ]
+          },
+          "right": {
+            "moment": 0.0002280202425901735,
+            "fixed_moment": 0.0002280202425901735,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0125
+      },
+      {
+        "energy": 19.25123776613711,
+        "charge": -0.9999974770309392,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0901936161855166,
+        "core_radius": 0.032189516835265795,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9969040077282788,
+            "x": -0.1361872066312125
+          },
+          "right": {
+            "charge": -0.00309346930266053,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9891683999342091,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.013153472653503123,
+            "fixed_moment": 0.013153472653503123,
+            "phase": 0.503531950924499,
+            "center": [
+              -0.13437500000000002,
+              0.0003472222222221655
+            ]
+          },
+          "right": {
+            "moment": 0.00021150643259653214,
+            "fixed_moment": 0.00021150643259653214,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.01375
+      },
+      {
+        "energy": 19.249340369835355,
+        "charge": -0.9999974398687521,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.985410660720923,
+        "core_radius": 0.031098027715842948,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9968014268927758,
+            "x": -0.136220959256405
+          },
+          "right": {
+            "charge": -0.0031960129759762085,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9817261045278066,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.012834464232847774,
+            "fixed_moment": 0.012880599963118466,
+            "phase": 0.6000559424664557,
+            "center": [
+              -0.13318452380952384,
+              -0.0014880952380952883
+            ]
+          },
+          "right": {
+            "moment": 0.0001873651230403971,
+            "fixed_moment": 0.0001873651230403971,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.015000000000000001
+      },
+      {
+        "energy": 19.247527393173193,
+        "charge": -0.9999973694325357,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.985410660720923,
+        "core_radius": 0.031098027715842948,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9941970030962244,
+            "x": -0.13653666088437388
+          },
+          "right": {
+            "charge": -0.0058003663363113325,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9981143383937321,
+        "total_moment": 0.02140118441325587,
+        "regions": {
+          "left": {
+            "moment": 0.012947018136369781,
+            "fixed_moment": 0.012947018136369781,
+            "phase": 0.7138260472938763,
+            "center": [
+              -0.13541666666666669,
+              -0.0011160714285713969
+            ]
+          },
+          "right": {
+            "moment": 0.00015273474594784534,
+            "fixed_moment": 0.00015273474594784534,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.016250000000000004
+      },
+      {
+        "energy": 19.24578318567236,
+        "charge": -0.9999972816343494,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0382538898732494,
+        "core_radius": 0.03164847801951301,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9936414864041208,
+            "x": -0.13669091458495639
+          },
+          "right": {
+            "charge": -0.006355795230228572,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.996978470601835,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.013287702544734088,
+            "fixed_moment": 0.013287702544734088,
+            "phase": 0.8161352999308531,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00016355099824443554,
+            "fixed_moment": 0.00016355099824443554,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0175
+      },
+      {
+        "energy": 19.24410224052488,
+        "charge": -0.9999972132071366,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2897623212397704,
+        "core_radius": 0.03426835751291427,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9983793216434014,
+            "x": -0.1360236250712901
+          },
+          "right": {
+            "charge": -0.0016178915637352724,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9894216869216708,
+        "total_moment": 0.021401184413255864,
+        "regions": {
+          "left": {
+            "moment": 0.013590143545079694,
+            "fixed_moment": 0.013613045902991835,
+            "phase": 0.8883368528960961,
+            "center": [
+              -0.13694852941176472,
+              0.00030637254901955124
+            ]
+          },
+          "right": {
+            "moment": 0.0002211751785925907,
+            "fixed_moment": 0.0002211751785925907,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.01875
+      },
+      {
+        "energy": 19.24248401291514,
+        "charge": -0.9999971764179346,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.385137501286538,
+        "core_radius": 0.03526184897173477,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9988368231727537,
+            "x": -0.13593934318768272
+          },
+          "right": {
+            "charge": -0.001160353245180744,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9928379040738,
+        "total_moment": 0.021401184413255867,
+        "regions": {
+          "left": {
+            "moment": 0.013908103627371491,
+            "fixed_moment": 0.013908103627371491,
+            "phase": 0.9452276058388681,
+            "center": [
+              -0.13628472222222227,
+              -0.0002893518518518601
+            ]
+          },
+          "right": {
+            "moment": 0.00024850293281935496,
+            "fixed_moment": 0.00024850293281935496,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02
+      },
+      {
+        "energy": 19.24091935772996,
+        "charge": -0.9999971172619312,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.058361839307812205,
+        "halves": {
+          "left": {
+            "charge": -0.9997461584375678,
+            "x": -0.13558882410349557
+          },
+          "right": {
+            "charge": -0.00025095882436317225,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9973950753533184,
+        "total_moment": 0.021401184413255864,
+        "regions": {
+          "left": {
+            "moment": 0.014276944609880235,
+            "fixed_moment": 0.014276944609880235,
+            "phase": 0.9843290023722727,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0002646885922721307,
+            "fixed_moment": 0.0002646885922721307,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02125
+      },
+      {
+        "energy": 19.239402399436557,
+        "charge": -0.9999970216821801,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.058361839307812205,
+        "halves": {
+          "left": {
+            "charge": -0.998823457981818,
+            "x": -0.1356495597380737
+          },
+          "right": {
+            "charge": -0.0011735637003620785,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9991070608461812,
+        "total_moment": 0.021401184413255857,
+        "regions": {
+          "left": {
+            "moment": 0.01440578789858186,
+            "fixed_moment": 0.01440578789858186,
+            "phase": 1.0028852606496146,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0002817922486392786,
+            "fixed_moment": 0.0002817922486392786,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.022500000000000003
+      },
+      {
+        "energy": 19.237932786084176,
+        "charge": -0.9999969793655576,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2897623212397704,
+        "core_radius": 0.03426835751291427,
+        "tilt_radius": 0.058361839307812205,
+        "halves": {
+          "left": {
+            "charge": -0.9978177178680977,
+            "x": -0.13582608502448207
+          },
+          "right": {
+            "charge": -0.0021792614974600276,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9992668478271939,
+        "total_moment": 0.02140118441325586,
+        "regions": {
+          "left": {
+            "moment": 0.014026888484818988,
+            "fixed_moment": 0.014082663202538898,
+            "phase": 1.0269768995870834,
+            "center": [
+              -0.13756127450980393,
+              0.0009191176470587648
+            ]
+          },
+          "right": {
+            "moment": 0.00028297020947676944,
+            "fixed_moment": 0.00028297020947676944,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02375
+      },
+      {
+        "energy": 19.236505373782123,
+        "charge": -0.9999969374548415,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2897623212397704,
+        "core_radius": 0.03426835751291427,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.9952197075008824,
+            "x": -0.13621686246498435
+          },
+          "right": {
+            "charge": -0.004777229953959122,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9949153806787946,
+        "total_moment": 0.02140118441325586,
+        "regions": {
+          "left": {
+            "moment": 0.013630836632055013,
+            "fixed_moment": 0.013690448330896046,
+            "phase": 1.0807449349122003,
+            "center": [
+              -0.13756127450980393,
+              0.0009191176470587648
+            ]
+          },
+          "right": {
+            "moment": 0.0002629950213079703,
+            "fixed_moment": 0.0002629950213079703,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.025
+      },
+      {
+        "energy": 19.235117235086584,
+        "charge": -0.999996898709642,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2410224072142872,
+        "core_radius": 0.03376065007514882,
+        "tilt_radius": 0.05836183930781222,
+        "halves": {
+          "left": {
+            "charge": -0.9951929513040731,
+            "x": -0.13620350923957705
+          },
+          "right": {
+            "charge": -0.0048039474055690656,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9994515100839285,
+        "total_moment": 0.02140118441325586,
+        "regions": {
+          "left": {
+            "moment": 0.013458870064686705,
+            "fixed_moment": 0.013469409760254068,
+            "phase": 1.1624553748742037,
+            "center": [
+              -0.13604797979797983,
+              0.0012626262626262985
+            ]
+          },
+          "right": {
+            "moment": 0.00019553368449011716,
+            "fixed_moment": 0.00019553368449011716,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.026250000000000002
+      },
+      {
+        "energy": 19.2337651975305,
+        "charge": -0.9999968393639569,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.1915382432114616,
+        "core_radius": 0.03324519003345272,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.9971727521341889,
+            "x": -0.1359229055038845
+          },
+          "right": {
+            "charge": -0.0028240872297680777,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9997681003179946,
+        "total_moment": 0.021401184413255853,
+        "regions": {
+          "left": {
+            "moment": 0.013261576699298665,
+            "fixed_moment": 0.013326619430077156,
+            "phase": 1.2516566146903745,
+            "center": [
+              -0.13313802083333337,
+              -0.0009765625
+            ]
+          },
+          "right": {
+            "moment": 0.0001464273671525354,
+            "fixed_moment": 0.0001464273671525354,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0275
+      },
+      {
+        "energy": 19.232447463909974,
+        "charge": -0.9999967928456643,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.141274657157109,
+        "core_radius": 0.03272161101205322,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.9979009469900305,
+            "x": -0.13585181038309385
+          },
+          "right": {
+            "charge": -0.002095845855634019,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9923948341249569,
+        "total_moment": 0.021401184413255857,
+        "regions": {
+          "left": {
+            "moment": 0.013468894411150758,
+            "fixed_moment": 0.01353250408173178,
+            "phase": 1.3419762614128572,
+            "center": [
+              -0.13306451612903225,
+              -0.0020161290322581182
+            ]
+          },
+          "right": {
+            "moment": 0.00015158081705098542,
+            "fixed_moment": 0.00015158081705098542,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02875
+      },
+      {
+        "energy": 19.231161643116288,
+        "charge": -0.9999967434586613,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.3377905890622728,
+        "core_radius": 0.03476865196939867,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.9959483232577689,
+            "x": -0.13621209323693795
+          },
+          "right": {
+            "charge": -0.004048420200892287,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9929434487190277,
+        "total_moment": 0.021401184413255853,
+        "regions": {
+          "left": {
+            "moment": 0.013815840473473878,
+            "fixed_moment": 0.013835817807494006,
+            "phase": 1.417184704787962,
+            "center": [
+              -0.1336309523809524,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00012937515302615456,
+            "fixed_moment": 0.00012937515302615456,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.030000000000000002
+      },
+      {
+        "energy": 19.22990538710876,
+        "charge": -0.9999967062767215,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.385137501286538,
+        "core_radius": 0.03526184897173477,
+        "tilt_radius": 0.058361839307812205,
+        "halves": {
+          "left": {
+            "charge": -0.9938047072579193,
+            "x": -0.13652860991525814
+          },
+          "right": {
+            "charge": -0.006191999018802196,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9953943369315871,
+        "total_moment": 0.021401184413255857,
+        "regions": {
+          "left": {
+            "moment": 0.013860900818235378,
+            "fixed_moment": 0.013860900818235378,
+            "phase": 1.4711208441379358,
+            "center": [
+              -0.1345486111111111,
+              -0.0002893518518518601
+            ]
+          },
+          "right": {
+            "moment": 0.00012612066924780997,
+            "fixed_moment": 0.00012612066924780997,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.03125000000000001
+      },
+      {
+        "energy": 19.22867599924366,
+        "charge": -0.9999966532511572,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.2897623212397704,
+        "core_radius": 0.03426835751291427,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.9936550727778191,
+            "x": -0.1366707583363705
+          },
+          "right": {
+            "charge": -0.006341580473338222,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9981787157259414,
+        "total_moment": 0.021401184413255853,
+        "regions": {
+          "left": {
+            "moment": 0.01376448778397399,
+            "fixed_moment": 0.013807231692891643,
+            "phase": 1.532282679341935,
+            "center": [
+              -0.1363357843137255,
+              -0.0015318627450980893
+            ]
+          },
+          "right": {
+            "moment": 0.00015064993639576875,
+            "fixed_moment": 0.00015064993639576875,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.03250000000000001
+      },
+      {
+        "energy": 19.22747157479522,
+        "charge": -0.9999966015938649,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.993004127105609,
+            "x": -0.13685146886366042
+          },
+          "right": {
+            "charge": -0.006992474488255942,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9957388162179274,
+        "total_moment": 0.021401184413255853,
+        "regions": {
+          "left": {
+            "moment": 0.013918056732546891,
+            "fixed_moment": 0.013918056732546891,
+            "phase": 1.606593336715417,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00015313829900104038,
+            "fixed_moment": 0.00015313829900104038,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.03375
+      },
+      {
+        "energy": 19.226292419543825,
+        "charge": -0.9999965590452815,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.0583618393078122,
+        "halves": {
+          "left": {
+            "charge": -0.9950772310570477,
+            "x": -0.13665645602073748
+          },
+          "right": {
+            "charge": -0.0049193279882338795,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.987076451634285,
+        "total_moment": 0.021401184413255846,
+        "regions": {
+          "left": {
+            "moment": 0.014235085517814172,
+            "fixed_moment": 0.014235085517814172,
+            "phase": 1.662092835135999,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00014943372318601309,
+            "fixed_moment": 0.00014943372318601309,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.035
+      }
+    ],
+    "isolated_negative": [
+      {
+        "energy": 17.27870530854329,
+        "charge": -1.0,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.050307160749965024,
+        "halves": {
+          "left": {
+            "charge": -1.0,
+            "x": -0.13541666666666669
+          },
+          "right": {
+            "charge": 0.0,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9899483680305047,
+        "total_moment": 0.01590155086330899,
+        "regions": {
+          "left": {
+            "moment": 0.015578722083852914,
+            "fixed_moment": 0.015578722083852914,
+            "phase": 0.0,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0,
+            "fixed_moment": 0.0,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0
+      },
+      {
+        "energy": 17.2774227839243,
+        "charge": -0.9999994554083571,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.431831258788849,
+        "core_radius": 0.035748242279050504,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9985297319291905,
+            "x": -0.13567033855293803
+          },
+          "right": {
+            "charge": -0.0014697234791665739,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9938764661875942,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.014485706674475398,
+            "fixed_moment": 0.014485706674475398,
+            "phase": -0.1150867019344124,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 2.8913326938905496e-05,
+            "fixed_moment": 2.8913326938905496e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.00125
+      },
+      {
+        "energy": 17.276024356143992,
+        "charge": -0.9999993733974455,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.050307160749964955,
+        "halves": {
+          "left": {
+            "charge": -0.9965064090595858,
+            "x": -0.1360076366885113
+          },
+          "right": {
+            "charge": -0.0034929643378597023,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9855436238633845,
+        "total_moment": 0.015901550863308953,
+        "regions": {
+          "left": {
+            "moment": 0.01265937849690725,
+            "fixed_moment": 0.01265937849690725,
+            "phase": -0.1108564923921991,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 5.636714911145262e-05,
+            "fixed_moment": 5.636714911145262e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0025
+      },
+      {
+        "energy": 17.27476328369416,
+        "charge": -0.9999993226207623,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9957637050904709,
+            "x": -0.13618823529064322
+          },
+          "right": {
+            "charge": -0.0042356175302914354,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9994717297587097,
+        "total_moment": 0.015901550863308953,
+        "regions": {
+          "left": {
+            "moment": 0.011772535867558723,
+            "fixed_moment": 0.011772535867558723,
+            "phase": 0.01629462433073756,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0001293626921019666,
+            "fixed_moment": 0.0001293626921019666,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0037500000000000003
+      },
+      {
+        "energy": 17.273611558149046,
+        "charge": -0.9999992750468718,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.7057581899030048,
+        "core_radius": 0.028184981144822964,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9961936035378355,
+            "x": -0.13617171115357524
+          },
+          "right": {
+            "charge": -0.0038056715090361744,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9881564496223036,
+        "total_moment": 0.015901550863308956,
+        "regions": {
+          "left": {
+            "moment": 0.011412727483263555,
+            "fixed_moment": 0.011431093210158375,
+            "phase": 0.16371116522060844,
+            "center": [
+              -0.13360507246376818,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00019411008240767655,
+            "fixed_moment": 0.00019411008240767655,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.005
+      },
+      {
+        "energy": 17.272548710465365,
+        "charge": -0.9999992155062635,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.7057581899030048,
+        "core_radius": 0.028184981144822964,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9969570930387981,
+            "x": -0.13607407813645625
+          },
+          "right": {
+            "charge": -0.003042122467465397,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9940717284776651,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.011280942849918141,
+            "fixed_moment": 0.0112960380859059,
+            "phase": 0.30614313423826317,
+            "center": [
+              -0.1372282608695652,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.0002070967542096395,
+            "fixed_moment": 0.0002070967542096395,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.00625
+      },
+      {
+        "energy": 17.271559562385427,
+        "charge": -0.9999991660334238,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.7057581899030048,
+        "core_radius": 0.028184981144822964,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9960136089932894,
+            "x": -0.1362104213411372
+          },
+          "right": {
+            "charge": -0.003985557040134474,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9877492605264749,
+        "total_moment": 0.015901550863308966,
+        "regions": {
+          "left": {
+            "moment": 0.011272218547573955,
+            "fixed_moment": 0.011272218547573955,
+            "phase": 0.4440317311444222,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00019182759258035357,
+            "fixed_moment": 0.00019182759258035357,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.007500000000000001
+      },
+      {
+        "energy": 17.270633138997596,
+        "charge": -0.9999991464934186,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9982148745697126,
+            "x": -0.1358855239770672
+          },
+          "right": {
+            "charge": -0.001784271923705955,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9812393232945457,
+        "total_moment": 0.015901550863308963,
+        "regions": {
+          "left": {
+            "moment": 0.01129887097889105,
+            "fixed_moment": 0.01129887097889105,
+            "phase": 0.5773335583144269,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00017569642365708102,
+            "fixed_moment": 0.00017569642365708102,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.00875
+      },
+      {
+        "energy": 17.269760657404966,
+        "charge": -0.9999991322843857,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.05030716074996498,
+        "halves": {
+          "left": {
+            "charge": -0.9982419031005422,
+            "x": -0.13587026053962745
+          },
+          "right": {
+            "charge": -0.0017572291838435933,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9970447944155313,
+        "total_moment": 0.015901550863308963,
+        "regions": {
+          "left": {
+            "moment": 0.011405048686591616,
+            "fixed_moment": 0.011405048686591616,
+            "phase": 0.6989627495769443,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00014910126257539386,
+            "fixed_moment": 0.00014910126257539386,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.01
+      },
+      {
+        "energy": 17.268933059978874,
+        "charge": -0.9999990634971985,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9968510098349743,
+            "x": -0.13603052413036892
+          },
+          "right": {
+            "charge": -0.0031480536622240534,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9985076527951029,
+        "total_moment": 0.015901550863308956,
+        "regions": {
+          "left": {
+            "moment": 0.011530638076808899,
+            "fixed_moment": 0.011530638076808899,
+            "phase": 0.809986159640208,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00012915781532695983,
+            "fixed_moment": 0.00012915781532695983,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.011250000000000001
+      },
+      {
+        "energy": 17.26814433770834,
+        "charge": -0.9999990209311362,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9974111502377985,
+            "x": -0.13600473768876667
+          },
+          "right": {
+            "charge": -0.0025878706933377977,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9911177837474964,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.011547574395452375,
+            "fixed_moment": 0.011547574395452375,
+            "phase": 0.9141542119333715,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00011252797655581697,
+            "fixed_moment": 0.00011252797655581697,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0125
+      },
+      {
+        "energy": 17.2673919410911,
+        "charge": -0.999999004718992,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.763953195770684,
+        "core_radius": 0.02879117912261129,
+        "tilt_radius": 0.05030716074996497,
+        "halves": {
+          "left": {
+            "charge": -0.997847959382361,
+            "x": -0.13588871283137693
+          },
+          "right": {
+            "charge": -0.0021510453366309786,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9764803380904106,
+        "total_moment": 0.015901550863308956,
+        "regions": {
+          "left": {
+            "moment": 0.011434179205045747,
+            "fixed_moment": 0.011434179205045747,
+            "phase": 1.0257602795698675,
+            "center": [
+              -0.1345486111111111,
+              -0.0008680555555555802
+            ]
+          },
+          "right": {
+            "moment": 0.00010022444240703831,
+            "fixed_moment": 0.00010022444240703831,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.01375
+      },
+      {
+        "energy": 17.266671613490768,
+        "charge": -0.9999989885037479,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.6462837142006137,
+        "core_radius": 0.02756545535625639,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9980071000203365,
+            "x": -0.1358942704383612
+          },
+          "right": {
+            "charge": -0.0019918884834112622,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9872243669805382,
+        "total_moment": 0.015901550863308956,
+        "regions": {
+          "left": {
+            "moment": 0.011327319663023836,
+            "fixed_moment": 0.01134323547107901,
+            "phase": 1.1572025044361876,
+            "center": [
+              -0.13446969696969696,
+              -0.0009469696969697239
+            ]
+          },
+          "right": {
+            "moment": 8.199746253973838e-05,
+            "fixed_moment": 8.199746253973838e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.015000000000000001
+      },
+      {
+        "energy": 17.26597907684039,
+        "charge": -0.9999989610873512,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.763953195770684,
+        "core_radius": 0.02879117912261129,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.996874193646924,
+            "x": -0.13601736862433214
+          },
+          "right": {
+            "charge": -0.0031247674404272256,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9889713342843127,
+        "total_moment": 0.015901550863308956,
+        "regions": {
+          "left": {
+            "moment": 0.011482143967542036,
+            "fixed_moment": 0.011482143967542036,
+            "phase": 1.2916873502320654,
+            "center": [
+              -0.13628472222222227,
+              -0.0008680555555555802
+            ]
+          },
+          "right": {
+            "moment": 6.563832626054145e-05,
+            "fixed_moment": 6.563832626054145e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.016250000000000004
+      },
+      {
+        "energy": 17.26531041558572,
+        "charge": -0.999998934644804,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.763953195770684,
+        "core_radius": 0.02879117912261129,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9967828365764344,
+            "x": -0.1360728315563558
+          },
+          "right": {
+            "charge": -0.003216098068369636,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9918062972410617,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.011759260798908634,
+            "fixed_moment": 0.011759260798908634,
+            "phase": 1.4085288420141067,
+            "center": [
+              -0.13628472222222227,
+              0.0008680555555555802
+            ]
+          },
+          "right": {
+            "moment": 7.569643642438823e-05,
+            "fixed_moment": 7.569643642438823e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0175
+      },
+      {
+        "energy": 17.264663185392916,
+        "charge": -0.9999989148619597,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9994265972838632,
+            "x": -0.13565643007910952
+          },
+          "right": {
+            "charge": -0.0005723175780965757,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9980563830774839,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.011965028946896925,
+            "fixed_moment": 0.011965028946896925,
+            "phase": 1.5028483771848757,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00010431381837302432,
+            "fixed_moment": 0.00010431381837302432,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.01875
+      },
+      {
+        "energy": 17.264036804492246,
+        "charge": -0.9999989027154481,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.985410660720923,
+        "core_radius": 0.031098027715842948,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9993759796687893,
+            "x": -0.13564977066094275
+          },
+          "right": {
+            "charge": -0.0006229230466587672,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.999383126247289,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.012115630012648246,
+            "fixed_moment": 0.012115630012648246,
+            "phase": 1.586347521764774,
+            "center": [
+              -0.13653273809523808,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00010990238913102302,
+            "fixed_moment": 0.00010990238913102302,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02
+      },
+      {
+        "energy": 17.263428634037137,
+        "charge": -0.9999988767496245,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0382538898732494,
+        "core_radius": 0.03164847801951301,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9995894657872466,
+            "x": -0.1355242786456714
+          },
+          "right": {
+            "charge": -0.00040941096237769015,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9954104725937932,
+        "total_moment": 0.015901550863308963,
+        "regions": {
+          "left": {
+            "moment": 0.012248242861912059,
+            "fixed_moment": 0.012248242861912059,
+            "phase": 1.6562096632053724,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00011481566816044409,
+            "fixed_moment": 0.00011481566816044409,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02125
+      },
+      {
+        "energy": 17.262836859853184,
+        "charge": -0.9999988463612424,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.9316150714175193,
+        "core_radius": 0.03053765699393249,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9985819078317227,
+            "x": -0.13564032263619824
+          },
+          "right": {
+            "charge": -0.0014169385295196338,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9921123602800673,
+        "total_moment": 0.01590155086330897,
+        "regions": {
+          "left": {
+            "moment": 0.01216371299353362,
+            "fixed_moment": 0.0121800628183703,
+            "phase": 1.720819130697009,
+            "center": [
+              -0.13657407407407413,
+              0.0011574074074074403
+            ]
+          },
+          "right": {
+            "moment": 0.00012021890753535435,
+            "fixed_moment": 0.00012021890753535435,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.022500000000000003
+      },
+      {
+        "energy": 17.262261766253424,
+        "charge": -0.9999988260933338,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.876813695875796,
+        "core_radius": 0.02996680933203954,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9981688631102852,
+            "x": -0.1357190971499291
+          },
+          "right": {
+            "charge": -0.0018299629830485667,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9884664360337655,
+        "total_moment": 0.01590155086330897,
+        "regions": {
+          "left": {
+            "moment": 0.011873344547462458,
+            "fixed_moment": 0.011906169015116746,
+            "phase": 1.8059060062578431,
+            "center": [
+              -0.1374198717948718,
+              0.0020032051282050656
+            ]
+          },
+          "right": {
+            "moment": 0.00012053432594919127,
+            "fixed_moment": 0.00012053432594919127,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02375
+      },
+      {
+        "energy": 17.261701379129484,
+        "charge": -0.9999988076801353,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.876813695875796,
+        "core_radius": 0.02996680933203954,
+        "tilt_radius": 0.050307160749965,
+        "halves": {
+          "left": {
+            "charge": -0.996908498870219,
+            "x": -0.13590506114255838
+          },
+          "right": {
+            "charge": -0.0030903088099162417,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9965586827812118,
+        "total_moment": 0.01590155086330897,
+        "regions": {
+          "left": {
+            "moment": 0.011687315272141072,
+            "fixed_moment": 0.011687315272141072,
+            "phase": 1.915013148435166,
+            "center": [
+              -0.13661858974358976,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 0.00010576376120270472,
+            "fixed_moment": 0.00010576376120270472,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.025
+      },
+      {
+        "energy": 17.26115478008191,
+        "charge": -0.9999987905018896,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.7057581899030048,
+        "core_radius": 0.028184981144822964,
+        "tilt_radius": 0.05030716074996498,
+        "halves": {
+          "left": {
+            "charge": -0.997448632638079,
+            "x": -0.13582330030392062
+          },
+          "right": {
+            "charge": -0.00255015786381041,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9842088827128775,
+        "total_moment": 0.015901550863308966,
+        "regions": {
+          "left": {
+            "moment": 0.011634729654716205,
+            "fixed_moment": 0.011650627393720641,
+            "phase": 2.038482181749596,
+            "center": [
+              -0.13360507246376818,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 8.23339627082577e-05,
+            "fixed_moment": 8.23339627082577e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.026250000000000002
+      },
+      {
+        "energy": 17.260620455738856,
+        "charge": -0.9999987661421216,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.8209479177387813,
+        "core_radius": 0.029384874143112305,
+        "tilt_radius": 0.05030716074996498,
+        "halves": {
+          "left": {
+            "charge": -0.9982582814126517,
+            "x": -0.1357194505348468
+          },
+          "right": {
+            "charge": -0.0017404847294700515,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9801785777564666,
+        "total_moment": 0.015901550863308963,
+        "regions": {
+          "left": {
+            "moment": 0.01163318725005084,
+            "fixed_moment": 0.011674772482179595,
+            "phase": 2.1596058993225955,
+            "center": [
+              -0.1325,
+              -0.0012499999999999734
+            ]
+          },
+          "right": {
+            "moment": 7.733742679024642e-05,
+            "fixed_moment": 7.733742679024642e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.0275
+      },
+      {
+        "energy": 17.260097976634874,
+        "charge": -0.9999987465995837,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.9316150714175193,
+        "core_radius": 0.03053765699393249,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9981597711678791,
+            "x": -0.13574965785770893
+          },
+          "right": {
+            "charge": -0.0018389754317045333,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9993674064326088,
+        "total_moment": 0.01590155086330896,
+        "regions": {
+          "left": {
+            "moment": 0.011867305356090777,
+            "fixed_moment": 0.011884065733152925,
+            "phase": 2.2674549067426795,
+            "center": [
+              -0.13425925925925924,
+              -0.0011574074074074403
+            ]
+          },
+          "right": {
+            "moment": 8.880158603446437e-05,
+            "fixed_moment": 8.880158603446437e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.02875
+      },
+      {
+        "energy": 17.25958666823836,
+        "charge": -0.9999987346538404,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.9316150714175193,
+        "core_radius": 0.03053765699393249,
+        "tilt_radius": 0.050307160749964976,
+        "halves": {
+          "left": {
+            "charge": -0.9968405660784613,
+            "x": -0.13597386679395523
+          },
+          "right": {
+            "charge": -0.0031581685753789756,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9990189310085114,
+        "total_moment": 0.015901550863308963,
+        "regions": {
+          "left": {
+            "moment": 0.012073529626812643,
+            "fixed_moment": 0.012073529626812643,
+            "phase": 2.3598646743158587,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 7.623990931528252e-05,
+            "fixed_moment": 7.623990931528252e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.030000000000000002
+      },
+      {
+        "energy": 17.259085987031927,
+        "charge": -0.9999987212836211,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.876813695875796,
+        "core_radius": 0.02996680933203954,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9963278002415393,
+            "x": -0.13603587710918993
+          },
+          "right": {
+            "charge": -0.003670921042081844,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9981634196321888,
+        "total_moment": 0.015901550863308966,
+        "regions": {
+          "left": {
+            "moment": 0.012048952947193783,
+            "fixed_moment": 0.012048952947193783,
+            "phase": 2.4490802291713374,
+            "center": [
+              -0.13541666666666669,
+              -0.0012019230769230727
+            ]
+          },
+          "right": {
+            "moment": 7.535139205734593e-05,
+            "fixed_moment": 7.535139205734593e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.03125000000000001
+      },
+      {
+        "energy": 17.258594971505737,
+        "charge": -0.9999986899241962,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.9316150714175193,
+        "core_radius": 0.03053765699393249,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9969746969531043,
+            "x": -0.13596930355800407
+          },
+          "right": {
+            "charge": -0.0030239929710919587,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9791858797175854,
+        "total_moment": 0.01590155086330897,
+        "regions": {
+          "left": {
+            "moment": 0.012015743636763096,
+            "fixed_moment": 0.012034192531209919,
+            "phase": 2.543595421809534,
+            "center": [
+              -0.13657407407407413,
+              -0.0011574074074074403
+            ]
+          },
+          "right": {
+            "moment": 8.235909249337421e-05,
+            "fixed_moment": 8.235909249337421e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.03250000000000001
+      },
+      {
+        "energy": 17.25811346274905,
+        "charge": -0.9999986731377688,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 2.9316150714175193,
+        "core_radius": 0.03053765699393249,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9970590932548546,
+            "x": -0.1359855798705944
+          },
+          "right": {
+            "charge": -0.0029395798829141544,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9881072088409381,
+        "total_moment": 0.01590155086330897,
+        "regions": {
+          "left": {
+            "moment": 0.012168828305435937,
+            "fixed_moment": 0.012168828305435937,
+            "phase": 2.6381155269434444,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 7.007634351573312e-05,
+            "fixed_moment": 7.007634351573312e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.03375
+      },
+      {
+        "energy": 17.257640956122426,
+        "charge": -0.9999986561779801,
+        "ambiguous_triangles": 0,
+        "core_radius_cells": 3.0382538898732494,
+        "core_radius": 0.03164847801951301,
+        "tilt_radius": 0.050307160749964996,
+        "halves": {
+          "left": {
+            "charge": -0.9983591945408736,
+            "x": -0.1358452451810942
+          },
+          "right": {
+            "charge": -0.0016394616371064557,
+            "x": null
+          }
+        },
+        "core_count": 1,
+        "core_separation": null,
+        "max_out_of_control_plane": 0.9975782518796276,
+        "total_moment": 0.01590155086330897,
+        "regions": {
+          "left": {
+            "moment": 0.012288724942528938,
+            "fixed_moment": 0.012288724942528938,
+            "phase": 2.715719116330609,
+            "center": [
+              -0.13541666666666669,
+              0.0
+            ]
+          },
+          "right": {
+            "moment": 5.1261088889321294e-05,
+            "fixed_moment": 5.1261088889321294e-05,
+            "phase": null,
+            "center": null
+          }
+        },
+        "time": 0.035
+      }
+    ]
+  }
+}

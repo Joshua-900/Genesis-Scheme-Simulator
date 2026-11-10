@@ -1,0 +1,36 @@
+{
+  "source_and_artifact_sha256": {
+    "src/genesis_sandbox/export.py": "bc89ed694adc97c000261e2f54ad020eac78565deb7d6b2cba2981c01f5a16a5",
+    "src/genesis_sandbox/lab_model.py": "66217ef1df0a5c7a79fe02483cdb7afdfd62d7e304ff7d0e8a94a0bd17b2c20c",
+    "src/genesis_sandbox/model.py": "3ab1f7e8a3a683a035e3c009d51c4253a2bf768496f84e883b10283e1c766c98",
+    "src/genesis_sandbox/render.py": "663529d67052f2338a3088bc156133027174b3fe0f11be074f23df9110ef5aab",
+    "src/genesis_sandbox/torus.py": "2e4ac9bba1ec2af96f8bc33ccdb67349d968a0014df3c2c82af09dae35cba36e",
+    "src/genesis_sandbox/torus_gl.py": "882b69a3328d337f827141e66660005def532892b03b5a4b943f6c155bdc734d",
+    "src/genesis_sandbox/ui.py": "3854a86bbfc151ea94ff9a68b2b95977bd295ad4e19e022b7d840edc4bf081ea",
+    "src/genesis_sandbox/vacancies.py": "9be0859eab0238c67d8c287f0a3ce46d461965d5ba8c4f63771ca8c5a1080028",
+    "src/genesis_sandbox/__init__.py": "a740a466f166791e9a935e5a7f27983dd1aa4c6ace8e373137c4b39146956e87",
+    "src/genesis_sandbox/__main__.py": "efa4a248b1f7e9ec5350f020e8caf756a281e4ce5e70c5f19d5147ff6b0fafa1",
+    "tests/test_torus_view.py": "e0682aee2010a5deaa1ed3faaed984232c23e941e33f188bf0c7fbfda8e97711",
+    "tests/test_vacancy_lab.py": "300bdbf79c37226dce058685c1ba09f113ba598967462cc028432c2d34c41fad",
+    "results/torus_view_2026-11-01/gpu_surface.png": "b94d3426f82aa29dbf11b1c9f5f7402b48a6ca27751fd1d4ad536e1306ba7cd7",
+    "results/torus_view_2026-11-01/window.png": "8e38298646b969555bfb7bae3710bf6ad9588148ba8c2a5f7413849db7f6f64a",
+    "results/torus_view_2026-11-01/orbit.gif": "dfbd8a84c7a2e3a54a3c33de18ab9d78f717e5b2114a3cb40805db1251be805f",
+    "results/torus_view_2026-11-01/qa.json": "3101c15cb8f0f8e9080b44e8a36ad42839eeb5030088b93148aa420e16133532",
+    "results/torus_view_2026-11-01/summary.md": "2e6c61dbdb5879b0fe430e0dc023e305e381dc3e68c1bc84d6ab859bdbe59899",
+    "results/torus_view_2026-11-01/verify_native.py": "f2bc486b2fc38ae02215811dfe26fd07df018b94103f65f771e0acb70225a4ec",
+    "results/torus_view_2026-11-01/test_log.txt": "dc10cdd2407cd702d5686706718e057e526971b425af571b2321d37ffdd202d2",
+    "results/torus_view_2026-11-01/exports/20261101T211218011139Z_seed7_u1000/fields.npz": "e3225a5f5b4fb4802c5ff1abe22134fe4dace41850ff583726478384df8ef71d",
+    "results/torus_view_2026-11-01/exports/20261101T211218011139Z_seed7_u1000/pattern.png": "15e911fec8ffb96982fabcaeb10a004adb5b13d865146a99a9bcc4b42308b696",
+    "results/torus_view_2026-11-01/exports/20261101T211218011139Z_seed7_u1000/README.txt": "d5b5ad6492dcdcdb0145fe92a8c6d8719b230a6c54ad4a171aa39293dcce21f0",
+    "results/torus_view_2026-11-01/exports/20261101T211218011139Z_seed7_u1000/recipe.json": "ee7a574766dc36f6e660be918e2e5e9de87873db18507a864ab30c368e9a02bb"
+  },
+  "latest_export": "results/torus_view_2026-11-01/exports/20261101T211218011139Z_seed7_u1000",
+  "tests": 76,
+  "preserved_dynamics": {
+    "genesis_fields_pretty.py": "3409ff5271d3a0d0a1abb2e9aa375fdcab6af4e157104ad43d28849163be886a",
+    "src/genesis_gallery/legacy.py": "4552b344d57b706f5ed48584e521a4e95d3937d5eacc159b48abdca948d217d6",
+    "src/genesis_sandbox/model.py": "3ab1f7e8a3a683a035e3c009d51c4253a2bf768496f84e883b10283e1c766c98",
+    "src/genesis_sandbox/lab_model.py": "66217ef1df0a5c7a79fe02483cdb7afdfd62d7e304ff7d0e8a94a0bd17b2c20c",
+    "src/genesis_sandbox/vacancies.py": "9be0859eab0238c67d8c287f0a3ce46d461965d5ba8c4f63771ca8c5a1080028"
+  }
+}

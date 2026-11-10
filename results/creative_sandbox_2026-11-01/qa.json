@@ -1,0 +1,29 @@
+{
+  "purpose": "Native UI smoke demonstration, not a new generative or scientific experiment",
+  "seed": 1,
+  "grid": 64,
+  "update": 1400,
+  "brush_stamps": 31,
+  "replay_full_fields_exact": true,
+  "growth_1000_updates_wall_seconds": 8.288,
+  "native_controls_exercised": [
+    "Grow +1000",
+    "mouse press/drag/release",
+    "angle and radius sliders",
+    "export",
+    "view selection"
+  ],
+  "sample_export": "results/creative_sandbox_2026-11-01/exports/20261101T134359579971Z_seed1_u1400",
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "test_environment": "Qt offscreen; screenshots rendered from the actual native widgets",
+  "native_windows_startup_verified": true,
+  "native_startup_check": "Qt windows platform, native window created, timed event-loop exit succeeded."
+}

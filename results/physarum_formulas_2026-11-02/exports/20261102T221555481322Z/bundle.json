@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "created_utc": "2026-11-02T22:15:55.886061+00:00",
+  "simulation": {
+    "seed": 7,
+    "rules": {
+      "size": 512,
+      "agents": 90000,
+      "sensor_distance": 5,
+      "sensor_angle": 0.8,
+      "turn_angle": 0.48,
+      "speed": 1.35,
+      "diffusion": 0.55,
+      "retention": 0.975,
+      "jitter": 0.025,
+      "crowding": 2.5,
+      "flow": 0.8,
+      "mode_m": 3,
+      "mode_n": 5
+    },
+    "tick": 332,
+    "formula": {
+      "expression": "sin(4*pi*x + t) * cos(3*pi*y - t)",
+      "response": "flow",
+      "velocity_x": "-y",
+      "velocity_y": "x",
+      "scale": 1.0,
+      "time_speed": 1.0
+    },
+    "rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 17531029346353999455974053705389318786,
+        "inc": 261136684632268670825940853076396136793
+      },
+      "has_uint32": 1,
+      "uinteger": 1410970939
+    }
+  },
+  "look": {
+    "palette": "Pearl",
+    "exposure": 1.3,
+    "bloom": 0.18
+  },
+  "session": {
+    "guidance": 1.0,
+    "target_guidance": 1.0,
+    "transition_ticks": 100
+  },
+  "numpy_version": "1.26.4",
+  "state_sha256": "79ba8a105f0f7e5bad6d6e73a559f3491a8b02d648d646bbf47fefce07584b84",
+  "sources": {
+    "__init__.py": "4a4c1fbda251f605822eaac05e533ec7df45c8a7f829bd5bf85c7caa00736864",
+    "__main__.py": "425c44fad0c0526adaa304feab2e4925151d80caf9ba1cadaaf9779af069f5fc",
+    "adapters/density.frag": "cca12c64191ef211bd09a878e722a5ed5d3a3ced6270d9cb55d7ae338cecbdd6",
+    "adapters/desktop.py": "e2ecf5aa5e828e01622eb670197d0e2cbe97562c2604ddde186431dea488267a",
+    "adapters/formula_editor.py": "0be210abc262fb9ed02ea80c94d8af7c8cb712ca40a6c91dea5d572c112baf3c",
+    "adapters/gpu.py": "c3848da014688a76c2a3ea1a98dee72749efc9eb03662eb9db24be32f920b0f3",
+    "adapters/render.py": "82214b0213731226d7696ab427b8455f86897a6ce21cc3bf1d3eb4a7491d4c00",
+    "adapters/storage.py": "2212909d1cdd0b6fdb235e0b041a484b12227e28c67096b99ad772648ecd6e42",
+    "adapters/__init__.py": "ff93db6ad9e9b09795e6a4d6073467246e5236dddf72fe344b7e9dacab79f793",
+    "application/session.py": "1820e804c964b6a2444442515cf52b020b32e9965156e7874768540e4eb612fe",
+    "application/__init__.py": "37d87a5678e75b1b345402968ffbbc2d7f0608a61ac88c5c52fae83327edc0ce",
+    "domain/fields.py": "e8b68484d5b9a86d6462f3605c07322adb92f04fc5d353b5043ee5c12dc47122",
+    "domain/formulas.py": "84547b08a92a92828c5ef4c95728843aee061676d28bb61374d88e8a6a4acb46",
+    "domain/model.py": "3abd4106eb220ac1427841f8d7272c142cc8ca5fbea97227c24c92533eae4769",
+    "domain/__init__.py": "88ff64d5132d7284f61e4be5fe3baa09ade8e4cc59e6d38f021610a1fafcbcb1"
+  }
+}

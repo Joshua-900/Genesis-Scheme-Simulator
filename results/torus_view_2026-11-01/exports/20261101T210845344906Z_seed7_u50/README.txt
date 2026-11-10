@@ -1,0 +1,5 @@
+pattern.png records the selected fixed-scale view. fields.npz stores all fields in float64.
+recipe.json records presets, seed, update count, brush edits and source fingerprints.
+Replay from the repo root:
+.venv\Scripts\python.exe -B -m src.genesis_sandbox --replay "C:\Users\joshu\Source\Repos\Genesis-Scheme-Simulator\results\torus_view_2026-11-01\exports\20261101T210845344906Z_seed7_u50\recipe.json"
+Replay requires matching dynamics sources; the saved field snapshot remains available independently.

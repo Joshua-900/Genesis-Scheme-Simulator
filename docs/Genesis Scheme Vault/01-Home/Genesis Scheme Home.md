@@ -1,6 +1,6 @@
 ---
 Area: Navigation
-datetime_stamp: 2026-10-11T00:00:00-05:00
+datetime_stamp: 2026-10-31T00:00:00-05:00
 status: in-progress
 confidence: vetted
 tags:
@@ -45,6 +45,8 @@ The Genesis Scheme is a theory-first project. This vault keeps the conceptual fr
 ## Current starting points
 
 - [[Current Direction]]
+- [[Audit Ledger]]
+- [[Cumulative Audit Protocol]]
 - [[Return Protocol]]
 - [[Theory Index]]
 - [[Operators Index]]

@@ -1,0 +1,96 @@
+{
+  "structural_evidence": {
+    "tested_seeds": 30,
+    "batch_merge_exact": true,
+    "medians": {
+      "untouched": 21.0,
+      "candidate_neighborhood": 4.5,
+      "background": 21.0
+    },
+    "end_survival": {
+      "untouched": 10,
+      "candidate_neighborhood": 6,
+      "background": 10
+    },
+    "target_lower_equal_higher": [
+      20,
+      9,
+      1
+    ],
+    "background_matches_untouched": true,
+    "wilcoxon": {
+      "settings": {
+        "zero_method": "wilcox",
+        "correction": false,
+        "method": "approx"
+      },
+      "two_sided_p": 0.00021275602571275146,
+      "one_sided_less_p": 0.00010637801285637573
+    },
+    "minimum_periodic_midpoint_background_distance": 12.816005617976296,
+    "interpretation": "Local joint structural-state intervention changes strict tracked-pair continuation in the selected high-compression regime. Does not isolate which state component or establish a history-dependent interaction law.",
+    "reporting_discrepancy": "Historical prose says medians 22/5/22; archived raw and summary agree on 21/4.5/21. Its p=0.000106 matches a one-sided less test; sidedness was unspecified."
+  },
+  "vortex_evidence": {
+    "observed": 8756,
+    "persistent": 763,
+    "median_persistent_age": 1550.0,
+    "all_final_net_winding_zero": true,
+    "robustness_seeds": 20,
+    "robustness_medians": {
+      "untouched": 38.5,
+      "core": 39.0,
+      "background": 38.5
+    },
+    "core_vs_untouched_two_sided_p": 0.733478055862478,
+    "interpretation": "Persistent topological object class and survival under the tested smooth core perturbation; nonsignificant difference is not a formal equivalence proof or autonomy claim."
+  },
+  "forecast_evidence": {
+    "cohorts": [
+      {
+        "file": "results/v1_pair_object_gate.json",
+        "records": 5043,
+        "field_brier": 0.11652734436873362,
+        "relational_brier": 0.11219624214783162,
+        "relative_reduction": 0.0371681191600562,
+        "held_seed_wins": 9,
+        "gate_passed": false
+      },
+      {
+        "file": "results/v1_pair_object_gate_replication.json",
+        "records": 5248,
+        "field_brier": 0.12101573395525313,
+        "relational_brier": 0.1152832178555051,
+        "relative_reduction": 0.04737000646434687,
+        "held_seed_wins": 10,
+        "gate_passed": false
+      }
+    ],
+    "combined_descriptive_reduction": 0.04246698335122348,
+    "interpretation": "Replicated relational predictive information, below the original object-level gate. No independent object dynamics or general interaction law established."
+  },
+  "equation_probes": {
+    "net_torque_cancellation": {
+      "tension_source_at_center": 0.0,
+      "positive_disagreement_diagnostic": 3.9999999999999996,
+      "conclusion": "grad_align is magnitude of net alignment torque, not total disagreement or energy."
+    },
+    "fixed_sign_drive": {
+      "minimum_tension_torque": 0.098,
+      "conclusion": "Compression rule adds +0.1*tau angular drive; for nonnegative tau a turning sign is supplied, not spontaneously selected."
+    },
+    "dt_convention": {
+      "one_update_structural_state_identical_at_half_dt": true,
+      "theta_double_increment_max_error": 8.881784197001252e-16,
+      "conclusion": "Structural recurrences are per-update while theta uses dt. Physical-time convergence requires an explicit convention; naive dt halving is not such a test."
+    },
+    "compression_semantics": {
+      "C_at_detF_zero": 1.0,
+      "C_at_detF_one": 1.1253546280962882e-07,
+      "C_at_detF_minus_one": 1.1253546280962882e-07,
+      "conclusion": "C emphasizes near-zero determinant and is sign-insensitive, not a general pressure or physical energy density."
+    }
+  },
+  "regression_tests_passed": true,
+  "frozen_source_and_evidence_unchanged": true
+}

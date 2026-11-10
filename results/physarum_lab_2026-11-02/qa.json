@@ -1,0 +1,47 @@
+{
+  "platform": "windows",
+  "gpu": true,
+  "gpu_reference_mean_absolute_error": 0.6003364014902477,
+  "native_palette_change": true,
+  "native_zoom_pan": true,
+  "camera_preserves_tick": true,
+  "native_guidance_transition": true,
+  "native_export_restore": true,
+  "measured_updates": 80,
+  "update_display_seconds": 8.608458799950313,
+  "updates_per_second": 9.293184977601538,
+  "seed": 7,
+  "agents": 150000,
+  "size": 640,
+  "phases": {
+    "flow": {
+      "tick": 340,
+      "guidance": 0.0,
+      "mean_squared_wave_at_agents": 0.12171231955289841
+    },
+    "gather": {
+      "tick": 820,
+      "guidance": 1.0,
+      "mean_squared_wave_at_agents": 0.011314342729747295
+    },
+    "release": {
+      "tick": 1060,
+      "guidance": 0.0,
+      "mean_squared_wave_at_agents": 0.06592649221420288
+    }
+  },
+  "animation": "real simulation evolution, sampled every 16 ticks; playback is time-compressed",
+  "default_configuration_benchmark": {
+    "size": 512,
+    "agents": 90000,
+    "updates": 40,
+    "model_seconds": 1.2982609000173397,
+    "presentation_prepare_seconds": 0.32950970006641,
+    "desktop_draw_seconds": 1.66773729986744,
+    "updates_per_second": 12.137734520555222,
+    "renderer": "Intel(R) Graphics",
+    "note": "Separate native benchmark; wall-clock speed depends on hardware and desktop compositing."
+  },
+  "automated_tests": 91,
+  "preserved_v1_audit_fingerprints_match": true
+}

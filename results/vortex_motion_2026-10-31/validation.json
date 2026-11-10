@@ -1,0 +1,11 @@
+{
+  "engine_files_verified": 53,
+  "parent_audit_fingerprints_match": true,
+  "new_simulation_tracking_and_fit_sources_match_precollection_hashes": true,
+  "presentation_revision_recorded": true,
+  "saved_predictions_reproduce_report": true,
+  "representative_branch_initial_theta_identical": true,
+  "regression_tests_passed": 28,
+  "forecast_records_verified": 8102,
+  "document_links_verified": true
+}

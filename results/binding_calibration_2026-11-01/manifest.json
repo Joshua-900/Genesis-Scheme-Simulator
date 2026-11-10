@@ -1,0 +1,37 @@
+{
+  "milestone": "binding_calibration_2026-11-01",
+  "stage": "B complete with method failure; C not run",
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "producer_and_inherited_inputs_match": true,
+  "presentation_source_sha256": "75d29b639b9bce22e3591408a8c6f475cf2a8eef7fcb105eb1647aae056df0e8",
+  "artifacts": {
+    "error_budget.png": "0a191468fbbb6e732302bb7772a1d5ac1c194caff1d854947c0e3cbf5ff87e22",
+    "protocol.json": "7755d77286624ec4535bd15a24a690e319c3969b45782c3e0467e9f694490d56",
+    "relocation_detail.png": "efcd4c4764781bec160d178b8411437c20be5a0160d5e058ed2182e3ffc7fbd3",
+    "report.json": "f5ffd088c342676a11cfb9fd4468657fe85cc7eb75ab37f54c2ab6979fdaf33b",
+    "seed1005_compress.npz": "da3165c3b60c352ff10234cadd545aa27d628d3466e211ea557eb474cd66b467",
+    "seed1005_sham.npz": "7d4d396e755d6dcc98d6c111575976dcc903d973cd4b903b676fa1573778bf8a",
+    "seed1005_stretch.npz": "138f07e81ea4295cfc3da2b743bea899a0973f5bd61479d78df2b6ebecee1dfc",
+    "seed1005_translate_minus.npz": "e0c379db5b5baf4363983d631f2a8356f206c80300dce228d970b6ada18e24b6",
+    "seed1005_translate_plus.npz": "71bc12ce9889a38547d29fd6b98f6d0109f19598702e42d68618c822a6290d78",
+    "seed3001_compress.npz": "f9e8c6dc6fcb42282fe6086b9bfacbcb008566f21f36b3cf6fb63f588c3e59f8",
+    "seed3001_sham.npz": "2f764d77d6d72bb88ac601dfc7c7cd2fbe27375964a77869be234a4a9d6220b6",
+    "seed3001_stretch.npz": "d432124d917f1650e7b7d4695096bb8abb0d5a56a26fca891481c059c3207052",
+    "seed3001_translate_minus.npz": "f34e479bc39e793d38f626dd62e5fa1b8e34298d32dae47d5ed62e13001d9a75",
+    "seed3001_translate_plus.npz": "0b8975d5b84dd34811ea35c6b469323c69c5053b594f80ce7064c9f5518b5833",
+    "summary.md": "49a04526fd9c537d0fb69c6b395ca2bd0e4ae60f4a846af741b597e72d8eb511",
+    "test_log.txt": "693f403c7d2d622d1ff3718ee4c0ccac67435fa23dacfd7311b1d02b0df4cfc6"
+  },
+  "documentation_sha256": {
+    "findings/2026-11-01_binding_relocation_calibration.md": "83d428b9002747c0f77a1ca6809b3957eee72f8f5c1624e2ee7b7404d3486f58",
+    "docs/Genesis Scheme Vault/40-Experiments/Structural Binding Response \u2014 Relocation Calibration.md": "dd8e396829b652229c8c0e9c6bc2727cbe1321798c72d23343669cd08fcd9a61"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "platform": "windows",
+  "gpu": true,
+  "scalar_apply": true,
+  "preview_preserves_state": true,
+  "invalid_expression_preserves_active_formula": true,
+  "vector_apply": true,
+  "exact_formula_continuation": true,
+  "export": "results\\physarum_formulas_2026-11-02\\exports\\20261102T221555481322Z",
+  "tick": 337,
+  "automated_tests": 104,
+  "formula_tests": 13
+}

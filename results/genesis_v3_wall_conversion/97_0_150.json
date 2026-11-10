@@ -1,0 +1,201 @@
+{
+  "turns": 0,
+  "size": 97,
+  "seed": null,
+  "penalty": 0.0002,
+  "easy_axis": 150,
+  "dt": 9.379103357719002e-07,
+  "quench_time": 0.0,
+  "records": [
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.49999999999999917,
+          "y": 0.4999999999999992,
+          "charge": 0.0,
+          "radius_cells": 19.89118368841965
+        }
+      ],
+      "max_disk_charge": 0.0,
+      "time": 0.0,
+      "energy": 130.47087749000895,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.49999999999999967,
+          "y": 0.4999999999999998,
+          "charge": 0.0,
+          "radius_cells": 15.967661658277217
+        }
+      ],
+      "time": 0.005,
+      "energy": 29.20101988793254,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.5000000000000004,
+          "y": 0.4999999999999999,
+          "charge": 0.0,
+          "radius_cells": 7.377736139048903
+        }
+      ],
+      "time": 0.01,
+      "energy": 17.3971744669791,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.015000000000000003,
+      "energy": 6.449781676002017,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.02,
+      "energy": 1.3112121004710993,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.025,
+      "energy": 0.22885531050092403,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.030000000000000006,
+      "energy": 0.040397260409414805,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.035,
+      "energy": 0.007259724462959344,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.04,
+      "energy": 0.0013177061383240294,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.045,
+      "energy": 0.00024033107118924887,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.05,
+      "energy": 4.3931224165143e-05,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.05500000000000001,
+      "energy": 8.03862948874806e-06,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.06000000000000001,
+      "energy": 1.4716132905728646e-06,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.065,
+      "energy": 2.6946212405286683e-07,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.07,
+      "energy": 4.934506526493644e-08,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.075,
+      "energy": 9.036677807215295e-09,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.08,
+      "energy": 1.654941069656458e-09,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.085,
+      "energy": 3.0308204275197514e-10,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.09,
+      "energy": 5.5505966094454715e-11,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.095,
+      "energy": 1.016529388420416e-11,
+      "dt": 9.379103357719002e-07
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.1,
+      "energy": 1.8616609139691e-12,
+      "dt": 9.379103357719002e-07
+    }
+  ]
+}

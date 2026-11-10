@@ -1,0 +1,88 @@
+{
+  "stage": "B2: distinct temporary dynamic probe calibration",
+  "created_utc": "2026-11-01T16:59:14.814577+00:00",
+  "config": {
+    "radius": 3.0,
+    "duration": 80,
+    "follow": 80,
+    "interval": 5,
+    "speeds": [
+      0.05,
+      0.1
+    ],
+    "directional_gradient_cap": 1.0,
+    "minimum_axial_movement": 0.5,
+    "maximum_translation_relative_error": 1.0,
+    "numerical_tolerance": 1e-12
+  },
+  "seeds": [
+    1005,
+    3001
+  ],
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "parameters": {
+    "alpha": 0.3,
+    "gamma": 0.01,
+    "kappa": 0.1,
+    "phase": 0.0,
+    "dipole": 0.0,
+    "triads": 0.0,
+    "curv": 0.04,
+    "gamma_soft": 0.7,
+    "kappa_soft": 0.5,
+    "curv_soft": 0.8,
+    "relax_geom": 0.03,
+    "theta_diff": 0.002,
+    "decay_tau": 0.02,
+    "geom_decay": 0.05,
+    "sigma_c2": 0.0625,
+    "tri_sigma2": 0.6400000000000001,
+    "lock_strength": 0.96,
+    "tri_lock_gain": 0.0,
+    "phase_lock_gain": 0.0,
+    "shell_geom_gain": 0.08,
+    "boundary_renewal": 0.0,
+    "inhibitor_source": 0.0,
+    "inhibitor_decay": 0.0,
+    "inhibitor_diffusion": 0.0,
+    "inhibitor_tension_damping": 0.0,
+    "template_write_rate": 0.0,
+    "template_decay": 0.0,
+    "template_restore_gain": 0.0
+  },
+  "previous_calibration_manifest_sha256": "791df0a5fb0dccc939a187fdfb0db988d372d53bc0126f0c21409fb0f3ff02dc",
+  "preflight_sha256": "d3dc1470bea61530cd42e8cf1637cdf02ebaa19c6b5ed6ac8388cb284b8791d5",
+  "source_sha256": {
+    "src/genesis_binding/calibrate_probe.py": "2a329470f3a7d2f757df596d5deb920b8bc8cd4b613e0dcf30ab8abc162bf85f",
+    "src/genesis_binding/dynamic_probe.py": "564a539baebed65017467c6c77c19939fd5b8fea129b2b67d71fcb91ecbba5e4",
+    "src/genesis_binding/relocation.py": "d1ab016fae89d1c8c73b4a8a63713e4a1b2348238f85bab59d335f026fda4301",
+    "src/genesis_binding/calibrate.py": "37704b1a0929d180f3c7631ced4643c19da9d2e0d0714e7f8ef871c34cf90db0",
+    "tests/test_dynamic_probe.py": "e0e1e9a12d5233aa77ba28b8acc2b78354f0832f4c706675b6f8036723432d93"
+  },
+  "archive_sha256": {
+    "seed_1005.npz": "cb563361fb299f604ce1c846052c5f74ba8e933edc088fe844f318abb740644a",
+    "seed_3001.npz": "81e692c51d3dd2144d9aafccf80ad59bbae2aab61d8c7f394f4c46b6be5c009a"
+  },
+  "intervention": "Temporary torque -speed/dt * sin^2(pi*(index+0.5)/80) * sum_i cosine_disk_i * clip(direction_i dot wrapped_centered_gradient(theta),-1,1). Native locking applies without compensation. Fixed disk centers; no pursuit of moving cores. No field resampling.",
+  "arms": "Untouched reference per seed; stretch, compress, common +/- dominant Cartesian pair axis at each of two speeds. Radius3 nonoverlapping disks. Same nominal amplitude/envelope, not equal realized motion or actual torque exposure.",
+  "durations": "80 forced updates, then80 unchanged native updates. First release step must equal a native step from the identical perturbed state bitwise. Input exactly zero throughout release.",
+  "safety": "At every forced update: original selected tracker identities observed, no excess vortex census or cumulative tracked births over reference, finite fields, external angle increment bounded by speed, release cutoff exact. Birth/identity checks are conservative tracker observations, not exact physical particle events.",
+  "effectiveness": "At pulse end both cores move >=0.5 cell projected along their own input direction relative to the untouched arm. Stretch/compress separation differs with requested sign by >=0.5 cell. Common translations have differential movement <=1 cell. This is manipulation resolution, not evidence of binding.",
+  "dose_policy": "Two levels fixed in advance (0.05,0.10). A level calibrates only if all four modes on both archived states pass safety and effectiveness. Choose the lowest passing level, or none. No escalation beyond these levels or tuning after outcomes.",
+  "limits": [
+    "Method development on old states, not fresh-seed confirmation or a bound-object result.",
+    "The externally imposed transport-like torque does not prove autonomous motion or constitute a new fuel budget.",
+    "Local structure evolves naturally; earlier structural imprints are not guaranteed to follow a driven defect.",
+    "Dense surroundings and individual pinning remain confounds for any later scientific interpretation.",
+    "No structural-feedback ablation or confirmatory response study is collected here.",
+    "Topology/positions/activity are recorded each update; full-field frames are float32 every5 updates, with float64 initial/release/final snapshots."
+  ]
+}

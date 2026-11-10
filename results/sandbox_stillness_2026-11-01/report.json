@@ -1,0 +1,83 @@
+{
+  "purpose": "Read-only interpretation of existing archives; no new trajectories or model changes",
+  "live_observation": "User reports the UPDATE counter keeps increasing while the picture appears static.",
+  "limits": "This does not measure the live session. Saved snapshots are float32; use original report for tiny angle residuals. No exact full-state fixed point is established.",
+  "source_directory": "results/generative_review_2026-10-31",
+  "source_sha256": {
+    "report.json": "7423a102007400190ff0e71db8be502ad85aee994fc866a71715c5c6663230d5",
+    "legacy_full_seed1.npz": "ebdc8477c98f448c2f208c7a819af91ae68c2e859da0c1f114d72f4f0dc7b7e2",
+    "legacy_no_geometry_seed1.npz": "4f1f53692944d4ff17199279591b1956ade338690f03f3ef59fd7ba98f6b4cc4",
+    "legacy_full_seed7.npz": "2816ce9bcfd52a94a27745830dc5e81365340736d503e6336dca8e83ce332aa0",
+    "legacy_no_geometry_seed7.npz": "a7c38736dcdd849999b48e2cef5a9fa8792283159e0ae6787fab87e25c73a312",
+    "legacy_full_seed42.npz": "e5d6208344876bab2c85a7e614cb87c88c7610f8183bd14e81706d37cbe5aced",
+    "legacy_no_geometry_seed42.npz": "5ef37316576d6b57574d6d40c766bde51185f4d52e3c446005c8378025de908c"
+  },
+  "records": [
+    {
+      "model": "legacy_full",
+      "seed": 1,
+      "interval": [
+        7900,
+        8000
+      ],
+      "phase_rms_from_original_float64_report": 0.005375363133590739,
+      "fraction_angle_change_over_one_degree_from_saved_snapshots": 0.0029296875,
+      "compression_rms_change_from_saved_snapshots": 0.017187888571011112
+    },
+    {
+      "model": "legacy_no_geometry",
+      "seed": 1,
+      "interval": [
+        7900,
+        8000
+      ],
+      "phase_rms_from_original_float64_report": 6.355976302654088e-19,
+      "fraction_angle_change_over_one_degree_from_saved_snapshots": 0.0,
+      "compression_rms_change_from_saved_snapshots": 0.0
+    },
+    {
+      "model": "legacy_full",
+      "seed": 7,
+      "interval": [
+        7900,
+        8000
+      ],
+      "phase_rms_from_original_float64_report": 0.01153630151430848,
+      "fraction_angle_change_over_one_degree_from_saved_snapshots": 0.00830078125,
+      "compression_rms_change_from_saved_snapshots": 0.0358891109249753
+    },
+    {
+      "model": "legacy_no_geometry",
+      "seed": 7,
+      "interval": [
+        7900,
+        8000
+      ],
+      "phase_rms_from_original_float64_report": 5.248640529094273e-19,
+      "fraction_angle_change_over_one_degree_from_saved_snapshots": 0.0,
+      "compression_rms_change_from_saved_snapshots": 0.0
+    },
+    {
+      "model": "legacy_full",
+      "seed": 42,
+      "interval": [
+        7900,
+        8000
+      ],
+      "phase_rms_from_original_float64_report": 0.019629594584725178,
+      "fraction_angle_change_over_one_degree_from_saved_snapshots": 0.0087890625,
+      "compression_rms_change_from_saved_snapshots": 0.021667039970639918
+    },
+    {
+      "model": "legacy_no_geometry",
+      "seed": 42,
+      "interval": [
+        7900,
+        8000
+      ],
+      "phase_rms_from_original_float64_report": 9.844158077681579e-17,
+      "fraction_angle_change_over_one_degree_from_saved_snapshots": 0.0,
+      "compression_rms_change_from_saved_snapshots": 0.0
+    }
+  ]
+}

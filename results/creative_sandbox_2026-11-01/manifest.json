@@ -1,0 +1,34 @@
+{
+  "milestone": "creative_sandbox_2026-11-01",
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "prior_gallery_hashes_match": true,
+  "tests": "48 pass; see test_log.txt",
+  "sources": {
+    "src/genesis_sandbox/export.py": "ab9cdbdabdacc42fe7cc6e59f1c0b122848a78672f794542e4d57dc2a7b8e04f",
+    "src/genesis_sandbox/model.py": "3ab1f7e8a3a683a035e3c009d51c4253a2bf768496f84e883b10283e1c766c98",
+    "src/genesis_sandbox/ui.py": "e80da5ae0f7e79a4c1744df3e828232d633520e1ae2ae3364cc96e732258c55c",
+    "src/genesis_sandbox/__init__.py": "a740a466f166791e9a935e5a7f27983dd1aa4c6ace8e373137c4b39146956e87",
+    "src/genesis_sandbox/__main__.py": "c509376a7740c8fcd628610f1c00725afc01db34112eb85cf93cd818adf785c3",
+    "launch_sandbox.ps1": "dbc8f2b06d9b46d63a868bfac781dc4a4ee2c4ac37d2b3bffc87612df0294abc",
+    "tests/test_sandbox.py": "3c09abe57f443ed2302962d4bf06fe1458f939179bffe1cb49d7150781884b73"
+  },
+  "artifacts": {
+    "compression.png": "806a7dfb504556b186ea0800590ad872d83f4a72218720a9ba3b48fd69d5f44f",
+    "exports/20261101T134359579971Z_seed1_u1400/fields.npz": "2e709e784bb0d94f03a08f1ce70eee2e2c5e47e5a24cb7efc04c6ade48f88ad2",
+    "exports/20261101T134359579971Z_seed1_u1400/pattern.png": "8f29c04ae0542e6b11c1c708bfca67112b1b023a93de72485326c8ca6ff519ac",
+    "exports/20261101T134359579971Z_seed1_u1400/README.txt": "77e2d997caf4fb1e06ba5720370ef1448822617c1cef138aea528d259d65629d",
+    "exports/20261101T134359579971Z_seed1_u1400/recipe.json": "cbe82c367b36f3d80337b87efc33e8da423b79679367d14bc8aeee8b30b5db8c",
+    "grown.png": "d008ad3386f7521af04d7d75b885b66dc5f73fab85542975db900797bd9eba22",
+    "qa.json": "4e439332ba2c8be9c70f4713aea902d6320e723ef3f88269da281b677d7ea724",
+    "sandbox.png": "a9d837590a9cb9975cb576c4eb328f23e38272d5f75fba4d329d432dd7bbd9b8",
+    "test_log.txt": "6557e8980e4453481e41cba280deab2b432b387837aa8b6c967f2c59da14ea99"
+  }
+}

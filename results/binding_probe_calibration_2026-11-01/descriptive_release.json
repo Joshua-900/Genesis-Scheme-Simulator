@@ -1,0 +1,414 @@
+{
+  "purpose": "Post-collection descriptive summary; does not modify frozen calibration acceptance or establish a general interaction law.",
+  "limitations": [
+    "Only two old development states and two nominal probe levels.",
+    "Positions have one-plaquette resolution; sub-grid or longer-time coupling is unresolved.",
+    "Own input prescription is held fixed, not necessarily actual delivered torque exposure.",
+    "Per-update theta activity is raw phasor change and includes global rotation; the separate aligned five-update descriptor removes best common phase rotation from saved float32 frames.",
+    "Activity is a global field mean and does not identify internal activity of a particular object."
+  ],
+  "release_observations": [
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "stretch",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006411151141951997,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0012926389285940255,
+        "tau": 0.00044136001539654717,
+        "ux": 0.0011487483463004575,
+        "uy": 0.0010760872297054598,
+        "C": 0.001279524816420008
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "compress",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006409967010753375,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0012926766870670616,
+        "tau": 0.00044530779141511913,
+        "ux": 0.0011011527288108595,
+        "uy": 0.0010269283692499228,
+        "C": 0.0011318553845491575
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "translate_plus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006458040349009591,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0013023569363808806,
+        "tau": 0.00044757603913484265,
+        "ux": 0.001098638536445812,
+        "uy": 0.001028314096216083,
+        "C": 0.00113161827873679
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "arm": "translate_minus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006362427808371931,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.001282829666523718,
+        "tau": 0.00043904622246706095,
+        "ux": 0.0011512338100111152,
+        "uy": 0.0010748602430108085,
+        "C": 0.001279633022004659
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "stretch",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006550283766837795,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0013205051366814535,
+        "tau": 0.0004678803012890035,
+        "ux": 0.0011607889403163383,
+        "uy": 0.0010947786677782542,
+        "C": 0.0012457215564813675
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "compress",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006661979714752176,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.001342867874142306,
+        "tau": 0.000475957074406025,
+        "ux": 0.0011536832947825954,
+        "uy": 0.0011060186356496582,
+        "C": 0.0012296918455444548
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "translate_plus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006693439231764129,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0013491799962639635,
+        "tau": 0.0004906345964659287,
+        "ux": 0.0011627966432370676,
+        "uy": 0.0011370348125066478,
+        "C": 0.001232022786127214
+      }
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "arm": "translate_minus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.00651656961320797,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0013137426225795876,
+        "tau": 0.00045225707112627595,
+        "ux": 0.0011514552762084383,
+        "uy": 0.001061068246928315,
+        "C": 0.001243621174433597
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "stretch",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.005866060548040359,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0011840847906720428,
+        "tau": 0.0004283534878568634,
+        "ux": 0.0012439737499836511,
+        "uy": 0.0012759406694900215,
+        "C": 0.0012462455467163638
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "compress",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.00588372712767912,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0011879236288572202,
+        "tau": 0.00043147275193482925,
+        "ux": 0.0012472273499135312,
+        "uy": 0.001278813079083933,
+        "C": 0.0012471864555443778
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "translate_plus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.005864071231327809,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0011836929875823697,
+        "tau": 0.0004268891574094093,
+        "ux": 0.001242298335155647,
+        "uy": 0.0012761365016461536,
+        "C": 0.0012461968797386042
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "arm": "translate_minus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.005885712416113945,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0011883131099753208,
+        "tau": 0.00043293770475308515,
+        "ux": 0.001248922147432357,
+        "uy": 0.001278617424656669,
+        "C": 0.001247218570619436
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "stretch",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006014953132412099,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0012140086154976228,
+        "tau": 0.00043999681943720744,
+        "ux": 0.0012636128065131123,
+        "uy": 0.0012873480630385531,
+        "C": 0.0012484506962484035
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "compress",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006046740162808335,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.001220501153187701,
+        "tau": 0.00045221699259954224,
+        "ux": 0.0012804470911841098,
+        "uy": 0.0013110512089425635,
+        "C": 0.0013108313388517801
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "translate_plus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006000300990877772,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0012108005685770584,
+        "tau": 0.00044540975977821996,
+        "ux": 0.0012771365594299276,
+        "uy": 0.001308037266863864,
+        "C": 0.0013097116509605403
+      }
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "arm": "translate_minus",
+      "maximum_post_cutoff_grid_displacement": 0.0,
+      "phase_aligned_post_cutoff_theta_change_mean_per5_updates": 0.006060897920721555,
+      "global_mean_post_cutoff_activity": {
+        "theta": 0.0012236124444552237,
+        "tau": 0.00044687746591008106,
+        "ux": 0.0012670113803009543,
+        "uy": 0.0012903855425856702,
+        "C": 0.0012495890745119497
+      }
+    }
+  ],
+  "partner_input_comparisons": [
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "slot": 0,
+      "arms": [
+        "stretch",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "slot": 0,
+      "arms": [
+        "compress",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "slot": 1,
+      "arms": [
+        "stretch",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.05,
+      "slot": 1,
+      "arms": [
+        "compress",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "slot": 0,
+      "arms": [
+        "stretch",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "slot": 0,
+      "arms": [
+        "compress",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "slot": 1,
+      "arms": [
+        "stretch",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 1005,
+      "speed": 0.1,
+      "slot": 1,
+      "arms": [
+        "compress",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "slot": 0,
+      "arms": [
+        "stretch",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "slot": 0,
+      "arms": [
+        "compress",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "slot": 1,
+      "arms": [
+        "stretch",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.05,
+      "slot": 1,
+      "arms": [
+        "compress",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "slot": 0,
+      "arms": [
+        "stretch",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "slot": 0,
+      "arms": [
+        "compress",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "slot": 1,
+      "arms": [
+        "stretch",
+        "translate_plus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    },
+    {
+      "seed": 3001,
+      "speed": 0.1,
+      "slot": 1,
+      "arms": [
+        "compress",
+        "translate_minus"
+      ],
+      "own_nominal_direction_unchanged": true,
+      "maximum_tracked_trajectory_difference": 0.0
+    }
+  ]
+}

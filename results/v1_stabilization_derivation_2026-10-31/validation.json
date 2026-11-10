@@ -1,0 +1,14 @@
+{
+  "parent_audit_fingerprints_match": true,
+  "parent_environment_matches": true,
+  "archived_inputs_unchanged": true,
+  "analysis_source_fingerprint_matches": true,
+  "archived_state_count": 24,
+  "maximum_staged_map_absolute_residual": 4.440892098500626e-16,
+  "documentation_sha256": {
+    "docs/Genesis Scheme Vault/50-Research/V1 Stabilization \u2014 Mechanism and Discriminating Prediction.md": "789242d14cf873288d38e7442f4408aea040ac9f1153a736327e7227e1a9a7a6",
+    "docs/Genesis Scheme Vault/50-Research/V1 Stabilization \u2014 Independent Mathematical Check.md": "d2cc576610861dbab771474820c473ab8a57c346d226aab314d844eb15401e16"
+  },
+  "no_new_trajectory_campaign": true,
+  "links_and_frontmatter_verified": true
+}

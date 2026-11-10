@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-31T18:07:26.785989+00:00",
+  "config": {
+    "grid_sizes": [
+      32,
+      64
+    ],
+    "modes": [
+      "v1",
+      "alignment_only",
+      "geometry_ablation"
+    ],
+    "sample_frames": [
+      300,
+      450,
+      600
+    ],
+    "scales": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "train_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "test_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "replication_seeds": [
+      201,
+      202,
+      203,
+      204,
+      205,
+      206
+    ],
+    "centers_per_snapshot": 4,
+    "horizon": 80,
+    "amplitude": 0.3,
+    "pulse_width": 1.5,
+    "dt": 0.05,
+    "kappa": 0.1,
+    "ridge": 10.0,
+    "minimum_gain": 0.05,
+    "win_fraction": 0.7,
+    "bootstrap_draws": 2000
+  },
+  "claim_boundary": "Classical multiscale representation and held-out perturbation-response prediction only; no spatial bulk, quantum entanglement, physical energy, matter, or holographic duality is established.",
+  "git_head": "33af0947d53a2c0f75efcac494ba13c763d23207",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "1.26.4",
+    "backend": "numpy_cpu"
+  },
+  "engine_source_sha256_before": {
+    "src/genesis_grid/__init__.py": "fb7ca20c2cc8b5a3bfc45b10f58bbc403aea1fd7cea6d367051efe3c5e751474",
+    "src/genesis_grid/adapter.py": "a15453170f229f8166c6df1e15e05dcdbb79a8a3edf09077bea356afa6d524c5",
+    "src/genesis_grid/backend.py": "a3b68297debe80ca4f1fffe1e6f3f0aa47199410e57ee5445aae720824bdbbee",
+    "src/genesis_grid/collector.py": "f1be06d31efa7c515903eb11b72f8042c6af434a0d78ece484cbcdd16972a5ec",
+    "src/genesis_grid/compression_tracker.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/genesis_grid/core.py": "65c4f0dff0845d942d5723aff90da2e55fbd0ab27e29a19fc72ed45de17e9ccd",
+    "src/genesis_grid/course_objects.py": "25bd6df6e8ff23ce0f0b3509979ffeaf88d84c7e629ec0e515b24092b73860e0",
+    "src/genesis_grid/defect_tracker.py": "595c34f53ceeecfacc890adb6d60c4dc1449f4f6663e8da5e039f5395aee5cc9",
+    "src/genesis_grid/diagnostics.py": "940d21ff4e6b300688692cadbde4c431773521aebdd39b835ddc1a1a9c935cef",
+    "src/genesis_grid/pairline_tracker.py": "a01e4720965162a2e84a03a370af75ba06e161d4184c8a6af26856a0ead0d710",
+    "src/genesis_grid/relax.py": "a552ad4aab51a4b283a12425568768b224d309d184fdaaa8f09264520177f9cf",
+    "src/genesis_grid/rules_alignment.py": "24999d2d7fedb2cef8dbe6cd21386b2552f438922113c5870e42f4eefc3dc3b9",
+    "src/genesis_grid/rules_boundary_renewal.py": "2b3022f96fe118675a30d12c96ebb79911f7538c5ca385c017087d17d89f897a",
+    "src/genesis_grid/rules_compression.py": "f09ffdaf0830965e13291e9d471fcbb08831f421f86e0e9813df952614c93155",
+    "src/genesis_grid/rules_curvature.py": "c6da7545cdfba2cb4205ca09ea0a91cf186e39c3d91061188fd857682a2119e4",
+    "src/genesis_grid/rules_dipoles.py": "1f5df6b561795f7d734606f1f850c3d580788abc61ccf761903b6bd750344a6d",
+    "src/genesis_grid/rules_locking.py": "17b4d3c657f2ce59e9552747edd43c5e631d45cab5ea28609ef81ae7e4aed64d",
+    "src/genesis_grid/rules_phase.py": "d4ea2a8837d637747894c2dc43181d947211d83aca06ac019999d8f7977a0936",
+    "src/genesis_grid/rules_scale_selection.py": "35c100a625822e30369c56526a41985dd4dd07cbcbbbbbf272e6aa386f144dfd",
+    "src/genesis_grid/rules_structural_memory.py": "076d3ecdb2f28e0f666e1b8fa610762c05c8dd30e48d736a7271058adca14641",
+    "src/genesis_grid/rules_triads.py": "9cd846abcbdab543f5dff1ff1ead65577bce12ac8bfc9715ecf3f24723373e82",
+    "src/genesis_grid/rules_triads_relative.py": "74177df4ded4e4fc83eb9c2a7a7a81d8ee09856177277b3c07c8368b7f397946",
+    "src/genesis_grid/ui_matplotlib.py": "0a1eb2b55f6ed75c434709c1539bbe578ec89b43baa93fed104b42da45cbcdc1",
+    "src/genesis_grid/ui_matplotlib2.py": "79f7673a525bf6db6fb19be100f3b6ffce332ba9aaebb94b585b5a22d3f033a8",
+    "src/genesis_grid/ui_matplotlib3.py": "96608e74e4100949866add53a57a295f93163ee5af4f63151d50ae438dabf566",
+    "src/genesis_grid/ui_napari.py": "19f038eca13f61c5eb0b028c9f2cfb6ad0813501d625c10d47a34cc5e5fefc39",
+    "src/genesis_grid/ui_napari_2.py": "d3b05ae762f89dbeeca02917f28ba5ea6e2691ca6a36a5a8d09ec98b9244ad2a",
+    "src/genesis_grid/ui_vispy.py": "328c789cec93f95e6157a62189ba72ca4f5982a15971e57c4df22c3b3ae5232a",
+    "src/genesis_grid/ui_vispy2.py": "f02a9db75951b1601a40a793e6d957d4b15fbe346ef6acf32ed981fcbb5865be",
+    "src/genesis_grid/ui_vispy3.py": "7fcc65deb616fbd245f7cf4d52e63045af31342333cbf928759864ff6601e3b3",
+    "src/genesis_v2/__init__.py": "3c9d63c36504d0e937d54ce0047921f63d78ed52de510f4cf5204e061f0e92bb",
+    "src/genesis_v2/adapter.py": "93c4f281cdf43a1ea4e1dc1adb67e763547bb53299b2a89302f4104773f14599",
+    "src/genesis_v2/core.py": "c115658f0562e0359e647a94c8b7e2f2b5f3afbdf828c318835bdadd0d10064f",
+    "src/genesis_v2_beta/__init__.py": "689db4ca6cabd99b39ddd8f5531e77e78705fb4afa20a2a3d26af7b0330a8d2e",
+    "src/genesis_v2_beta/adapter.py": "903d18422c8b9f18b551d6c095a729aabc7576ca7e7c8dc3eb5ed9799660791f",
+    "src/genesis_v2_beta/core.py": "f29af9bdaa0a3ac70787b85c2735ce5b69db9c04a819fab466d777b8165f7e8b",
+    "src/genesis_v2_beta/objects.py": "294d399aa5892d915376247b621242c6a78275d70a5c0a9bbd7c2887ace40ea7",
+    "src/genesis_v2_delta/__init__.py": "42e07740e157bf71f0fd76e5bc1bdbf3285993114d168a1ad8dd0b2fe0bb3c6d",
+    "src/genesis_v2_delta/adapter.py": "899c786aee6658ed8b9c196dc8b333bd7027274c274d4a5e1b8da9a291c72d86",
+    "src/genesis_v2_delta/core.py": "366b22c68dcb606da977114810af0673519c9d79e523e9b3ff20cbb310b0f64d",
+    "src/genesis_v2_epsilon/__init__.py": "b220678094eefadc20bd99ac1eea734bc794164584f3ebfedf1425975951245f",
+    "src/genesis_v2_epsilon/adapter.py": "7835c4da457b58f42ad610abf630e1bb6093755a67e88fd501f850c2619c6147",
+    "src/genesis_v2_epsilon/core.py": "91ee1bc48e53dfd23b61eca7e533fd4f7f67601288c2bb92f438a8d897a83ef7",
+    "src/genesis_v2_gamma/__init__.py": "212a0b27fd3b41e4ff75bec2159f145463e816181a2fada6de2138ebb1ededfa",
+    "src/genesis_v2_gamma/adapter.py": "98b775eaf2117cc9c61797737de222879f191c119c1a74dbc0f031aad5fb9ce7",
+    "src/genesis_v2_gamma/core.py": "c48de6a868c84bf0e1798ae0ea8333f52d719c51cd8e93748480cdee0ccdcafd",
+    "src/genesis_v2_gamma/interventions.py": "9b6b66970fa0168891b5929aa0a438a7e0714b4a67fe29c1aeea76dc83ad455f",
+    "src/genesis_v2_gamma/probes.py": "399ca3ccdf57291452aa040ff2165e2ea67cef0bc9794ee3203c01e4860c1458",
+    "src/genesis_v2_integrated/__init__.py": "e8759061421e27f6e95a008fe104c95ee646cdce83350d8a06d829f35768d550",
+    "src/genesis_v2_integrated/core.py": "dd199359efc8b262a05e98d29aa9c89df87c447c336751c5ee807f6d80552dd0",
+    "src/genesis_v2_zeta/__init__.py": "58c76f94d3e52fc80841cebe3cd295f86f6ada792743ec6655dc01a8e1b73f4b",
+    "src/genesis_v2_zeta/adapter.py": "1143912966c078e895ff5313ce092d24294ac80672a185e84c6cba254759f09a",
+    "src/genesis_v2_zeta/core.py": "6cb8df68e8c14e7c8eff112aaad69a296c6c861afb5108e4a48e7b0d9b86893a"
+  },
+  "audit_source_sha256": {
+    "genesis_multiscale_audit.py": "ea867f49479bc43017c614dcdd1d9aaf258442bd8f3f4d1b866b5c69902fe283",
+    "src/genesis_audit/__init__.py": "17557008dfcfc7af3baa6c09a7db8e3190ac7cb64b0cf21575da6d0cb02c5948",
+    "src/genesis_audit/analysis.py": "7f71d9c8069aeba6d8db54b002c6e30fa38b2d8b17223a2558c69f4f706f7bd1",
+    "src/genesis_audit/v1_adapter.py": "4dc0b8626a55664e7c9c8846ba883c22966469e6de2a91dbd097b53c049e7b2b"
+  },
+  "pipelines": {
+    "v1": {
+      "params": {
+        "alpha": 0.3,
+        "gamma": 0.01,
+        "kappa": 0.1,
+        "phase": 0.0,
+        "dipole": 0.0,
+        "triads": 0.0,
+        "curv": 0.04,
+        "gamma_soft": 0.7,
+        "kappa_soft": 0.5,
+        "curv_soft": 0.8,
+        "relax_geom": 0.03,
+        "theta_diff": 0.002,
+        "decay_tau": 0.02,
+        "geom_decay": 0.05,
+        "sigma_c2": 0.0625,
+        "tri_sigma2": 0.6400000000000001,
+        "lock_strength": 0.96,
+        "tri_lock_gain": 0.0,
+        "phase_lock_gain": 0.0,
+        "shell_geom_gain": 0.08,
+        "boundary_renewal": 0.0,
+        "inhibitor_source": 0.0,
+        "inhibitor_decay": 0.0,
+        "inhibitor_diffusion": 0.0,
+        "inhibitor_tension_damping": 0.0,
+        "template_write_rate": 0.0,
+        "template_decay": 0.0,
+        "template_restore_gain": 0.0
+      },
+      "rules": [
+        "src.genesis_grid.rules_alignment.alignment_rule",
+        "src.genesis_grid.rules_compression.compression_rule",
+        "src.genesis_grid.rules_curvature.curvature_rule"
+      ]
+    },
+    "alignment_only": {
+      "params": {
+        "alpha": 0.3,
+        "gamma": 0.01,
+        "kappa": 0.1,
+        "phase": 0.0,
+        "dipole": 0.0,
+        "triads": 0.0,
+        "curv": 0.04,
+        "gamma_soft": 0.7,
+        "kappa_soft": 0.5,
+        "curv_soft": 0.8,
+        "relax_geom": 0.03,
+        "theta_diff": 0.002,
+        "decay_tau": 0.02,
+        "geom_decay": 0.05,
+        "sigma_c2": 0.0625,
+        "tri_sigma2": 0.6400000000000001,
+        "lock_strength": 0.0,
+        "tri_lock_gain": 0.0,
+        "phase_lock_gain": 0.0,
+        "shell_geom_gain": 0.08,
+        "boundary_renewal": 0.0,
+        "inhibitor_source": 0.0,
+        "inhibitor_decay": 0.0,
+        "inhibitor_diffusion": 0.0,
+        "inhibitor_tension_damping": 0.0,
+        "template_write_rate": 0.0,
+        "template_decay": 0.0,
+        "template_restore_gain": 0.0
+      },
+      "rules": [
+        "src.genesis_grid.rules_alignment.alignment_rule"
+      ]
+    },
+    "geometry_ablation": {
+      "params": {
+        "alpha": 0.3,
+        "gamma": 0.01,
+        "kappa": 0.0,
+        "phase": 0.0,
+        "dipole": 0.0,
+        "triads": 0.0,
+        "curv": 0.04,
+        "gamma_soft": 0.7,
+        "kappa_soft": 0.5,
+        "curv_soft": 0.8,
+        "relax_geom": 0.03,
+        "theta_diff": 0.002,
+        "decay_tau": 0.02,
+        "geom_decay": 0.05,
+        "sigma_c2": 0.0625,
+        "tri_sigma2": 0.6400000000000001,
+        "lock_strength": 0.96,
+        "tri_lock_gain": 0.0,
+        "phase_lock_gain": 0.0,
+        "shell_geom_gain": 0.0,
+        "boundary_renewal": 0.0,
+        "inhibitor_source": 0.0,
+        "inhibitor_decay": 0.0,
+        "inhibitor_diffusion": 0.0,
+        "inhibitor_tension_damping": 0.0,
+        "template_write_rate": 0.0,
+        "template_decay": 0.0,
+        "template_restore_gain": 0.0
+      },
+      "rules": [
+        "src.genesis_grid.rules_alignment.alignment_rule",
+        "src.genesis_grid.rules_compression.compression_rule",
+        "src.genesis_grid.rules_curvature.curvature_rule"
+      ]
+    }
+  },
+  "design": {
+    "primary": "full_state_summaries multiscale versus matched planar_shells, shuffled_context and training_mean, in V1",
+    "secondary": "theta_only, local-only/zero-response baselines, snapshot controls and alternative pipelines",
+    "targets": [
+      "RMS_phasor_response_radius_0_to_2",
+      "RMS_phasor_response_radius_2_to_4",
+      "RMS_phasor_response_radius_4_to_8"
+    ],
+    "feature_names": {
+      "theta_only": [
+        "cos_mean",
+        "sin_mean",
+        "coherence",
+        "winding_density",
+        "abs_winding_density"
+      ],
+      "full_state_summaries": [
+        "cos_mean",
+        "sin_mean",
+        "coherence",
+        "winding_density",
+        "abs_winding_density",
+        "tension_mean",
+        "tension_std",
+        "compression_mean",
+        "compression_std",
+        "ux_mean",
+        "uy_mean",
+        "displacement_rms"
+      ]
+    },
+    "comparison": "local center-site summary + equal-count nested square blocks or disjoint square shells, same outer footprint and same winding halo",
+    "gate": "For every comparator, each unseen cohort needs >=minimum_gain loss reduction, positive paired-seed 95% bootstrap lower bound, and ceil(win_fraction * seed_count) wins. Both cohorts and all specified V1 grid sizes must pass.",
+    "loss": "Mean squared prediction error standardized per response ring by training-target standard deviation, floored at 1e-6; average per independent seed",
+    "limitations": [
+      "Exploratory small cohorts and fixed linear ridge model; no optimized model selection.",
+      "Independent angles and spatial permutation are observational controls, not simulated trajectories.",
+      "Fourier phase surrogate is NOT pair-correlation matched after projection to unit angles; spectral mismatch is reported.",
+      "Shuffled context permutes context within seed across times and centers while preserving local inputs.",
+      "No mutual-information estimator is fitted; coherence and winding are descriptive statistics, not entropy or entanglement.",
+      "Nested versus shell summaries are alternative representations of the same input footprint; gains can reflect feature geometry or ridge bias, not new dimensions.",
+      "Gaussian pulse has small nonzero tails at every site; response radius is not a finite-speed or causality measurement.",
+      "No bulk reconstruction, emergent locality, energy conservation or matter claim is tested."
+    ]
+  }
+}

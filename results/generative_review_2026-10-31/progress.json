@@ -1,0 +1,76 @@
+{
+  "completed": [
+    {
+      "seed": 1,
+      "model": "alignment"
+    },
+    {
+      "seed": 1,
+      "model": "v1"
+    },
+    {
+      "seed": 1,
+      "model": "v1_no_geometry"
+    },
+    {
+      "seed": 1,
+      "model": "legacy_full"
+    },
+    {
+      "seed": 1,
+      "model": "legacy_no_geometry"
+    },
+    {
+      "seed": 1,
+      "model": "v2_integrated"
+    },
+    {
+      "seed": 7,
+      "model": "alignment"
+    },
+    {
+      "seed": 7,
+      "model": "v1"
+    },
+    {
+      "seed": 7,
+      "model": "v1_no_geometry"
+    },
+    {
+      "seed": 7,
+      "model": "legacy_full"
+    },
+    {
+      "seed": 7,
+      "model": "legacy_no_geometry"
+    },
+    {
+      "seed": 7,
+      "model": "v2_integrated"
+    },
+    {
+      "seed": 42,
+      "model": "alignment"
+    },
+    {
+      "seed": 42,
+      "model": "v1"
+    },
+    {
+      "seed": 42,
+      "model": "v1_no_geometry"
+    },
+    {
+      "seed": 42,
+      "model": "legacy_full"
+    },
+    {
+      "seed": 42,
+      "model": "legacy_no_geometry"
+    },
+    {
+      "seed": 42,
+      "model": "v2_integrated"
+    }
+  ]
+}

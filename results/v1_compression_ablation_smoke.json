@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "claim_boundary": "This tests the causal role of the specified V1 geometry/compression path in tracked pair candidates; it does not establish objects.",
+  "experiment": {
+    "name": "v1_geometry_compression_ablation",
+    "question": "Does V1 geometry coupling causally change pair-candidate persistence?",
+    "grid_size": 24,
+    "frames": 100,
+    "seeds": 2,
+    "kappas": [
+      0.0,
+      0.05
+    ]
+  },
+  "conditions": [
+    {
+      "kappa": 0.0,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.2677470963892968,
+          "mean_compression": 1.1253546280962881e-07,
+          "pair_candidates_observed": 45,
+          "persistent_pair_candidates": 0,
+          "median_pair_max_age": 20.0,
+          "mean_pair_compression": 1.5707994067188776e-08
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.2527734830905843,
+          "mean_compression": 1.1253546280962881e-07,
+          "pair_candidates_observed": 67,
+          "persistent_pair_candidates": 0,
+          "median_pair_max_age": 0.0,
+          "mean_pair_compression": 1.6120842523754057e-08
+        }
+      ],
+      "median_final": {
+        "mean_tension": 0.26026028973994053,
+        "mean_compression": 1.1253546280962881e-07,
+        "pair_candidates_observed": 56.0,
+        "persistent_pair_candidates": 0.0,
+        "median_pair_max_age": 10.0,
+        "mean_pair_compression": 1.5914418295471417e-08
+      }
+    },
+    {
+      "kappa": 0.05,
+      "runs": [
+        {
+          "seed": 1,
+          "mean_tension": 0.2611012696057364,
+          "mean_compression": 0.00030483217287609863,
+          "pair_candidates_observed": 44,
+          "persistent_pair_candidates": 0,
+          "median_pair_max_age": 20.0,
+          "mean_pair_compression": 3.0328048895110534e-05
+        },
+        {
+          "seed": 2,
+          "mean_tension": 0.2468059074409593,
+          "mean_compression": 0.0006698018000771329,
+          "pair_candidates_observed": 65,
+          "persistent_pair_candidates": 0,
+          "median_pair_max_age": 0.0,
+          "mean_pair_compression": 5.148288945700543e-06
+        }
+      ],
+      "median_final": {
+        "mean_tension": 0.2539535885233478,
+        "mean_compression": 0.0004873169864766158,
+        "pair_candidates_observed": 54.5,
+        "persistent_pair_candidates": 0.0,
+        "median_pair_max_age": 10.0,
+        "mean_pair_compression": 1.7738168920405538e-05
+      }
+    }
+  ]
+}

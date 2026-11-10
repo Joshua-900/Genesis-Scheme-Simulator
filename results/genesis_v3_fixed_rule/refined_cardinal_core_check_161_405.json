@@ -1,0 +1,14 @@
+{
+  "size": 161,
+  "seed": 405,
+  "reference_center": [0.773, 1.059],
+  "reference_center_rounding": "Displayed to three decimals. The replay used the full archived center.",
+  "measurement_radius": 0.09,
+  "search_radius": 0.06,
+  "provenance": "Measurements recovered from replay stdout. The full-record equality assertion compared Python tuples with JSON lists and stopped before writing the report.",
+  "readings": [
+    {"sample": 12, "time": 0.057931034482758624, "fixed_disk_charge": -1.0174555669613772, "nearby_min_charge": -1.0673710503472797, "nearby_min_center": [0.759375, 1.0406250000000001]},
+    {"sample": 13, "time": 0.06275862068965518, "fixed_disk_charge": -1.1143613478767382, "nearby_min_charge": -1.2989525803265085, "nearby_min_center": [0.734375, 1.059375]},
+    {"sample": 14, "time": 0.06758620689655173, "fixed_disk_charge": -1.021909041456723, "nearby_min_charge": -1.0541178190363554, "nearby_min_center": [0.759375, 1.053125]}
+  ]
+}

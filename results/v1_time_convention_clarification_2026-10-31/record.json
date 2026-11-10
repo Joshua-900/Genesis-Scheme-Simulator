@@ -1,0 +1,17 @@
+{
+  "record_id": "v1_time_convention_clarification_2026-10-31",
+  "parent_audit_id": "v1_baseline_audit_2026-10-31",
+  "kind": "documentation_only_clarification",
+  "created_utc": "2026-10-31T18:42:42.940464+00:00",
+  "status": "complete",
+  "parent_manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+  "engine_or_experiment_changes": false,
+  "new_experimental_evidence": false,
+  "parent_source_and_evidence_fingerprints_match": true,
+  "parent_environment_matches": true,
+  "document_sha256": {
+    "docs/Genesis Scheme Vault/30-Implementation/V1 Discrete Update Convention.md": "a07f7a5ec825941423d2052832d278a2d0687b578080f8e7d4b10470ae439981"
+  },
+  "decision": "The audited V1 structural preset is a discrete-update map. Structural coefficients apply per update; existing dt multiplies the final angular update. No shared physical-time calibration or continuum-convergence claim follows.",
+  "open_scope": "Any continuous-time variant requires separately defined equations and consistent rate mapping, preserved baselines and focused new validation."
+}

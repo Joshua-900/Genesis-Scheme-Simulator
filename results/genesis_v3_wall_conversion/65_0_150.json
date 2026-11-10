@@ -1,0 +1,201 @@
+{
+  "turns": 0,
+  "size": 65,
+  "seed": null,
+  "penalty": 0.0002,
+  "easy_axis": 150,
+  "dt": 4.492362982929021e-06,
+  "quench_time": 0.0,
+  "records": [
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.4999999999999998,
+          "y": 0.5000000000000004,
+          "charge": 0.0,
+          "radius_cells": 13.339236349084569
+        }
+      ],
+      "max_disk_charge": 0.0,
+      "time": 0.0,
+      "energy": 125.9308254333822,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.49999999999999956,
+          "y": 0.4999999999999999,
+          "charge": 0.0,
+          "radius_cells": 10.600159896099592
+        }
+      ],
+      "time": 0.005,
+      "energy": 29.276200020400942,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [
+        {
+          "x": 0.5000000000000001,
+          "y": 0.5000000000000001,
+          "charge": 0.0,
+          "radius_cells": 5.201570947860099
+        }
+      ],
+      "time": 0.01,
+      "energy": 17.498044272915614,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.015000000000000003,
+      "energy": 6.536001139521321,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.02,
+      "energy": 1.3331308947776603,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.025,
+      "energy": 0.23253950365585124,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.030000000000000006,
+      "energy": 0.04101173003631883,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.035,
+      "energy": 0.0073649010087329615,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.04,
+      "energy": 0.0013359944994703558,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.045,
+      "energy": 0.00024353445004869176,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.05,
+      "energy": 4.4493873946433006e-05,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.05500000000000001,
+      "energy": 8.137500584298268e-06,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.06000000000000001,
+      "energy": 1.4889752477860772e-06,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.065,
+      "energy": 2.7250689492960543e-07,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.07,
+      "energy": 4.987811784731117e-08,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.075,
+      "energy": 9.129814563906854e-09,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.08,
+      "energy": 1.6711777496378412e-09,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.085,
+      "energy": 3.0590552905363675e-10,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.09,
+      "energy": 5.5995589812014586e-11,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.095,
+      "energy": 1.0249935797556864e-11,
+      "dt": 4.492362982929021e-06
+    },
+    {
+      "charge": 0.0,
+      "ambiguous_triangles": 0,
+      "cores": [],
+      "time": 0.1,
+      "energy": 1.8762419482069176e-12,
+      "dt": 4.492362982929021e-06
+    }
+  ]
+}

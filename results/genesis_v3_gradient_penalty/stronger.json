@@ -1,0 +1,1580 @@
+[
+  {
+    "size": 65,
+    "duration": 0.04,
+    "dt": 8.23045267489712e-06,
+    "exchange_strength": 1,
+    "boundary": "fixed up",
+    "support_radius": 0.25,
+    "minimum_core_radius_cells": 3,
+    "sharp_gradient_penalty": 0.0001,
+    "records": [
+      {
+        "time": 0.0,
+        "fields": {
+          "charged": {
+            "energy": 14.94917866375096,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0732267290298063,
+            "max_out_of_control_plane": 0.996312612182778
+          },
+          "uncharged": {
+            "energy": 11.407838060118523,
+            "charge": 2.6504622345529306e-17,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0732267290298063,
+            "max_out_of_control_plane": 0.5317641238240384
+          },
+          "planar": {
+            "energy": 10.414545254355165,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0732267290298063,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.002,
+        "fields": {
+          "charged": {
+            "energy": 13.739182756347237,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 3.7846987830302403,
+            "core_radius": 0.059135918484847505,
+            "max_out_of_control_plane": 0.9999178341606518
+          },
+          "uncharged": {
+            "energy": 4.258376401444296,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.3726429657254515
+          },
+          "planar": {
+            "energy": 3.7780109516120515,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.004,
+        "fields": {
+          "charged": {
+            "energy": 13.33837848902451,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 3.431831258788849,
+            "core_radius": 0.053622363418575764,
+            "max_out_of_control_plane": 0.991247124106165
+          },
+          "uncharged": {
+            "energy": 2.151503360417614,
+            "charge": 1.3252311172764653e-17,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.24858656003638047
+          },
+          "planar": {
+            "energy": 2.0056137558227585,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.006,
+        "fields": {
+          "charged": {
+            "energy": 13.154477644612275,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 3.431831258788849,
+            "core_radius": 0.053622363418575764,
+            "max_out_of_control_plane": 0.9956323043099551
+          },
+          "uncharged": {
+            "energy": 1.2657902851482659,
+            "charge": 1.3252311172764653e-17,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.17527334128106303
+          },
+          "planar": {
+            "energy": 1.2377387798103414,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.008,
+        "fields": {
+          "charged": {
+            "energy": 13.054183541536176,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 3.0382538898732494,
+            "core_radius": 0.04747271702926952,
+            "max_out_of_control_plane": 0.9993141250953365
+          },
+          "uncharged": {
+            "energy": 0.8269032636946011,
+            "charge": 1.1043592643970545e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.1305282244533567
+          },
+          "planar": {
+            "energy": 0.8385202860651162,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.01,
+        "fields": {
+          "charged": {
+            "energy": 12.993531362968241,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.8209479177387813,
+            "core_radius": 0.04407731121466846,
+            "max_out_of_control_plane": 0.9999896274472344
+          },
+          "uncharged": {
+            "energy": 0.5815166850441602,
+            "charge": 5.521796321985272e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.10152140295020184
+          },
+          "planar": {
+            "energy": 0.6059485699842693,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.012,
+        "fields": {
+          "charged": {
+            "energy": 12.95447798696716,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.8209479177387813,
+            "core_radius": 0.04407731121466846,
+            "max_out_of_control_plane": 0.9993422939971099
+          },
+          "uncharged": {
+            "energy": 0.4320681403821865,
+            "charge": 1.1043592643970545e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.08161294711010293
+          },
+          "planar": {
+            "energy": 0.45972033824891323,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.014000000000000002,
+        "fields": {
+          "charged": {
+            "energy": 12.92835522358262,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.998137124804752
+          },
+          "uncharged": {
+            "energy": 0.3352325795462009,
+            "charge": 2.208718528794109e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.06728221570825374
+          },
+          "planar": {
+            "energy": 0.36264596834508384,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.016,
+        "fields": {
+          "charged": {
+            "energy": 12.91046830430468,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9967419246266824
+          },
+          "uncharged": {
+            "energy": 0.2694321489465693,
+            "charge": 1.1043592643970545e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.05677832909702429
+          },
+          "planar": {
+            "energy": 0.2954402660325054,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.018,
+        "fields": {
+          "charged": {
+            "energy": 12.898039591458668,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9953380733322884
+          },
+          "uncharged": {
+            "energy": 0.22292632327202241,
+            "charge": 2.070673620744477e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.04861964123864063
+          },
+          "planar": {
+            "energy": 0.2472314790442361,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.02,
+        "fields": {
+          "charged": {
+            "energy": 12.889321015069573,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9940139941529964
+          },
+          "uncharged": {
+            "energy": 0.1888928234762356,
+            "charge": -1.5184939885459499e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.042135804131297784
+          },
+          "planar": {
+            "energy": 0.21151338657673535,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.022,
+        "fields": {
+          "charged": {
+            "energy": 12.883165807700763,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9928097451029669
+          },
+          "uncharged": {
+            "energy": 0.16317294699274731,
+            "charge": 1.380449080496318e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.036905069257438396
+          },
+          "planar": {
+            "energy": 0.18422613679126895,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.024,
+        "fields": {
+          "charged": {
+            "energy": 12.8788007369933,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9917395750712634
+          },
+          "uncharged": {
+            "energy": 0.14314169061726842,
+            "charge": 1.311426626471502e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.03253718667194779
+          },
+          "planar": {
+            "energy": 0.16276102408771434,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.026000000000000002,
+        "fields": {
+          "charged": {
+            "energy": 12.87569488611604,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9908038840642964
+          },
+          "uncharged": {
+            "energy": 0.1270983442270377,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.028833420006658814
+          },
+          "planar": {
+            "energy": 0.14540572144425268,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.028000000000000004,
+        "fields": {
+          "charged": {
+            "energy": 12.873479259022169,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9899958031771529
+          },
+          "uncharged": {
+            "energy": 0.11391816847629663,
+            "charge": 1.8636062586700292e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.025693104353211822
+          },
+          "planar": {
+            "energy": 0.1310175306769803,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.03,
+        "fields": {
+          "charged": {
+            "energy": 12.871895259115377,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9893049108204437
+          },
+          "uncharged": {
+            "energy": 0.10284429162193431,
+            "charge": -6.90224540248159e-20,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.02295143205916071
+          },
+          "planar": {
+            "energy": 0.11882304159514862,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.032,
+        "fields": {
+          "charged": {
+            "energy": 12.870760603792498,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9887193612574177
+          },
+          "uncharged": {
+            "energy": 0.0933591967498013,
+            "charge": -3.1060104311167155e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.02054580754946168
+          },
+          "planar": {
+            "energy": 0.10829173326725902,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.034,
+        "fields": {
+          "charged": {
+            "energy": 12.869946267891171,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9882271023230246
+          },
+          "uncharged": {
+            "energy": 0.0851033853867264,
+            "charge": -1.0008255833598307e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.01842566713868491
+          },
+          "planar": {
+            "energy": 0.09905460092440693,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.036,
+        "fields": {
+          "charged": {
+            "energy": 12.869360644133664,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9878165565210917
+          },
+          "uncharged": {
+            "energy": 0.07782294619706699,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.016558960293901595
+          },
+          "planar": {
+            "energy": 0.09085101378088994,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.038,
+        "fields": {
+          "charged": {
+            "energy": 12.868938542395245,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9874769802383735
+          },
+          "uncharged": {
+            "energy": 0.07133528252937134,
+            "charge": 3.278566566178755e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.014906330353099512
+          },
+          "planar": {
+            "energy": 0.08349364839483636,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.04,
+        "fields": {
+          "charged": {
+            "energy": 12.868633489935384,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 2.5854414729132054,
+            "core_radius": 0.040397523014268834,
+            "max_out_of_control_plane": 0.9871986283642092
+          },
+          "uncharged": {
+            "energy": 0.06550646463845548,
+            "charge": 1.7255613506203977e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.013431106661742846
+          },
+          "planar": {
+            "energy": 0.07684516980041214,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "size": 97,
+    "duration": 0.04,
+    "dt": 1.7985611510791368e-06,
+    "exchange_strength": 1,
+    "boundary": "fixed up",
+    "support_radius": 0.25,
+    "minimum_core_radius_cells": 3,
+    "sharp_gradient_penalty": 0.0001,
+    "records": [
+      {
+        "time": 0.0,
+        "fields": {
+          "charged": {
+            "energy": 15.016189502945249,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 6.886811529393324,
+            "core_radius": 0.07173762009784712,
+            "max_out_of_control_plane": 0.9999851261394216
+          },
+          "uncharged": {
+            "energy": 11.420089679079172,
+            "charge": 8.834874115176436e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 6.886811529393324,
+            "core_radius": 0.07173762009784712,
+            "max_out_of_control_plane": 0.533717432654682
+          },
+          "planar": {
+            "energy": 10.420318884517275,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 6.886811529393324,
+            "core_radius": 0.07173762009784712,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.002,
+        "fields": {
+          "charged": {
+            "energy": 13.830707798136434,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 5.890312181373172,
+            "core_radius": 0.061357418555970544,
+            "max_out_of_control_plane": 0.9999688220441723
+          },
+          "uncharged": {
+            "energy": 4.2531801905828495,
+            "charge": 1.4356670437161707e-17,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.3732328624029165
+          },
+          "planar": {
+            "energy": 3.773579566307581,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.004,
+        "fields": {
+          "charged": {
+            "energy": 13.452762835422572,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 5.322553886092406,
+            "core_radius": 0.05544326964679589,
+            "max_out_of_control_plane": 0.9969550369603057
+          },
+          "uncharged": {
+            "energy": 2.1475352707818187,
+            "charge": 3.3130777931911632e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.24913261172559725
+          },
+          "planar": {
+            "energy": 2.002370965487824,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.006,
+        "fields": {
+          "charged": {
+            "energy": 13.285388349407313,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 5.077706251929807,
+            "core_radius": 0.052892773457602155,
+            "max_out_of_control_plane": 0.9999742535124687
+          },
+          "uncharged": {
+            "energy": 1.2635038177518507,
+            "charge": 1.5875164425707657e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.1751509682077094
+          },
+          "planar": {
+            "energy": 1.2357811245836907,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.008,
+        "fields": {
+          "charged": {
+            "energy": 13.196719964215323,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0488178193532042,
+            "max_out_of_control_plane": 0.9992341392579636
+          },
+          "uncharged": {
+            "energy": 0.8255315356426921,
+            "charge": -2.5538307989181883e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.13041938582581236
+          },
+          "planar": {
+            "energy": 0.8372866784500184,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.01,
+        "fields": {
+          "charged": {
+            "energy": 13.144125958611678,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0488178193532042,
+            "max_out_of_control_plane": 0.9975096576398417
+          },
+          "uncharged": {
+            "energy": 0.5806348866444778,
+            "charge": -7.592469942729749e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.10139129733564527
+          },
+          "planar": {
+            "energy": 0.6051219084686043,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.012,
+        "fields": {
+          "charged": {
+            "energy": 13.110531126433198,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0488178193532042,
+            "max_out_of_control_plane": 0.9957346699748457
+          },
+          "uncharged": {
+            "energy": 0.43146609481746634,
+            "charge": 4.003302333439323e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.08152767835350665
+          },
+          "planar": {
+            "energy": 0.45913660372773896,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.014000000000000002,
+        "fields": {
+          "charged": {
+            "energy": 13.087962662197636,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.686510657907603,
+            "core_radius": 0.0488178193532042,
+            "max_out_of_control_plane": 0.994214430128058
+          },
+          "uncharged": {
+            "energy": 0.33480233462639347,
+            "charge": 4.986872303292949e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0673056464584223
+          },
+          "planar": {
+            "energy": 0.3622174820475925,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.016,
+        "fields": {
+          "charged": {
+            "energy": 13.07223368687843,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9932795715791493
+          },
+          "uncharged": {
+            "energy": 0.26911426351302237,
+            "charge": -1.9067452924355393e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.05672437317259045
+          },
+          "planar": {
+            "energy": 0.2951169409682984,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.018,
+        "fields": {
+          "charged": {
+            "energy": 13.060943334795555,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9940866510710852
+          },
+          "uncharged": {
+            "energy": 0.2226854843535549,
+            "charge": -6.98852347001261e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.04858447952175988
+          },
+          "planar": {
+            "energy": 0.2469824504983626,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.02,
+        "fields": {
+          "charged": {
+            "energy": 13.05262570271868,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9945858183543647
+          },
+          "uncharged": {
+            "energy": 0.18870657862698734,
+            "charge": 2.747956450862983e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.04213279040475829
+          },
+          "planar": {
+            "energy": 0.2113183095044252,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.022,
+        "fields": {
+          "charged": {
+            "energy": 13.046346083749217,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9948741574177785
+          },
+          "uncharged": {
+            "energy": 0.16302625606256638,
+            "charge": 3.321705599944265e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.03687897063283492
+          },
+          "planar": {
+            "energy": 0.18407092009835474,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.024,
+        "fields": {
+          "charged": {
+            "energy": 13.04149044160347,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9950122856034129
+          },
+          "uncharged": {
+            "energy": 0.14302411144673088,
+            "charge": -1.1216148779032583e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.03251444293317629
+          },
+          "planar": {
+            "energy": 0.16263559749646095,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.026000000000000002,
+        "fields": {
+          "charged": {
+            "energy": 13.037646833862125,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9950394892961557
+          },
+          "uncharged": {
+            "energy": 0.12700245977886981,
+            "charge": 3.9256520726614044e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.02883872170262003
+          },
+          "planar": {
+            "energy": 0.14530275944871096,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.028000000000000004,
+        "fields": {
+          "charged": {
+            "energy": 13.034534551189992,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.99498220441129
+          },
+          "uncharged": {
+            "energy": 0.11383863597654509,
+            "charge": -1.0094533901129326e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.025673206383276668
+          },
+          "planar": {
+            "energy": 0.13093165510109606,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.03,
+        "fields": {
+          "charged": {
+            "energy": 13.031959899424706,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9948589124060088
+          },
+          "uncharged": {
+            "energy": 0.10277722836938542,
+            "charge": -1.3394669984190837e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.022932498029252096
+          },
+          "planar": {
+            "energy": 0.11875028565957374,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.032,
+        "fields": {
+          "charged": {
+            "energy": 13.029787746373978,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9946830377761313
+          },
+          "uncharged": {
+            "energy": 0.09330176373500448,
+            "charge": -1.0871036508908505e-18,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.020541236984354595
+          },
+          "planar": {
+            "energy": 0.10822916350617491,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.034,
+        "fields": {
+          "charged": {
+            "energy": 13.027922812714019,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9944646991302125
+          },
+          "uncharged": {
+            "energy": 0.08505349600080002,
+            "charge": 5.543365838868027e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.018430319142565137
+          },
+          "planar": {
+            "energy": 0.09900004307808868,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.036,
+        "fields": {
+          "charged": {
+            "energy": 13.026297179892211,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9942117872107853
+          },
+          "uncharged": {
+            "energy": 0.07777905863363813,
+            "charge": 4.227625309019974e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.016560208248895442
+          },
+          "planar": {
+            "energy": 0.09080285151259662,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.038,
+        "fields": {
+          "charged": {
+            "energy": 13.024861855759893,
+            "charge": -1.0000000000000002,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9939306403084579
+          },
+          "uncharged": {
+            "energy": 0.07129625035220671,
+            "charge": -4.141347241488954e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.014898241070791182
+          },
+          "planar": {
+            "energy": 0.0834506748629556,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      },
+      {
+        "time": 0.04,
+        "fields": {
+          "charged": {
+            "energy": 13.02358103196032,
+            "charge": -1.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 4.406461512053774,
+            "core_radius": 0.04590064075056014,
+            "max_out_of_control_plane": 0.9936264751841999
+          },
+          "uncharged": {
+            "energy": 0.06547142871495731,
+            "charge": 2.437355407751312e-19,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.013422438607105429
+          },
+          "planar": {
+            "energy": 0.07680647825043846,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          },
+          "uniform": {
+            "energy": 0.0,
+            "charge": 0.0,
+            "ambiguous_triangles": 0,
+            "core_radius_cells": 0.0,
+            "core_radius": 0.0,
+            "max_out_of_control_plane": 0.0
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,5 +1,14 @@
 # Local Candidate-Associated Structure Weakening Causally Reduces Strict Pair Continuation
 
+> **Audit addendum, 2026-10-31:** the original narrative below is preserved.
+> Replaying the archived 30-seed raw records gives medians **21 / 4.5 / 21**
+> (untouched / candidate / background), rather than 22 / 5 / 22. The reported
+> p≈0.000106 matches a one-sided `less` Wilcoxon test; the corresponding
+> two-sided value is approximately **0.000213**. Sidedness was not specified
+> in the original prose. The local causal conclusion is retained within its
+> stated regime. See the [closed baseline audit](../docs/Genesis%20Scheme%20Vault/40-Experiments/V1%20Baseline%20Audit%20%E2%80%94%202026-10-31.md)
+> for exact settings, hashes, provenance limits and cumulative coverage.
+
 ## Headline
 
 Across a fixed 30-seed matched perturbation replication, weakening the

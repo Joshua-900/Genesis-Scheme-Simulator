@@ -5,6 +5,108 @@
     "schema_version": 1
   },
   "modules": {
+    "src/genesis_equilibria/__init__.py": {
+      "description": "Opt-in equilibrium study package, never imported by preserved engines.",
+      "status": "exploratory",
+      "notes": "See V1 Equilibria — Search and Shell Balance in the vault.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_equilibria/equations.py": {
+      "description": "Batched source-exact staged equations, reduced equilibrium residual and full active-state derivative.",
+      "status": "exploratory",
+      "notes": "Verified against unchanged V1; tension elimination is for roots only, not stability.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_equilibria/search.py": {
+      "description": "Frozen bounded root search, independent source acceptance and active-state stability checks.",
+      "status": "exploratory",
+      "notes": "First search found no qualifying witness; no exhaustive nonexistence claim.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_equilibria/shell_balance.py": {
+      "description": "Constructed-field algebra checks of the exact weighted shell-curvature equilibrium budget.",
+      "status": "reference",
+      "notes": "Separate post-search deduction, not a new root, simulation or retuned gate.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_equilibria/render.py": {
+      "description": "Saved-data equilibrium attempt log and residual plot.",
+      "status": "exploratory",
+      "notes": "Does not solve or change any threshold.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/stabilization_math.py": {
+      "description": "Closed-form V1 mobility and memory bounds with one-update transcription checks on archived starting states.",
+      "status": "reference",
+      "notes": "Source-based stabilization derivation; no new trajectory campaign, fitted predictor or engine change.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_motion/__init__.py": {
+      "description": "Opt-in vortex motion experiment package; never imported by preserved engines.",
+      "status": "exploratory",
+      "notes": "See V1 Vortex Motion Experiment in the vault.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_motion/observations.py": {
+      "description": "Separate periodic conservative tracker, smooth structural reset and local object descriptors.",
+      "status": "exploratory",
+      "notes": "Historical tracker unchanged; strict observed continuation is not proof of annihilation.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_motion/evaluation.py": {
+      "description": "Fixed motion and continuation forecasts with disjoint seed cohorts and matched controls.",
+      "status": "exploratory",
+      "notes": "Both first full predictive gates not passed; no tuning on these held-out cohorts.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_motion/experiment.py": {
+      "description": "Matched V1 structural-state encounter experiment with frozen protocol and engine checks.",
+      "status": "exploratory",
+      "notes": "One selected pair per fresh seed in a populated periodic field; not isolated two-body data.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_motion/render.py": {
+      "description": "Saved-data encounter animation and all-comparator tables and plots.",
+      "status": "exploratory",
+      "notes": "Does not simulate or fit; presentation source revision fingerprinted separately.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/v1_baseline.py": {
+      "description": "Closed V1 baseline audit: replay archived evidence and equation probes without rerunning the old simulation cohorts.",
+      "status": "reference",
+      "notes": "Preserves V1/V2; use the vault Audit Ledger and Cumulative Audit Protocol before repeating covered work.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/verify.py": {
+      "description": "Lightweight source/evidence/environment fingerprint comparison for closed audits.",
+      "status": "active",
+      "notes": "Reports deltas without rerunning experiments; matching fingerprints inherit only the recorded scope.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/__init__.py": {
+      "description": "Opt-in analysis package, never imported by V1 or V2 engines.",
+      "status": "exploratory",
+      "notes": "Preserves both engines; see Genesis Multiscale Organization Audit in the vault.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/analysis.py": {
+      "description": "Classical block/shell descriptors, snapshot controls and seed-grouped held-out evaluation.",
+      "status": "exploratory",
+      "notes": "No quantum entropy, bulk geometry or added spatial dimension is inferred.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/v1_adapter.py": {
+      "description": "Frozen calls into unchanged V1 with detached snapshots and cloned perturbation branches.",
+      "status": "exploratory",
+      "notes": "Exact V1 preset parity tested; all V1/V2 source hashes checked before and after collection.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
+    "src/genesis_audit/report.py": {
+      "description": "Read saved audit metrics and render Markdown tables and a static figure.",
+      "status": "exploratory",
+      "notes": "Does not rerun or tune models.",
+      "last_modified": "2026-10-31T00:00:00-05:00"
+    },
     "src/genesis_grid/__init__.py": {
       "description": "Public re-exports for the active engine package.",
       "status": "active",

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "created_utc": "2026-11-02T21:12:24.773420+00:00",
+  "simulation": {
+    "seed": 7,
+    "rules": {
+      "size": 640,
+      "agents": 150000,
+      "sensor_distance": 5,
+      "sensor_angle": 0.8,
+      "turn_angle": 0.48,
+      "speed": 1.35,
+      "diffusion": 0.55,
+      "retention": 0.975,
+      "jitter": 0.025,
+      "crowding": 2.5,
+      "flow": 0.8,
+      "mode_m": 3,
+      "mode_n": 5
+    },
+    "tick": 1060,
+    "rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 35727196161359781599883500109275456460,
+        "inc": 261136684632268670825940853076396136793
+      },
+      "has_uint32": 0,
+      "uinteger": 413418154
+    }
+  },
+  "look": {
+    "palette": "Pearl",
+    "exposure": 1.3,
+    "bloom": 0.18
+  },
+  "session": {
+    "guidance": 0.0,
+    "target_guidance": 0.0,
+    "transition_ticks": 100
+  },
+  "numpy_version": "1.26.4",
+  "state_sha256": "735f4e2a228c44e085e3c5a2b3f755b5c900b562fe7d058e027e7f16a4d9f0ab",
+  "sources": {
+    "__init__.py": "4a4c1fbda251f605822eaac05e533ec7df45c8a7f829bd5bf85c7caa00736864",
+    "__main__.py": "74bde17c4e55edd711220afcd4412c9e1b24b55a0a09b72f75f41f7fcf91b008",
+    "adapters/desktop.py": "d9e7c300df8a505caadc6cab32482fce331250f7f5fc2950e97ce1830a5bb6d1",
+    "adapters/gpu.py": "05a2832dd3153c788454d3fac885d6ca6673b94ad32c0bad77845650871f64db",
+    "adapters/render.py": "f27106b7efb9787f2b101d21858ec7834c4adfad7beadcd0b10730386dfa4d82",
+    "adapters/storage.py": "9f0bdf6591803c1bd1fb7cbab4ca0386023b3f89af3494cbb703e8e3c86a46d8",
+    "adapters/__init__.py": "ff93db6ad9e9b09795e6a4d6073467246e5236dddf72fe344b7e9dacab79f793",
+    "application/session.py": "79a365942e37f92ca40b01d6301a04d2af57f2847f167d75488f6f6af735cccb",
+    "application/__init__.py": "37d87a5678e75b1b345402968ffbbc2d7f0608a61ac88c5c52fae83327edc0ce",
+    "domain/model.py": "7817a9884542e4b121f1779f60972f41527f8a0012f7d027146ac1df514d96a9",
+    "domain/__init__.py": "88ff64d5132d7284f61e4be5fe3baa09ade8e4cc59e6d38f021610a1fafcbcb1"
+  }
+}

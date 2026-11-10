@@ -1,0 +1,1069 @@
+{
+  "size": 97,
+  "duration": 0.08,
+  "dt": 9.384384384384384e-07,
+  "exchange_strength": 1,
+  "boundary": "fixed up",
+  "support_radius": 0.1,
+  "minimum_core_radius_cells": 3,
+  "width": 1,
+  "sharp_gradient_penalty": 0.0002,
+  "easy_axis": 30,
+  "pair_separation": 0.20833333333333334,
+  "records": [
+    {
+      "time": 0.0,
+      "fields": {
+        "isolated": {
+          "energy": 16.87497502985564,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 2.5854414729132054,
+          "core_radius": 0.026931682009512556,
+          "tilt_radius": 0.035499064242293696,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10416666666666667
+            },
+            "right": {
+              "charge": 0.0,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.996312612182778
+        },
+        "same_charge": {
+          "energy": 33.749950059711274,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.656366395715726,
+          "core_radius": 0.03808714995537214,
+          "tilt_radius": 0.05020325810300552,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10416666666666667
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.10416666666666666
+            }
+          },
+          "max_out_of_control_plane": 0.996312612182778
+        },
+        "opposite_charge": {
+          "energy": 33.749950059711274,
+          "charge": -1.1102230246251565e-16,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.656366395715726,
+          "core_radius": 0.03808714995537214,
+          "tilt_radius": 0.05020325810300552,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10416666666666667
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.10416666666666666
+            }
+          },
+          "max_out_of_control_plane": 0.996312612182778
+        }
+      }
+    },
+    {
+      "time": 0.005,
+      "fields": {
+        "isolated": {
+          "energy": 14.751893540729657,
+          "charge": -0.9999999999999998,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.0382538898732494,
+          "core_radius": 0.03164847801951301,
+          "tilt_radius": 0.046374367773330656,
+          "halves": {
+            "left": {
+              "charge": -0.9949171701297973,
+              "x": -0.10481993402506588
+            },
+            "right": {
+              "charge": -0.005082829870202536,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9998676501670274
+        },
+        "same_charge": {
+          "energy": 29.897519483646864,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.068428945128219,
+          "core_radius": 0.04237946817841895,
+          "tilt_radius": 0.0636262811403976,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.1047782849848263
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.10477828498482632
+            }
+          },
+          "max_out_of_control_plane": 0.999994473676723
+        },
+        "opposite_charge": {
+          "energy": 30.25602202286675,
+          "charge": -1.3877787807814457e-16,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.9088200952233594,
+          "core_radius": 0.04071687599190999,
+          "tilt_radius": 0.06187692004260627,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10595077554860216
+            },
+            "right": {
+              "charge": 0.9999999999999998,
+              "x": 0.10595077554860219
+            }
+          },
+          "max_out_of_control_plane": 0.9993557604735497
+        }
+      }
+    },
+    {
+      "time": 0.01,
+      "fields": {
+        "isolated": {
+          "energy": 14.465537288412287,
+          "charge": -0.9999999999999999,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.431831258788849,
+          "core_radius": 0.035748242279050504,
+          "tilt_radius": 0.05361363705732212,
+          "halves": {
+            "left": {
+              "charge": -0.9902058773139801,
+              "x": -0.10549588746399745
+            },
+            "right": {
+              "charge": -0.009794122686019688,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9898480619868949
+        },
+        "same_charge": {
+          "energy": 29.370780598089965,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.652426491681278,
+          "core_radius": 0.04846277595501331,
+          "tilt_radius": 0.07282678260411686,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10579264701763
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.10579264701762998
+            }
+          },
+          "max_out_of_control_plane": 0.994181962754496
+        },
+        "opposite_charge": {
+          "energy": 29.90337555594961,
+          "charge": 5.551115123125783e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.51351666838205,
+          "core_radius": 0.047015798628979685,
+          "tilt_radius": 0.06831625998115524,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10928781153162635
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.10928781153162634
+            }
+          },
+          "max_out_of_control_plane": 0.991747150665093
+        }
+      }
+    },
+    {
+      "time": 0.015,
+      "fields": {
+        "isolated": {
+          "energy": 14.350549274267248,
+          "charge": -0.9999999999999999,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.7846987830302403,
+          "core_radius": 0.039423945656565,
+          "tilt_radius": 0.05827885878836787,
+          "halves": {
+            "left": {
+              "charge": -0.9867077844877574,
+              "x": -0.10603044303960228
+            },
+            "right": {
+              "charge": -0.013292215512242602,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9941185721984481
+        },
+        "same_charge": {
+          "energy": 29.142866561409008,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.918490759365935,
+          "core_radius": 0.05123427874339515,
+          "tilt_radius": 0.0789879433620233,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.10687746139004689
+            },
+            "right": {
+              "charge": -1.0000000000000002,
+              "x": 0.10687746139004684
+            }
+          },
+          "max_out_of_control_plane": 0.988655884422873
+        },
+        "opposite_charge": {
+          "energy": 29.726955051888748,
+          "charge": -1.942890293094024e-16,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.853342309955121,
+          "core_radius": 0.050555649062032505,
+          "tilt_radius": 0.07216333475265846,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.11291598161224985
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.11291598161224986
+            }
+          },
+          "max_out_of_control_plane": 0.9887844737990439
+        }
+      }
+    },
+    {
+      "time": 0.02,
+      "fields": {
+        "isolated": {
+          "energy": 14.294936866610438,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.7846987830302403,
+          "core_radius": 0.039423945656565,
+          "tilt_radius": 0.06154920172034245,
+          "halves": {
+            "left": {
+              "charge": -0.9841082682299334,
+              "x": -0.10644283173805132
+            },
+            "right": {
+              "charge": -0.01589173177006678,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.99819664053587
+        },
+        "same_charge": {
+          "energy": 29.025476422815885,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08342044218193245,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.1079726516402586
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.1079726516402586
+            }
+          },
+          "max_out_of_control_plane": 0.9935490176470078
+        },
+        "opposite_charge": {
+          "energy": 29.609563998880105,
+          "charge": -5.551115123125783e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.787307364817192,
+          "core_radius": 0.04986778505017908,
+          "tilt_radius": 0.07483527833829082,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.11650240375706977
+            },
+            "right": {
+              "charge": 1.0000000000000002,
+              "x": 0.11650240375706974
+            }
+          },
+          "max_out_of_control_plane": 0.9912642131687054
+        }
+      }
+    },
+    {
+      "time": 0.025,
+      "fields": {
+        "isolated": {
+          "energy": 14.265702889953232,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.7846987830302403,
+          "core_radius": 0.039423945656565,
+          "tilt_radius": 0.06393573887558077,
+          "halves": {
+            "left": {
+              "charge": -0.9821483391818872,
+              "x": -0.10675960846399238
+            },
+            "right": {
+              "charge": -0.01785166081811295,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9996421216275468
+        },
+        "same_charge": {
+          "energy": 28.959741591939153,
+          "charge": -2.0000000000000004,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08670891453999914,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.10905827385949557
+            },
+            "right": {
+              "charge": -1.0000000000000002,
+              "x": 0.10905827385949557
+            }
+          },
+          "max_out_of_control_plane": 0.995368866102518
+        },
+        "opposite_charge": {
+          "energy": 29.521624536161102,
+          "charge": -5.551115123125783e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.853342309955121,
+          "core_radius": 0.050555649062032505,
+          "tilt_radius": 0.07682818112930899,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.11994687117047484
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.11994687117047487
+            }
+          },
+          "max_out_of_control_plane": 0.9840228897735431
+        }
+      }
+    },
+    {
+      "time": 0.03,
+      "fields": {
+        "isolated": {
+          "energy": 14.249636178043252,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.7846987830302403,
+          "core_radius": 0.039423945656565,
+          "tilt_radius": 0.06571545113011108,
+          "halves": {
+            "left": {
+              "charge": -0.9806525207893269,
+              "x": -0.10700193686632466
+            },
+            "right": {
+              "charge": -0.01934747921067322,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.999995865325456
+        },
+        "same_charge": {
+          "energy": 28.9207901279179,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.352372348458314,
+          "core_radius": 0.0557538786297741,
+          "tilt_radius": 0.08918461455690882,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.1101259284094066
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11012592840940662
+            }
+          },
+          "max_out_of_control_plane": 0.9954900142166898
+        },
+        "opposite_charge": {
+          "energy": 29.45137275209348,
+          "charge": -3.469446951953614e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.853342309955121,
+          "core_radius": 0.050555649062032505,
+          "tilt_radius": 0.0783766103740007,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.12322200951551365
+            },
+            "right": {
+              "charge": 1.0000000000000002,
+              "x": 0.12322200951551363
+            }
+          },
+          "max_out_of_control_plane": 0.9832345754766669
+        }
+      }
+    },
+    {
+      "time": 0.035,
+      "fields": {
+        "isolated": {
+          "energy": 14.240565797079125,
+          "charge": -1.0000000000000002,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.949327084834294,
+          "core_radius": 0.04113882380035723,
+          "tilt_radius": 0.06705963060877851,
+          "halves": {
+            "left": {
+              "charge": -0.9795008425973719,
+              "x": -0.10718589144617141
+            },
+            "right": {
+              "charge": -0.02049915740262824,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9998921048146651
+        },
+        "same_charge": {
+          "energy": 28.89646837315808,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.352372348458314,
+          "core_radius": 0.0557538786297741,
+          "tilt_radius": 0.09106176707573545,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.11117214643543462
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11117214643543466
+            }
+          },
+          "max_out_of_control_plane": 0.9945087967874351
+        },
+        "opposite_charge": {
+          "energy": 29.39295308227705,
+          "charge": -7.112366251504909e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.07961454217711719,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.12632624710225143
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.1263262471022514
+            }
+          },
+          "max_out_of_control_plane": 0.9899868711604863
+        }
+      }
+    },
+    {
+      "time": 0.04,
+      "fields": {
+        "isolated": {
+          "energy": 14.235353242618665,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 3.949327084834294,
+          "core_radius": 0.04113882380035723,
+          "tilt_radius": 0.06808300101225359,
+          "halves": {
+            "left": {
+              "charge": -0.9786085468821754,
+              "x": -0.10732377293232669
+            },
+            "right": {
+              "charge": -0.02139145311782474,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9996129657914886
+        },
+        "same_charge": {
+          "energy": 28.880390086007573,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.352372348458314,
+          "core_radius": 0.0557538786297741,
+          "tilt_radius": 0.09248978113175338,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11219590586051845
+            },
+            "right": {
+              "charge": -1.0000000000000002,
+              "x": 0.11219590586051842
+            }
+          },
+          "max_out_of_control_plane": 0.9927177303039632
+        },
+        "opposite_charge": {
+          "energy": 29.343054904278045,
+          "charge": -3.469446951953614e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08062734461511997,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.12926750209133828
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.1292675020913383
+            }
+          },
+          "max_out_of_control_plane": 0.9899745638831932
+        }
+      }
+    },
+    {
+      "time": 0.045,
+      "fields": {
+        "isolated": {
+          "energy": 14.232319434967975,
+          "charge": -1.0000000000000002,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.06886625511478961,
+          "halves": {
+            "left": {
+              "charge": -0.977913900943294,
+              "x": -0.1074251343954059
+            },
+            "right": {
+              "charge": -0.02208609905670623,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9992875127583237
+        },
+        "same_charge": {
+          "energy": 28.86906584642232,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.4115163798060095,
+          "core_radius": 0.05636996228964593,
+          "tilt_radius": 0.09357734257544748,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11319742486022606
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11319742486022608
+            }
+          },
+          "max_out_of_control_plane": 0.9943864984310873
+        },
+        "opposite_charge": {
+          "energy": 29.299632476068265,
+          "charge": 6.245004513516506e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08147280721818692,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.13205691429109317
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.13205691429109317
+            }
+          },
+          "max_out_of_control_plane": 0.9844051097574805
+        }
+      }
+    },
+    {
+      "time": 0.05,
+      "fields": {
+        "isolated": {
+          "energy": 14.230536590641151,
+          "charge": -1.0000000000000002,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.06946792263899725,
+          "halves": {
+            "left": {
+              "charge": -0.9773709038115175,
+              "x": -0.1074974841559765
+            },
+            "right": {
+              "charge": -0.022629096188482845,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9989735365644073
+        },
+        "same_charge": {
+          "energy": 28.860542822937617,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.4115163798060095,
+          "core_radius": 0.05636996228964593,
+          "tilt_radius": 0.09440538156777942,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11417751870768872
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11417751870768873
+            }
+          },
+          "max_out_of_control_plane": 0.9965674574870147
+        },
+        "opposite_charge": {
+          "energy": 29.261329205175517,
+          "charge": 5.551115123125783e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08219141675632877,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.1347062996177738
+            },
+            "right": {
+              "charge": 1.0000000000000002,
+              "x": 0.1347062996177738
+            }
+          },
+          "max_out_of_control_plane": 0.9916126476012634
+        }
+      }
+    },
+    {
+      "time": 0.055,
+      "fields": {
+        "isolated": {
+          "energy": 14.229480683424677,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.0699313103128032,
+          "halves": {
+            "left": {
+              "charge": -0.9769447440980208,
+              "x": -0.10754676856046318
+            },
+            "right": {
+              "charge": -0.023055255901979245,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9986944520359529
+        },
+        "same_charge": {
+          "energy": 28.85370951819602,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.527906391541368,
+          "core_radius": 0.05758235824522258,
+          "tilt_radius": 0.09503495980667354,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11513725146109687
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11513725146109687
+            }
+          },
+          "max_out_of_control_plane": 0.9981862978419362
+        },
+        "opposite_charge": {
+          "energy": 29.227191991119177,
+          "charge": 6.938893903907228e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.170882945826411,
+          "core_radius": 0.05386336401902511,
+          "tilt_radius": 0.0828121527549363,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.13722709596594074
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.13722709596594074
+            }
+          },
+          "max_out_of_control_plane": 0.9947482492360329
+        }
+      }
+    },
+    {
+      "time": 0.06,
+      "fields": {
+        "isolated": {
+          "energy": 14.228851052806915,
+          "charge": -1.0000000000000002,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.07028888856080016,
+          "halves": {
+            "left": {
+              "charge": -0.9766088190812835,
+              "x": -0.10757771626297356
+            },
+            "right": {
+              "charge": -0.02339118091871669,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9984570218970862
+        },
+        "same_charge": {
+          "energy": 28.84792472535297,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.753627391751592,
+          "core_radius": 0.05993361866407908,
+          "tilt_radius": 0.09551250180592433,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11607775100255704
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11607775100255704
+            }
+          },
+          "max_out_of_control_plane": 0.9992771881795094
+        },
+        "opposite_charge": {
+          "energy": 29.19651933494485,
+          "charge": -8.326672684688674e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.170882945826411,
+          "core_radius": 0.05386336401902511,
+          "tilt_radius": 0.08335608470630075,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.13962994272228227
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.1396299427222823
+            }
+          },
+          "max_out_of_control_plane": 0.993667735945982
+        }
+      }
+    },
+    {
+      "time": 0.065,
+      "fields": {
+        "isolated": {
+          "energy": 14.228473166110259,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.07056522496922008,
+          "halves": {
+            "left": {
+              "charge": -0.9763426780905072,
+              "x": -0.10759409414301474
+            },
+            "right": {
+              "charge": -0.02365732190949289,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9982601991801293
+        },
+        "same_charge": {
+          "energy": 28.84281406521417,
+          "charge": -2.0000000000000004,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.753627391751592,
+          "core_radius": 0.05993361866407908,
+          "tilt_radius": 0.0958734649901582,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.11700011547095546
+            },
+            "right": {
+              "charge": -1.0000000000000002,
+              "x": 0.11700011547095546
+            }
+          },
+          "max_out_of_control_plane": 0.9998663246292868
+        },
+        "opposite_charge": {
+          "energy": 29.168775629740708,
+          "charge": 5.551115123125783e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08383873579494419,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.1419245452918664
+            },
+            "right": {
+              "charge": 1.0000000000000002,
+              "x": 0.1419245452918664
+            }
+          },
+          "max_out_of_control_plane": 0.9890288564489544
+        }
+      }
+    },
+    {
+      "time": 0.07,
+      "fields": {
+        "isolated": {
+          "energy": 14.228244793101874,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.0707790265591045,
+          "halves": {
+            "left": {
+              "charge": -0.976130545212368,
+              "x": -0.10759890392087659
+            },
+            "right": {
+              "charge": -0.02386945478763198,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9980996092176266
+        },
+        "same_charge": {
+          "energy": 28.838156297060827,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.753627391751592,
+          "core_radius": 0.05993361866407908,
+          "tilt_radius": 0.09614500578976688,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000002,
+              "x": -0.11790537033690748
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11790537033690754
+            }
+          },
+          "max_out_of_control_plane": 0.9999761931219655
+        },
+        "opposite_charge": {
+          "energy": 29.143540067585842,
+          "charge": 0.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.352372348458314,
+          "core_radius": 0.0557538786297741,
+          "tilt_radius": 0.08427168698351718,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.1441196701968418
+            },
+            "right": {
+              "charge": 1.0000000000000002,
+              "x": 0.14411967019684177
+            }
+          },
+          "max_out_of_control_plane": 0.992494377031773
+        }
+      }
+    },
+    {
+      "time": 0.075,
+      "fields": {
+        "isolated": {
+          "energy": 14.228105628280733,
+          "charge": -1.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.259537945889915,
+          "core_radius": 0.04437018693635328,
+          "tilt_radius": 0.07094460303251005,
+          "halves": {
+            "left": {
+              "charge": -0.9759602269294021,
+              "x": -0.10759453654896446
+            },
+            "right": {
+              "charge": -0.024039773070597972,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9979698064383496
+        },
+        "same_charge": {
+          "energy": 28.8338188967174,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.641895835477563,
+          "core_radius": 0.05876974828622461,
+          "tilt_radius": 0.0963479583203953,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11879445288784315
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11879445288784315
+            }
+          },
+          "max_out_of_control_plane": 0.9996277332511166
+        },
+        "opposite_charge": {
+          "energy": 29.120474607207708,
+          "charge": 5.551115123125783e-17,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.108953969950291,
+          "core_radius": 0.05321827052031553,
+          "tilt_radius": 0.08466368719342304,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.1462231969847378
+            },
+            "right": {
+              "charge": 1.0,
+              "x": 0.1462231969847378
+            }
+          },
+          "max_out_of_control_plane": 0.9962644533538779
+        }
+      }
+    },
+    {
+      "time": 0.08,
+      "fields": {
+        "isolated": {
+          "energy": 14.228019894350346,
+          "charge": -1.0000000000000002,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 4.3336224206596095,
+          "core_radius": 0.04514190021520426,
+          "tilt_radius": 0.07107293695414396,
+          "halves": {
+            "left": {
+              "charge": -0.9758222887226391,
+              "x": -0.10758289497453644
+            },
+            "right": {
+              "charge": -0.024177711277361087,
+              "x": null
+            }
+          },
+          "max_out_of_control_plane": 0.9978653708547292
+        },
+        "same_charge": {
+          "energy": 28.829721153938326,
+          "charge": -2.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.527906391541368,
+          "core_radius": 0.05758235824522258,
+          "tilt_radius": 0.09649832255699312,
+          "halves": {
+            "left": {
+              "charge": -1.0,
+              "x": -0.11966821093860534
+            },
+            "right": {
+              "charge": -1.0,
+              "x": 0.11966821093860536
+            }
+          },
+          "max_out_of_control_plane": 0.9988413816268965
+        },
+        "opposite_charge": {
+          "energy": 29.099302932511257,
+          "charge": 0.0,
+          "ambiguous_triangles": 0,
+          "core_radius_cells": 5.170882945826411,
+          "core_radius": 0.05386336401902511,
+          "tilt_radius": 0.0850214320088539,
+          "halves": {
+            "left": {
+              "charge": -1.0000000000000004,
+              "x": -0.1482421922313221
+            },
+            "right": {
+              "charge": 1.0000000000000004,
+              "x": 0.14824219223132212
+            }
+          },
+          "max_out_of_control_plane": 0.9970943303008095
+        }
+      }
+    }
+  ]
+}

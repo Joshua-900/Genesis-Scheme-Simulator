@@ -1,0 +1,24 @@
+{
+  "platform": "windows",
+  "gpu_backend": "CanvasBackendDesktop",
+  "tests": 76,
+  "visible_surface_pixels": 32155,
+  "camera_orbit_changes_pixels": true,
+  "camera_orbit_preserves_recipe": true,
+  "native_surface_erase": true,
+  "old_v2_recipe_replayed": true,
+  "demo_seed": 7,
+  "demo_update": 1000,
+  "orbit_frames": 36,
+  "orbit_capture_seconds": 3.2603342999937013,
+  "animation": "camera orbit only; field paused at update 1000",
+  "export": "results\\torus_view_2026-11-01\\exports\\20261101T211218011139Z_seed7_u1000",
+  "camera": {
+    "yaw": -24.0,
+    "tilt": 55.0,
+    "roll": -12.0,
+    "zoom": 1.0
+  },
+  "classic_and_vacancy_dynamics_sources_unchanged": true,
+  "v1_audit_fingerprints_match": true
+}

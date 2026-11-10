@@ -1,0 +1,54 @@
+{
+  "stage": "B: intervention calibration only",
+  "created_utc": "2026-11-01T16:43:21.323651+00:00",
+  "config": {
+    "inner": 1.0,
+    "outer": 3.0,
+    "magnitude": 1.0,
+    "inverse_tolerance": 1e-12,
+    "inverse_iterations": 512,
+    "minimum_phase_norm": 0.2,
+    "coordinate_tolerance": 1e-10,
+    "core_value_tolerance": 1e-10,
+    "phase_roundtrip_rms_limit": 0.35,
+    "tau_roundtrip_relative_limit": 0.25,
+    "displacement_roundtrip_relative_limit": 0.25,
+    "compression_roundtrip_relative_limit": 0.5
+  },
+  "seeds": [
+    1005,
+    3001
+  ],
+  "baseline_verification": {
+    "audit_id": "v1_baseline_audit_2026-10-31",
+    "manifest_sha256": "86220b414180b45bddbb812023e07774af8d0de30f6f8270174b9ea3e344dd7a",
+    "fingerprints_match": true,
+    "environment_matches": true,
+    "changes": [],
+    "environment_differences": {},
+    "meaning": "Unchanged reviewed inputs inherit only this audit's stated coverage. New evidence of a defect can reopen a specific claim; a fingerprint is not a proof of scientific completeness."
+  },
+  "preflight_sha256": "d3dc1470bea61530cd42e8cf1637cdf02ebaa19c6b5ed6ac8388cb284b8791d5",
+  "archive_sha256": {
+    "seed_1005.npz": "cb563361fb299f604ce1c846052c5f74ba8e933edc088fe844f318abb740644a",
+    "seed_3001.npz": "81e692c51d3dd2144d9aafccf80ad59bbae2aab61d8c7f394f4c46b6be5c009a"
+  },
+  "source_sha256": {
+    "src/genesis_binding/calibrate.py": "37704b1a0929d180f3c7631ced4643c19da9d2e0d0714e7f8ef871c34cf90db0",
+    "src/genesis_binding/relocation.py": "d1ab016fae89d1c8c73b4a8a63713e4a1b2348238f85bab59d335f026fda4301",
+    "tests/test_binding_relocation.py": "1f538f00fbc787d7df01c3f979e95c16706a6e9ed3a5f219138ec3390468042f"
+  },
+  "map": "F(x)=x+sum_i a_i*w(periodic_distance(x,p_i)). w=1 inside radius1; cosine taper to0 at radius3. Disjoint supports. Invert by fixed-point iteration.",
+  "interpolation": "Periodic bilinear sampling of exp(i theta), angle recovered by arg; bilinear sampling of tau, ux, uy, C. Stored vector components are transported in the lab frame, not transformed as a geometric tensor.",
+  "arms": "Sham, relative stretch/compress, common translation along +/- dominant Cartesian pair axis. Every nonsham constituent moves exactly one cell. Opposing arms move two cells in relative axial coordinate. No evolution.",
+  "identity": "Expected winding map moves only the selected +1/-1 plaquettes. Compare entire map exactly; instantiate a fresh tracker and assign slots at validated target locations. No old tracker IDs silently carried across.",
+  "error_budget": "Declared numerical ceilings, not binding criteria: exact outside-support/sham; protected core corners and inverse residual <=1e-10; phasor norm>=0.2; support roundtrip phasor RMS<=0.35, tau/u relativeL2<=0.25, C relativeL2<=0.50.",
+  "acceptance": "Every arm on both fixed archived states must satisfy every declared numerical criterion and arm geometry checks. No tolerances changed after calibration. A failure is an intervention limitation, not evidence against binding.",
+  "limits": [
+    "Only radius3 neighborhoods are transported; extended structural wakes outside remain unchanged.",
+    "Roundtrip resampling error is an artifact diagnostic, not a conserved energy or physical displacement.",
+    "C is transported as stored state; no new consistency projection is applied. The unchanged engine would overwrite it on evolution.",
+    "No trajectories, restoring responses or fresh-seed confirmations are collected.",
+    "A calibrated operation is not proof that pinning and binding can be distinguished; Stage C still needs its own frozen design."
+  ]
+}

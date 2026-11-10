@@ -1,0 +1,99 @@
+{
+  "format": "genesis-sandbox",
+  "version": 2,
+  "seed": 7,
+  "n": 64,
+  "update": 1000,
+  "parameters": {
+    "geometry_on": {
+      "shell_geom_gain": 0.08,
+      "tri_sigma2": 0.6400000000000001,
+      "dipole0": 0.3,
+      "well0": 0.6,
+      "tri_sigma": 0.8,
+      "gamma0": 0.015,
+      "sigma_c": 0.25,
+      "phase_lock_gain": 2.5,
+      "lock_strength": 0.75,
+      "alpha0": 0.3,
+      "sigma_c2": 0.0625,
+      "dt": 0.05,
+      "geom_decay": 0.05,
+      "kappa0": 0.015,
+      "tri_lock_gain": 3.0,
+      "tri0": 0.8,
+      "curv0": 0.4,
+      "decay_tau": 0.02
+    },
+    "geometry_off": {
+      "shell_geom_gain": 0.0,
+      "tri_sigma2": 0.6400000000000001,
+      "dipole0": 0.3,
+      "well0": 0.6,
+      "tri_sigma": 0.8,
+      "gamma0": 0.015,
+      "sigma_c": 0.25,
+      "phase_lock_gain": 2.5,
+      "lock_strength": 0.75,
+      "alpha0": 0.3,
+      "sigma_c2": 0.0625,
+      "dt": 0.05,
+      "geom_decay": 0.05,
+      "kappa0": 0.0,
+      "tri_lock_gain": 3.0,
+      "tri0": 0.8,
+      "curv0": 0.0,
+      "decay_tau": 0.02
+    }
+  },
+  "edits": [],
+  "source_sha256": {
+    "genesis_fields_pretty.py": "3409ff5271d3a0d0a1abb2e9aa375fdcab6af4e157104ad43d28849163be886a",
+    "src/genesis_gallery/legacy.py": "4552b344d57b706f5ed48584e521a4e95d3937d5eacc159b48abdca948d217d6",
+    "src/genesis_sandbox/model.py": "3ab1f7e8a3a683a035e3c009d51c4253a2bf768496f84e883b10283e1c766c98",
+    "src/genesis_sandbox/lab_model.py": "66217ef1df0a5c7a79fe02483cdb7afdfd62d7e304ff7d0e8a94a0bd17b2c20c",
+    "src/genesis_sandbox/vacancies.py": "9be0859eab0238c67d8c287f0a3ce46d461965d5ba8c4f63771ca8c5a1080028"
+  },
+  "initialization": "default_rng(seed) uniform theta; other fields zero in both lanes",
+  "brush": "cosine disk clipped at grid edges; turn adds angle, set uses shortest circular path",
+  "variant": "vacancy-lab",
+  "events": [
+    {
+      "kind": "rates",
+      "update": 400,
+      "drop": 0.002,
+      "restore": 0.006
+    }
+  ],
+  "drop_probability": 0.002,
+  "return_probability": 0.006,
+  "dropped": 3843,
+  "arrived": 2883,
+  "turnover_rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 203264936443868607127116923302059268599,
+      "inc": 261222010863496322042979067622879517607
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "interaction_rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 274185940481221968425941004920574738981,
+      "inc": 52355714918033244354377700201331305661
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "vacancy_semantics": "Absent nodes have no bonds/triads/retained state. Fixed-grid no-flux holes. Fresh arrivals have shared random theta and zero retained fields. Automatic removals and returns use the previous occupancy simultaneously.",
+  "created_utc": "2026-11-01T20:45:06.650212+00:00",
+  "visible_field": "theta",
+  "render_style": "dashes",
+  "view_zoom": 4,
+  "compare_view": false,
+  "numpy_version": "1.26.4",
+  "snapshot_precision": "float64",
+  "presentation_source_sha256": "d34ea0fcc6f4b97a94e78e9040797f2ff8100d7e5d552fcbe613796afb71d45d"
+}
